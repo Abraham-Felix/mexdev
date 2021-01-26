@@ -1,0 +1,64 @@
+{
+  "name": "mexdev",
+  "author": "abraham felix <apesyntax@gmail.com>",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "firebase": "^7.18.0",
+    "native-toast": "^2.0.0",
+    "serve-static": "^1.14.1",
+    "tiptap": "^1.29.6",
+    "tiptap-extensions": "^1.32.7",
+    "toastr": "^2.1.4",
+    "vue": "^2.6.11",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.4.3",
+    "vuelidate": "^0.7.5",
+    "vuetify": "^2.2.11",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.3",
+    "@vue/cli-plugin-vuex": "^4.5.4",
+    "@vue/cli-service": "~4.5.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-cli-plugin-vuetify": "~2.0.7",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.3.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

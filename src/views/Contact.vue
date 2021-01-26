@@ -1,0 +1,67 @@
+<template>
+<div id="app">
+   <ChatApp/>
+<v-card
+   class="mx-auto"
+   max-width="344"
+ >
+ <v-img
+   alt="Apesyntax logo"
+   class="shrink mr-2 margin center"
+   contain
+   src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Fmxdv%20-%20logo%20500px.png?alt=media&token=dc7d1c88-4580-4333-b07d-aeeb9f1295d2"
+   transition="scale-transition"
+   width="100"
+ />
+
+  <v-card-text>
+    <h1>contact form</h1>
+     <ContactForm/>
+    </v-card-text>
+  </v-card>
+</div>
+
+</template>
+
+<script>
+import ChatApp from '../components/ChatApp.vue';
+import ContactForm from '../components/ContactForm.vue';
+
+
+export default {
+  name: 'contact',
+  components: {
+    ContactForm,
+    ChatApp,
+  }
+}
+
+</script>
+
+
+<style scoped>
+  h1 {
+    margin-bottom:1vw;
+  }
+  .bold {
+    -webkit-text-stroke-width: medium;
+  }
+  .v-card{
+    display:inline-block;
+    max-width: 600px !important;
+    width: -webkit-fill-available !important;
+  }
+  .margin {
+    margin:10px !important;
+  }
+  .mx-auto {
+   margin-top: 10vw;
+   margin-bottom: 10vw;
+  }
+  .v-input .v-label {
+    margin: 0.4vw !important;
+}
+.v-image {
+   z-index: 0 !important;
+}
+</style>
