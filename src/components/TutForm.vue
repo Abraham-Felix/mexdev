@@ -32,7 +32,7 @@ img.preview {
             </v-btn>
         </template>
         <div class="left">
-            <v-btn color="primary" @click="dialog = false" width="10px">
+            <v-btn class="form-close-btn" color="primary" @click="dialog = false" width="10px">
                 <v-icon>
                     mdi-close
                 </v-icon>

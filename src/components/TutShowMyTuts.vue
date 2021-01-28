@@ -14,13 +14,21 @@ padding: 20px;
     height: 50px !important;
     min-width: 50px !important;
 }
-
+#my-tutorials {
+  margin-top: 20px;
+}
 </style>
 <template>
 
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
-            <v-btn style="z-index:9;" color="primary" dark rounded v-bind="attrs" v-on="on" fixed right>
+            <v-btn
+            style="z-index:9;"
+            color="primary"
+            dark rounded
+            v-bind="attrs"
+            v-on="on"
+            fixed right>
               <v-tooltip right >
                   <template  v-slot:activator="{ on, attrs }">
               <v-icon fab dark v-bind="attrs" v-on="on">
@@ -35,7 +43,7 @@ padding: 20px;
             </v-btn>
             </template>
             <div class="left">
-                <v-btn style="z-index:9; height: 20px !important; margin-top: -30px; margin-left: -10px;" color="primary" @click="dialog = false" width="5px">
+                <v-btn class="form-close-btn"  color="primary" @click="dialog = false" width="5px">
                     <v-icon>
                         mdi-close
                     </v-icon>
