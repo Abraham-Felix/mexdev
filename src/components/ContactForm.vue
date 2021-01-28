@@ -55,7 +55,7 @@ export default {
 
     data() {
         return {
-            displayText: 'Push me!',
+            displayText: 'Send Message',
             newMessage: {
                 first: '',
                 content: '',

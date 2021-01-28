@@ -3,19 +3,19 @@ html  {
   overflow: auto;
 }
 h1 {
-  color: #5c6269;
+  color: #465061 !important;
   margin: 20px auto;
 }
 h2 {
     margin: 2vw;
-    color: dodgerblue;
+    color: #313233 !important;
 }
 h3 {
-  color:dodgerblue;
+  color:#5388E6 !important;
 }
 h4 {
   text-align:left;
-  color: #5c6269;
+  color: #465061 !important;
 }
 main  {
     height: 700px !important;
@@ -29,6 +29,9 @@ input {
 }
 a {
     text-decoration: none;
+}
+p {
+  font-size: 16px;
 }
 /*css-classes*/
 .m-tb-20 {
@@ -67,7 +70,7 @@ a {
     position: absolute;
 }
 .v-parallax {
-  background-color: #475e7a;
+  background-color: #DADCE0;
 }
 .v-parallax__image {
     position: absolute;
