@@ -41,7 +41,7 @@ h1 {
         <v-card-text>
             <h5><b>About Vision:</b></h5>
             <br>
-            <p> MexDev is dedicated to provide coding solutions.</p>
+            <p> MexDev is a web development agency dedicated to providing coding solutions for big and small companies merging into the online business or updating their current app progress.</p>
             <h5><b>About the project:</b></h5>
             <br>
             <p> CEO: Kevin Naf  </p>
