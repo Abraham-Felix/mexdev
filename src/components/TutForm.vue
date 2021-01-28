@@ -17,7 +17,7 @@ img.preview {
 <div id="app">
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
-            <v-btn style="z-index:9;" color="blue lighten-1" dark rounded v-bind="attrs" v-on="on" fixed left>
+            <v-btn style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
                 <v-tooltip right >
                     <template  v-slot:activator="{ on, attrs }">
                         <v-icon fab dark v-bind="attrs" v-on="on">

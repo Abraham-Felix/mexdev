@@ -20,7 +20,7 @@ padding: 20px;
 
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
-            <v-btn style="z-index:9;" color="blue lighten-1" dark rounded v-bind="attrs" v-on="on" fixed right>
+            <v-btn style="z-index:9;" color="primary" dark rounded v-bind="attrs" v-on="on" fixed right>
               <v-tooltip right >
                   <template  v-slot:activator="{ on, attrs }">
               <v-icon fab dark v-bind="attrs" v-on="on">

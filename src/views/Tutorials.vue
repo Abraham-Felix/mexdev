@@ -1,7 +1,7 @@
 <style scoped>
 
 .tutshow {
-    background: linear-gradient(45deg, #313233, #465061);
+    background: #313233;
     color: #ffffff !important;
 }
 
