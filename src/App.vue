@@ -30,10 +30,10 @@
         </div>
         <div class="nav-col-mid">
         <router-link to="/about">
-        <v-btn depressed small >About</v-btn>
+        <v-btn depressed small color="primary">About</v-btn>
         </router-link>
         <router-link to="/contact">
-        <v-btn depressed dark small >Contact</v-btn>
+        <v-btn depressed dark small color="primary">Contact</v-btn>
         </router-link>
         </div>
         <div class="nav-col-right">
@@ -116,7 +116,7 @@
         </v-card-text>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong> MexDev </strong>
+          {{ new Date().getFullYear() }} — <strong> MexDev | 2020 </strong>
         </v-card-text>
 
     </v-footer>

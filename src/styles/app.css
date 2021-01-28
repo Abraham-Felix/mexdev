@@ -30,10 +30,6 @@ a {
     text-decoration: none;
 }
 /*css-classes*/
-.v-sheet.v-app-bar.v-toolbar {
-    border-radius: 0;
-    background: #aaaeb1 !important;
-}
 .m-tb-20 {
   margin-top:20px;
   margin-bottom:20px;
