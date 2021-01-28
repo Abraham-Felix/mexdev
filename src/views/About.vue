@@ -39,10 +39,10 @@ h1 {
         <h5> Coding solutions </h5><br>
         <v-divider></v-divider>
         <v-card-text>
-            <h5>About Vision:</h5>
+            <h5><b>About Vision:</b></h5>
             <br>
             <p> MexDev is dedicated to provide coding solutions.</p>
-            <h5>About the project:</h5>
+            <h5><b>About the project:</b></h5>
             <br>
             <p> CEO: Kevin Naf  </p>
             <br>
