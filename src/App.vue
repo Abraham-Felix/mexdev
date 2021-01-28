@@ -116,7 +116,7 @@
         </v-card-text>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong> MexDev | 2020 </strong>
+        <strong>  {{ new Date().getFullYear() }} | MexDev  </strong>
         </v-card-text>
 
     </v-footer>

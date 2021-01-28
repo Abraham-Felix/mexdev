@@ -4,6 +4,7 @@ html  {
 }
 h1 {
   color: #5c6269;
+  margin: 20px auto;
 }
 h2 {
     margin: 2vw;
@@ -56,11 +57,17 @@ a {
   margin-right: auto !important;
   display: -webkit-inline-box !important;
 }
+.v-card {
+  margin: 20px auto !important;
+}
 .v-text-field input {
     flex: 1 1 auto !important;
   }
   .v-select.v-text-field input {
     position: absolute;
+}
+.v-parallax {
+  background-color: #475e7a;
 }
 .v-parallax__image {
     position: absolute;
