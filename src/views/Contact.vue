@@ -1,6 +1,5 @@
 <template>
 <div id="app">
-   <ChatApp/>
 <v-card
    class="mx-auto"
    max-width="344"
@@ -26,15 +25,13 @@
 </template>
 
 <script>
-import ChatApp from '../components/ChatApp.vue';
 import ContactForm from '../components/ContactForm.vue';
 
 
 export default {
   name: 'contact',
   components: {
-    ContactForm,
-    ChatApp,
+    ContactForm
   }
 }
 

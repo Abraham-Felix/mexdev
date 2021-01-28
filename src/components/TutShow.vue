@@ -38,7 +38,7 @@ padding: 20px;
 <template>
   <v-container id="tutorials">
     <v-card>
-      <h1>Workflow Entries</h1>
+      <h1>Work Requests</h1>
       </v-card>
            <!-- loop over the tutorials -->
            <div v-for="tutorial in allTutorials" :key="tutorial._key">

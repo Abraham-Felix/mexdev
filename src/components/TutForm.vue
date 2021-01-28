@@ -26,7 +26,7 @@ img.preview {
                     </template>
                     <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png">
                     <span style="display:inline;">
-                      Add Tutorial
+                      Add Request
                     </span>
                 </v-tooltip>
             </v-btn>
@@ -41,8 +41,8 @@ img.preview {
         <div class="panel-heading">
         </div>
         <div>
-            <h1>Workflow form</h1>
-            <h3> create one</h3>
+            <h1>Work Request Form</h1>
+            <h3> create a request</h3>
             <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
                 <v-divider class="m-tb-20"></v-divider>
                 <h4>Contractor details</h4>
@@ -258,7 +258,7 @@ export default {
             picture:null,
             uploadValue: 0,
             dialog: false,
-            displayText: 'Push me!',
+            displayText: 'send request',
             newTutorial: {
                 first: '',
                 email: '',

@@ -29,7 +29,7 @@ padding: 20px;
             </template>
             <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png">
             <span style="display:inline;">
-              View your tutorials
+              view entries
             </span>
         </v-tooltip>
             </v-btn>
@@ -43,7 +43,7 @@ padding: 20px;
             </div>
             <v-container id="my-tutorials">
     <v-card>
-      <h1>My Tutorials</h1>
+      <h1>My requests</h1>
     </v-card>
 
       <!-- loop over the tutorials -->

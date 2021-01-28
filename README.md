@@ -19,7 +19,9 @@ npm run build
 ```
 npm run lint
 ```
-
+### hotreload
+npm run-script serve
+```
 ### Customize configuration  / configuracion customizada
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
@@ -29,4 +31,4 @@ see [Firebase Configuration Reference](https://firebase.google.com/docs/web/setu
 - Support chat app ( in development )
 - app structure and pages in under developtment ( new pages comming soon! )
 - Firebase auth, Github auth, Google auth. ( no passwords store to respect users privacy ) ( updating... )
-- Mdi Icon library 
+- Mdi Icon library
