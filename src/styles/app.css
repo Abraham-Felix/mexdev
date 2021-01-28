@@ -3,19 +3,28 @@ html  {
   overflow: auto;
 }
 h1 {
-  color: #465061 !important;
+  color: #313233 !important;
   margin: 20px auto;
+  font-family: system-ui;
 }
 h2 {
     margin: 2vw;
     color: #313233 !important;
+    font-family: system-ui;
 }
 h3 {
   color:#5388E6 !important;
+  font-family: system-ui;
 }
 h4 {
   text-align:left;
   color: #465061 !important;
+  font-family: system-ui;
+}
+h5 {
+  font-family: system-ui;
+  color: #313233 !important;
+  font-size: 16px;
 }
 main  {
     height: 700px !important;
@@ -31,7 +40,9 @@ a {
     text-decoration: none;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: monospace;
+  text-align: justify;
 }
 /*css-classes*/
 .m-tb-20 {

@@ -24,11 +24,17 @@ h1 {
   z-index:0;
 }
 
+ul {
+display: inline-flex;
+white-space: pre-wrap;
+font-family: monospace;
+}
+
 </style>
 
 <template>
     <v-card class="mx-auto">
-      <h1> about us </h1>
+      <h1> About us </h1>
         <v-img
         alt="Apesyntax logo"
         class="shrink mr-2 margin center"
@@ -36,7 +42,7 @@ h1 {
         transition="scale-transition" width="100" /><br>
         <v-card-title class="center">
         </v-card-title>
-        <h5> Coding solutions </h5><br>
+        <h2> Coding solutions </h2><br>
         <v-divider></v-divider>
         <v-card-text>
             <h5><b>About Vision:</b></h5>
@@ -44,10 +50,11 @@ h1 {
             <p> MexDev is a web development agency dedicated to providing coding solutions for big and small companies merging into the online business or updating their current app progress.</p>
             <h5><b>About the project:</b></h5>
             <br>
-            <p> CEO: Kevin Naf  </p>
+            <ul>
+              <li><p> CEO: Kevin Naf  </p></li>
             <br>
-            <p> Dev: Abraham Felix </p>
-
+              <li><p> Dev: Abraham Felix </p></li>
+          </ul>
         </v-card-text>
     </v-card>
 </template>

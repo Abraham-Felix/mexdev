@@ -77,8 +77,8 @@ display: inline-grid;
 
 <div id="app">
     <v-container class="v-container">
-      <h1> Profile Settings </h1>
         <v-card v-if="authUser" class="center block">
+            <h1> Profile Settings </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
             <img :src="authUser.photoURL" width="150">

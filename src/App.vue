@@ -147,7 +147,7 @@ data: () => ({
   icons: [
     {
         name:'mdi-google',
-        url: 'https://business.google.com/dashboard/l/18315130497288576188',
+        url: 'mailto:apesyntax@gmail.com',
         target: '_blank'
     },
     {
