@@ -29,6 +29,9 @@
 
         </div>
         <div class="nav-col-mid">
+          <router-link to="/home">
+          <v-btn depressed small color="primary"><span class="mdi mdi-home"></span></v-btn>
+          </router-link>
         <router-link to="/about">
         <v-btn depressed small color="primary">About</v-btn>
         </router-link>
@@ -75,7 +78,7 @@
 
      <v-list-item>
        <router-link to="/tutorials">
-       <v-btn depressed dark small color="primary">Workflow</v-btn>
+       <v-btn depressed dark small color="primary">Work Request</v-btn>
        </router-link>
      </v-list-item>
      </v-list>

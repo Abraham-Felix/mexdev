@@ -7,6 +7,7 @@ import Tutorials from '../views/Tutorials.vue'
 import Profile from '../views/Profile.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -63,7 +64,16 @@ Vue.use(VueRouter)
     path: '/sign-up',
     name: 'SignUp',
     component: SignUp
+  },
+  {
+  path: '/home',
+  name: 'Home',
+  component: Home,
+  meta: {
+    requiresAuth:true
   }
+  }
+
 ]
 
 const router = new VueRouter({
@@ -78,7 +88,7 @@ const router = new VueRouter({
       const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
 
       if (requiresAuth && !currentUser) next('login');
-      else if (!requiresAuth && currentUser) next('profile')
+      else if (!requiresAuth && currentUser) next('home')
       next(firebase.auth().onAuthStateChanged(currentUser => {
           currentUser}));
     });

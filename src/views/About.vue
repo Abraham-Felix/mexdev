@@ -47,7 +47,7 @@ font-family: monospace;
         <v-card-text>
             <h5><b>About Vision:</b></h5>
             <br>
-            <p> MexDev is a web development agency dedicated to providing coding solutions for big and small companies merging into the online business or updating their current app progress.</p>
+            <p> MexDev is a web development agency providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress.</p>
             <h5><b>About the project:</b></h5>
             <br>
             <ul>
