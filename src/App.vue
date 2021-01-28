@@ -149,7 +149,7 @@ data: () => ({
       ],
   icons: [
     {
-        name:'mdi-google',
+        name:'mdi-gmail',
         url: 'mailto:apesyntax@gmail.com',
         target: '_blank'
     },
