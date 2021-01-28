@@ -9,7 +9,9 @@ img.preview {
 .txt-e-btn {
   padding: 0px !important;
 }
-
+.up-pic {
+  display: grid;
+}
 </style>
 
 <template>
@@ -42,10 +44,10 @@ img.preview {
         </div>
         <div>
             <h1>Work Request Form</h1>
-            <h3> create a request</h3>
+            <h3> send us a request</h3>
             <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
                 <v-divider class="m-tb-20"></v-divider>
-                <h4>Contractor details</h4>
+                <h4>contact details:</h4><br>
                 <div class="form-group">
                     <v-text-field :rules="nameRules" required label="First Name" type="text" id="tutorialFirst" class="form-control" v-model="newTutorial.first">
                     </v-text-field>
@@ -60,10 +62,10 @@ img.preview {
                 </div>
                 <div class="form-goup">
                   <!-- Img upload input field-->
-                  <div>
-                    <h4 class="m-tb-20">Upload reference picture:</h4>
+                  <h4 class="m-tb-20">choose picture and click upload</h4><br>
+                  <div class="up-pic">
                   <input class="form-control"  type="file" @change="previewImage" accept="image/+">
-                  <br><v-btn class="m-tb-20" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
+                  <br><v-btn title="upload" class="m-tb-20" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
                 </div>
                 <div>
                   <p> Progress: {{uploadValue.toFixed()+"%"}}
@@ -73,7 +75,7 @@ img.preview {
               </div>
 
                 <v-divider class="m-tb-20"></v-divider>
-                <h4>Contractor work details </h4>
+                <h4>work request details </h4><br>
                 <div class="form-group">
                     <v-select required label="Technology resquested"
                     id="tutorialLanguage" v-model="newTutorial.language"
@@ -265,7 +267,7 @@ export default {
                 last: '',
                 language: [],
                 title: '',
-                content: '<br>Enter content here<br>👏',
+                content: '<br>Enter content here to create space use double tap :) <br>👏',
                 date: '',
                 picture:'',
                 code: '',

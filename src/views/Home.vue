@@ -39,7 +39,7 @@ export default {
     display: inline-flex;
 }
 .v-card {
-  padding: 50px;
+  padding: 20px;
 }
 .mdi-code-tags {
   font-size: 5em;
