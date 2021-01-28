@@ -62,6 +62,7 @@ p {
 }
 .v-card {
   margin: 20px auto !important;
+  max-width: 600px !important;
 }
 .v-text-field input {
     flex: 1 1 auto !important;

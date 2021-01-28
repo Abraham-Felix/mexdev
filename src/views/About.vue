@@ -27,14 +27,14 @@ h1 {
 </style>
 
 <template>
-    <v-card class="mx-auto" max-width="420">
+    <v-card class="mx-auto">
+      <h1> about us </h1>
         <v-img
         alt="Apesyntax logo"
         class="shrink mr-2 margin center"
         contain src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Fmxdv%20-%20logo%20500px.png?alt=media&token=dc7d1c88-4580-4333-b07d-aeeb9f1295d2"
         transition="scale-transition" width="100" /><br>
         <v-card-title class="center">
-            <h2>MexDev</h2>
         </v-card-title>
         <h5> Coding solutions </h5><br>
         <v-divider></v-divider>
