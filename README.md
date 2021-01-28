@@ -20,8 +20,15 @@ npm run build
 npm run lint
 ```
 ### hotreload
+
 npm run-script serve
 ```
+
+### font
+
+monospace, system-ui
+```
+
 ### Customize configuration  / configuracion customizada
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
