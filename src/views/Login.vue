@@ -86,8 +86,9 @@ export default {
           const provider = new firebase.auth.GoogleAuthProvider()
           firebase.auth().signInWithPopup(provider)
           .then(
+            data => console.log(data.user.uid),
               (user) => {
-                  this.$router.go('home' + user.message + this.created || true)
+                  this.$router.go('/home' + user.message + this.created || true)
                 }, (err) => {
                   alert('Oops.' + err.message)
               }
@@ -97,8 +98,9 @@ export default {
           const provider = new firebase.auth.GithubAuthProvider()
           firebase.auth().signInWithPopup(provider)
           .then(
+            data => console.log(data.user.uid),
               (user) => {
-                  this.$router.go('home' + user.message + this.created || true)
+                  this.$router.go('/home' + user.message + this.created || true)
                 }
           )
           .catch (err =>

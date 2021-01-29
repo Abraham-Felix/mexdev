@@ -7,7 +7,6 @@ import Tutorials from '../views/Tutorials.vue'
 import Profile from '../views/Profile.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -68,7 +67,7 @@ Vue.use(VueRouter)
   {
   path: '/home',
   name: 'Home',
-  component: Home,
+  component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
   meta: {
     requiresAuth:true
   }
@@ -83,12 +82,10 @@ const router = new VueRouter({
 });
 
     router.beforeEach((to, from, next) =>  {
-
       const currentUser = firebase.auth().currentUser;
       const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
-
       if (requiresAuth && !currentUser) next('login');
-      else if (!requiresAuth && currentUser) next('home')
+      else if (!requiresAuth && currentUser) next('home');
       next(firebase.auth().onAuthStateChanged(currentUser => {
           currentUser}));
     });
