@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development / servidor local para precomplilar y actualizar app automaticamente
 ```
-npm run serve
+npm run-script serve
 ```
 
 ### Compiles and minifies for production
