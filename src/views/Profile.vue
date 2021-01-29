@@ -17,6 +17,10 @@ button {
 .v-container {
   padding:0px !important;
 }
+.link-sm {
+  width: 200px;
+  -webkit-box-pack: center;
+}
 .v-card {
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -124,30 +128,30 @@ display: inline-grid;
             </form>
 
               <v-divider class="m-tb-20"></v-divider>
-            <div class="center" v-if="!linkedGoogle">
+            <div class=" link-sm center" v-if="!linkedGoogle">
               <br>
-             <h4 class="center">Link google account</h4>
+             <h4 class="center">Link google </h4>
              <br>
              <v-btn class="center" @click="linkGoogle"><v-icon>mdi-google</v-icon></v-btn>
             </div>
 
-            <div class="center" v-if="linkedGoogle">
+            <div class=" link-smcenter" v-if="linkedGoogle">
              <br>
-             <h4 class="center">unlink google account</h4>
+             <h4 class="center">unlink google </h4>
              <br>
              <v-btn class="center" @click="unlinkGoogle"><v-icon color=red>mdi-email-off</v-icon></v-btn>
             </div>
 
-            <div class="center" v-if="!linkedGithub">
+            <div class="link-sm center" v-if="!linkedGithub">
               <br>
-             <h4 class="center">Link github account</h4>
+             <h4 class="center">Link github </h4>
              <br>
              <v-btn class="center" @click="linkGithub"><v-icon>mdi-github</v-icon></v-btn>
             </div>
 
-            <div class="center" v-if="linkedGithub">
+            <div  class="link-sm center" v-if="linkedGithub">
              <br>
-             <h4 class="center">unlink github account</h4>
+             <h4 class="center">unlink github </h4>
              <br>
              <v-btn class="center" @click="unlinkGithub"><v-icon color=red>mdi-email-off</v-icon></v-btn>
             </div>
