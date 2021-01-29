@@ -273,7 +273,7 @@ export default {
                 code: '',
             },
             languages: [
-                'Html', 'CSS', 'VUE', 'React', 'Ruby', 'JS', 'SASS', 'Python','PHP','C#','JAVA','Other',
+                'Html', 'CSS', 'VUE', 'Ruby', 'JS', 'SASS', "Web Design", "Other"
             ],
             nameRules: [
                 v => !!v || 'you must type something',
