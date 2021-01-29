@@ -17,6 +17,14 @@ padding: 20px;
 #my-tutorials {
   margin-top: 20px;
 }
+.tech-requested {
+  display: inline;
+}
+.requested-card {
+  box-shadow: 0px 0px 10px -5px cadetblue;
+    padding: 3px !important;
+    border-radius: 5px;
+}
 </style>
 <template>
 
@@ -57,24 +65,24 @@ padding: 20px;
       <!-- loop over the tutorials -->
       <div v-for="(tutorial, key) in authUser.myTutorial" :key="key">
         <v-card>
-             <br>
-             <h3>{{ tutorial.title}}</h3><br>
-             <div class="data-rw dt-corner">
-               <v-icon> mdi-calendar </v-icon>
-               <p> {{ tutorial.date  }} </p><br>
-             </div>
-             <p class="content" v-html="tutorial.content"> {{ tutorial.content}}</p><br>
-             <br>
-             <img class="preview" :src="tutorial.picture"><br>
-             <div class="data-rw"><v-icon>mdi-account-tie</v-icon>
-               <p> {{ tutorial.first + ' ' + tutorial.last}}</p>
-             </div>
-             <br><br>
-              <div class="data-rw"><v-icon>mdi-code-braces</v-icon>
-                <a  v-bind:href="tutorial.code"> {{ tutorial.code }} </a>
-              </div>
-             <p> {{ tutorial.language  }} </p><br>
-           <!-- and so on -->
+          <br>
+          <h3>{{ tutorial.title}}</h3><br>
+          <div class="data-rw dt-corner">
+            <v-icon> mdi-calendar </v-icon>
+            <p> {{ tutorial.date  }} </p>
+          </div>
+          <p class="content" v-html="tutorial.content"> {{ tutorial.content}}</p><br>
+          <br>
+          <img class="preview" :src="tutorial.picture"><br>
+          <div class="data-rw requested-card" ><v-icon style="font-size:44px;">mdi-account-tie</v-icon>
+            <h5 style="padding-right:20px;" > requested by: <h3>{{ tutorial.first + ' ' + tutorial.last}} </h3></h5>
+          </div>
+          <br><br>
+           <div class="data-rw"><v-icon>mdi-web</v-icon>
+             <a  v-bind:href="tutorial.code"> {{ tutorial.code }} </a>
+           </div><br><br>
+           <v-text><h5 class="tech-requested"> Tech Requested:</h5> {{ tutorial.language  }} </v-text><br>
+         <!-- and so on -->
         </v-card>
       </div>
     </v-container>

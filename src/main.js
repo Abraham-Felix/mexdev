@@ -16,14 +16,15 @@ require('firebase/firestore')
 Vue.config.productionTip = false;
 let app = '';
 
-firebase.auth().onAuthStateChanged(user =>  {
-store.dispatch("fetchUser", user);
-this.authUser = user
-});
+//firebase.auth().onAuthStateChanged(user =>  {
+//store.dispatch("fetchUser", user);
+//this.authUser = user
+//});
 
 
 
-firebase.auth().onAuthStateChanged(() => {
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("fetchUser", user);
   if (!app) {
     app = new Vue({
       vuetify,
