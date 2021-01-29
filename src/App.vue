@@ -30,13 +30,13 @@
         </div>
         <div class="nav-col-mid">
           <router-link to="/home">
-          <v-btn depressed small color="primary"><span class="mdi mdi-home"></span></v-btn>
+          <v-btn class="nav-btns" depressed small color="primary" title="home" ><span style="font-size:1.3rem;" class="mdi mdi-home"></span></v-btn>
           </router-link>
         <router-link to="/about">
-        <v-btn depressed small color="primary">About</v-btn>
+        <v-btn  class="nav-btns" depressed small color="primary" title="about us"><span style="font-size:1.3rem;" class="mdi mdi-information-outline"></span></v-btn>
         </router-link>
         <router-link to="/contact">
-        <v-btn depressed dark small color="primary">Contact</v-btn>
+        <v-btn  class="nav-btns" depressed dark small color="primary" title="contact us"><span style="font-size:1.3rem;" class="mdi mdi-card-account-mail-outline"></span></v-btn>
         </router-link>
         </div>
         <div class="nav-col-right">
@@ -176,6 +176,9 @@ methods: {
 
 
 <style lang="scss">
+.nav-btns {
+  width: 80px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
