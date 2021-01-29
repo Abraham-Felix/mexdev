@@ -71,6 +71,9 @@ display: inline-grid;
   height:28px !important;
   width: auto;
 }
+.profile-pic {
+  border-radius:100%;
+}
 </style>
 
 <template>
@@ -81,7 +84,7 @@ display: inline-grid;
             <h1> Profile Settings </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
-            <img :src="authUser.photoURL" width="150">
+            <img class="profile-pic" :src="authUser.photoURL" width="150">
             <p>What's up, {{authUser.displayName || 'my friend'}}<br> we know you like {{authUser.favoriteFood || 'Programing'}}</p>
              <br>
              <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
