@@ -234,10 +234,10 @@ methods: {
        transition: 1s;
        }
 }
-@media screen and (max-width: 497px){
+@media only screen and (max-width: 497px){
   .nav-col-mid {
-      width: 60%;
-      display: flex;
+      width: 100%;
+      display: flex !important;
       -webkit-box-pack: center;
   }
 }
