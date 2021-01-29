@@ -30,13 +30,22 @@
         </div>
         <div class="nav-col-mid">
           <router-link to="/home">
-          <v-btn class="nav-btns" depressed small color="primary" title="home" ><span style="font-size:1.3rem;" class="mdi mdi-home"></span></v-btn>
+          <v-btn class="nav-btns" depressed small color="primary" title="home" >
+            <span class="mobile-icons mdi mdi-home"></span>
+            <span class="web-nav-btns"> home </span>
+          </v-btn>
           </router-link>
         <router-link to="/about">
-        <v-btn  class="nav-btns" depressed small color="primary" title="about us"><span style="font-size:1.3rem;" class="mdi mdi-information-outline"></span></v-btn>
+        <v-btn  class="nav-btns" depressed small color="primary" title="about us">
+          <span class="mobile-icons mdi mdi-information-outline"></span>
+          <span class="web-nav-btns"> about us </span>
+        </v-btn>
         </router-link>
         <router-link to="/contact">
-        <v-btn  class="nav-btns" depressed dark small color="primary" title="contact us"><span style="font-size:1.3rem;" class="mdi mdi-card-account-mail-outline"></span></v-btn>
+        <v-btn  class="nav-btns" depressed dark small color="primary" title="contact us">
+          <span class="mobile-icons mdi mdi-card-account-mail-outline"></span>
+          <span class="web-nav-btns"> contact </span>
+        </v-btn>
         </router-link>
         </div>
         <div class="nav-col-right">
@@ -176,6 +185,18 @@ methods: {
 
 
 <style lang="scss">
+@media screen and (min-width:900px) {
+  .mobile-icons {
+    display: none;
+    font-size:1.3rem;
+  }
+}
+@media screen and (max-width:900px) {
+  .web-nav-btns {
+    display: none;
+    font-size:1.3rem;
+  }
+}
 .nav-btns {
   width: 80px;
 }
