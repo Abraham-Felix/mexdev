@@ -74,19 +74,18 @@ export default {
         login: function() {
             firebase.auth().signInWithEmailAndPassword(this.email, this.password)
             .then(
-              data => console.log(data.user.uid),
                 (user) => {
                     this.$router.go('home' + user.message + this.created || true)
-                }, (err) => {
+                },
+                (err) => {
                     alert('Oops.' + err.message)
-                }
+                },
             )
         },
         signInWithGoogle: function(){
           const provider = new firebase.auth.GoogleAuthProvider()
           firebase.auth().signInWithPopup(provider)
           .then(
-            data => console.log(data.user.uid),
               (user) => {
                   this.$router.go('/home' + user.message + this.created || true)
                 }, (err) => {
@@ -98,7 +97,6 @@ export default {
           const provider = new firebase.auth.GithubAuthProvider()
           firebase.auth().signInWithPopup(provider)
           .then(
-            data => console.log(data.user.uid),
               (user) => {
                   this.$router.go('/home' + user.message + this.created || true)
                 }
