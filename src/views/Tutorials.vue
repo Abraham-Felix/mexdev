@@ -14,20 +14,9 @@
 }
 @media screen and (max-width:900px) {
   .tutorial-giff {
-    max-width: 350px;
-      height: auto;
-      width: auto;
+      width: 80% !important;
       border-radius: 5px;
-      margin: 50px;
-  }
-}
-@media and (max-width:400px) {
-  .tutorial-giff {
-    max-width: 80%;
-      height: auto;
-      width: auto;
-      border-radius: 5px;
-      margin: 50px;
+      margin: auto;
   }
 }
 </style>
