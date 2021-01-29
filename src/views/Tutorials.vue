@@ -21,6 +21,15 @@
       margin: 50px;
   }
 }
+@media and (max-width:400px) {
+  .tutorial-giff {
+    max-width: 80%;
+      height: auto;
+      width: auto;
+      border-radius: 5px;
+      margin: 50px;
+  }
+}
 </style>
 <template>
   <v-container>
