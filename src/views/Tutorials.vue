@@ -10,6 +10,16 @@
     width: auto;
     border-radius: 5px;
     margin: 50px;
+    transition: 1.3s;
+}
+@media screen and (max-width:900px) {
+  .tutorial-giff {
+    max-width: 350px;
+      height: auto;
+      width: auto;
+      border-radius: 5px;
+      margin: 50px;
+  }
 }
 </style>
 <template>
