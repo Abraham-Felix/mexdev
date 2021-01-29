@@ -220,8 +220,9 @@ methods: {
   }
 }
 .nav-col-mid {
-  width:60%;
-  display: table;
+    width: 60%;
+    display: -webkit-inline-box;
+    -webkit-box-pack: center;
 }
 .nav-col-left, .nav-col-right {
   width:20%;
@@ -232,5 +233,12 @@ methods: {
        padding:0px !important;
        transition: 1s;
        }
+}
+@media screen and (max-width: 497px){
+  .nav-col-mid {
+      width: 60%;
+      display: flex;
+      -webkit-box-pack: center;
+  }
 }
 </style>
