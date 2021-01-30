@@ -45,11 +45,6 @@ export default {
   .bold {
     -webkit-text-stroke-width: medium;
   }
-  .v-card{
-    display:inline-block;
-    max-width: 600px !important;
-    width: -webkit-fill-available !important;
-  }
   .margin {
     margin:10px !important;
   }
