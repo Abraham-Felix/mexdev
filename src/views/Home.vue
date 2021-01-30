@@ -3,7 +3,7 @@
   <v-card>
      <h1> <span  style="font-size:64px;color:#5388E6 "> Get </span>
         your project done <br>
-        In simple stemps by </h1><br>
+        In simple steps by </h1><br>
          <v-img
             alt="Meddev Logo"
             class="shrink mr-2 home-image"
