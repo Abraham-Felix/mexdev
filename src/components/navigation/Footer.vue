@@ -6,7 +6,7 @@
     padless
       flat
       tile
-      class=" white--text text-center"
+      class="footer white--text text-center"
       color="primary"
       width="100%"
     >
@@ -14,7 +14,7 @@
         <v-btn
         v-for="icon in icons"
         :key="icon"
-        class="mx-3 "
+        class="mx-3 f-btn"
         dark
         icon
       >
@@ -22,19 +22,22 @@
           <v-icon class="white--text" size="24px">{{ icon.name }}</v-icon>
         </a>
       </v-btn>
-      </v-card-text>
-
-
-      <v-card-text class="white--text">
-      <strong>  {{ new Date().getFullYear() }} | MexDev  </strong>
+      <br>
+      <strong>  {{ new Date().getFullYear() }} | © MexDev  </strong>
       </v-card-text>
 
   </v-footer>
 </div>
 </template>
 
-<style>
-
+<style scoped>
+.footer {
+  border-radius: 10px !important;
+  height: 70px;
+}
+.f-btn{
+  margin-top: -14px;
+}
 </style>
 
 <script>
