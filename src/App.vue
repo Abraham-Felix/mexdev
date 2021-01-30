@@ -102,38 +102,8 @@
         </main>
      </div>
 
-    <!-- footer -->
-    <div id="footer">
-    <v-footer
-      dark
-      padless
-        flat
-        tile
-        class=" white--text text-center"
-        color="primary"
-        width="100%"
-      >
-        <v-card-text>
-          <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-3 "
-          dark
-          icon
-        >
-          <a :href="icon.url" :target="icon.target">
-            <v-icon class="white--text" size="24px">{{ icon.name }}</v-icon>
-          </a>
-        </v-btn>
-        </v-card-text>
+  <Footer/>
 
-
-        <v-card-text class="white--text">
-        <strong>  {{ new Date().getFullYear() }} | MexDev  </strong>
-        </v-card-text>
-
-    </v-footer>
-  </div>
   </v-parallax>
   </v-app>
 </template>
@@ -141,9 +111,13 @@
 import firebase from 'firebase'
 import toastr from 'toastr';
 import { mapGetters } from "vuex"
+import Footer from './components/navigation/Footer.vue';
 
 export default {
   name: 'App',
+  components: {
+    Footer,
+  },
   computed: {
     // map `this.user` to `this.$store.getters.user`
     ...mapGetters({
@@ -157,19 +131,7 @@ data: () => ({
           url: "/profile",
           active: true,
         }
-      ],
-  icons: [
-    {
-        name:'mdi-gmail',
-        url: 'mailto:admin@mexdev.io',
-        target: '_blank'
-    },
-    {
-        name:'mdi-github',
-        url: 'https://www.github.com/abraham-felix',
-        target: '_blank'
-    },
-  ],
+      ]
 }),
 methods: {
   logout: function() {
