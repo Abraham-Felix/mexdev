@@ -160,7 +160,7 @@ data: () => ({
   icons: [
     {
         name:'mdi-gmail',
-        url: 'mailto:apesyntax@gmail.com',
+        url: 'mailto:admin@mexdev.io',
         target: '_blank'
     },
     {
