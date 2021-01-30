@@ -12,8 +12,11 @@
             transition="scale-transition"
             width="40"
           />
-        <h4>Profesional Developers </h4>
-        <span class="mdi mdi-code-tags"> </span> <br><br>
+          <div>
+        <h5 style="margin-top:-30px; display: contents;">Profesional Developers </h5>
+        <span class="mdi mdi-code-tags"> </span>
+         </div>
+        <br><br>
        <ol>
           <li> Start by creating your new <b> account or login </b> </li>
           <li> Navigate to <b>work requests</b> from top navbar <span class="mdi mdi-account"></span></li>
@@ -45,7 +48,7 @@ export default {
   padding: 20px;
 }
 .mdi-code-tags {
-  font-size: 5em;
+  font-size:16px;
   display: inline;
   color:#5388E6;
 }
