@@ -78,13 +78,16 @@ display: inline-grid;
 .profile-pic {
   border-radius:100%;
 }
+.p-pad {
+  padding:15px;
+}
 </style>
 
 <template>
 
 <div id="app">
     <v-container class="v-container">
-        <v-card v-if="authUser" class="center block">
+        <v-card v-if="authUser" class="center p-pad block">
             <h1> Profile Settings </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
