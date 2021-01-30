@@ -64,14 +64,15 @@ export default {
             },
             nameRules: [
                 v => !!v || 'you must type something',
-                v => v.length <= 10 || 'hum.. this monk smelling somthing strange... must be less than 10 characters',
+                v => v.length <= 15 || 'hum.. this monk smelling somthing strange... must be less than 10 characters',
             ],
             emailRules: [
                 v => !!v || 'E-mail is required',
                 v => /.+@.+/.test(v) || 'Please enter a valid email containing @ ',
             ],
             contentRules: [
-                v => !!v || 'Content is required amigo!'
+                v => !!v || 'Content is required amigo!',
+                v => v.length >= 20 || 'hum.. this monk smelling somthing strange... must be at least more than 30 characters',
             ],
         }
     },

@@ -76,11 +76,12 @@ export default {
             .then(
                 (user) => {
                     this.$router.go('home' + user.message + this.created || true)
-                },
-                (err) => {
-                    alert('Oops.' + err.message)
-                },
+                }
             )
+            .catch (err =>
+              toastr.error('Yikes! '+ err.message))
+            .catch (
+              toastr.success('Well done '))
         },
         signInWithGoogle: function(){
           const provider = new firebase.auth.GoogleAuthProvider()
@@ -88,10 +89,12 @@ export default {
           .then(
               (user) => {
                   this.$router.go('/home' + user.message + this.created || true)
-                }, (err) => {
-                  alert('Oops.' + err.message)
-              }
+                }
           )
+          .catch (err =>
+            toastr.error('Yikes! '+ err.message))
+          .catch (
+            toastr.success('Well done '))
         },
         signInWithGithub: function(){
           const provider = new firebase.auth.GithubAuthProvider()
@@ -104,7 +107,7 @@ export default {
           .catch (err =>
             toastr.error('Yikes! '+ err.message))
           .catch (
-            toastr.success('Well done +'))
+            toastr.success('Well done '))
         },
     }
 }

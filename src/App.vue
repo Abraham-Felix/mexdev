@@ -138,6 +138,7 @@
 </template>
 <script>
 import firebase from 'firebase'
+import toastr from 'toastr';
 import { mapGetters } from "vuex"
 
 export default {
@@ -175,6 +176,10 @@ methods: {
     .then(() => {
       this.$router.replace('login')
     })
+    .catch (err =>
+      toastr.error('Yikes! '+ err.message))
+    .catch (
+      toastr.success('You have logged out, se ya!'))
   },
 
 },
