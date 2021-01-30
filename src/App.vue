@@ -127,6 +127,7 @@
         </v-btn>
         </v-card-text>
 
+
         <v-card-text class="white--text">
         <strong>  {{ new Date().getFullYear() }} | MexDev  </strong>
         </v-card-text>

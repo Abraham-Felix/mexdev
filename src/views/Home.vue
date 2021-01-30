@@ -5,7 +5,7 @@
         your project done <br>
         In simple stemps by </h1><br>
          <v-img
-            alt="Apesyntax logo"
+            alt="Meddev Logo"
             class="shrink mr-2 home-image"
             contain
             src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Fmxdv%20-%20logo%20500px.png?alt=media&token=dc7d1c88-4580-4333-b07d-aeeb9f1295d2"
@@ -21,9 +21,11 @@
           <br>
         <!--  <h5><a> check tutorial </a></h5> -->
        </ol>
+
     <br><br>
     <p> PS:"se habla espanol" </p>
      </v-card>
+
 </div>
 </template>
 
@@ -34,6 +36,7 @@ export default {
 </script>
 
 <style>
+
 .home-image {
     width: 137px !important;
     display: inline-flex;
