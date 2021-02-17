@@ -48,9 +48,6 @@ Vue.use(VueRouter)
     path: '/showcase',
     name: 'Showcase',
     component: Showcase,
-    meta: {
-      requiresAuth:true
-    }
   },
   {
     path: '/about',
