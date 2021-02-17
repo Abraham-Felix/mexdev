@@ -19,6 +19,13 @@
   background: #474747;
   color: #ffffff !important;
 }
+.i {
+  color: lightgray !important;
+  margin-top:20px;
+}
+.i:hover{
+  color: darkgray !important;
+}
 </style>
 
 <template>
@@ -26,19 +33,25 @@
   <v-card class="shocase-card">
     <h1> ShowCase </h1>
     <h3> Fintech Horizons Media </h3>
-    <v-img class="showcase-img" src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Ffhm-mockup.png?alt=media&token=39813dd2-672d-4574-bc0b-afba2d4cb14b"/>
-      <div class="p-box">
+    <i class="i">scroll to zoom-in</i>
+    <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
+     <img
+       src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Ffhm-mockup.png?alt=media&token=39813dd2-672d-4574-bc0b-afba2d4cb14b"
+       style="object-fit: contain; width: 100%; height: 100%;"
+     >
+   </v-zoomer>
+    <div class="p-box">
         <h5>highlights:</h5>
         <hr>
-        <p>Robust Profesional Ruby on Rails App designed for Fintech Newsletter with a backend api and mailer system,
+        <p>Profesional robust Ruby on Rails App designed for Fintech Newsletter, it has a backend api and mailer system,
           this app was upgraded to nuxt server, webpacker for front end framework support vuejs support.
         </p>
-        <p>Project was buuild using git and github code manage systems, hosted on heroku and dns to a custom domain
+        <p>Project was build using git and github code manage systems with an Agile methodology touch, hosted on heroku and dns to a custom domain
            with an optimized Google Anatlytics Tags to provide reports and realtime data.</p>
         <p>Designed with an optimiztic and profesional mind, material was created using graphic tools and software
-          with a UI/UX influence.</p>
+          with a UI/UX influence.</p><br>
         <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
-      </div>
+    </div><br>
   </v-card>
 </v-container>
 </template>

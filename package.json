@@ -23,6 +23,7 @@
     "vue-gtag": "^1.11.0",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.4.3",
+    "vue-zoomer": "^0.3.9",
     "vuelidate": "^0.7.5",
     "vuetify": "^2.2.11",
     "vuex": "^3.5.1"
