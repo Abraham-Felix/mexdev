@@ -1,8 +1,9 @@
 // modules
-import Vue from 'vue'
-import firebase from './plugins/firebase'
-import VueResorce from 'vue-resource'
-import './plugins/axios'
+import Vue from 'vue';
+import firebase from './plugins/firebase';
+import VueResorce from 'vue-resource';
+import './plugins/axios';
+import './plugins/vue-gtag';
 import vuetify from './plugins/vuetify';
 // components
 import App from './App.vue';
