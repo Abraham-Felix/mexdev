@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Contact from '../views/Contact.vue'
 import Tutorials from '../views/Tutorials.vue'
 import Profile from '../views/Profile.vue'
+import Showcase from '../views/Showcase.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
 
@@ -39,6 +40,14 @@ Vue.use(VueRouter)
     path: '/profile',
     name: 'Profile',
     component: Profile,
+    meta: {
+      requiresAuth:true
+    }
+  },
+  {
+    path: '/showcase',
+    name: 'Showcase',
+    component: Showcase,
     meta: {
       requiresAuth:true
     }

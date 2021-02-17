@@ -35,6 +35,12 @@
             <span class="web-nav-btns"> home </span>
           </v-btn>
           </router-link>
+          <router-link to="/showcase">
+          <v-btn  class="nav-btns" depressed dark small color="primary" title="Showcase">
+            <span class="mobile-icons mdi mdi-video"></span>
+            <span class="web-nav-btns"> showcase </span>
+          </v-btn>
+          </router-link>
         <router-link to="/about">
         <v-btn  class="nav-btns" depressed small color="primary" title="about us">
           <span class="mobile-icons mdi mdi-information-outline"></span>
@@ -166,7 +172,7 @@ methods: {
   }
 }
 .nav-btns {
-  width: 80px;
+  width: 100px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
