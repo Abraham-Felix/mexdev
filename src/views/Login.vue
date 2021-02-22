@@ -47,7 +47,7 @@ h5 {
             <div class="grid-50">
             <h5>Sign in with</h5>
             <v-btn @click="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
-           <v-btn @click="signInWithGithub"><v-icon>mdi-github</v-icon></v-btn>
+            <v-btn @click="signInWithGithub"><v-icon>mdi-github</v-icon></v-btn>
           </div>
           </div>
 

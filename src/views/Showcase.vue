@@ -43,13 +43,10 @@
     <div class="p-box">
         <h5>highlights:</h5>
         <hr>
-        <p>Profesional robust Ruby on Rails App designed for Fintech Newsletter, it has a backend api and mailer system,
-          this app was upgraded to nuxt server, webpacker for front end framework support vuejs support.
+        <p>A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile app built with Ionic/ Vue.js.
         </p>
-        <p>Project was build using git and github code manage systems with an Agile methodology touch, hosted on heroku and dns to a custom domain
-           with an optimized Google Anatlytics Tags to provide reports and realtime data.</p>
-        <p>Designed with an optimiztic and profesional mind, material was created using graphic tools and software
-          with a UI/UX influence.</p><br>
+        <p> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
+
         <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
     </div><br>
   </v-card>
