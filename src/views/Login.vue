@@ -39,7 +39,7 @@ h5 {
             </div>
             <v-text-field class="form-control" type="password" @keyup.enter="login" v-model="password" placeholder="Password">
             </v-text-field>
-            <v-btn depressed small color="primary"  @click="login">conect</v-btn>
+            <v-btn depressed small color="primary"  @click="login">connect</v-btn>
             <p>Or you can
                 <router-link to="/sign-up">create one.</router-link>
             </p>
