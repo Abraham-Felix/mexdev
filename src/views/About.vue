@@ -51,9 +51,7 @@ font-family: monospace;
             <h5><b>About the project:</b></h5>
             <br>
             <ul>
-              <li><p> CEO: Kevin Naf  </p></li>
-            <br>
-              <li><p> Dev: Abraham Felix </p></li>
+              <li><p> Principals:  Abraham Felx, Kevin Nafziger </p></li>
           </ul>
         </v-card-text>
     </v-card>

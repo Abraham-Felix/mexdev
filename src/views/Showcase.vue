@@ -117,9 +117,11 @@
       <div class="p-box">
           <h5>highlights:</h5>
           <hr>
-          <p>A CMS ressort application transfered from Wordpress CMS to Adobe Catalyst Systems, built and designed side by side with a Visual Basic database conected to an sql app to manage inventory and status, it includes its mailling campaing system with templated emails for the calling center marketing deaprtment.
+          <p>The app/content management system was created in WordPress and transferred to Adobe Catalyst.
           </p>
-          <p> The project uses Godaddy for hosting, AWS for storage, and Google Analytics Tags for optimization. </p>
+          <p> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
+          <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
+          </p>
           <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
       </div><br>
       </div>
