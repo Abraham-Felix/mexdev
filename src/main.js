@@ -24,8 +24,6 @@ let app = '';
 //this.authUser = user
 //});
 
-
-
 firebase.auth().onAuthStateChanged(user => {
   store.dispatch("fetchUser", user);
   if (!app) {

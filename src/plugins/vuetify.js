@@ -18,7 +18,7 @@ const vuetify = new Vuetify({
 export default vuetify
 
 
-/* mexdec color scheme
+/* mexdev color scheme
 .mexdev-1-hex { color: #313233; }
 .mexdev-2-hex { color: #5388E6; }
 .mexdev-3-hex { color: #DADCE0; }
