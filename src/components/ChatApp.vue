@@ -41,8 +41,8 @@ v-button {
                 </v-icon>
             </v-btn>
             <div id="chat" class="container">
-              <h1>Vue School Chat Room</h1>
-              
+              <h1>Vue.js Chat App</h1>
+
               <!-- Messages -->
               <div v-bind:key="message" v-for="message in messages" class="card">
                 <v-card padding="10px" class="pt-3 m-tb-20">
