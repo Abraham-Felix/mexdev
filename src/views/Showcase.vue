@@ -155,9 +155,8 @@
       <div class="p-box">
             <h3> Organized & clean code. </h3>
           <v-divider></v-divider>
-          <p>As experienced developers we know the importance of having organized and clean code, we prefer understandable and not overwhelming code that is hard to maintain, we believe the sweet spot somewhere in the middle.
-          </p>
-          <p> We are convinced that it is useful to learn and apply the concepts of structured programming. High-level programming languages that originally lacked programming structures, This said our code meets the Structured programming expectations, controlling the structure with block of html, js, css & back end architechture as ROR, Nuxt, Node.  </p>
+          <p> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity.
+Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
       </div>
         <i class="i">scroll to zoom-in</i><br><br>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
