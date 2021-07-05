@@ -89,6 +89,7 @@
     <div class="Fgrid">
       <div class="Gmodule">
       <h3> Fintech Horizons Media </h3>
+        <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
          <img
@@ -107,6 +108,7 @@
       </div>
       <div class="Gmodule">
       <h3> Laguna Shores Resorts </h3>
+        <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
          <img
@@ -127,6 +129,7 @@
       </div>
       <div class="Gmodule">
       <h3> Classic Car Pal </h3>
+      <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
          <img
@@ -145,6 +148,27 @@
       </div>
       </div>
   </div>
+  <div>
+    <h1> Our code </h1>
+    <div class="Fgrid">
+      <div class="Gmodule">
+      <div class="p-box">
+            <h3> We love organized and clean code. </h3>
+          <v-divider></v-divider>
+          <p>As experienced developers we know the importance of having organized and clean code, we prefer understandable and not overwhelming code that is hard to maintain, we believe the sweet spot somewhere in the middle.
+          </p>
+          <p> We are convinced that it is useful to learn and apply the concepts of structured programming. High-level programming languages that originally lacked programming structures, This said our code meets the Structured programming expectations, controlling the structure with block of html, js, css & back end architechture as ROR, Nuxt, Node.  </p>
+      </div>
+        <i class="i">scroll to zoom-in</i><br><br>
+      <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
+         <img
+         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fcode.png?alt=media&token=e0385ea1-7468-4411-8db6-d5abab9a038a"
+         style="object-fit: contain; width: 100%; height: 100%;"
+         >
+     </v-zoomer>
+  </div>
+</div>
+</div>
 </v-container>
 </template>
 
