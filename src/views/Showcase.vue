@@ -162,11 +162,18 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
          <img
          src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fcode.png?alt=media&token=e0385ea1-7468-4411-8db6-d5abab9a038a"
-         style="object-fit: contain; width: 100%; height: 100%;"
+         style="object-fit: contain; width: 50%; height: 100%;"
+         >
+         <img
+         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
+"
+         style="object-fit: contain; width: 50%; height: 100%;"
          >
      </v-zoomer>
   </div>
-</div>
+
+
+  </div>
 </div>
 </v-container>
 </template>
