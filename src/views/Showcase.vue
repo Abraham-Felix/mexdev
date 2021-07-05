@@ -153,7 +153,7 @@
     <div class="Fgrid">
       <div class="Gmodule">
       <div class="p-box">
-            <h3> We love organized and clean code. </h3>
+            <h3> Organized & clean code. </h3>
           <v-divider></v-divider>
           <p>As experienced developers we know the importance of having organized and clean code, we prefer understandable and not overwhelming code that is hard to maintain, we believe the sweet spot somewhere in the middle.
           </p>
