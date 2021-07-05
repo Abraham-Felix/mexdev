@@ -171,12 +171,19 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
          >
      </v-zoomer>
   </div>
-
-
   </div>
 </div>
+<ChatApp />
 </v-container>
 </template>
 
 <script>
+import ChatApp from '../components/ChatApp.vue';
+
+export default {
+  name: 'showcase',
+  components: {
+    ChatApp
+  }
+}
 </script>

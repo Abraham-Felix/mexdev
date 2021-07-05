@@ -1,6 +1,8 @@
 <style>
 
-
+v-button {
+  left: 0px;
+}
 
 </style>
 
@@ -9,15 +11,23 @@
 <div id="app">
     <v-dialog v-model="dialog" width="500">
         <template v-slot:activator="{ on, attrs }">
-            <v-btn style="z-index:9;" color="orange darken-5" dark rounded v-bind="attrs" v-on="on" class="m-tb-20" fixed right>
+            <v-btn
+            style="left: 50px; bottom: 3px; z-index: 9;"
+            color="orange darken-5"
+            dark rounded
+            v-bind="attrs"
+            v-on="on"
+            class="m-tb-20"
+            fixed right>
                 <v-tooltip left>
-                    <template v-slot:activator="{ on, attrs }">
+                    <template  v-slot:activator="{ on, attrs }">
                         <v-icon fab dark v-bind="attrs" v-on="on">
                             mdi-chat
                         </v-icon>
 
                     </template>
-                    <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png">
+                    <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png"><br>
+                    <v-text>Click & try our Chat Demo APP!</v-text>
                     <span style="display:inline;">
 
                       </span>
@@ -32,6 +42,7 @@
             </v-btn>
             <div id="chat" class="container">
               <h1>Vue School Chat Room</h1>
+              
               <!-- Messages -->
               <div v-bind:key="message" v-for="message in messages" class="card">
                 <v-card padding="10px" class="pt-3 m-tb-20">
