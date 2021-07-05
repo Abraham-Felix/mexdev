@@ -149,7 +149,7 @@
       </div>
   </div>
   <div>
-    <h1> Our code </h1>
+    <h1> Our approach </h1>
     <div class="Fgrid">
       <div class="Gmodule">
       <div class="p-box">
