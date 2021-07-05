@@ -123,7 +123,7 @@ export default {
             dialog: false, // this for modal
             messages: [],
             messageText: '',
-            nickname: 'Apesyntax',
+            nickname: 'Mexdev',
             editingMessage: null
         }
     },
