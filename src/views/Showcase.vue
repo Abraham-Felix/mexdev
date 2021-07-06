@@ -80,11 +80,17 @@
     max-width: 600px;
   }
 }
+
+.v-parallax h4 {
+  color: white !important;
+}
 </style>
 
 <template>
   <v-container>
-  <div class="shocase-card">
+
+    <div class="shocase-card">
+
     <h1> ShowCase </h1>
     <div class="Fgrid">
       <div class="Gmodule">
@@ -148,6 +154,7 @@
       </div>
       </div>
   </div>
+
   <div>
     <h1> Our approach </h1>
     <div class="Fgrid">
@@ -172,9 +179,34 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
      </v-zoomer>
   </div>
   </div>
-</div>
-<ChatApp />
-</v-container>
+  </div>
+  <ChatApp />
+  <h1 style="color:white;">We love modern design </h1>
+  <div class="Fgrid">
+    <v-container
+    class="Gmodule">
+      <v-card>
+        <h3> Design </h3>
+      <v-divider></v-divider><br>
+        <v-parallax
+        height="600"
+        src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
+        <div style="border: 5px lightgray dashed; border-radius:10px;">
+        <br>
+        <h4> Mobile first </h4>
+        <h4> Responsive </h4>
+        <h4> Organized </h4>
+        <h4> Animated </h4>
+        <h4> Minimal </h4>
+        <h4> Parallax </h4>
+        <h4> Clean </h4>
+        <br>
+        </div>
+        </v-parallax>
+      </v-card>
+    </v-container>
+  </div>
+  </v-container>
 </template>
 
 <script>
