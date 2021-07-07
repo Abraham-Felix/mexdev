@@ -211,7 +211,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
       </div>
         <div class="col-50">
           <center>
-            <h3>Design Libraries</h3>
+            <h3>Design libraries</h3>
           <v-divider width="80%"></v-divider>
         </center>
         <h4> BootstrapVue </h4>
