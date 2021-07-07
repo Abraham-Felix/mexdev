@@ -81,7 +81,7 @@ export default {
             .catch (err =>
               toastr.error('Yikes! '+ err.message))
             .catch (
-              toastr.success('Well done '))
+              toastr.success('Welcome to Mexdev app, Enjoy! '))
         },
         signInWithGoogle: function(){
           const provider = new firebase.auth.GoogleAuthProvider()
@@ -94,7 +94,7 @@ export default {
           .catch (err =>
             toastr.error('Yikes! '+ err.message))
           .catch (
-            toastr.success('Well done '))
+            toastr.success('Welcome to Mexdev app, Enjoy! '))
         },
         signInWithGithub: function(){
           const provider = new firebase.auth.GithubAuthProvider()
