@@ -81,7 +81,10 @@
   }
 }
 
-
+.col-50 {
+  width: 50%;
+  display: inline-grid;
+}
 </style>
 
 <template>
@@ -179,7 +182,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   <ChatApp />
-  <h1 style="color:white;"> Ui Vision </h1>
+  <h1 style="color:white;"> Our Ui/Ux vision </h1>
   <div class="Fgrid">
     <v-container
     class="Gmodule">
@@ -188,10 +191,15 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
         height="600"
         style="background:white;bottom:10px;"
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
-        <div style="border: 5px lightgray dashed; border-radius:10px;top:-400px;">
+        <div style="border:5px lightgray dashed; border-radius:10px; top: -400px;">
         <br>
         <h3> Web App Design </h3>
       <v-divider></v-divider><br>
+       <div class="col-50">
+         <center>
+           <h3>Vision of modeling</h3>
+           <v-divider width="80%" ></v-divider>
+         </center>
         <h4> Mobile first </h4>
         <h4> Responsive </h4>
         <h4> Organized </h4>
@@ -200,6 +208,20 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
         <h4> Parallax </h4>
         <h4> Clean </h4>
         <br>
+      </div>
+        <div class="col-50">
+          <center>
+            <h3>Design Libraries</h3>
+          <v-divider width="80%"></v-divider>
+        </center>
+        <h4> Vuetify </h4>
+        <h4> BootstrapVue </h4>
+        <h4> Mdi </h4>
+        <h4> Quasar </h4>
+        <h4> VueTailwind </h4>
+        <h4> Animate.css </h4>
+        <h4> Vue Material </h4>
+      </div>
         </div>
         </v-parallax>
         <h3>Thank You</h3>
