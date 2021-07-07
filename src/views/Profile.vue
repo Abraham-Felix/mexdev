@@ -88,7 +88,7 @@ display: inline-grid;
 <div id="app">
     <v-container class="v-container">
         <v-card v-if="authUser" class="center p-pad block">
-            <h1> Profile Settings </h1>
+            <h1> Profile </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
             <img class="profile-pic" :src="authUser.photoURL" width="150">
@@ -96,7 +96,8 @@ display: inline-grid;
              <br>
              <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
              <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
-             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon>
+             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon> <br>
+               <h4 class="center mt-10">profile settings</h4>
              <v-divider class="m-tb-20"></v-divider>
 
             <form  @submit.prevent="updateProfile">
@@ -139,10 +140,12 @@ display: inline-grid;
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCustomDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
             </form>
 
+
+              <h4 class="center mt-10">Company settings</h4>
               <v-divider class="m-tb-20"></v-divider>
 
               <form  @submit.prevent="updateCompanyDetails">
-                <h4><center><v-icon> mdi-domain </v-icon>  Update company details </center> </h4>
+                <h4><center><v-icon> mdi-account-details </v-icon>  Update company details </center> </h4>
                 <v-divider></v-divider>
                 <br>
                 <p>Company name</p>
@@ -151,6 +154,17 @@ display: inline-grid;
                 <p>Company website</p>
                 <input required type="text" v-model="companyWebsite" label="Fav food" placeholder="enter your company website" class="form-control"><br>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
+              </form>
+              <form  @submit.prevent="updateCompanyContactDetails">
+                <h4><center><v-icon> mdi-domain  </v-icon>  Update company contact details </center> </h4>
+                <v-divider></v-divider>
+                <br>
+                <p>Company phone</p>
+                <input :rules="titleRules" required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" class="form-control">
+                <v-divider vertical></v-divider>
+                <p>Company email</p>
+                <input required type="text" v-model="companyEmail" label="Fav food" placeholder="enter your company email" class="form-control"><br>
+                <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyContactDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
               </form>
 
               <v-divider class="m-tb-20"></v-divider>
@@ -210,12 +224,18 @@ export default {
             newPassword: '',
             providerData: '',
             authUser: '',
+            companyPhone: null,
+            comapnyEmail: null,
             companyName: null,
             companyWebsite: null,
             favoriteFood: null,
             userID: null,
         }
     },
+    phoneRules: [
+        v => !!v || 'you must type digits something',
+        v => v.length <= 10 || 'hum.. this monk smelling somthing strange... must be less than 10 characters',
+    ],
     computed:{
       linkedGithub () {
         return !!this.authUser.providerData.find(provider => provider.providerId === 'github.com')
@@ -251,6 +271,15 @@ export default {
             companyWebsite: this.companyWebsite
           });
           toastr.success('Cool! company details updated')
+      },
+      updateCompanyContactDetails() {
+        firebase.database().ref('users').child(this.authUser.uid)
+          .update({
+            companyPhone: this.companyPhone,
+            companyEmail: this.companyEmail
+          });
+          this.nameRules = true;
+          toastr.success('Cool! company contact details updated')
       },
       updatePassword() {
         this.authUser.updatePassword(this.newPassword)
@@ -296,16 +325,19 @@ export default {
                 this.photoURL = user.photoURL
                 this.email = user.email
                 this.uid = user.uid
-                this.companyWebsite = user.companyWebsite
                 this.providerData = user.providerData
                 usersRef.child(user.uid).once('value', snapshot => {
                   if (snapshot.val()) {
                   this.favoriteFood = snapshot.val().favoriteFood
                   this.companyName = snapshot.val().companyName
                   this.companyWebsite = snapshot.val().companyWebsite
+                  this.companyPhone = snapshot.val().companyPhone
+                  this.companyEmail = snapshot.val().companyEmail
                   vue.set(this.authUser, 'favoriteFood', this.favoriteFood)
                   vue.set(this.authUser, 'companyName', this.companyName)
                   vue.set(this.authUser, 'companyWebsite', this.companyWebsite)
+                  vue.set(this.authUser, 'companyPhone', this.companyPhone)
+                  vue.set(this.authUser, 'companyEmail', this.companyEmail)
                    }
                 })
 
