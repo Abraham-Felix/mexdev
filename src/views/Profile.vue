@@ -102,10 +102,10 @@ display: inline-grid;
              </v-card>
              <v-divider class="m-tb-20"></v-divider>
 
-             <h4 class="center mt-5">profile settings</h4><br><br>
+             <h4 class="center mt-5">User profile</h4><br><br>
 
             <form  @submit.prevent="updateProfile">
-              <h4><v-icon> mdi-account </v-icon>Update profile details</h4>
+              <h4><v-icon> mdi-account </v-icon>User details</h4>
               <v-divider></v-divider>
               <br>
               <div class="update-profile-inputs">
@@ -145,17 +145,18 @@ display: inline-grid;
             </form>
 
 
-              <h4 class="center mt-10">Company settings</h4>
+              <h4 class="center mt-10">Company profile</h4>
               <v-divider class="m-tb-20"></v-divider>
 
               <form style="width:50%;" @submit.prevent="updateCompanyDetails">
                 <h4><center><v-icon> mdi-domain </v-icon>  Update company details </center> </h4>
                 <v-divider></v-divider>
                 <br>
-                <p>Company name</p>
+                <p class="center">Company name</p><br>
                 <input required type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control">
+                <br>
                 <v-divider vertical></v-divider>
-                <p>Company website</p>
+                <p class="center">Company website</p><br>
                 <input required type="text" v-model="companyWebsite" label="Fav food" placeholder="enter your company website" class="form-control"><br>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
               </form>
@@ -163,13 +164,24 @@ display: inline-grid;
                 <h4><center><v-icon> mdi-phone  </v-icon>  Update company contact details </center> </h4>
                 <v-divider></v-divider>
                 <br>
-                <p>Company phone</p>
+                <p class="center">Company phone</p><br>
                 <input :rules="titleRules" required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" class="form-control">
-                <v-divider vertical></v-divider>
-                <p>Company email</p>
+                <v-divider vertical></v-divider><br>
+                <p class="center">Company email</p><br>
                 <input required type="text" v-model="companyEmail" label="Fav food" placeholder="enter your company email" class="form-control"><br>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyContactDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
               </form>
+              <form  @submit.prevent="updateCompanyPhoto">
+                <h4 class="center"><v-icon> mdi-camera </v-icon> Company Photo</h4>
+                <v-divider></v-divider>
+                <br>
+                <div class="update-profile-inputs">
+                <img class="center profile-pic" :src="authUser.companyPhotoURL" width="150">
+                <p>Company photo url</p>
+                <input class="form-control" v-model="companyPhotoURL" placeholder="company photo url">
+                <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyPhoto" class="update right-btn"><v-icon> mdi-send </v-icon> </v-btn>
+                </div>
+                </form>
 
               <v-divider class="m-tb-20"></v-divider>
 
@@ -259,6 +271,11 @@ export default {
         });
         toastr.success('Nice! profile updated')
       },
+      updateCompanyPhoto() {
+        firebase.database().ref('users').child(this.authUser.uid)
+        .update({companyPhotoURL: this.companyPhotoURL})
+        toastr.success('Nice! company profile updated')
+      },
       updateEmail() {
         this.authUser.updateEmail(this.email)
         toastr.success('Cool! email updated')
@@ -333,11 +350,13 @@ export default {
                 usersRef.child(user.uid).once('value', snapshot => {
                   if (snapshot.val()) {
                   this.favoriteFood = snapshot.val().favoriteFood
+                  this.companyPhotoURL = snapshot.val().companyPhotoURL
                   this.companyName = snapshot.val().companyName
                   this.companyWebsite = snapshot.val().companyWebsite
                   this.companyPhone = snapshot.val().companyPhone
                   this.companyEmail = snapshot.val().companyEmail
                   vue.set(this.authUser, 'favoriteFood', this.favoriteFood)
+                  vue.set(this.authUser, 'companyPhotoURL', this.companyPhotoURL)
                   vue.set(this.authUser, 'companyName', this.companyName)
                   vue.set(this.authUser, 'companyWebsite', this.companyWebsite)
                   vue.set(this.authUser, 'companyPhone', this.companyPhone)
