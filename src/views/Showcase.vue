@@ -197,7 +197,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
       <v-divider></v-divider><br>
        <div class="col-50">
          <center>
-           <h3>Vision of modeling</h3>
+           <h3>App model</h3>
            <v-divider width="80%" ></v-divider>
          </center>
         <h4> Mobile first </h4>
