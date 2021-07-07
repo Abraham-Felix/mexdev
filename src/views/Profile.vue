@@ -101,6 +101,7 @@ display: inline-grid;
 
             <form  @submit.prevent="updateProfile">
               <h4><v-icon> mdi-account </v-icon>Update profile details</h4>
+              <v-divider></v-divider>
               <br>
               <div class="update-profile-inputs">
               <p>First name</p><input  class="form-control" v-model="displayName" placeholder="your name"><br>
@@ -112,6 +113,7 @@ display: inline-grid;
 
             <form  @submit.prevent="updateEmail">
               <h4><v-icon> mdi-email </v-icon>Update email</h4>
+              <v-divider></v-divider>
               <br>
               <center>
               <p>Contact email</p>
@@ -122,6 +124,7 @@ display: inline-grid;
 
             <form  @submit.prevent="updatePassword">
               <h4><v-icon> mdi-lock </v-icon>Update password</h4>
+              <v-divider></v-divider>
               <br><p>Go ahead change it</p>
               <input type="password" class="form-control" v-model="newPassword" placeholder="enter new password">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updatePassword" class="update"><v-icon> mdi-send </v-icon></v-btn>
@@ -129,6 +132,7 @@ display: inline-grid;
 
             <form  @submit.prevent="updateCustomDetails">
               <h4><v-icon> mdi-account-cowboy-hat </v-icon>Update extra details  </h4>
+              <v-divider></v-divider>
               <br>
               <p>Write anything you love</p>
               <input type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" class="form-control">
@@ -137,7 +141,17 @@ display: inline-grid;
 
               <v-divider class="m-tb-20"></v-divider>
 
+              <form  @submit.prevent="updateCompanyDetails">
+                <h4><center><v-icon> mdi-domain </v-icon>  Update company details </center> </h4>
+                <v-divider></v-divider>
+                <br>
+                <p>Company name</p>
+                <input type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control">
+                <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
+              </form>
+
               <v-divider class="m-tb-20"></v-divider>
+
             <div class=" link-sm center" v-if="!linkedGoogle">
               <br>
              <h4 class="center">Link google </h4>
@@ -193,6 +207,7 @@ export default {
             newPassword: '',
             providerData: '',
             authUser: '',
+            companyName: null,
             favoriteFood: null,
             userID: null,
         }
@@ -220,10 +235,14 @@ export default {
         toastr.success('Cool! email updated')
       },
       updateCustomDetails() {
-
         firebase.database().ref('users').child(this.authUser.uid)
           .update({favoriteFood: this.favoriteFood})
-
+          toastr.success('Cool! extra details updated')
+      },
+      updateCompanyDetails() {
+        firebase.database().ref('users').child(this.authUser.uid)
+          .update({companyName: this.companyName})
+          toastr.success('Cool! company details updated')
       },
       updatePassword() {
         this.authUser.updatePassword(this.newPassword)
@@ -269,6 +288,7 @@ export default {
                 this.photoURL = user.photoURL
                 this.email = user.email
                 this.uid = user.uid
+                this.companyName = user.companyName
                 this.providerData = user.providerData
                 usersRef.child(user.uid).once('value', snapshot => {
                   if (snapshot.val()) {
