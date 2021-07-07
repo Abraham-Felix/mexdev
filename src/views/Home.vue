@@ -3,7 +3,7 @@
   <v-card>
      <h1> <span  style="font-size:64px;color:#5388E6 "> Get </span>
         your project done <br>
-        In simple steps <b> by </b> </h1><br>
+        <span class="in">I</span>n simple steps b<b class="on">y </b> </h1><br>
          <v-img
             alt="Meddev Logo"
             class="shrink mr-2 home-image"
@@ -40,6 +40,15 @@ export default {
 </script>
 
 <style>
+
+.in {
+  font-size: 40px ;
+  font-family: poppins ;
+}
+.on {
+  font-size: 25px ;
+  font-family: poppins ;
+}
 
 .home-image {
     width: 137px !important;
