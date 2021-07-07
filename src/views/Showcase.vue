@@ -81,9 +81,7 @@
   }
 }
 
-.v-parallax h4 {
-  color: white !important;
-}
+
 </style>
 
 <template>
@@ -181,18 +179,19 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   <ChatApp />
-  <h1 style="color:white;">We love modern design </h1>
+  <h1 style="color:white;"> Ui Vision </h1>
   <div class="Fgrid">
     <v-container
     class="Gmodule">
-      <v-card>
-        <h3> Design </h3>
-      <v-divider></v-divider><br>
+      <v-card style="">
         <v-parallax
         height="600"
+        style="background:white;bottom:10px;"
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
-        <div style="border: 5px lightgray dashed; border-radius:10px;">
+        <div style="border: 5px lightgray dashed; border-radius:10px;top:-400px;">
         <br>
+        <h3> Web App Design </h3>
+      <v-divider></v-divider><br>
         <h4> Mobile first </h4>
         <h4> Responsive </h4>
         <h4> Organized </h4>
@@ -203,6 +202,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
         <br>
         </div>
         </v-parallax>
+        <h3>Thank You</h3>
       </v-card>
     </v-container>
   </div>
