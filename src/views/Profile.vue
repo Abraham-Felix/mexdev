@@ -146,7 +146,10 @@ display: inline-grid;
                 <v-divider></v-divider>
                 <br>
                 <p>Company name</p>
-                <input type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control">
+                <input required type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control">
+                <v-divider vertical></v-divider>
+                <p>Company website</p>
+                <input required type="text" v-model="companyWebsite" label="Fav food" placeholder="enter your company website" class="form-control"><br>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
               </form>
 
@@ -208,6 +211,7 @@ export default {
             providerData: '',
             authUser: '',
             companyName: null,
+            companyWebsite: null,
             favoriteFood: null,
             userID: null,
         }
@@ -228,7 +232,8 @@ export default {
         this.authUser.updateProfile({
           displayName: this.displayName ,
           photoURL: this.photoURL
-        }); toastr.success('Nice! profile updated')
+        });
+        toastr.success('Nice! profile updated')
       },
       updateEmail() {
         this.authUser.updateEmail(this.email)
@@ -241,7 +246,10 @@ export default {
       },
       updateCompanyDetails() {
         firebase.database().ref('users').child(this.authUser.uid)
-          .update({companyName: this.companyName})
+          .update({
+            companyName: this.companyName,
+            companyWebsite: this.companyWebsite
+          });
           toastr.success('Cool! company details updated')
       },
       updatePassword() {
@@ -288,12 +296,16 @@ export default {
                 this.photoURL = user.photoURL
                 this.email = user.email
                 this.uid = user.uid
-                this.companyName = user.companyName
+                this.companyWebsite = user.companyWebsite
                 this.providerData = user.providerData
                 usersRef.child(user.uid).once('value', snapshot => {
                   if (snapshot.val()) {
                   this.favoriteFood = snapshot.val().favoriteFood
+                  this.companyName = snapshot.val().companyName
+                  this.companyWebsite = snapshot.val().companyWebsite
                   vue.set(this.authUser, 'favoriteFood', this.favoriteFood)
+                  vue.set(this.authUser, 'companyName', this.companyName)
+                  vue.set(this.authUser, 'companyWebsite', this.companyWebsite)
                    }
                 })
 
