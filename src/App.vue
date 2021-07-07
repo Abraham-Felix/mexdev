@@ -148,7 +148,7 @@ methods: {
     .catch (err =>
       toastr.error('Yikes! '+ err.message))
     .catch (
-      toastr.success('You have logged out, se ya!'))
+      toastr.success('You have logged out, Thanks for using Mexdev app, se ya!'))
   },
 
 },
