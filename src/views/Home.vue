@@ -14,7 +14,7 @@
           />
           <div>
         <h5 style="margin-top:-30px; display: contents;">Profesional Developers </h5>
-        <span class="mdi mdi-code-tags"> </span>
+        <span class="mdi mdi-code-braces"> </span>
          </div>
         <br><br>
        <ol>
