@@ -91,8 +91,8 @@ display: inline-grid;
             <h1> Profile </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
-            <img class="profile-pic" :src="authUser.photoURL" width="150">
-            <p>What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}}</p>
+            <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
+            <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
              <br>
              <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
              <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
@@ -144,8 +144,8 @@ display: inline-grid;
               <h4 class="center mt-10">Company settings</h4>
               <v-divider class="m-tb-20"></v-divider>
 
-              <form  @submit.prevent="updateCompanyDetails">
-                <h4><center><v-icon> mdi-account-details </v-icon>  Update company details </center> </h4>
+              <form style="width:50%;" @submit.prevent="updateCompanyDetails">
+                <h4><center><v-icon> mdi-domain </v-icon>  Update company details </center> </h4>
                 <v-divider></v-divider>
                 <br>
                 <p>Company name</p>
@@ -156,7 +156,7 @@ display: inline-grid;
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-send </v-icon> </v-btn>
               </form>
               <form  @submit.prevent="updateCompanyContactDetails">
-                <h4><center><v-icon> mdi-domain  </v-icon>  Update company contact details </center> </h4>
+                <h4><center><v-icon> mdi-phone  </v-icon>  Update company contact details </center> </h4>
                 <v-divider></v-divider>
                 <br>
                 <p>Company phone</p>
