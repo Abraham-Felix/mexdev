@@ -182,7 +182,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   <ChatApp />
-  <h1 style="color:white;"> Our Ui/Ux vision </h1>
+  <h1 style="color:white;"> Ui/Ux vision </h1>
   <div class="Fgrid">
     <v-container
     class="Gmodule">
@@ -193,7 +193,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
         <div style="border:5px lightgray dashed; border-radius:10px; top: -400px;">
         <br>
-        <h3> Web App Design </h3>
+        <h4>Core of design </h4><br>
       <v-divider></v-divider><br>
        <div class="col-50">
          <center>
