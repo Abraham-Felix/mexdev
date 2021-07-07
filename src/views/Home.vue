@@ -26,7 +26,8 @@
        </ol>
 
     <br><br>
-    <p> PS:"se habla espanol" </p>
+    <v-divider></v-divider>
+    <p class="center"> PS:"se habla espanol" </p>
      </v-card>
 
 </div>
