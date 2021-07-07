@@ -214,13 +214,13 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
             <h3>Design Libraries</h3>
           <v-divider width="80%"></v-divider>
         </center>
-        <h4> Vuetify </h4>
         <h4> BootstrapVue </h4>
-        <h4> Mdi </h4>
-        <h4> Quasar </h4>
+        <h4> Vue Material </h4>
         <h4> VueTailwind </h4>
         <h4> Animate.css </h4>
-        <h4> Vue Material </h4>
+        <h4> Mdi icons </h4>
+        <h4> Vuetify </h4>
+        <h4> Quasar </h4>
       </div>
         </div>
         </v-parallax>
