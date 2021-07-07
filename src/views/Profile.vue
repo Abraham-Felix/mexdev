@@ -73,7 +73,10 @@ display: inline-grid;
 }
 .update{
   height:28px !important;
-  width: auto;
+  width: 30px;
+  bottom: 0px;
+  text-align: center;
+  margin:20px auto auto auto;
 }
 .profile-pic {
   border-radius:10% 10% !important;
