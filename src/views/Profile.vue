@@ -76,7 +76,8 @@ display: inline-grid;
   width: auto;
 }
 .profile-pic {
-  border-radius:100%;
+  border-radius:10% 10% !important;
+  box-shadow: 5px 3px 10px -3px gray;
 }
 .p-pad {
   padding:15px;
@@ -91,14 +92,17 @@ display: inline-grid;
             <h1> Profile </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
-            <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
-            <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
-             <br>
-             <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
-             <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
-             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon> <br>
-               <h4 class="center mt-10">profile settings</h4>
+             <v-card >
+               <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
+               <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
+               <br>
+               <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
+               <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
+               <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon> <br><br>
+             </v-card>
              <v-divider class="m-tb-20"></v-divider>
+
+             <h4 class="center mt-5">profile settings</h4><br><br>
 
             <form  @submit.prevent="updateProfile">
               <h4><v-icon> mdi-account </v-icon>Update profile details</h4>
