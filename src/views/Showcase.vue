@@ -85,6 +85,33 @@
   width: 50%;
   display: inline-grid;
 }
+
+/* toggle css */
+
+.toggle_container {
+    margin: 0px auto;
+    background: #efefef;
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 30px;
+    transition: all .25s;
+}
+
+.toggle_container.active {
+    background: #e9ffef;
+}
+
+.box {
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+
+.e4 {
+  width: 400px;
+  margin: auto;
+}
+
 </style>
 
 <template>
@@ -186,14 +213,88 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   <div class="Fgrid">
     <v-container
     class="Gmodule">
-      <v-card style="">
+
+      <v-card > <h3> Front end Library XP </h3> <br>
+        <v-card class="e4">
+            <v-responsive
+              :style="{ background: `rgb(${red}, ${green}, ${blue})` }"
+              height="300px"
+            ></v-responsive>
+
+            <v-card-text>
+              <v-container fluid>
+                <v-row>
+                  <v-col cols="12">
+                    <v-slider
+                      v-model="red"
+                      :max="255"
+                      label="R"
+                      class="align-center"
+                    >
+                      <template v-slot:append>
+                        <v-text-field
+                          v-model="red"
+                          class="mt-0 pt-0"
+                          type="number"
+                          style="width: 60px"
+                        ></v-text-field>
+                      </template>
+                    </v-slider>
+                  </v-col>
+
+                  <v-col cols="12">
+                    <v-slider
+                      v-model="green"
+                      :max="255"
+                      label="G"
+                      class="align-center"
+                    >
+                      <template v-slot:append>
+                        <v-text-field
+                          v-model="green"
+                          class="mt-0 pt-0"
+                          type="number"
+                          style="width: 60px"
+                        ></v-text-field>
+                      </template>
+                    </v-slider>
+                  </v-col>
+
+                  <v-col cols="12">
+                    <v-slider
+                      v-model="blue"
+                      :max="255"
+                      label="B"
+                      class="align-center"
+                    >
+                      <template v-slot:append>
+                        <v-text-field
+                          v-model="blue"
+                          class="mt-0 pt-0"
+                          type="number"
+                          style="width: 60px"
+                        ></v-text-field>
+                      </template>
+                    </v-slider>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-card-text>
+          </v-card>
+<v-divider></v-divider><br>
+        <div :class="{'active': toggleActive}" class="toggle_container">
+               <ToggleButton
+                   v-on:change="triggerToggleEvent"
+               />
+           </div><br>
         <v-parallax
-        height="600"
+        height="700"
         style="background:white;bottom:10px;"
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
-        <div style="border:5px lightgray dashed; border-radius:10px; top: -400px;">
-        <br>
+        <div  style="border:5px lightgray dashed; border-radius:10px; top: -400px;">
+
         <h4>Core of design </h4><br>
+
       <v-divider></v-divider><br>
        <div class="col-50">
          <center>
@@ -223,6 +324,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
         <h4> Quasar </h4>
       </div>
         </div>
+
         </v-parallax>
         <h3>Thank You</h3>
       </v-card>
@@ -233,11 +335,20 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 
 <script>
 import ChatApp from '../components/ChatApp.vue';
+import ToggleButton from '../components/ToggleButton.vue'
 
 export default {
   name: 'showcase',
   components: {
-    ChatApp
-  }
+    ChatApp,
+    ToggleButton
+  },
+  data () {
+      return {
+        red: 64,
+        green: 128,
+        blue: 0,
+      }
+    },
 }
 </script>
