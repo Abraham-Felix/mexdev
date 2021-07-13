@@ -214,91 +214,20 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
     <v-container
     class="Gmodule">
 
-      <v-card > <h3> Front end Library XP </h3> <br>
-        <v-card class="e4">
-            <v-responsive
-              :style="{ background: `rgb(${red}, ${green}, ${blue})` }"
-              height="300px"
-            ></v-responsive>
-
-            <v-card-text>
-              <v-container fluid>
-                <v-row>
-                  <v-col cols="12">
-                    <v-slider
-                      v-model="red"
-                      :max="255"
-                      label="R"
-                      class="align-center"
-                    >
-                      <template v-slot:append>
-                        <v-text-field
-                          v-model="red"
-                          class="mt-0 pt-0"
-                          type="number"
-                          style="width: 60px"
-                        ></v-text-field>
-                      </template>
-                    </v-slider>
-                  </v-col>
-
-                  <v-col cols="12">
-                    <v-slider
-                      v-model="green"
-                      :max="255"
-                      label="G"
-                      class="align-center"
-                    >
-                      <template v-slot:append>
-                        <v-text-field
-                          v-model="green"
-                          class="mt-0 pt-0"
-                          type="number"
-                          style="width: 60px"
-                        ></v-text-field>
-                      </template>
-                    </v-slider>
-                  </v-col>
-
-                  <v-col cols="12">
-                    <v-slider
-                      v-model="blue"
-                      :max="255"
-                      label="B"
-                      class="align-center"
-                    >
-                      <template v-slot:append>
-                        <v-text-field
-                          v-model="blue"
-                          class="mt-0 pt-0"
-                          type="number"
-                          style="width: 60px"
-                        ></v-text-field>
-                      </template>
-                    </v-slider>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-          </v-card>
+<v-card>
 <v-divider></v-divider><br>
-        <div :class="{'active': toggleActive}" class="toggle_container">
-               <ToggleButton
-                   v-on:change="triggerToggleEvent"
-               />
-           </div><br>
         <v-parallax
         height="700"
         style="background:white;bottom:10px;"
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
         <div  style="border:5px lightgray dashed; border-radius:10px; top: -400px;">
 
-        <h4>Core of design </h4><br>
+        <h3>Core of design </h3><br>
 
       <v-divider></v-divider><br>
        <div class="col-50">
          <center>
-           <h3>App model</h3>
+           <h2>App model</h2>
            <v-divider width="80%" ></v-divider>
          </center>
         <h4> Mobile first </h4>
@@ -312,7 +241,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
       </div>
         <div class="col-50">
           <center>
-            <h3>Design libraries</h3>
+            <h2>Design libraries</h2>
           <v-divider width="80%"></v-divider>
         </center>
         <h4> BootstrapVue </h4>
@@ -335,13 +264,11 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 
 <script>
 import ChatApp from '../components/ChatApp.vue';
-import ToggleButton from '../components/ToggleButton.vue'
 
 export default {
   name: 'showcase',
   components: {
-    ChatApp,
-    ToggleButton
+    ChatApp
   },
   data () {
       return {
