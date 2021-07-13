@@ -215,12 +215,11 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
     class="Gmodule">
 
 <v-card>
-<v-divider></v-divider><br>
         <v-parallax
         height="700"
         style="background:white;bottom:10px;"
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
-        <div  style="border:5px lightgray dashed; border-radius:10px; top: -400px;">
+        <div  style="border:5px lightgray dashed; border-radius:10px;">
 
         <h3>Core of design </h3><br>
 
