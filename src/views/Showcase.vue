@@ -112,6 +112,22 @@
   margin: auto;
 }
 
+.des {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -3px black;
+  background:#313233b0;
+  display: inline-grid;
+  width: 80%
+}
+
+.title {
+    background: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px;
+    text-align: justify;
+    padding: 5px;
+}
+
 </style>
 
 <template>
@@ -158,7 +174,7 @@
           <p> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
           <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
           </p>
-          <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
+          <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b>live view</b></a>
       </div><br>
       </div>
       <div class="Gmodule">
@@ -177,7 +193,7 @@
           <p>A classic car showcase webdesign, it uses gallery and event most of the project was design and migrating the website from and old CMS system.
           </p>
           <p> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
-          <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
+          <a class="gardient-button" href="http://www.classiccarpal.com"><b>live view</b></a>
       </div><br>
       </div>
       </div>
@@ -209,55 +225,25 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   <ChatApp />
-  <h1 style="color:white;"> Ui/Ux vision </h1>
-  <div class="Fgrid">
-    <v-container
-    class="Gmodule">
-
-<v-card>
-        <v-parallax
-        height="700"
-        style="background:white;bottom:10px;"
-        src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fmoon%20plane.png?alt=media&token=7e8f9a17-dd7a-4987-a33a-451a29f52c98">
-        <div  style="border:5px lightgray dashed; border-radius:10px;">
-
-        <h3>Core of design </h3><br>
-
-      <v-divider></v-divider><br>
-       <div class="col-50">
-         <center>
-           <h2>App model</h2>
-           <v-divider width="80%" ></v-divider>
-         </center>
-        <h4> Mobile first </h4>
-        <h4> Responsive </h4>
-        <h4> Organized </h4>
-        <h4> Animated </h4>
-        <h4> Minimal </h4>
-        <h4> Parallax </h4>
-        <h4> Clean </h4>
-        <br>
-      </div>
-        <div class="col-50">
-          <center>
-            <h2>Design libraries</h2>
-          <v-divider width="80%"></v-divider>
-        </center>
-        <h4> BootstrapVue </h4>
-        <h4> Vue Material </h4>
-        <h4> VueTailwind </h4>
-        <h4> Animate.css </h4>
-        <h4> Mdi icons </h4>
-        <h4> Vuetify </h4>
-        <h4> Quasar </h4>
-      </div>
-        </div>
-
-        </v-parallax>
-        <h3>Thank You</h3>
-      </v-card>
-    </v-container>
-  </div>
+  <h1 style="color:white;"> Ui/Ux </h1>
+    <div class="Fgrid">
+      <v-container class="Gmodule">
+        <template>
+          <v-carousel>
+           <v-carousel-item
+             v-for="(item,i) in items"
+             :key="i"
+             :src="item.src"
+             reverse-transition="fade-transition"
+             transition="fade-transition"
+           >
+           <h3 class="title" >{{item.title}} </h3>
+           <v-text class="des">{{item.des}}</v-text>
+         </v-carousel-item>
+          </v-carousel>
+        </template>
+      </v-container>
+    </div>
   </v-container>
 </template>
 
@@ -270,11 +256,30 @@ export default {
     ChatApp
   },
   data () {
-      return {
-        red: 64,
-        green: 128,
-        blue: 0,
-      }
-    },
+     return {
+       items: [
+         {
+           src: require("@/assets/mood-board.png"),
+           title: 'Mood Boards',
+           des: 'Mood boards are a collage of images, fonts, interactions, features, icons, and UI elements to communicate the artistic direction of a project. As everything in user experience design your mood board should be focused on meeting user needs and problem-solving.'
+         },
+         {
+           src: require("@/assets/Prototyping.png"),
+           title: 'Prototyping',
+           des: 'A simulation or sample version of a final product, which is used for testing prior to launch. The goal of a prototype is to test products & product ideas before sinking lots of time and money into the final product. Prototyping is essential for resolving usability issues before launch. It can also reveal areas that need improvement. Once a draft of your product idea is in the hands of real users, you will finally see how they want to use the product. You can then go back and adjust your initial guesswork.'
+         },
+         {
+           src: require("@/assets/ComplexityColor.png"),
+           title: 'Complexity breakdown in color desing',
+           des: 'In professional environments, the work produced is complex. As long as the content is in the hands of the creator, complexity is easily manageable. Remember, that complexity is subjective, and everything makes sense in the head of the creator.'
+         },
+         {
+           src: require("@/assets/interlex.png"),
+           title: 'Complexity breakdown in color desing',
+           des: 'While an increase in alignment between the agent and the designer leads to more complex but better quality products, higher product demand or lower competition among designers leads to more complex and lower quality products. '
+         },
+       ],
+     }
+   },
 }
 </script>
