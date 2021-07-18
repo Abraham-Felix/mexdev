@@ -83,8 +83,8 @@ Our goal is to deliver high-quality nearshoring and software development at an a
         <v-list-item>● We help you achieve your goals without the need to make expensive new hires that can harm your bottom line, now and for years to come.</v-list-item>
        </v-list-item-content>
 </v-list-item>
-            <h4>principles</h4>
-            <br>
+<h5 class="mt-10"><b>Team Leads:</b></h5><br>
+<v-divider></v-divider><br>
       </v-card-text>
             <div>
               <div class="col-100">
@@ -94,7 +94,8 @@ Our goal is to deliver high-quality nearshoring and software development at an a
                   class="shrink mr-2 margin center"
                   contain src="https://fintechhorizonsmedia.com/assets/abraham-24b58f3ac4ffda9aadada5db47f0ab3c9259cad5ebf48e62f3c895d485e24532.png"
                   transition="scale-transition" width="100" /><br>
-                  <p> Abraham Felix </p>
+                  <p> Abraham Felix </p><br>
+                  <p> Front-End </p>
                 </div>
 
                   <v-divider vertical class="gray"></v-divider>
@@ -106,6 +107,8 @@ Our goal is to deliver high-quality nearshoring and software development at an a
                   contain src="https://fintechhorizonsmedia.com/assets/kevin-884e174bc81a6e353c210086518783420addc3daab670ab41fb608ddcfd4f2c3.png"
                   transition="scale-transition" width="100" /><br>
                   <p> Kevin Nafziger </p>
+                  <br>
+                  <p> Back-End </p>
                 </div>
               </div>
               <br><br>
