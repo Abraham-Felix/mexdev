@@ -223,6 +223,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
          style="object-fit: contain; width: 50%; height: 100%;"
          >
      </v-zoomer>
+     <GithubExplorer/>
   </div>
   </div>
   </div>
@@ -251,11 +252,13 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 
 <script>
 import ChatApp from '../components/ChatApp.vue';
+import GithubExplorer from '../components/gitExplorer.vue';
 
 export default {
   name: 'portfolio',
   components: {
-    ChatApp
+    ChatApp,
+    GithubExplorer
   },
   data () {
      return {
