@@ -37,8 +37,8 @@
           </router-link>
           <router-link to="/showcase">
           <v-btn  class="nav-btns" depressed dark small color="primary" title="Showcase">
-            <span class="mobile-icons mdi mdi-video"></span>
-            <span class="web-nav-btns"> showcase </span>
+            <span class="mobile-icons mdi mdi-account-tie"></span>
+            <span class="web-nav-btns"> portfolio </span>
           </v-btn>
           </router-link>
         <router-link to="/about">
