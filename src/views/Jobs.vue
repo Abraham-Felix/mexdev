@@ -80,6 +80,9 @@
   .des-over {
     overflow:auto;
   }
+  .v-progress-circular {
+  margin: 1rem;
+}
 </style>
 <template>
   <div>
@@ -95,8 +98,15 @@
       <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
     </div>
 
-    <div v-else class="Fgrid">
-      <div v-if="loading">Cargando...</div>
+    <div v-else class="Fgrid ">
+
+           <v-progress-circular
+           :size="50"
+           color="blue"
+           indeterminate
+           v-if="loading"
+           class="center my-10"
+         ></v-progress-circular>
 
 
       <div
