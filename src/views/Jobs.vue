@@ -89,7 +89,7 @@
 
   <v-container>
     <div>
-      <h1> Front and Back end Jobs </h1>
+      <h1> Front end & Back end Jobs </h1>
     <div
     class="jobs-card ">
 
