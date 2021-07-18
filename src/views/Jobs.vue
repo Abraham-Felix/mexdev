@@ -126,7 +126,13 @@
 
       <p class="des-over">  {{ job.description }} </p>
     <p class=" mdi mdi-calendar">   {{job.published_at.date}} </p>
-    <a class=" mdi mdi-web"  v-bind:href="job.url"> {{ job.url }} </a>
+
+    <v-btn
+     depressed
+     elevation="2"
+     color="primary"
+     v-bind:href="job.url"> Apply </v-btn>
+   
   </div>
   </div>
   </div>
