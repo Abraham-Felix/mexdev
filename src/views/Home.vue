@@ -16,18 +16,14 @@
         <h5 style="margin-top:-30px; display: contents;">Profesional Developers </h5>
         <span class="mdi mdi-code-braces mb-16px"> </span><br>
          </div>
-         <v-text class="text-sm-body-2 ">
-           <br><br>
-       <ol>
-          <li> Start by creating your new <b> account or login </b> </li>
-          <li> Navigate to <b>work requests</b> from top navbar <span class="mdi mdi-account"></span></li>
-          <li> Click the plus sign <span class="mdi mdi-plus"></span> and <b> send work request.</b> </li>
-          <br>
-        <!--  <h5><a> check tutorial </a></h5> -->
-       </ol>
+         <v-text class="text-sm-body-2 mb-15 ">
+
+           <div class="h-des">
+            
+          </div>
     <br><br>
     <v-divider></v-divider>
-     <p class="text-sm-body-2 font-weight-light align-justify text--secondary">
+     <p class="f-p text-sm-body-2 font-weight-light align-justify text--secondary">
        <span class="text--primary">what is mexdev?</span> MexDev is a web development agency providing coding solutions as a service for individuals,
          companies & contractors, upgrading into the online business model or updating their current app progress.
      </p>
@@ -45,6 +41,17 @@ export default {
 </script>
 
 <style>
+
+@media screen and (max-width:900px) {
+  .h-des {
+    font-size: 0.8em !important;
+  }
+  .f-p {
+      font-size: 0.6em !important;
+      width:80%;
+      transition: 1s;
+    }
+}
 
 .in {
   font-size: 40px ;
@@ -70,10 +77,14 @@ export default {
 h4 {
   text-align: revert !important;
 }
-ol {
-  font-size: 16px !important;
+.h-des {
+  font-size: 16px ;
   font-family: monospace;
-  line-height: 1.9;
+  line-height: 1.8;
+  max-width:85%;
+  margin:auto;
+  text-align: justify;
+  transition: 1s;
 }
 p {
   font-size: 12px !important;
