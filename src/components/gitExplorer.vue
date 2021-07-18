@@ -2,7 +2,7 @@
 <template>
   <div>
 <div  class="ui container">
-    <h1>GitHub Profiles</h1>
+    <h1></h1>
     <div class="ui cards">
       <div
         v-bind:key="username"
