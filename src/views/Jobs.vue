@@ -86,8 +86,6 @@
 </style>
 <template>
   <div>
-
-  <v-container>
     <div>
       <h1> Front end & Back end Jobs </h1>
     <div
@@ -126,19 +124,17 @@
 
       <p class="des-over">  {{ job.description }} </p>
     <p class=" mdi mdi-calendar">   {{job.published_at.date}} </p>
-
     <v-btn
      depressed
      elevation="2"
      color="primary"
      v-bind:href="job.url"> Apply </v-btn>
-   
+
   </div>
   </div>
   </div>
   </div>
 </div>
-  </v-container>
 </div>
 </template>
 
