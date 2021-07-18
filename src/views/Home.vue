@@ -19,11 +19,11 @@
          <v-text class="text-sm-body-2 mb-15 ">
 
            <div class="h-des">
-            
+
           </div>
     <br><br>
     <v-divider></v-divider>
-     <p class="f-p text-sm-body-2 font-weight-light align-justify text--secondary">
+     <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
        <span class="text--primary">what is mexdev?</span> MexDev is a web development agency providing coding solutions as a service for individuals,
          companies & contractors, upgrading into the online business model or updating their current app progress.
      </p>
