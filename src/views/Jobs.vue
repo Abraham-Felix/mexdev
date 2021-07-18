@@ -1,19 +1,10 @@
 
 <style>
-  .jobs-card .col {
-    width:50%;
+  .jobs-card .col-tres {
+    width:33%;
     display:inline-grid;
     text-align: center;
     font-size: small !important;
-  }
-  .jobs-card .col1 {
-    width:50%;
-    display:inline-grid;
-    text-align: center;
-    font-size: small !important;
-  }
-  .jobs-card p {
-
   }
   .job-pic {
     border-radius:10% 10% !important;
@@ -49,13 +40,13 @@
       -moz-box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
       box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
   }
-  .Fgrid {
+  .Agrid {
       display: flex;
       flex-wrap: wrap;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-rows: minmax(150px, auto);
-      grid-gap: 3em;
-      max-width: 1000px !important;
+      grid-gap: 1em;
+      max-width: 1200px !important;
       width: 100%;
       margin-left:auto;
       margin-right:auto;
@@ -87,7 +78,7 @@
 <template>
   <div>
     <div>
-      <h1> Front end & Back end Jobs </h1>
+      <h1 class="mb-10 mt-5"> Front end & Back end Jobs </h1>
     <div
     class="jobs-card ">
 
@@ -96,7 +87,7 @@
       <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
     </div>
 
-    <div v-else class="Fgrid ">
+    <div v-else class="Agrid ">
 
            <v-progress-circular
            :size="50"
@@ -115,15 +106,15 @@
       >
       <div>
         <h3  v-bind:href="job.url" >{{ job.title }}</h3>
-         <img class="job-pic my-5 left ml-15" :src="job.company.avatar" width="150">
+         <img class="job-pic mt-5" :src="job.company.avatar" width="150">
         <div class="my-1 ">
-          <p class="col mdi mdi-clock"> {{ job.type }} </p>
-          <p class="col1 mdi mdi-map"> {{ job.location }} </p>
+          <p class="col-tres mdi mdi-clock"> {{ job.type }} </p>
+          <p class="col-tres mdi mdi-earth"> {{ job.location }} </p>
+          <p class="col-tres mdi mdi-calendar">   {{job.published_at.date}} </p>
         </div>
         <v-divider class="mx-4"></v-divider>
 
-      <p class="des-over">  {{ job.description }} </p>
-    <p class=" mdi mdi-calendar">   {{job.published_at.date}} </p>
+      <p class="des-over ">  {{ job.description }} </p>
     <v-btn
      depressed
      elevation="2"

@@ -40,12 +40,13 @@ a {
     text-decoration: none;
 }
 p {
-  font-size: 16px !important;
+  font-size: 16px ;
   line-height: 1.9;
   font-family: monospace;
   text-align: justify;
   margin: 20px auto;
 }
+
 /*css-classes*/
 .form-close-btn {
   z-index:9;
