@@ -126,7 +126,7 @@
    depressed
    elevation="2"
    color="primary"
-   v-bind:href="job.url"> Apply </v-btn>
+   v-bind:href="job.url"><span class="mdi mdi-open-in-new"></span> Apply </v-btn>
  </div>
   </div>
   </div>
