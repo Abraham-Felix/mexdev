@@ -74,6 +74,9 @@
   .v-progress-circular {
   margin: 1rem;
 }
+.t-row {
+  display: table-footer-group;
+}
 </style>
 <template>
   <div>
@@ -115,13 +118,16 @@
         <v-divider class="mx-4"></v-divider>
 
       <p class="des-over ">  {{ job.description }} </p>
-    <v-btn
-     depressed
-     elevation="2"
-     color="primary"
-     v-bind:href="job.url"> Apply </v-btn>
+
 
   </div>
+  <div class="t-row">
+  <v-btn
+   depressed
+   elevation="2"
+   color="primary"
+   v-bind:href="job.url"> Apply </v-btn>
+ </div>
   </div>
   </div>
   </div>
