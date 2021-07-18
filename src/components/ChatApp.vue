@@ -45,7 +45,7 @@ v-button {
 
               <v-card>
                 <h4>Welcome</h4>
-                <p>Hello, what can we helo you with? </p>
+                <p>Hello, can we help you with something? </p>
               </v-card>
 
               <!-- Messages -->
