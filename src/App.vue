@@ -49,7 +49,7 @@
         </router-link>
         <router-link to="/contact">
         <v-btn  class="nav-btns" depressed dark small color="primary" title="contact us">
-          <span class="mobile-icons mdi mdi-card-account-mail-outline"></span>
+          <span class="mobile-icons mdi mdi-at"></span>
           <span class="web-nav-btns"> contact </span>
         </v-btn>
         </router-link>
