@@ -6,7 +6,7 @@ import Contact from '../views/Contact.vue'
 import Jobs from '../views/Jobs.vue'
 import Tutorials from '../views/Tutorials.vue'
 import Profile from '../views/Profile.vue'
-import Showcase from '../views/Showcase.vue'
+import Portfolio from '../views/Portfolio.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
 
@@ -54,9 +54,9 @@ Vue.use(VueRouter)
     }
   },
   {
-    path: '/showcase',
-    name: 'Showcase',
-    component: Showcase,
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: Portfolio,
     meta: {
       requiresAuth:true
     }

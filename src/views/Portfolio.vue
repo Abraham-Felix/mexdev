@@ -153,8 +153,9 @@
           <p>A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile app built with Ionic/ Vue.js.
           </p>
           <p> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
-          <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
+
       </div><br>
+      <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
       </div>
       <div class="Gmodule">
       <h3> Laguna Shores Resorts </h3>
@@ -174,8 +175,8 @@
           <p> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
           <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
           </p>
-          <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b>live view</b></a>
       </div><br>
+      <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b>live view</b></a>
       </div>
       <div class="Gmodule">
       <h3> Classic Car Pal </h3>
@@ -193,8 +194,9 @@
           <p>A classic car showcase webdesign, it uses gallery and event most of the project was design and migrating the website from and old CMS system.
           </p>
           <p> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
-          <a class="gardient-button" href="http://www.classiccarpal.com"><b>live view</b></a>
+
       </div><br>
+      <a class="gardient-button" href="http://www.classiccarpal.com"><b>live view</b></a>
       </div>
       </div>
   </div>
@@ -251,7 +253,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 import ChatApp from '../components/ChatApp.vue';
 
 export default {
-  name: 'showcase',
+  name: 'portfolio',
   components: {
     ChatApp
   },
