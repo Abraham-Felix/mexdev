@@ -37,7 +37,7 @@
           </router-link>
           <router-link to="/portfolio">
           <v-btn  class="nav-btns" depressed dark small color="primary" title="Portfolio">
-            <span class="mobile-icons mdi mdi-account-tie"></span>
+            <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
             <span class="web-nav-btns"> portfolio </span>
           </v-btn>
           </router-link>
