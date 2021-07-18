@@ -21,15 +21,15 @@
     height:100px;
     widht:auto;
   }
-  .Gmodule p {
+  .Amodule p {
     color: #474747;
   }
-  .Gmodule {
+  .Amodule {
       background: white;
       display: inline-table;
       align-items: center;
       justify-content: center;
-      min-height: 800px;
+      min-height: 500px;
       padding: 15px;
       border-radius: 10px;
       -webkit-box-shadow: 0px 0px 25px -16px rgba(161,161,161,1);
@@ -43,7 +43,7 @@
       margin: 0;
       color:#4f81bd !important;
   }
-  .Gmodule:hover {
+  .Amodule:hover {
       background: #fbfbfb;
       -webkit-box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
       -moz-box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
@@ -103,7 +103,7 @@
         v-else
         v-for="job in jobs"
         v-bind:key="job.id"
-        class="Gmodule"
+        class="Amodule"
       >
       <div>
         <h3  v-bind:href="job.url" >{{ job.title }}</h3>
