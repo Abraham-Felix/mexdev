@@ -3,6 +3,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Contact from '../views/Contact.vue'
+import Jobs from '../views/Jobs.vue'
 import Tutorials from '../views/Tutorials.vue'
 import Profile from '../views/Profile.vue'
 import Showcase from '../views/Showcase.vue'
@@ -37,6 +38,14 @@ Vue.use(VueRouter)
     }
   },
   {
+    path: '/jobs',
+    name: 'Jobs',
+    component: Jobs,
+    meta: {
+      requiresAuth:true
+    }
+  },
+  {
     path: '/profile',
     name: 'Profile',
     component: Profile,
@@ -48,6 +57,9 @@ Vue.use(VueRouter)
     path: '/showcase',
     name: 'Showcase',
     component: Showcase,
+    meta: {
+      requiresAuth:true
+    }
   },
   {
     path: '/about',

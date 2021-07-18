@@ -53,6 +53,12 @@
           <span class="web-nav-btns"> contact </span>
         </v-btn>
         </router-link>
+        <router-link to="/jobs">
+        <v-btn  class="nav-btns" depressed dark small color="primary" title="jobs">
+          <span class="mobile-icons mdi mdi-briefcase"></span>
+          <span class="web-nav-btns"> jobs </span>
+        </v-btn>
+        </router-link>
         </div>
         <div class="nav-col-right">
         </div>
