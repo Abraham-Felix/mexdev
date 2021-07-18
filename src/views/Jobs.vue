@@ -154,8 +154,7 @@ export default {
       }
     },
     mounted () {
-      axios
-        .get('https://vuejobs.com/api/jobs')
+      axios.get('https://vuejobs.com/api/jobs')
         .then(response => {
           this.jobs = response.data
         })

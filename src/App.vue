@@ -19,7 +19,7 @@
         <div class="d-flex align-center nav-col-left">
           <v-img
             alt="Apesyntax logo"
-            class="shrink mr-2"
+            class="shrink "
             contain
             src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Fmxdv%20-%20logo%20500px.png?alt=media&token=dc7d1c88-4580-4333-b07d-aeeb9f1295d2"
             transition="scale-transition"
@@ -60,9 +60,6 @@
         </v-btn>
         </router-link>
         </div>
-        <div class="nav-col-right">
-        </div>
-
         <v-spacer></v-spacer>
         <v-menu
         v-if="user.loggedIn"
@@ -176,6 +173,9 @@ methods: {
     display: none;
     font-size:1.3rem;
   }
+  .nav-btns {
+    width:20px !important;
+  }
 }
 .nav-btns {
   width: 100px;
@@ -200,7 +200,7 @@ methods: {
   }
 }
 .nav-col-mid {
-    width: 60%;
+    width: 100%;
     display: -webkit-inline-box;
     -webkit-box-pack: center;
 }
