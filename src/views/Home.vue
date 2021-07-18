@@ -14,9 +14,10 @@
           />
           <div>
         <h5 style="margin-top:-30px; display: contents;">Profesional Developers </h5>
-        <span class="mdi mdi-code-braces"> </span>
+        <span class="mdi mdi-code-braces mb-16px"> </span><br>
          </div>
-        <br><br>
+         <v-text class="text-sm-body-2 ">
+           <br><br>
        <ol>
           <li> Start by creating your new <b> account or login </b> </li>
           <li> Navigate to <b>work requests</b> from top navbar <span class="mdi mdi-account"></span></li>
@@ -24,10 +25,14 @@
           <br>
         <!--  <h5><a> check tutorial </a></h5> -->
        </ol>
-
     <br><br>
     <v-divider></v-divider>
-    <p class="center"> PS:"se habla espanol" </p>
+     <p class="text-sm-body-2 font-weight-light align-justify text--secondary">
+       <span class="text--primary">what is mexdev?</span> MexDev is a web development agency providing coding solutions as a service for individuals,
+         companies & contractors, upgrading into the online business model or updating their current app progress.
+     </p>
+    <p class=" center">PS:"se habla espanol"</p>
+    </v-text>
      </v-card>
 
 </div>
