@@ -46,7 +46,7 @@ img.preview {
         <div class="panel-heading">
         </div>
         <div>
-            <h1>Work Request Form</h1>
+            <h1>Hire a developer</h1>
             <h3> send us a request</h3>
             <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
                 <v-divider class="m-tb-20"></v-divider>

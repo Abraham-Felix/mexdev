@@ -93,7 +93,7 @@
 
      <v-list-item>
        <router-link to="/tutorials">
-       <v-btn depressed dark small color="primary">Work Request</v-btn>
+       <v-btn depressed dark small color="primary">Request Developer</v-btn>
        </router-link>
      </v-list-item>
      </v-list>
