@@ -12,8 +12,9 @@ const vuetify = new Vuetify({
         anchor: '#5388E6',
       },
       dark: {
-        primary: '#465061',
-        secondary: '#5388E6',
+        primary: '#465061 ',
+        secondary: '#5388E6 ',
+        third: '#ffffff',
         anchor: '#DADCE0',
         h1: 'white',
       },
