@@ -10,47 +10,44 @@
       <v-app-bar
         app
         color="primary"
-        dark
       >
-        <div class="d-flex align-center nav-col-left">
+        <div center >
           <v-img
-            alt="Apesyntax logo"
-            class="shrink "
+            alt="Mexdev Small Navbar Logo"
+            class="shrink d-none d-sm-flex"
             contain
             src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Fmxdv%20-%20logo%20500px.png?alt=media&token=dc7d1c88-4580-4333-b07d-aeeb9f1295d2"
             transition="scale-transition"
             width="40"
           />
-
-
         </div>
         <div class="nav-col-mid">
           <router-link to="/home">
-          <v-btn class="nav-btns" depressed small color="primary" title="home" >
+          <v-btn v-if="user.loggedIn" class="nav-btns" depressed small color="primary" title="home" >
             <span class="mobile-icons mdi mdi-home"></span>
             <span class="web-nav-btns"> home </span>
           </v-btn>
           </router-link>
           <router-link to="/portfolio">
-          <v-btn  class="nav-btns" depressed dark small color="primary" title="Portfolio">
+          <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Portfolio">
             <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
             <span class="web-nav-btns"> portfolio </span>
           </v-btn>
           </router-link>
         <router-link to="/about">
-        <v-btn  class="nav-btns" depressed small color="primary" title="about us">
+        <v-btn v-if="user.loggedIn" class="nav-btns" depressed small color="primary" title="about us">
           <span class="mobile-icons mdi mdi-information-outline"></span>
           <span class="web-nav-btns"> about us </span>
         </v-btn>
         </router-link>
         <router-link to="/contact">
-        <v-btn  class="nav-btns" depressed dark small color="primary" title="contact us">
+        <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="contact us">
           <span class="mobile-icons mdi mdi-at"></span>
           <span class="web-nav-btns"> contact </span>
         </v-btn>
         </router-link>
         <router-link to="/jobs">
-        <v-btn  class="nav-btns" depressed dark small color="primary" title="jobs">
+        <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="jobs">
           <span class="mobile-icons mdi mdi-briefcase-search-outline"></span>
           <span class="web-nav-btns"> jobs </span>
         </v-btn>

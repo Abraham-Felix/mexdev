@@ -6,7 +6,7 @@
     padless
       flat
       tile
-      class="footer white--text text-center mb-5"
+      class="footer white--text text-center "
       color="primary"
       width="100%"
     >
