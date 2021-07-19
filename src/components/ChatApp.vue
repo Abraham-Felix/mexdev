@@ -1,8 +1,9 @@
 <style>
-
-v-button {
-  left: 0px;
+.v-btn {
+  bottom: 3px;
+  z-index: 9
 }
+
 
 </style>
 
@@ -12,7 +13,6 @@ v-button {
     <v-dialog v-model="dialog" width="500">
         <template v-slot:activator="{ on, attrs }">
             <v-btn
-            style="left: 50px; bottom: 3px; z-index: 9;"
             color="orange darken-5"
             dark rounded
             v-bind="attrs"
