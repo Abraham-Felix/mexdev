@@ -21,22 +21,23 @@
     </v-card-text>
   </v-card>
 
-  <!-- <ChatApp/> -->
+   <ChatApp/> 
 
 </div>
 
 </template>
 
 <script>
+
 import ContactForm from '../components/ContactForm.vue';
-//import ChatApp from '../components/ChatApp.vue';
+import ChatApp from '../components/ChatApp.vue';
 
 
 export default {
   name: 'contact',
   components: {
     ContactForm,
-  //  ChatApp
+    ChatApp
   }
 }
 

@@ -242,7 +242,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   </div>
-  <ChatApp />
+  <!-- <ChatApp /> -->
   <h1 style="color:white;"> Ui/Ux </h1>
     <div class="Fgrid">
       <v-container class="Gmodule">
@@ -264,13 +264,13 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 </template>
 
 <script>
-import ChatApp from '../components/ChatApp.vue';
+//import ChatApp from '../components/ChatApp.vue';
 import GithubExplorer from '../components/gitExplorer.vue';
 
 export default {
   name: 'portfolio',
   components: {
-    ChatApp,
+  //  ChatApp,
     GithubExplorer
   },
   data () {
