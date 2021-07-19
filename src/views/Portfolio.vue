@@ -120,12 +120,12 @@
   width: 80%;
 }
 
-.title {
+.uiux-title {
     background: #ffffff;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px;
-    text-align: justify;
+    box-shadow: 0px 0px 10px -5px gray;
+    text-align: center;
     padding: 5px;
+    width: 100%;
 }
 .Fgrid .v-btn {
   transition: 1s;
@@ -231,14 +231,11 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
       </div>
         <i class="i">scroll to zoom-in</i><br><br>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
-         <img
-         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fcode.png?alt=media&token=e0385ea1-7468-4411-8db6-d5abab9a038a"
-         style="object-fit: contain; width: 50%; height: 100%;"
-         >
+
          <img
          src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
 "
-         style="object-fit: contain; width: 50%; height: 100%;"
+         style="object-fit: contain; width: 90%; height: 100%;"
          >
      </v-zoomer>
      <GithubExplorer/>
@@ -257,7 +254,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
              reverse-transition="fade-transition"
              transition="fade-transition"
            >
-           <h3 class="title" >{{item.title}} </h3>
+           <h3 class="mb-10 uiux-title">{{item.title}} </h3>
            <v-text class="des py-10 px-10 ">{{item.des}}</v-text>
          </v-carousel-item>
           </v-carousel>
