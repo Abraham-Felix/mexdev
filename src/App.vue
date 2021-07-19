@@ -63,7 +63,7 @@
         <v-spacer></v-spacer>
         <v-menu
         v-if="user.loggedIn"
-     transition="slide-y-transition"
+     transition="scroll-x-transition"
      bottom
    >
      <template v-slot:activator="{ on, attrs }">
