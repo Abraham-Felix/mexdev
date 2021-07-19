@@ -69,7 +69,7 @@
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 50px;
-
+    transition:1s;
 }
 .exespotbody{
   margin-top:100px;
@@ -117,7 +117,7 @@
   box-shadow: 0px 0px 10px -3px black;
   background:#313233b0;
   display: inline-grid;
-  width: 80%
+  width: 80%;
 }
 
 .title {
@@ -127,7 +127,25 @@
     text-align: justify;
     padding: 5px;
 }
-
+.Fgrid .v-btn {
+  transition: 1s;
+}
+@media screen and (max-width:600px) {
+  .des {
+    width:100%;
+    display: inline-block;
+    text-align: justify;
+    height: -webkit-fill-available;
+    margin-top: -20px !important;
+  }
+  .Fgrid .v-btn {
+    background: #ffffff97 !important;
+    color: gray !important;
+    box-shadow: 0px 0px 7px -2px #5388e6 !important;
+    border-radius: 3px;
+    transition: 1s;
+  }
+}
 </style>
 
 <template>
@@ -231,7 +249,6 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   <h1 style="color:white;"> Ui/Ux </h1>
     <div class="Fgrid">
       <v-container class="Gmodule">
-        <template>
           <v-carousel>
            <v-carousel-item
              v-for="(item,i) in items"
@@ -241,10 +258,9 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
              transition="fade-transition"
            >
            <h3 class="title" >{{item.title}} </h3>
-           <v-text class="des">{{item.des}}</v-text>
+           <v-text class="des py-10 px-10 ">{{item.des}}</v-text>
          </v-carousel-item>
           </v-carousel>
-        </template>
       </v-container>
     </div>
   </v-container>
