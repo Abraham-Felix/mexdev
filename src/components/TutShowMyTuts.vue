@@ -7,8 +7,7 @@ img.preview {
 padding: 20px;
 }
 .v-card{
-  margin-top:10px;
-  margin-bottom:10px;
+  padding:10px;
 }
 .v-btn {
     height: 50px !important;
@@ -27,7 +26,6 @@ padding: 20px;
 }
 </style>
 <template>
-
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
             <v-btn
@@ -51,6 +49,7 @@ padding: 20px;
         </v-tooltip>
             </v-btn>
             </template>
+            <v-card>
             <div class="left">
                 <v-btn class="form-close-btn"  color="primary" @click="dialog = false" width="5px">
                     <v-icon>
@@ -87,6 +86,7 @@ padding: 20px;
         </v-card>
       </div>
     </v-container>
+  </v-card>
 </v-dialog>
 </template>
 
