@@ -12,6 +12,9 @@ img.preview {
 .up-pic {
   display: grid;
 }
+.top {
+ top:100px !importants;
+}
 </style>
 
 <template>
@@ -19,7 +22,7 @@ img.preview {
 <div id="app">
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
-            <v-btn style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
+            <v-btn top class="mt-15" style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
                 <v-tooltip right >
                     <template  v-slot:activator="{ on, attrs }">
                         <v-icon fab dark v-bind="attrs" v-on="on">
@@ -33,7 +36,7 @@ img.preview {
                 </v-tooltip>
             </v-btn>
         </template>
-        <div class="left">
+        <div class="left top">
             <v-btn class="form-close-btn" color="primary" @click="dialog = false" width="10px">
                 <v-icon>
                     mdi-close

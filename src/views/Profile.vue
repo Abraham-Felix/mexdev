@@ -90,9 +90,21 @@ display: inline-grid;
 <template>
 
 <div id="app">
+
     <v-container class="v-container">
         <v-card v-if="authUser" class="center p-pad block">
-            <h1> Profile </h1>
+            <h1> Profile </h1>  <v-toolbar
+                  flat
+                  height="72"
+                >
+                  <v-switch
+                    v-model="$vuetify.theme.dark"
+                    hint="Change Ui Theme ( beta )"
+                    inset
+                    label="Vuetify Theme Dark"
+                    persistent-hint
+                  ></v-switch>
+                </v-toolbar>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
              <v-card >

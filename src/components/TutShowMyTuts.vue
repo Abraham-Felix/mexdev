@@ -31,6 +31,7 @@ padding: 20px;
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
             <v-btn
+            top class="mt-15"
             style="z-index:9;"
             color="primary"
             dark rounded
