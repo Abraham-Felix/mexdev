@@ -63,7 +63,7 @@
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: minmax(150px, auto);
-    grid-gap: 3em;
+    grid-gap: 2em;
     max-width: 1000px !important;
     width: 100%;
     margin-left:auto;
@@ -155,7 +155,7 @@
 
     <h1> ShowCase </h1>
     <div class="Fgrid">
-      <div class="Gmodule">
+      <div class="Gmodule py-10">
       <h3> Fintech Horizons Media </h3>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
@@ -171,11 +171,12 @@
           <p>A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile app built with Ionic/ Vue.js.
           </p>
           <p> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
-
       </div><br>
-      <a class="gardient-button" href="http://fintechhorizonsmedia.com"><b>live view</b></a>
+      <a class="gardient-button mb-15" href="http://fintechhorizonsmedia.com">
+        <b class="mdi mdi-open-in-new mb-10"> live view </b>
+      </a>
       </div>
-      <div class="Gmodule">
+      <div class="Gmodule py-10">
       <h3> Laguna Shores Resorts </h3>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
@@ -194,9 +195,9 @@
           <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
           </p>
       </div><br>
-      <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b>live view</b></a>
+      <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b class="mdi mdi-open-in-new mb-10"> live view </b></a>
       </div>
-      <div class="Gmodule">
+      <div class="Gmodule py-10">
       <h3> Classic Car Pal </h3>
       <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
@@ -214,7 +215,7 @@
           <p> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
 
       </div><br>
-      <a class="gardient-button" href="http://www.classiccarpal.com"><b>live view</b></a>
+      <a class="gardient-button" href="http://www.classiccarpal.com"><b class="mdi mdi-open-in-new mb-10"> live view </b></a>
       </div>
       </div>
   </div>
@@ -222,7 +223,7 @@
   <div>
     <h1> Our approach </h1>
     <div class="Fgrid">
-      <div class="Gmodule">
+      <div class="Gmodule py-10">
       <div class="p-box">
             <h3> Organized & clean code. </h3>
           <v-divider></v-divider>
@@ -230,12 +231,12 @@
 Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
       </div>
         <i class="i">scroll to zoom-in</i><br><br>
-      <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
+      <v-zoomer  title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
 
          <img
          src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
 "
-         style="object-fit: contain; width: 90%; height: 100%;"
+         style="object-fit: contain; width: 90%; height: 100%; border-radius:10px; box-shadow: 0px 0px 10px -3px black; "
          >
      </v-zoomer>
      <GithubExplorer/>
@@ -245,7 +246,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   <!-- <ChatApp /> -->
   <h1 style="color:white;"> Ui/Ux </h1>
     <div class="Fgrid">
-      <v-container class="Gmodule">
+      <v-container class="Gmodule pb-10">
           <v-carousel>
            <v-carousel-item
              v-for="(item,i) in items"

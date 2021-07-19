@@ -6,7 +6,7 @@
     padless
       flat
       tile
-      class="footer white--text text-center"
+      class="footer white--text text-center mb-5"
       color="primary"
       width="100%"
     >
@@ -32,7 +32,7 @@
 
 <style scoped>
 .footer {
-  border-radius: 10px !important;
+  border-radius: 3px !important;
   height: 70px;
 }
 .f-btn{

@@ -2,10 +2,6 @@
 
 <v-app>
 <!-- it might need more height in body as content so it works properly -->
-<v-parallax
-    height="100%"
-
-  >
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -110,10 +106,8 @@
           <router-view/>
         </main>
      </div>
+       <Footer/>
 
-  <Footer/>
-
-  </v-parallax>
   </v-app>
 </template>
 <script>
