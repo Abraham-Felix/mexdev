@@ -190,6 +190,7 @@ methods: {
 
 #nav {
   padding: 30px;
+      z-index: 99;
 
   a {
     font-weight: bold;
