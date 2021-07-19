@@ -71,8 +71,8 @@ img.preview {
                   <!-- Img upload input field-->
                   <h4 class="m-tb-20">choose picture and click upload</h4><br>
                   <div class="up-pic">
-                  <input class="form-control"  type="file" @change="previewImage" accept="image/+">
-                  <br><v-btn title="upload" class="m-tb-20" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
+                  <input color="secondary" class="form-control tertiary"  type="file" @change="previewImage" accept="image/+">
+                  <br><v-btn title="upload" color="primary" class="m-tb-20" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
                 </div>
                 <div>
                   <p> Progress: {{uploadValue.toFixed()+"%"}}
