@@ -61,6 +61,7 @@
         v-if="user.loggedIn"
      transition="scroll-x-transition"
      bottom
+     id="drop-d"
    >
      <template v-slot:activator="{ on, attrs }">
        <v-btn
@@ -73,7 +74,7 @@
          <v-icon>mdi-account</v-icon>
        </v-btn>
      </template>
-     <v-list>
+     <v-list >
        <v-list-item
          v-for="(item, i) in items"
          :key="i"
@@ -184,7 +185,7 @@ methods: {
 
 #nav {
   padding: 30px;
-      z-index: 99;
+      z-index: 10;
 
   a {
     font-weight: bold;
@@ -213,5 +214,8 @@ methods: {
       display: flex !important;
       -webkit-box-pack: center;
   }
+}
+#drop-d {
+  z-index:99;
 }
 </style>

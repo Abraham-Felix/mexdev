@@ -9,8 +9,8 @@
   .job-pic {
     border-radius: 100% 100% !important;
     box-shadow: 5px 3px 15px -10px grey;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
   }
   .Amodule p {
     color: #474747;
@@ -62,6 +62,11 @@
       max-width: 600px;
     }
   }
+  @media screen and (max-width:1000px) {
+    .job-detail {
+      height:125px ;
+    }
+  }
 
   .col-50 {
     width: 50%;
@@ -76,6 +81,13 @@
 }
 .t-row {
   display: table-footer-group;
+}
+.j-title {
+  height:100px;
+}
+.job-detail {
+  height:115px;
+  transition: 1s;
 }
 </style>
 <template>
@@ -108,18 +120,17 @@
         class="Amodule"
       >
       <div>
-        <h3  v-bind:href="job.url" >{{ job.title }}</h3>
-         <img class="job-pic mt-5" :src="job.company.avatar" width="150">
-        <div class="my-1 ">
+        <v-text>
+        <h3 class="j-title" v-bind:href="job.url" >{{ job.title }}</h3>
+         <img class="job-pic" :src="job.company.avatar" width="150">
+        <div class="my-1 job-detail ">
           <p class="col-tres mdi mdi-clock"> {{ job.type }} </p>
           <p class="col-tres mdi mdi-earth"> {{ job.location }} </p>
           <p class="col-tres mdi mdi-calendar">   {{job.published_at.date}} </p>
         </div>
         <v-divider class="mx-4"></v-divider>
-
       <p class="des-over ">  {{ job.description }} </p>
-
-
+    </v-text>
   </div>
   <div class="t-row">
   <v-btn
