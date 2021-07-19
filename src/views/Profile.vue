@@ -39,7 +39,7 @@ button {
       width: 100%;
       display: table-cell !important;
       /* height: 117px; */
-      box-shadow: 0px 0px 19px 4px #e6e8ec;
+      box-shadow:  0px 0px 10px -5px #e6e8ec;
       border-radius: 10px;
       padding: 10px;
   }
@@ -53,9 +53,10 @@ button {
 }
 form {
     padding: 10px;
-    box-shadow: 0px 0px 10px 4px #e6e8ec;
+    box-shadow:  0px 0px 10px -3px #e6e8ec;
     margin-top:20px;
     border-radius: 5px;
+    gap:1em;
 }
 }
 .authicons{
