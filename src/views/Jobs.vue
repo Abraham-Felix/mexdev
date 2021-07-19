@@ -7,10 +7,10 @@
     font-size: small !important;
   }
   .job-pic {
-    border-radius:10% 10% !important;
-    box-shadow: 5px 3px 15px -10px gray;
-    height:100px;
-    widht:auto;
+    border-radius: 100% 100% !important;
+    box-shadow: 5px 3px 15px -10px grey;
+    height: 100px;
+    width: 100px;
   }
   .Amodule p {
     color: #474747;
