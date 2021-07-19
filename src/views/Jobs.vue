@@ -117,7 +117,7 @@
         v-else
         v-for="job in jobs"
         v-bind:key="job.id"
-        class="Amodule"
+        class="Amodule  back"
       >
       <div>
         <v-text>

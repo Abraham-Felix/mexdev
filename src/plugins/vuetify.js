@@ -10,12 +10,14 @@ const vuetify = new Vuetify({
         primary: '#313233 ',
         secondary: '#DADCE0 !important',
         anchor: '#5388E6 ',
+        back: '#ffffff'
       },
       dark: {
         primary: '#465061 ',
         secondary: '#5388E6 ',
         tertiary: 'A8AAAD',
         anchor: '#DADCE0',
+        back: '#1E1E1E'
       },
     },
   },

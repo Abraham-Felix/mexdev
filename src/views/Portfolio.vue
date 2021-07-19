@@ -152,7 +152,7 @@
     <div class="shocase-card">
     <h2> ShowCase </h2>
     <div class="Fgrid">
-      <div class="Gmodule py-10" >
+      <div class="Gmodule py-10 back" >
       <v-text><h3> Fintech Horizons Media </h3></v-text>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
@@ -173,7 +173,7 @@
         <b class="mdi mdi-open-in-new mb-10"> live view </b>
       </a>
       </div>
-      <div class="Gmodule py-10">
+      <div class="Gmodule py-10 back">
       <h3> Laguna Shores Resorts </h3>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
@@ -194,7 +194,7 @@
       </div><br>
       <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b class="mdi mdi-open-in-new mb-10"> live view </b></a>
       </div>
-      <div class="Gmodule py-10">
+      <div class="Gmodule py-10 back">
       <h3> Classic Car Pal </h3>
       <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
@@ -220,7 +220,7 @@
   <div>
     <h2> Our approach </h2>
     <div class="Fgrid">
-      <div class="Gmodule py-10">
+      <div class="Gmodule py-10 back">
       <div class="p-box">
             <h3> Organized & clean code. </h3>
           <v-divider></v-divider>
@@ -243,7 +243,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   <!-- <ChatApp /> -->
   <h2> Ui/Ux </h2>
     <div class="Fgrid">
-      <v-container class="Gmodule pb-10">
+      <v-container class="Gmodule pb-10 back">
           <v-carousel>
            <v-carousel-item
              v-for="(item,i) in items"
