@@ -280,14 +280,14 @@ export default {
      return {
        items: [
          {
-           src: require("@/assets/mood-board.png"),
-           title: 'Mood Boards',
-           des: 'Mood boards are a collage of images, fonts, interactions, features, icons, and UI elements to communicate the artistic direction of a project. As everything in user experience design your mood board should be focused on meeting user needs and problem-solving.'
-         },
-         {
            src: require("@/assets/Prototyping.png"),
            title: 'Prototyping',
            des: 'A simulation or sample version of a final product, which is used for testing prior to launch. The goal of a prototype is to test products & product ideas before sinking lots of time and money into the final product. Prototyping is essential for resolving usability issues before launch. It can also reveal areas that need improvement. Once a draft of your product idea is in the hands of real users, you will finally see how they want to use the product. You can then go back and adjust your initial guesswork.'
+         },
+         {
+           src: require("@/assets/mood-board.png"),
+           title: 'Mood Boards',
+           des: 'Mood boards are a collage of images, fonts, interactions, features, icons, and UI elements to communicate the artistic direction of a project. As everything in user experience design your mood board should be focused on meeting user needs and problem-solving.'
          },
          {
            src: require("@/assets/ComplexityColor.png"),

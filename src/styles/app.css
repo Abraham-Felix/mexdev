@@ -45,6 +45,7 @@ p {
   font-family: monospace;
   text-align: justify;
   margin: 20px auto;
+  transition: 1s;
 }
 
 /*css-classes*/
@@ -72,6 +73,9 @@ p {
 .v-card {
   height: auto;
 }
+.v-text {
+  transition:1s;
+}
 .my-3 {
   margin-top:10vw !important;
 }
@@ -87,6 +91,7 @@ p {
   margin: 20px auto !important;
   max-width: 600px !important;
   min-width: auto !important;
+  transition:1s;
 }
 .v-text-field input {
     flex: 1 1 auto !important;
