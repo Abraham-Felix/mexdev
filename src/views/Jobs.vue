@@ -93,7 +93,7 @@
 <template>
   <div>
     <div>
-      <h1 class="mb-10 mt-5"> Front end & Back end Jobs </h1>
+      <h1 color="primary" class="mb-10 mt-5"> Front end & Back end Jobs </h1>
     <div
     class="jobs-card ">
 

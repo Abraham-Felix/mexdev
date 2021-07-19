@@ -15,17 +15,19 @@ img.preview {
 .top {
  top:100px !importants;
 }
+.v-card {
+  padding:10px;
+}
 </style>
 
 <template>
-
-<div id="app">
-    <v-dialog v-model="dialog" width="500">
+  <v-container id="app">
+    <v-dialog class="v-card" v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
             <v-btn top class="mt-15" style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
                 <v-tooltip right >
                     <template  v-slot:activator="{ on, attrs }">
-                        <v-icon fab dark v-bind="attrs" v-on="on">
+                        <v-icon fab v-bind="attrs" v-on="on">
                             mdi-plus
                         </v-icon>
                     </template>
@@ -36,19 +38,21 @@ img.preview {
                 </v-tooltip>
             </v-btn>
         </template>
-        <div class="left top">
-            <v-btn class="form-close-btn" color="primary" @click="dialog = false" width="10px">
-                <v-icon>
-                    mdi-close
-                </v-icon>
-            </v-btn>
-        </div>
+        <v-card>
         <div class="panel-heading">
+          <div class="left top">
+              <v-btn class="form-close-btn" color="primary" @click="dialog = false" width="10px">
+                  <v-icon>
+                      mdi-close
+                  </v-icon>
+              </v-btn>
+          </div>
+          <h1>Hire a developer</h1>
+          <h3> send us a request</h3>
         </div>
         <div>
-            <h1>Hire a developer</h1>
-            <h3> send us a request</h3>
             <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
+              <v-card>
                 <v-divider class="m-tb-20"></v-divider>
                 <h4>contact details:</h4><br>
                 <div class="form-group">
@@ -94,6 +98,7 @@ img.preview {
                     <v-text-field :rules="titleRules" required label="Work Request Title" type="text" id="tutorialTitle" class="form-control" v-model="newTutorial.title">
                     </v-text-field>
                 </div>
+                </v-card>
   <!--tiptap-->   <v-card >
                   <div >
                     <editor-menu-bar v-on:submit.prevent="addTutorial" :editor="editor" v-slot="{ commands, isActive }">
@@ -152,7 +157,7 @@ img.preview {
                     <editor-content  label="Tutorial content"  :editor="editor" v-model="newTutorial.content" />
                   </div>
                   </v-card>
-
+               <v-card>
                 <div class="form-group">
                     <v-text-field required label="Date" class="form-control" type='date' v-model='newTutorial.date'>
                     </v-text-field>
@@ -161,7 +166,7 @@ img.preview {
                     <v-text-field  required label="Reference link" type="url" id="tutorialCode" class="form-control" v-model="newTutorial.code">
                     </v-text-field>
                 </div>
-
+                </v-card>
               <div>
 
                 <br>
@@ -189,8 +194,9 @@ img.preview {
                 </v-btn>
             </form>
         </div>
+        </v-card>
     </v-dialog>
-</div>
+</v-container>
 
 </template>
 

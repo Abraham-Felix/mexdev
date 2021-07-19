@@ -3,27 +3,23 @@ html  {
   overflow: auto;
 }
 h1 {
-  color: #313233 !important;
   margin: 20px auto;
   font-family: system-ui;
 }
 h2 {
     margin: 2vw;
-    color: #313233 !important;
     font-family: system-ui;
 }
 h3 {
-  color:#5388E6 !important;
   font-family: system-ui;
 }
 h4 {
   text-align:left;
-  color: #465061;
   font-family: system-ui;
+  color: var(--v-secondary-base);
 }
 h5 {
   font-family: system-ui;
-  color: #313233 !important;
   font-size: 16px;
 }
 main  {
@@ -52,8 +48,6 @@ p {
 .form-close-btn {
   z-index:9;
   height: 40px !important;
-  margin-top: -10px !important;
-  margin-left: -10px;
 }
 .m-tb-20 {
   margin-top:20px;
@@ -61,10 +55,6 @@ p {
 }
 .v-divider {
       border-color: #1e90ff;
-}
-.v-dialog {
-  background: #ffffff;
-  padding:20px;
 }
 .left {
   float:left;
@@ -79,6 +69,7 @@ p {
 .my-3 {
   margin-top:10vw !important;
 }
+
 .v-responsive__content {
   width:auto !important;
 }

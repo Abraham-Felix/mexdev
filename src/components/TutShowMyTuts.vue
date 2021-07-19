@@ -34,7 +34,7 @@ padding: 20px;
             top class="mt-15"
             style="z-index:9;"
             color="primary"
-            dark rounded
+             rounded
             v-bind="attrs"
             v-on="on"
             fixed right>

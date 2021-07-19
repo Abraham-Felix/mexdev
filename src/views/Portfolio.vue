@@ -50,7 +50,6 @@
     margin-right: 5px;
     flex: 1 1 300px;
     margin: 0;
-    color:#4f81bd !important;
 }
 .Gmodule:hover {
     background: #fbfbfb;
@@ -150,13 +149,11 @@
 
 <template>
   <v-container>
-
     <div class="shocase-card">
-
-    <h1> ShowCase </h1>
+    <h2> ShowCase </h2>
     <div class="Fgrid">
-      <div class="Gmodule py-10">
-      <h3> Fintech Horizons Media </h3>
+      <div class="Gmodule py-10" >
+      <v-text><h3> Fintech Horizons Media </h3></v-text>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
@@ -221,7 +218,7 @@
   </div>
 
   <div>
-    <h1> Our approach </h1>
+    <h2> Our approach </h2>
     <div class="Fgrid">
       <div class="Gmodule py-10">
       <div class="p-box">
@@ -244,7 +241,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   <!-- <ChatApp /> -->
-  <h1 style="color:white;"> Ui/Ux </h1>
+  <h2> Ui/Ux </h2>
     <div class="Fgrid">
       <v-container class="Gmodule pb-10">
           <v-carousel>

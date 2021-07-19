@@ -5,7 +5,7 @@ img.preview {
 }
 button {
   box-shadow: 0px 0px 3px -2px #b6bbc0 ;
-  color:white;
+  color: #ffffff;
   padding:.5vh;
   border-radius: 10px;
   margin:2vh;
@@ -118,7 +118,7 @@ display: inline-grid;
              </v-card>
              <v-divider class="m-tb-20"></v-divider>
 
-             <h4 class="center mt-5" color="secondary">User profile</h4><br><br>
+             <h4 class="center mt-5">User profile</h4><br><br>
 
             <form  @submit.prevent="updateProfile">
               <h4><v-icon> mdi-account </v-icon>User details</h4>
