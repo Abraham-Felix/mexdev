@@ -6,15 +6,15 @@
     padless
       flat
       tile
-      class="footer white--text text-center "
+      class="footer white--text text-center d-flex justify-space-around "
       color="primary"
       width="100%"
     >
-      <v-card-text>
+      <v-text>
         <v-btn
         v-for="icon in icons"
         :key="icon"
-        class="mx-3 f-btn"
+        class="mx-3 f-btn center"
         dark
         icon
       >
@@ -24,7 +24,7 @@
       </v-btn>
       <br>
       <strong>  {{ new Date().getFullYear() }} | © MexDev  </strong>
-      </v-card-text>
+      </v-text>
 
   </v-footer>
 </div>
