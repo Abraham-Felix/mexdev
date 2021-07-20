@@ -120,7 +120,7 @@
 .des:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 10px -5px black;
-  
+
 }
 
 .uiux-title {
@@ -166,13 +166,13 @@
          style="object-fit: contain; width: 100%; height: 100%;"
          >
      </v-zoomer>
-      <div class="p-box">
+      <v-container class="p-box ">
           <h5>highlights:</h5>
           <hr>
-          <p>A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile app built with Ionic/ Vue.js.
+          <p class="text--primary">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile app built with Ionic/ Vue.js.
           </p>
-          <p> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
-      </div><br>
+          <p class="text--primary"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
+      </v-container><br>
       <v-btn
         align-center
         depressed
@@ -196,10 +196,10 @@
       <div class="p-box">
           <h5>highlights:</h5>
           <hr>
-          <p>The app/content management system was created in WordPress and transferred to Adobe Catalyst.
+          <p class="text--primary">The app/content management system was created in WordPress and transferred to Adobe Catalyst.
           </p>
-          <p> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
-          <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
+          <p class="text--primary"> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
+          <p class="text--primary"> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
           </p>
       </div><br>
       <v-btn
@@ -225,9 +225,9 @@
       <div class="p-box">
           <h5>highlights:</h5>
           <hr>
-          <p>A classic car showcase webdesign, it uses gallery and event most of the project was design and migrating the website from and old CMS system.
+          <p class="text--primary">A classic car showcase webdesign, it uses gallery and event most of the project was design and migrating the website from and old CMS system.
           </p>
-          <p> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
+          <p class="text--primary"> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
 
       </div><br>
       <v-btn
@@ -250,7 +250,7 @@
       <div class="p-box">
             <h3> Organized & clean code. </h3>
           <v-divider></v-divider>
-          <p> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity.
+          <p class="text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity.
 Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
       </div>
         <i class="i">scroll to zoom-in</i><br><br>
