@@ -118,12 +118,12 @@
         <h3 class="j-title" v-bind:href="job.url" >{{ job.title }}</h3>
          <img class="job-pic" :src="job.company.avatar" width="150">
         <div class="my-1 job-detail ">
-          <p class="col-tres mdi mdi-clock"> {{ job.type }} </p>
-          <p class="col-tres mdi mdi-earth"> {{ job.location }} </p>
-          <p class="col-tres mdi mdi-calendar">   {{job.published_at.date}} </p>
+          <p class="col-tres mdi mdi-clock text--secondary"> {{ job.type }} </p>
+          <p class="col-tres mdi mdi-earth text--secondary"> {{ job.location }} </p>
+          <p class="col-tres mdi mdi-calendar text--secondary">   {{job.published_at.date}} </p>
         </div>
         <v-divider class="mx-4"></v-divider>
-      <p class="des-over ">  {{ job.description }} </p>
+      <p class="des-over text--secondary">  {{ job.description }} </p>
     </v-container>
   </div>
   <div class="t-row">
