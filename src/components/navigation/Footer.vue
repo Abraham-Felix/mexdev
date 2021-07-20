@@ -10,10 +10,12 @@
       color="primary"
       width="100%"
     >
-      <v-text>
+      <v-row
+      justify="center"
+      no-gutters>
         <v-btn
         v-for="icon in icons"
-        :key="icon"
+        :key="icon.id"
         class="mx-3 f-btn center"
         dark
         icon
@@ -23,8 +25,13 @@
         </a>
       </v-btn>
       <br>
+      <v-col
+       class="primary lighten-1 text-center white--text"
+       cols="12"
+     >
       <strong>  {{ new Date().getFullYear() }} | © MexDev  </strong>
-      </v-text>
+      </v-col>
+    </v-row>
 
   </v-footer>
 </div>

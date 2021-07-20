@@ -96,14 +96,10 @@
       <h1 color="primary" class="mb-10 mt-5"> Front end & Back end Jobs </h1>
     <div
     class="jobs-card ">
-
-
     <div v-if="errored">
       <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
     </div>
-
     <div v-else class="Agrid ">
-
            <v-progress-circular
            :size="50"
            color="blue"
@@ -111,8 +107,6 @@
            v-if="loading"
            class="center my-10"
          ></v-progress-circular>
-
-
       <div
         v-else
         v-for="job in jobs"
@@ -120,7 +114,7 @@
         class="Amodule  back"
       >
       <div>
-        <v-text>
+        <v-container>
         <h3 class="j-title" v-bind:href="job.url" >{{ job.title }}</h3>
          <img class="job-pic" :src="job.company.avatar" width="150">
         <div class="my-1 job-detail ">
@@ -130,7 +124,7 @@
         </div>
         <v-divider class="mx-4"></v-divider>
       <p class="des-over ">  {{ job.description }} </p>
-    </v-text>
+    </v-container>
   </div>
   <div class="t-row">
   <v-btn
