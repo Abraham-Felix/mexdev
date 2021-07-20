@@ -15,7 +15,7 @@ const vuetify = new Vuetify({
     dark: {
       primary: '#465061',
       secondary: '#5388E6 ',
-      tertiary: 'A8AAAD',
+      tertiary: '#313233',
       anchor: '#DADCE0',
       back: '#1E1E1E'
     }

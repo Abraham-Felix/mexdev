@@ -124,10 +124,10 @@ display: inline-grid;
               <h4><v-icon> mdi-account </v-icon>User details</h4>
               <v-divider></v-divider>
               <br>
-              <div class="update-profile-inputs">
-              <p>First name</p><input  class="form-control" v-model="displayName" placeholder="your name"><br>
+              <div class="update-profile-inputs ">
+              <p>First name</p><input  class="form-control tertiary" v-model="displayName" placeholder="your name"><br>
               <p>Photo url</p>
-              <input class="form-control" v-model="photoURL" placeholder="your photo url">
+              <input class="form-control tertiary"  v-model="photoURL" placeholder="your photo url">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateProfile" class="update right-btn"><v-icon> mdi-pencil </v-icon> </v-btn>
               </div>
               </form>
@@ -139,7 +139,7 @@ display: inline-grid;
               <center>
                 <p>Contact email</p>
               </center>
-              <input type="email" class="form-control" v-model="email" placeholder="enter new email">
+              <input type="email" class="form-control tertiary" v-model="email" placeholder="enter new email">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateEmail" class="update"> <v-icon> mdi-pencil </v-icon></v-btn>
               <v-container>
                 <div class=" link-sm center" v-if="!linkedGoogle">
@@ -161,7 +161,7 @@ display: inline-grid;
               <h4><v-icon> mdi-lock </v-icon>Update password</h4>
               <v-divider></v-divider>
               <br><p>Go ahead change it</p>
-              <input type="password" class="form-control" v-model="newPassword" placeholder="enter new password">
+              <input type="password" class="form-control tertiary" v-model="newPassword" placeholder="enter new password">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updatePassword" class="update"><v-icon> mdi-pencil </v-icon></v-btn>
             </form>
 
@@ -170,7 +170,7 @@ display: inline-grid;
               <v-divider></v-divider>
               <br>
               <p>Write anything you love</p>
-              <input type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" class="form-control">
+              <input type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" class="form-control tertiary">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCustomDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
             </form>
 
@@ -183,11 +183,11 @@ display: inline-grid;
                 <v-divider></v-divider>
                 <br>
                 <p class="center">Company name</p><br>
-                <input required type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control">
+                <input required type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control tertiary">
                 <br>
                 <v-divider vertical></v-divider>
                 <p class="center">Company website</p><br>
-                <input required type="text" v-model="companyWebsite" label="Fav food" placeholder="enter your company website" class="form-control"><br>
+                <input required type="text" v-model="companyWebsite" label="Fav food" placeholder="enter your company website" class="form-control tertiary"><br>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
               </form>
               <form  @submit.prevent="updateCompanyContactDetails">
@@ -195,10 +195,10 @@ display: inline-grid;
                 <v-divider></v-divider>
                 <br>
                 <p class="center">Company phone</p><br>
-                <input :rules="titleRules" required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" class="form-control">
+                <input class="form-control tertiary" :rules="titleRules" required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" >
                 <v-divider vertical></v-divider><br>
                 <p class="center">Company email</p><br>
-                <input required type="text" v-model="companyEmail" label="Fav food" placeholder="enter your company email" class="form-control"><br>
+                <input class="form-control tertiary" required type="text" v-model="companyEmail" label="Fav food" placeholder="enter your company email" ><br>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyContactDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
               </form>
               <form  @submit.prevent="updateCompanyPhoto">
@@ -208,7 +208,7 @@ display: inline-grid;
                 <div class="update-profile-inputs">
                 <img class="center profile-pic" :src="authUser.companyPhotoURL" width="150">
                 <p>Company photo url</p>
-                <input class="form-control" v-model="companyPhotoURL" placeholder="company photo url">
+                <input class="form-control tertiary" v-model="companyPhotoURL" placeholder="company photo url">
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyPhoto" class="update right-btn"><v-icon> mdi-pencil </v-icon> </v-btn>
                 </div>
                 </form>
