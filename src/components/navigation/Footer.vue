@@ -45,9 +45,6 @@
   border-radius: 3px !important;
   height: 70px;
 }
-.f-btn{
-  margin-top: -14px;
-}
 </style>
 
 <script>
