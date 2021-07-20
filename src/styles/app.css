@@ -66,6 +66,12 @@ p {
 .v-card {
   height: auto;
 }
+.v-btn {
+  transition: all transform 1s;
+}
+.v-btn:hover {
+  transform: scale(1.1);
+}
 .v-text {
   transition:1s;
 }

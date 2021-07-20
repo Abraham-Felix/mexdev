@@ -22,9 +22,9 @@
             width="40"
           />
         </div>
-        <div class="nav-col-mid">
+        <div class="nav-col-mid d-flex justify-space-around align-center">
           <router-link to="/home">
-          <v-btn v-if="user.loggedIn" class="nav-btns" depressed small color="primary" title="home" >
+          <v-btn v-if="user.loggedIn" class="nav-btns pa-2" depressed small color="primary" title="home" >
             <span class="mobile-icons mdi mdi-home"></span>
             <span class="web-nav-btns"> home </span>
           </v-btn>
