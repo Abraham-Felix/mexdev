@@ -169,9 +169,15 @@
           </p>
           <p> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
       </div><br>
-      <a class="gardient-button mb-15" href="http://fintechhorizonsmedia.com">
-        <b class="mdi mdi-open-in-new mb-10"> live view </b>
-      </a>
+      <v-btn
+        align-center
+        depressed
+        elevation="2"
+        color="primary"
+        class="gardient-button"
+        href="http://fintechhorizonsmedia.com">
+        <b class="mdi mdi-open-in-new"> live view </b>
+      </v-btn>
       </div>
       <div class="Gmodule py-10 back">
       <h3> Laguna Shores Resorts </h3>
@@ -192,7 +198,15 @@
           <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
           </p>
       </div><br>
-      <a class="gardient-button" href="http://www.lagunashoresresorts.com"><b class="mdi mdi-open-in-new mb-10"> live view </b></a>
+      <v-btn
+        align-center
+        depressed
+        elevation="2"
+        color="primary"
+        class="gardient-button"
+        href="http://www.lagunashoresresort.com">
+      <b class="mdi mdi-open-in-new "> live view </b>
+      </v-btn>
       </div>
       <div class="Gmodule py-10 back">
       <h3> Classic Car Pal </h3>
@@ -212,7 +226,15 @@
           <p> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
 
       </div><br>
-      <a class="gardient-button" href="http://www.classiccarpal.com"><b class="mdi mdi-open-in-new mb-10"> live view </b></a>
+      <v-btn
+        align-center
+        depressed
+        elevation="2"
+        color="primary"
+        class="gardient-button"
+        href="http://www.classiccarpal.com">
+        <b class="mdi mdi-open-in-new"> live view </b>
+      </v-btn>
       </div>
       </div>
   </div>
