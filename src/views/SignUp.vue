@@ -21,7 +21,6 @@
   <div class="grid-50">
   <h5>Sign in with</h5>
   <v-btn @click="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
- <v-btn @click="signInWithGithub"><v-icon>mdi-github</v-icon></v-btn>
 </div>
 </div>
 </v-card>
@@ -55,14 +54,6 @@ import toastr from 'toastr';
     },
     signInWithGoogle: function(){
       const provider = new firebase.auth.GoogleAuthProvider()
-      firebase.auth().signInWithPopup(provider)
-      .then(
-        data => console.log(data.user, data.credential.accessToken)
-      ).catch(err =>
-        toastr.error('Yikes '+ err.message))
-    },
-    signInWithGithub: function(){
-      const provider = new firebase.auth.GithubAuthProvider()
       firebase.auth().signInWithPopup(provider)
       .then(
         data => console.log(data.user, data.credential.accessToken)

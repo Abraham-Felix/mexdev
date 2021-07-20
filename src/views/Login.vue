@@ -46,8 +46,7 @@ h5 {
             <div class="oneH">
             <div class="grid-50">
             <h5>Sign in with</h5>
-            <v-btn @click="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
-            <v-btn @click="signInWithGithub"><v-icon>mdi-github</v-icon></v-btn>
+            <v-btn @click.native="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
           </div>
           </div>
 
@@ -96,19 +95,11 @@ export default {
           .catch (
             toastr.success('Welcome to Mexdev app, Enjoy! '))
         },
-        signInWithGithub: function(){
-          const provider = new firebase.auth.GithubAuthProvider()
-          firebase.auth().signInWithPopup(provider)
-          .then(
-              (user) => {
-                  this.$router.go('/home' + user.message + this.created || true)
-                }
-          )
-          .catch (err =>
-            toastr.error('Yikes! '+ err.message))
-          .catch (
-            toastr.success('Welcome to Mexdev app, Enjoy! '))
-        },
+    },
+    created () {
+      firebase.auth().onAuthStateChanged(user => {
+        this.authUser = user
+      })
     }
 }
 
