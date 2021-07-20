@@ -16,7 +16,7 @@
         <h5 style="margin-top:-30px; display: contents;">Profesional Developers </h5>
         <span class="mdi mdi-code-braces mb-16px"> </span><br>
          </div>
-         <v-text class="text-sm-body-2 mb-15 ">
+         <v-container class="text-sm-body-2 mb-15 ">
 
            <div class="h-des">
 
@@ -28,7 +28,7 @@
          companies & contractors, upgrading into the online business model or updating their current app progress.
      </p>
     <p class=" center">PS:"se habla espanol"</p>
-    </v-text>
+  </v-container>
      </v-card>
 
 </div>
