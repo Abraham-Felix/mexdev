@@ -16,7 +16,7 @@
         <v-btn
         v-for="icon in icons"
         :key="icon.id"
-        class="mx-3 f-btn center"
+        class="mx-3 f-btn"
         dark
         icon
       >
