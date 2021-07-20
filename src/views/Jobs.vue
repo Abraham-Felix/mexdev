@@ -25,7 +25,7 @@
       border-radius: 10px;
       -webkit-box-shadow: 0px 0px 25px -16px rgba(161,161,161,1);
       -moz-box-shadow: 0px 0px 25px -16px rgba(161,161,161,1);
-      box-shadow: 0px 0px 25px -16px rgba(161,161,161,1);
+      box-shadow: inset 0px 0px 25px -16px rgba(161,161,161,1);
       text-align: center;
       text-decoration: none;
       margin-left: 5px;
@@ -33,12 +33,13 @@
       flex: 1 1 300px;
       margin: 0;
       color:#4f81bd !important;
+      transition: all 0.3s ease-in ;
   }
   .Amodule:hover {
       background: #fbfbfb;
-      -webkit-box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
-      -moz-box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
-      box-shadow: 0px 0px 35px -16px rgba(161,161,161,1);
+      -webkit-box-shadow:inset 0px 0px 35px -16px rgba(161,161,161,1);
+      -moz-box-shadow:inset 0px 0px 35px -16px rgba(161,161,161,1);
+      box-shadow: inset 0px 0px 35px -16px rgba(161,161,161,1);
   }
   .Agrid {
       display: flex;
