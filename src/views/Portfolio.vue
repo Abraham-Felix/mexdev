@@ -246,14 +246,14 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
       <v-container class="Gmodule pb-10 back">
           <v-carousel>
            <v-carousel-item
-             v-for="(item,i) in items"
+             v-for="(uxitem,i) in uxitems"
              :key="i"
-             :src="item.src"
+             :src="uxitem.src"
              reverse-transition="fade-transition"
              transition="fade-transition"
            >
-           <h3 class="mb-10 uiux-title">{{item.title}} </h3>
-           <v-text class="des py-10 px-10 ">{{item.des}}</v-text>
+           <h3 class="mb-10 uiux-title">{{uxitem.title}} </h3>
+           <v-text class="des py-10 px-10 ">{{uxitem.des}}</v-text>
          </v-carousel-item>
           </v-carousel>
       </v-container>
@@ -273,7 +273,12 @@ export default {
   },
   data () {
      return {
-       items: [
+       slides: [
+         {
+           GithubExplorer
+         }
+       ],
+       uxitems: [
          {
            src: require("@/assets/Prototyping.png"),
            title: 'Prototyping',
