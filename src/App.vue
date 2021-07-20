@@ -10,6 +10,7 @@
       <v-app-bar
         app
         color="primary"
+        light
       >
         <div center >
           <v-img

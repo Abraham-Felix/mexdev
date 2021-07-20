@@ -269,9 +269,6 @@ export default {
         v => v.length <= 10 || 'hum.. this monk smelling somthing strange... must be less than 10 characters',
     ],
     computed:{
-      linkedGithub () {
-        return !!this.authUser.providerData.find(provider => provider.providerId === 'github.com')
-      },
       linkedGoogle () {
         return !!this.authUser.providerData.find(provider => provider.providerId === 'google.com')
       },
@@ -335,14 +332,7 @@ export default {
       },
       unlinkGoogle: function(){
         this.authUser.unlink('google.com')
-      },
-      linkGithub: function(){
-        const provider = new firebase.auth.GithubAuthProvider()
-        this.authUser.linkWithPopup(provider)
-      },
-      unlinkGithub: function(){
-        this.authUser.unlink('github.com')
-      },
+      }
     },
     created: function() {
         // functions
