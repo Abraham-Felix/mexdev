@@ -39,7 +39,7 @@ button {
       width: 100%;
       display: table-cell !important;
       /* height: 117px; */
-      box-shadow:  0px 0px 10px -5px #e6e8ec;
+      box-shadow: 0px 0px 6px -5px #e6e8ec;
       border-radius: 10px;
       padding: 10px;
   }
@@ -53,7 +53,7 @@ button {
 }
 form {
     padding: 10px;
-    box-shadow:  0px 0px 10px -3px #e6e8ec;
+    box-shadow: 0px 0px 6px -5px #e6e8ec;
     margin-top:20px;
     border-radius: 5px;
     gap:1em;
@@ -81,7 +81,7 @@ display: inline-grid;
 }
 .profile-pic {
   border-radius:10% 10% !important;
-  box-shadow: 5px 3px 10px -3px gray;
+  box-shadow: 0px 0px 7px -6px #e6e8ec;
 }
 .p-pad {
   padding:15px;
@@ -137,10 +137,24 @@ display: inline-grid;
               <v-divider></v-divider>
               <br>
               <center>
-              <p>Contact email</p>
+                <p>Contact email</p>
               </center>
               <input type="email" class="form-control" v-model="email" placeholder="enter new email">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateEmail" class="update"> <v-icon> mdi-pencil </v-icon></v-btn>
+              <v-container>
+                <div class=" link-sm center" v-if="!linkedGoogle">
+                  <br>
+                  <h4 class="center">Link google </h4>
+                  <br>
+                  <v-btn class="center" @click="linkGoogle"><v-icon>mdi-google</v-icon></v-btn>
+                </div>
+                <div class=" link-smcenter" v-if="linkedGoogle">
+                  <br>
+                  <h4 class="center">unlink google </h4>
+                  <br>
+                  <v-btn class="center" @click="unlinkGoogle"><v-icon color=red>mdi-email-off</v-icon></v-btn>
+                </div>
+              </v-container>
             </form>
 
             <form  @submit.prevent="updatePassword">
@@ -198,37 +212,6 @@ display: inline-grid;
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyPhoto" class="update right-btn"><v-icon> mdi-pencil </v-icon> </v-btn>
                 </div>
                 </form>
-
-              <v-divider class="m-tb-20"></v-divider>
-
-            <div class=" link-sm center" v-if="!linkedGoogle">
-              <br>
-             <h4 class="center">Link google </h4>
-             <br>
-             <v-btn class="center" @click="linkGoogle"><v-icon>mdi-google</v-icon></v-btn>
-            </div>
-
-            <div class=" link-smcenter" v-if="linkedGoogle">
-             <br>
-             <h4 class="center">unlink google </h4>
-             <br>
-             <v-btn class="center" @click="unlinkGoogle"><v-icon color=red>mdi-email-off</v-icon></v-btn>
-            </div>
-
-            <div class="link-sm center" v-if="!linkedGithub">
-              <br>
-             <h4 class="center">Link github </h4>
-             <br>
-             <v-btn class="center" @click="linkGithub"><v-icon>mdi-github</v-icon></v-btn>
-            </div>
-
-            <div  class="link-sm center" v-if="linkedGithub">
-             <br>
-             <h4 class="center">unlink github </h4>
-             <br>
-             <v-btn class="center" @click="unlinkGithub"><v-icon color=red>mdi-email-off</v-icon></v-btn>
-            </div>
-
         </v-card>
     </v-container>
 </div>
