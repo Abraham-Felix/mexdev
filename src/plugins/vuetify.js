@@ -13,7 +13,7 @@ const vuetify = new Vuetify({
       back: '#ffffff'
     },
     dark: {
-      primary: '#5388E6 ',
+      primary: '#465061',
       secondary: '#5388E6 ',
       tertiary: 'A8AAAD',
       anchor: '#DADCE0',
