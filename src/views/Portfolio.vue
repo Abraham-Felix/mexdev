@@ -153,7 +153,7 @@
     <h2> ShowCase </h2>
     <div class="Fgrid">
       <div class="Gmodule py-10 back" >
-      <v-text><h3> Fintech Horizons Media </h3></v-text>
+      <h3> Fintech Horizons Media </h3>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
       <v-zoomer title="Scroll to zoom-in" class="showcase-img" style="width: 500px; height: 500px;">
@@ -236,7 +236,6 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
          style="object-fit: contain; width: 90%; height: 100%; border-radius:10px; box-shadow: 0px 0px 10px -3px black; "
          >
      </v-zoomer>
-     <GithubExplorer/>
   </div>
   </div>
   </div>
@@ -251,8 +250,8 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
              reverse-transition="fade-transition"
              transition="fade-transition"
            >
-           <h3 class="mb-10 uiux-title">{{uxitem.title}} </h3>
-           <v-text class="des py-10 px-10 ">{{uxitem.des}}</v-text>
+           <p class="uiux-title">{{uxitem.title}} </p>
+           <p class="des py-10 px-10 white">{{uxitem.des}}</p>
          </v-carousel-item>
           </v-carousel>
       </v-container>
@@ -262,7 +261,7 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 
 <script>
 export default {
-  name: 'portfolio',
+  name: 'Portfolio',
   data () {
      return {
        uxitems: [
