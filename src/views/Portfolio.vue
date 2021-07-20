@@ -50,6 +50,7 @@
     margin-right: 5px;
     flex: 1 1 300px;
     margin: 0;
+    transition: 0.6s;
 }
 .Gmodule:hover {
     background: #fbfbfb;
@@ -110,13 +111,16 @@
   width: 400px;
   margin: auto;
 }
-
-.des {
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px -3px black;
+.des{
+  transition:.3s;
   background:#313233b0;
   display: inline-grid;
   width: 80%;
+  }
+.des:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -5px black;
+  
 }
 
 .uiux-title {
