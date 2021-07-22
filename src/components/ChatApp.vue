@@ -34,7 +34,7 @@
                 </v-tooltip>
             </v-btn>
         </template>
-        <div class="left">
+        <v-card class="left">
             <v-btn color="primary" @click="dialog = false" width="10px">
                 <v-icon>
                     mdi-close
@@ -101,7 +101,7 @@
               </form>
             </v-card> -->
             </div>
-        </div>
+        </v-card>
     </v-dialog>
 </div>
 </template>
