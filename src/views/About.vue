@@ -49,6 +49,7 @@ h4 {
 .gray {
   color:gray;
 }
+
 </style>
 
 <template>

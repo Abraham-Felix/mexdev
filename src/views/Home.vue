@@ -1,7 +1,7 @@
 <template>
 <div id="app">
-  <v-card>
-     <h1> <span  style="font-size:64px;color:#5388E6 "> Get </span>
+  <v-card >
+     <h1> <span  style="font-size:64px;color:#5388E6" transition="scroll-y-transition"> Get </span>
         your project done <br>
         <span class="in">I</span>n simple steps b<b class="on">y </b> </h1><br>
          <v-img

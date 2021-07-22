@@ -1,9 +1,22 @@
+<style>
+.v-application .d-flex {
+    display: flex !important;
+    align-self: center;
+    transition: 0.3s;
+}
+.app-bar {
+  transition:0.6 !important;
+}
+</style>
 <template>
   <div id="nav">
     <v-app-bar
+    class="app-bar"
       app
       color="primary"
       light
+
+      elevate-on-scroll
     >
       <div center >
         <v-img
