@@ -63,12 +63,6 @@
       </v-btn>
       </router-link>
       </div>
-      <v-badge
-        v-if="user.loggedIn"
-        color="success"
-        dot
-      >
-      </v-badge>
       <v-spacer></v-spacer>
       <v-menu
       v-if="user.loggedIn"
@@ -84,7 +78,14 @@
        v-bind="attrs"
        v-on="on"
      >
-       <v-icon>mdi-account</v-icon>
+     <v-badge
+       v-if="user.loggedIn"
+       color="success"
+       dot
+       overlap
+       class="py-2"
+     >
+     </v-badge><v-icon>mdi-account</v-icon>
      </v-btn>
    </template>
    <v-list >
