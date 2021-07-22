@@ -7,6 +7,9 @@
 .app-bar {
   transition:0.6 !important;
 }
+.v-badge {
+  z-index:99;
+}
 </style>
 <template>
   <div id="nav">
@@ -60,6 +63,12 @@
       </v-btn>
       </router-link>
       </div>
+      <v-badge
+        v-if="user.loggedIn"
+        color="success"
+        dot
+      >
+      </v-badge>
       <v-spacer></v-spacer>
       <v-menu
       v-if="user.loggedIn"
