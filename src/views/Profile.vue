@@ -86,6 +86,11 @@ display: inline-grid;
 .p-pad {
   padding:15px;
 }
+.mdi-barcode {
+  padding-left: -1;
+  display: inline-flex;
+    max-width: 94px;
+}
 </style>
 
 <template>
@@ -95,15 +100,18 @@ display: inline-grid;
     <v-container class="v-container">
         <v-card v-if="authUser" class="center p-pad block">
           <h1> Profile </h1>
-          <v-text-field readonly v-model="uid" label="Uid">
-          </v-text-field>
           <v-card >
              <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
+             <v-container>
              <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
              <br>
              <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
-             <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
-             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon> <br><br>
+             <!-- GIT CONFIG AUTH UNLINK | LEFT OVER -->
+             <!--   <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon> -->
+             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon>
+             <v-text-field class="mdi mdi-barcode" readonly v-model="uid">
+             </v-text-field>
+           </v-container>
           </v-card>
           <v-divider class="m-tb-20"></v-divider>
           <h4 class="center mt-5">User profile</h4><br><br>
