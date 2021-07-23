@@ -94,32 +94,19 @@ display: inline-grid;
 
     <v-container class="v-container">
         <v-card v-if="authUser" class="center p-pad block">
-            <h1> Profile </h1>  <v-toolbar
-                  flat
-                  height="72"
-                >
-                  <v-switch
-                    v-model="$vuetify.theme.dark"
-                    hint="Change Ui Theme ( beta )"
-                    inset
-                    label="Vuetify Theme Dark"
-                    persistent-hint
-                  ></v-switch>
-                </v-toolbar>
+          <h1> Profile </h1>
           <v-text-field readonly v-model="uid" label="Uid">
           </v-text-field>
-             <v-card >
-               <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
-               <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
-               <br>
-               <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
-               <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
-               <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon> <br><br>
-             </v-card>
-             <v-divider class="m-tb-20"></v-divider>
-
-             <h4 class="center mt-5">User profile</h4><br><br>
-
+          <v-card >
+             <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
+             <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
+             <br>
+             <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
+             <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon>
+             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon> <br><br>
+          </v-card>
+          <v-divider class="m-tb-20"></v-divider>
+          <h4 class="center mt-5">User profile</h4><br><br>
             <form  @submit.prevent="updateProfile">
               <h4><v-icon> mdi-account </v-icon>User details</h4>
               <v-divider></v-divider>
@@ -131,7 +118,6 @@ display: inline-grid;
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateProfile" class="update right-btn"><v-icon> mdi-pencil </v-icon> </v-btn>
               </div>
               </form>
-
             <form  @submit.prevent="updateEmail">
               <h4><v-icon> mdi-email </v-icon>Update email</h4>
               <v-divider></v-divider>
@@ -168,6 +154,19 @@ display: inline-grid;
             <form  @submit.prevent="updateCustomDetails">
               <h4><v-icon> mdi-account-cowboy-hat </v-icon>Update extra details  </h4>
               <v-divider></v-divider>
+              <p class="my-5">Write anything you love</p>
+              <v-toolbar
+                    flat
+                    height="75"
+                    class="center my-10 py-2 rounded"
+                  >
+                    <v-switch
+                      v-model="$vuetify.theme.dark"
+                      inset
+                      label="Dark Ape"
+                      persistent-hint
+                    ></v-switch>
+                  </v-toolbar>
               <br>
               <p>Write anything you love</p>
               <input type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" class="form-control tertiary text--secondary">
