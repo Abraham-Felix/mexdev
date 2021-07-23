@@ -37,14 +37,16 @@ button {
   }
   form {
       width: 100%;
-      display: table-cell !important;
       /* height: 117px; */
       box-shadow: 0px 0px 6px -5px #e6e8ec;
       border-radius: 10px;
       padding: 10px;
   }
 }
-@media ony screen and (max-width:1000px){
+@media only screen and (max-width:601){
+
+}
+@media only screen and (max-width:1000px){
   .right-btn{
      float: right;
      position: relative;
@@ -68,9 +70,6 @@ form {
 }
 .uid {
   font-size: 12px;
-}
-.update-profile-inputs{
-display: inline-grid;
 }
 .update{
   height:28px !important;
@@ -96,44 +95,100 @@ display: inline-grid;
 <template>
 
 <div id="app">
-
     <v-container class="v-container">
         <v-card v-if="authUser" class="center p-pad block">
           <h1> Profile </h1>
           <v-card >
              <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
              <v-container>
-             <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
-             <br>
-             <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
-             <!-- GIT CONFIG AUTH UNLINK | LEFT OVER -->
-             <!--   <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon> -->
-             <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon>
-             <v-text-field class="mdi mdi-barcode" readonly v-model="uid">
-             </v-text-field>
-           </v-container>
+               <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
+               <!-- GIT CONFIG AUTH UNLINK | LEFT OVER -->
+               <!--   <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon> -->
+               <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon>
+               <br>
+               <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
+               <br>
+               <v-text-field class="mdi mdi-barcode" readonly v-model="uid">
+               </v-text-field>
+             </v-container>
           </v-card>
           <v-divider class="m-tb-20"></v-divider>
           <h4 class="center mt-5">User profile</h4><br><br>
-            <form  @submit.prevent="updateProfile">
-              <h4><v-icon> mdi-account </v-icon>User details</h4>
-              <v-divider></v-divider>
-              <br>
-              <div class="update-profile-inputs ">
-              <p>First name</p><input  class="form-control tertiary text--secondary" v-model="displayName" placeholder="your name"><br>
-              <p>Photo url</p>
-              <input class="form-control tertiary text--secondary"  v-model="photoURL" placeholder="your photo url">
-              <v-btn type="submit" depressed small color="primary" @keyup.enter="updateProfile" class="update right-btn"><v-icon> mdi-pencil </v-icon> </v-btn>
-              </div>
-              </form>
-            <form  @submit.prevent="updateEmail">
+          <h4><v-icon> mdi-account </v-icon>User details</h4>
+          <v-divider class="mb-5"></v-divider>
+                        <v-card>
+                          <v-row>
+                            <v-col class="col-12 col-md-4">
+                            <v-form @submit.prevent="updateProfile">
+                              <div class="update-inputs">
+                                <v-text-field
+                                  background-color="tertiary"
+                                  class="form-control mb-10"
+                                  v-model="displayName"
+                                  :counter="10"
+                                  label="Name (press enter)"
+                                  required>
+                                </v-text-field>
+                                <v-text-field
+                                  background-color="tertiary"
+                                  class="form-control"
+                                  v-model="photoURL"
+                                  placeholder="your photo url"
+                                  label="Photo url (press enter)"
+                                >
+                                </v-text-field>
+                                <v-btn
+                                  type="submit"
+                                  depressed
+                                  small
+                                  color="primary"
+                                  @keyup.enter="updateProfile"
+                                  class="update center hidden-sm-and-up"
+                                >
+                                <v-icon> mdi-pencil </v-icon>
+                                </v-btn>
+                              </div>
+                            </v-form>
+                          </v-col>
+                          <v-col class="col-12 col-md-8">
+                            <v-form @submit.prevent="updateAboutYou">
+                              <div class="update-inputs">
+                              <v-textarea
+                              label="About you"
+                              placeholder="tell us about yourself"
+                              v-model="aboutYou"
+                              >
+                              </v-textarea>
+                              <v-btn
+                              :fullscreen="$vuetify.breakpoint.mobile"
+                              type="submit"
+                              depressed
+                              small
+                              color="primary"
+                              @keyup.enter="updateAboutYou"
+                              class="update center  ">
+                                <v-icon> mdi-pencil </v-icon>
+                              </v-btn>
+                            </div>
+                            </v-form>
+                          </v-col>
+                          </v-row>
+                        </v-card>
               <h4><v-icon> mdi-email </v-icon>Update email</h4>
               <v-divider></v-divider>
-              <br>
+            <form  @submit.prevent="updateEmail">
+            <div  class="update-profile-inputs ">
               <center>
                 <p>Contact email</p>
               </center>
-              <input type="email" class="form-control tertiary text--secondary" v-model="email" placeholder="enter new email">
+              <v-text-field
+              type="email"
+              background-color="tertiary"
+              class="form-control"
+              v-model="email"
+              placeholder="enter new email"
+              label="Email (press enter)"
+              > </v-text-field>
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateEmail" class="update"> <v-icon> mdi-pencil </v-icon></v-btn>
               <v-container>
                 <div class=" link-sm center" v-if="!linkedGoogle">
@@ -149,12 +204,13 @@ display: inline-grid;
                   <v-btn class="center" @click="unlinkGoogle"><v-icon color=red>mdi-email-off</v-icon></v-btn>
                 </div>
               </v-container>
+            </div>
             </form>
 
             <form  @submit.prevent="updatePassword">
               <h4><v-icon> mdi-lock </v-icon>Update password</h4>
               <v-divider></v-divider>
-              <br><p>Go ahead change it</p>
+              <br><p class="center">Go ahead change it</p><br>
               <input type="password" class="form-control tertiary text--secondary" v-model="newPassword" placeholder="enter new password">
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updatePassword" class="update"><v-icon> mdi-pencil </v-icon></v-btn>
             </form>
@@ -202,7 +258,7 @@ display: inline-grid;
                 <v-divider></v-divider>
                 <br>
                 <p class="center">Company phone</p><br>
-                <input class="form-control tertiary text--secondary" :rules="titleRules" required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" >
+                <input class="form-control tertiary text--secondary"  required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" >
                 <v-divider vertical></v-divider><br>
                 <p class="center">Company email</p><br>
                 <input class="form-control tertiary text--secondary" required type="text" v-model="companyEmail" label="Fav food" placeholder="enter your company email" ><br>
@@ -245,6 +301,7 @@ export default {
             uid: '',
             newPassword: '',
             providerData: '',
+            aboutYou: '',
             authUser: '',
             companyPhone: null,
             comapnyEmail: null,
@@ -255,7 +312,7 @@ export default {
         }
     },
     phoneRules: [
-        v => !!v || 'you must type digits something',
+        v => !!v || 'you must type digits or something...',
         v => v.length <= 10 || 'hum.. this monk smelling somthing strange... must be less than 10 characters',
     ],
     computed:{
@@ -267,6 +324,11 @@ export default {
       }
     },
     methods: {
+      updateAboutYou() {
+        firebase.database().ref('users').child(this.authUser.uid)
+            .update({aboutYou: this.aboutYou})
+            toastr.success('awesome!, your about me seciton has been updated')
+      },
       updateProfile() {
         this.authUser.updateProfile({
           displayName: this.displayName ,
@@ -345,12 +407,14 @@ export default {
                 this.providerData = user.providerData
                 usersRef.child(user.uid).once('value', snapshot => {
                   if (snapshot.val()) {
+                  this.aboutYou = snapshot.val().aboutYou
                   this.favoriteFood = snapshot.val().favoriteFood
                   this.companyPhotoURL = snapshot.val().companyPhotoURL
                   this.companyName = snapshot.val().companyName
                   this.companyWebsite = snapshot.val().companyWebsite
                   this.companyPhone = snapshot.val().companyPhone
                   this.companyEmail = snapshot.val().companyEmail
+                  vue.set(this.authUser, 'aboutYou', this.favoriteFood)
                   vue.set(this.authUser, 'favoriteFood', this.favoriteFood)
                   vue.set(this.authUser, 'companyPhotoURL', this.companyPhotoURL)
                   vue.set(this.authUser, 'companyName', this.companyName)
