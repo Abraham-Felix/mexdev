@@ -227,7 +227,7 @@ form {
                     <v-switch
                       v-model="$vuetify.theme.dark"
                       inset
-                      label="Dark Ape"
+                      label="dark ape theme"
                       persistent-hint
                     ></v-switch>
                   </v-toolbar>
