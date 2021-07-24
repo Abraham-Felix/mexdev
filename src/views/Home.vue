@@ -27,7 +27,7 @@
        <span class="text--primary">what is mexdev?</span> MexDev is a web development agency providing coding solutions as a service for individuals,
          companies & contractors, upgrading into the online business model or updating their current app progress.
      </p>
-    <p class=" center">PS:"se habla espanol"</p>
+    <p class=" center">PS:"se habla español"</p>
   </v-container>
      </v-card>
 
