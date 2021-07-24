@@ -267,17 +267,20 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   <h2> Ui/Ux </h2>
     <div class="Fgrid">
-      <v-container class="Gmodule pb-10 back">
+      <v-container class="Gmodule pb-10">
           <v-carousel>
            <v-carousel-item
+           gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
              v-for="(uxitem,i) in uxitems"
              :key="i"
              :src="uxitem.src"
              reverse-transition="fade-transition"
              transition="fade-transition"
            >
-           <p class="uiux-title">{{uxitem.title}} </p>
-           <p class="des py-10 px-10 white">{{uxitem.des}}</p>
+           <v-col>
+            <v-text class="des rounded back text--primary">{{uxitem.title}} </v-text>
+            <p class="des py-10 px-10 back text--primary rounded">{{uxitem.des}}</p>
+         </v-col>
          </v-carousel-item>
           </v-carousel>
       </v-container>

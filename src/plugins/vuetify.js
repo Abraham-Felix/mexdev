@@ -17,7 +17,8 @@ const vuetify = new Vuetify({
       secondary: '#5388E6 ',
       tertiary: '#313233',
       anchor: '#DADCE0',
-      back: '#1E1E1E'
+      back: '#1E1E1E',
+      quadrant: '#DADCE0'
     }
   }
 }
