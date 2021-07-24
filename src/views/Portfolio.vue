@@ -156,7 +156,7 @@
     <div class="shocase-card">
     <h2> ShowCase </h2>
     <div class="Fgrid">
-      <div class="Gmodule py-10 back" >
+      <div class=" col-12 py-10 back" >
       <h3> Fintech Horizons Media </h3>
         <v-divider></v-divider>
       <i class="i">scroll to zoom-in</i>
