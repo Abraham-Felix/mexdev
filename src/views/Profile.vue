@@ -1,4 +1,7 @@
 <style scoped>
+ input.form-control {
+   width: -webkit-fill-available;
+ }
 
 img.preview {
     width: 200px;
@@ -58,7 +61,7 @@ form {
     box-shadow: 0px 0px 6px -5px #e6e8ec;
     margin-top:20px;
     border-radius: 5px;
-    gap:1em;
+    gap:0em;
 }
 }
 .authicons{
@@ -72,7 +75,7 @@ form {
   font-size: 12px;
 }
 .update{
-  height:28px !important;
+  height:30px !important;
   width: 30px;
   bottom: 0px;
   text-align: center;
@@ -90,6 +93,18 @@ form {
   display: inline-flex;
     max-width: 94px;
 }
+.comp-pic {
+  height: 55px;
+  width: 55px;
+}
+ .ep-icon {
+  border-radius: 0px 5px 5px 0px !important;
+  height: 34px !important;
+  margin-top: 15px;
+}
+form.mt-10.center {
+    -webkit-box-pack: center;
+}
 </style>
 
 <template>
@@ -99,7 +114,11 @@ form {
         <v-card v-if="authUser" class="center p-pad block">
           <h1> Profile </h1>
           <v-card >
-             <img class="profile-pic left ml-15" :src="authUser.photoURL" width="150">
+            <v-row>
+              <v-col class="col-12 col-md-6">
+             <img class="profile-pic center " :src="authUser.photoURL" width="150">
+             </v-col>
+             <v-col class="col-12 col-md-6">
              <v-container>
                <v-icon class="authicons" color=green v-if="linkedGoogle" >mdi-google</v-icon>
                <!-- GIT CONFIG AUTH UNLINK | LEFT OVER -->
@@ -111,12 +130,14 @@ form {
                <v-text-field class="mdi mdi-barcode" readonly v-model="uid">
                </v-text-field>
              </v-container>
+            </v-col>
+           </v-row>
           </v-card>
-          <v-divider class="m-tb-20"></v-divider>
-          <h4 class="center mt-5">User profile</h4><br><br>
-          <h4><v-icon> mdi-account </v-icon>User details</h4>
-          <v-divider class="mb-5"></v-divider>
+            <v-divider class="m-tb-20"></v-divider>
+            <h4 class="center mt-5">User profile</h4><br><br>
                         <v-card>
+                          <h4><v-icon> mdi-account </v-icon>User details</h4>
+                          <v-divider class="mb-5"></v-divider>
                           <v-row>
                             <v-col class="col-12 col-md-4">
                             <v-form @submit.prevent="updateProfile">
@@ -143,20 +164,22 @@ form {
                                   small
                                   color="primary"
                                   @keyup.enter="updateProfile"
-                                  class="update center hidden-sm-and-up"
+                                  class="update center "
                                 >
                                 <v-icon> mdi-pencil </v-icon>
                                 </v-btn>
                               </div>
                             </v-form>
-                          </v-col>
-                          <v-col class="col-12 col-md-8">
+                            </v-col>
+                            <v-col class="col-12 col-md-8">
                             <v-form @submit.prevent="updateAboutYou">
                               <div class="update-inputs">
                               <v-textarea
                               label="About you"
                               placeholder="tell us about yourself"
                               v-model="aboutYou"
+                              background-color="tertiary"
+                              counter
                               >
                               </v-textarea>
                               <v-btn
@@ -174,55 +197,78 @@ form {
                           </v-col>
                           </v-row>
                         </v-card>
-              <h4><v-icon> mdi-email </v-icon>Update email</h4>
-              <v-divider></v-divider>
-            <form  @submit.prevent="updateEmail">
-            <div  class="update-profile-inputs ">
-              <center>
-                <p>Contact email</p>
-              </center>
-              <v-text-field
-              type="email"
-              background-color="tertiary"
-              class="form-control"
-              v-model="email"
-              placeholder="enter new email"
-              label="Email (press enter)"
-              > </v-text-field>
-              <v-btn type="submit" depressed small color="primary" @keyup.enter="updateEmail" class="update"> <v-icon> mdi-pencil </v-icon></v-btn>
-              <v-container>
-                <div class=" link-sm center" v-if="!linkedGoogle">
-                  <br>
-                  <h4 class="center">Link google </h4>
-                  <br>
-                  <v-btn class="center" @click="linkGoogle"><v-icon>mdi-google</v-icon></v-btn>
-                </div>
-                <div class=" link-smcenter" v-if="linkedGoogle">
-                  <br>
-                  <h4 class="center">unlink google </h4>
-                  <br>
-                  <v-btn class="center" @click="unlinkGoogle"><v-icon color=red>mdi-email-off</v-icon></v-btn>
-                </div>
-              </v-container>
-            </div>
-            </form>
-
-            <form  @submit.prevent="updatePassword">
-              <h4><v-icon> mdi-lock </v-icon>Update password</h4>
-              <v-divider></v-divider>
-              <br><p class="center">Go ahead change it</p><br>
-              <input type="password" class="form-control tertiary text--secondary" v-model="newPassword" placeholder="enter new password">
-              <v-btn type="submit" depressed small color="primary" @keyup.enter="updatePassword" class="update"><v-icon> mdi-pencil </v-icon></v-btn>
-            </form>
-
+                        <v-card>
+                          <h4><v-icon> mdi-email mdi-lock </v-icon>Email & password</h4>
+                          <v-divider></v-divider>
+                          <v-row>
+                             <v-col class="col-12 col-md-6">
+                               <form class="mt-10 center"
+                               @submit.prevent="updateEmail">
+                                 <v-text-field
+                                 type="email"
+                                 background-color="tertiary"
+                                 class="form-control"
+                                 v-model="email"
+                                 placeholder="enter new email"
+                                 label="Email (press enter)"
+                                 > </v-text-field>
+                                 <v-btn type="submit"
+                                 depressed small
+                                 color="primary"
+                                 @keyup.enter="updateEmail"
+                                 class="update ep-icon">
+                                 <v-icon > mdi-pencil </v-icon>
+                                 </v-btn>
+                                 <v-divider class="mt-3">
+                                 </v-divider>
+                              </form>
+                            </v-col>
+                            <v-col class="col-12 col-md-6">
+                              <form class="mt-10 center"
+                              @submit.prevent="updatePassword"
+                              >
+                                <v-text-field
+                                type="password"
+                                class="form-control"
+                                background-color="tertiary"
+                                v-model="newPassword"
+                                placeholder="enter new password"
+                                label="Password (press enter)"
+                                >
+                                </v-text-field>
+                                <v-btn type="submit"
+                                depressed small
+                                color="primary"
+                                @keyup.enter="updatePassword"
+                                class="update ep-icon">
+                                <v-icon> mdi-pencil </v-icon>
+                              </v-btn>
+                              </form>
+                            </v-col>
+                            <v-col class="col-12">
+                            <div class=" link-sm center" v-if="!linkedGoogle">
+                            <br>
+                            <h4 class="center">Link google </h4>
+                            <br>
+                            <v-btn class="center" @click="linkGoogle"><v-icon>mdi-google</v-icon></v-btn>
+                           </div>
+                           <div class=" link-smcenter" v-if="linkedGoogle">
+                           <br>
+                           <h4 class="center">unlink google </h4>
+                           <br>
+                           <v-btn class="center" @click="unlinkGoogle"><v-icon color=red>mdi-email-off</v-icon></v-btn>
+                           </div>
+                         </v-col>
+                          </v-row>
+                          </v-card>
             <form  @submit.prevent="updateCustomDetails">
-              <h4><v-icon> mdi-account-cowboy-hat </v-icon>Update extra details  </h4>
+              <v-card>
+              <h4><v-icon> mdi-account-cowboy-hat </v-icon>Extra details  </h4>
               <v-divider></v-divider>
-              <p class="my-5">Write anything you love</p>
               <v-toolbar
-                    flat
-                    height="75"
-                    class="center my-10 py-2 rounded"
+                  flat
+                  height="75"
+                  class="center my-10 py-2 rounded"
                   >
                     <v-switch
                       v-model="$vuetify.theme.dark"
@@ -230,51 +276,103 @@ form {
                       label="dark ape theme"
                       persistent-hint
                     ></v-switch>
-                  </v-toolbar>
-              <br>
-              <p>Write anything you love</p>
-              <input type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" class="form-control tertiary text--secondary">
+              </v-toolbar>
+              <v-text-field type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" background-color="tertiary" class="form-control">
+              </v-text-field>
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCustomDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
+              </v-card>
             </form>
+            <!-- company profile -->
+            <v-divider class="m-tb-20"></v-divider>
+            <h4 class="center mt-5">Company Profile</h4><br><br>
+            <v-card>
+              <v-row
+              center
+              no-gutters>
+              <v-col class="col-6 col-md-4">
+              <form @submit.prevent="updateCompanyDetails">
+                <h4><center><v-icon> mdi-domain </v-icon> company details </center> </h4>
+                <v-divider class="mb-5"></v-divider>
+                <v-text-field required type="text"
+                  v-model="companyName"
+                  label="Fav food"
+                  placeholder="enter your company name"
+                  background-color="tertiary"
+                  class="form-control">
+                </v-text-field>
+                <v-text-field
+                  required type="text"
+                  v-model="companyWebsite"
+                  label="Company website"
+                  placeholder="enter your company website"
+                  background-color="tertiary"
+                  class="form-control">
+                </v-text-field>
+                <v-btn
+                  type="submit"
+                  depressed small
+                  color="primary"
+                  @keyup.enter="updateCompanyDetails"
+                  class="update"
+                > <v-icon> mdi-pencil </v-icon>
+                </v-btn>
 
-
-              <h4 class="center mt-10">Company profile</h4>
-              <v-divider class="m-tb-20"></v-divider>
-
-              <form style="width:50%;" @submit.prevent="updateCompanyDetails">
-                <h4><center><v-icon> mdi-domain </v-icon>  Update company details </center> </h4>
-                <v-divider></v-divider>
-                <br>
-                <p class="center">Company name</p><br>
-                <input required type="text" v-model="companyName" label="Fav food" placeholder="enter your company name" class="form-control tertiary text--secondary">
-                <br>
-                <v-divider vertical></v-divider>
-                <p class="center">Company website</p><br>
-                <input required type="text" v-model="companyWebsite" label="Fav food" placeholder="enter your company website" class="form-control tertiary text--secondary"><br>
-                <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
               </form>
+            </v-col>
+
+            <v-col class="col-6 col-md-4">
               <form  @submit.prevent="updateCompanyContactDetails">
-                <h4><center><v-icon> mdi-phone  </v-icon>  Update company contact details </center> </h4>
-                <v-divider></v-divider>
-                <br>
-                <p class="center">Company phone</p><br>
-                <input class="form-control tertiary text--secondary"  required type="number" v-model="companyPhone" label="Fav food"  placeholder="enter your company phone" >
-                <v-divider vertical></v-divider><br>
-                <p class="center">Company email</p><br>
-                <input class="form-control tertiary text--secondary" required type="text" v-model="companyEmail" label="Fav food" placeholder="enter your company email" ><br>
+                <h4><center><v-icon> mdi-phone  </v-icon>  company contact </center> </h4>
+                <v-divider class="mb-5"></v-divider>
+                <v-text-field
+                  class="form-control"
+                  required type="number"
+                  v-model="companyPhone"
+                  label="Company phone"
+                  background-color="tertiary"
+                  placeholder="enter your company phone" >
+                </v-text-field>
+                <v-text-field
+                  class="form-control"
+                  background-color="tertiary"
+                  required type="text"
+                  v-model="companyEmail"
+                  label="Company email"
+                  placeholder="enter your company email"
+                >
+                </v-text-field>
                 <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyContactDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
               </form>
+            </v-col>
+
+            <v-col class="col-12 col-md-4">
               <form  @submit.prevent="updateCompanyPhoto">
                 <h4 class="center"><v-icon> mdi-camera </v-icon> Company Photo</h4>
                 <v-divider></v-divider>
                 <br>
                 <div class="update-profile-inputs">
-                <img class="center profile-pic" :src="authUser.companyPhotoURL" width="150">
-                <p>Company photo url</p>
-                <input class="form-control tertiary text--secondary" v-model="companyPhotoURL" placeholder="company photo url">
-                <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCompanyPhoto" class="update right-btn"><v-icon> mdi-pencil </v-icon> </v-btn>
+                <img class="comp-pic center profile-pic" :src="authUser.companyPhotoURL" width="150">
+
+                <v-text-field
+                label="Company photo url"
+                class="form-control"
+                background-color="tertiary"
+                v-model="companyPhotoURL"
+                placeholder="company photo url">
+                </v-text-field>
+                <v-btn
+                  type="submit"
+                  depressed small
+                  color="primary"
+                  @keyup.enter="updateCompanyPhoto"
+                  class="center update">
+                  <v-icon> mdi-pencil </v-icon>
+                </v-btn>
                 </div>
                 </form>
+              </v-col>
+            </v-row>
+            </v-card>
         </v-card>
     </v-container>
 </div>
