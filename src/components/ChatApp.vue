@@ -4,7 +4,6 @@
   z-index: 9
 }
 
-
 </style>
 
 <template>
@@ -43,7 +42,7 @@
             <div id="chat" class="container">
               <h1>Vue.js Chat App</h1>
 
-              <v-card>
+              <v-card  padding="10px" class="pa-3 m-tb-20 form-group">
                 <h4>Welcome</h4>
                 <p>Hello, can we help you with something? </p>
               </v-card>
@@ -75,31 +74,16 @@
             <v-card hover  class="m-tb-20 pl-3 pr-3">
               <form  v-if="!editingMessage" @submit.prevent="storeMessage">
                 <div class="form-group">
-                  <h4>Chat App</h4>
+                  <h4>Chat App Demo</h4>
                   <v-textarea label="Message" v-model="messageText" class="form-control"></v-textarea>
                 </div>
                 <div class="form-group">
-                  <v-text-field label="Nickname" type="input" v-model="nickname" class="form-control">
+                  <v-text-field label="Nickname" placeholder="Enter Nickname" type="input" v-model="nickname" class="form-control">
                   </v-text-field>
                 </div>
                 <v-btn type="submit" class="m-tb-20 btn btn-primary"><v-icon color=primary>mdi-send</v-icon></v-btn>
               </form>
             </v-card>
-
-              <!-- New Message
-              <v-card hover class="m-tb-20 pl-3 pr-3">
-              <form v-if="!editingMessage" @submit.prevent="storeMessage">
-                <div class="form-group">
-                  <h4>Chat App</h4>
-                  <v-textarea label="Message" v-model="messageText" class="form-control"></v-textarea>
-                </div>
-                <div class="form-group">
-                  <v-text-field label="Nickname" type="input" v-model="nickname" class="form-control">
-                  </v-text-field>
-                </div>
-                <v-btn type="submit" class="m-tb-20 btn btn-primary"><v-icon color=primary>mdi-send</v-icon></v-btn>
-              </form>
-            </v-card> -->
             </div>
         </v-card>
     </v-dialog>
@@ -128,7 +112,7 @@ export default {
             dialog: false, // this for modal
             messages: [],
             messageText: '',
-            nickname: 'Mexdev',
+            nickname: '',
             editingMessage: null
         }
     },

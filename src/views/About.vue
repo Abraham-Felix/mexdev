@@ -44,36 +44,54 @@ p {
   text-align: left !important;
 }
 h4 {
-  text-align: center;
+  text-align: left;
+  color: #313233;
+}
+.text-center {
+  text-align:center;
 }
 .gray {
   color:gray;
 }
+
 
 </style>
 
 <template>
     <v-card class="mx-auto">
       <h1> About us </h1>
-      <h4> Mexdev Coding solutions </h4>
+      <h4 class="text-center"> Mexdev Coding solutions </h4>
       <v-card-text class="text-justify p10s">
-            <h5><b>About Vision:</b></h5><br>
+            <h4><b>About Vision:</b></h4><br>
             <v-divider class="mb-5"></v-divider>
-            <p> MexDev is a web development agency providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress.</p>
-            <br><br>
-            <h5><b>About the project:</b></h5><br>
+            <p>
+              MexDev is a web development agency providing coding solutions as a service for individuals,
+              companies & contractors, upgrading into the online business model or updating their current app
+              progress.
+            </p>
+            <h4 class="mt-10"><b>About the project:</b></h4><br>
             <v-divider></v-divider><br>
             <p>MexDev.io Is a remote agency with founders in the USA and MX.
-Our management team is bilingual, as is most of our staff. Our two founers have more than 15 years of combined software development experience.
-
-Vision, Objectives and Services
-
-Software development talent is expensive.
-Hiring new developers for a project is risky too, as a developer's skills may not match their resume and because some engineers fail to keep current on the latest languages, platforms and best practices. As remote work expands, so do the number of applicants, creating even greater risk for hiring managers.
-
-Our goal is to deliver high-quality nearshoring and software development at an affordable price, from developers whose skills and productivity are regularly evaluated. We use agile methodologies, secure information exchange, and productivity and skills assessment tools to eliminate the risks of hiring outside help.
+              Our management team is bilingual, as is most of our staff. Our
+              two founers have more than 15 years of combined software development experience.</p>
+              <br>
+              <h4 class="mt-10"> Vision, Objectives and Services: </h4>
+              <p>
+              <br>  <br>
+              Software development talent is expensive.
+              Hiring new developers for a project is risky too, as a developer's skills may not
+              match their resume and because some engineers fail to keep current on the latest languages,
+              platforms and best practices. As remote work expands, so do the number of applicants,
+              creating even greater risk for hiring managers.
+              </p>
+              <p>
+              <br>  <br>
+              Our goal is to deliver high-quality nearshoring and software development at an affordable
+              price, from developers whose skills and productivity are regularly evaluated. We use agile
+              methodologies, secure information exchange, and productivity and skills assessment tools to
+              eliminate the risks of hiring outside help.
 </p>
-<h5 class="mt-10"><b>Why are we different?</b></h5><br>
+<h4 class="mt-10"><b>Why are we different?</b></h4><br>
 <v-divider></v-divider><br>
 <v-list-item>
       <v-list-item-content>
@@ -84,7 +102,7 @@ Our goal is to deliver high-quality nearshoring and software development at an a
         <v-list-item>● We help you achieve your goals without the need to make expensive new hires that can harm your bottom line, now and for years to come.</v-list-item>
        </v-list-item-content>
 </v-list-item>
-<h5 class="mt-10"><b>Team Leads:</b></h5><br>
+<h4 class="mt-10"><b>Team Leads:</b></h4><br>
 <v-divider></v-divider><br>
       </v-card-text>
             <div>

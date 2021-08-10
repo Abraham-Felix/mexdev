@@ -28,7 +28,10 @@ h5 {
 
 <template>
 
+
 <v-form class="contactForm">
+  <h1> Hello, please try our auth proccess we developt :) </h1>
+  <v-divider/>
     <v-card class="center">
         <div class="login">
             <h3>Log In</h3>
@@ -49,7 +52,6 @@ h5 {
             <v-btn @click.native="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
           </div>
           </div>
-
         </div>
     </v-card>
 </v-form>
