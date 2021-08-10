@@ -54,7 +54,7 @@ data: () => ({
   icons: [
     {
         name:'mdi-gmail',
-        url: 'mailto:mexdev@fintechhorizonsmedia.com',
+        url: 'mailto:mexdevservice@gmail.com',
         target: '_blank'
     },
     {

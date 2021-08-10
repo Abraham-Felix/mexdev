@@ -81,6 +81,10 @@
   }
 }
 
+.v-dialog {
+  background: #FFFFFF;
+}
+
 .col-50 {
   width: 50%;
   display: inline-grid;
@@ -149,6 +153,14 @@
     transition: 1s;
   }
 }
+.hover-shadow {
+  box-shadow: 0px 0px 10px -7px #5388e6;
+}
+.hover-shadow:hover {
+  box-shadow: 0px 0px 10px -3px #5388e6;
+}
+
+
 </style>
 
 <template>
@@ -266,6 +278,46 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
   </div>
   </div>
   <h2> Ui/Ux </h2>
+  <v-row justify="space-around">
+   <v-col cols="auto">
+     <v-dialog
+       transition="dialog-bottom-transition"
+       max-width="600"
+     >
+       <template v-slot:activator="{ on, attrs }">
+         <v-btn
+           color="primary"
+           v-bind="attrs"
+           v-on="on"
+         >Ui demo</v-btn>
+       </template>
+       <template v-slot:default="dialog">
+         <v-card class="px-10">
+           <h2 class="py-3"> Vue UI Demo on Codepen </h2>
+           <v-divider/>
+           <h5 class="my-3"> Layout from Mockup </h5>
+               <v-card-text class="hover-shadow pa-10" >
+                 <a target="_blank" href="https://codepen.io/apesyntax/pen/ExmpVRB">
+                   <v-img src="@/assets/Ux-Design-Potrait-Ipad.png"></v-img>
+                 </a>
+               </v-card-text>
+           <h5 class="my-3"> Wireframe Live Figma Project </h5>
+               <v-zoomer title="Scroll to zoom-in" class="showcase-img hover-shadow pa-10" style="width: 500px; height: 500px;">
+                 <a target="_blank" href="https://www.figma.com/file/1R0sVqlkEPWupn2gbmxFGA/Wireframing-in-Figma?node-id=109%3A276">
+                   <v-img class="pa-10" src="@/assets/elevator-ui-wireframe.png"></v-img>
+                 </a>
+               </v-zoomer>
+           <v-card-actions class="justify-end">
+             <v-btn
+               text
+               @click="dialog.value = false"
+             >Close</v-btn>
+           </v-card-actions>
+         </v-card>
+       </template>
+     </v-dialog>
+   </v-col>
+ </v-row>
     <div class="Fgrid">
       <v-container class="Gmodule pb-10">
           <v-carousel>
@@ -289,10 +341,17 @@ Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS,
 </template>
 
 <script>
+
 export default {
   name: 'Portfolio',
   data () {
      return {
+       // Importing external JS files sample by appending it in head
+         mounted() {
+           let externalScript = document.createElement('script')
+           externalScript.setAttribute('src', 'https://cpwebassets.codepen.io/assets/embed/ei.js')
+           document.head.appendChild(externalScript)
+         },
        uxitems: [
          {
            src: require("@/assets/Prototyping.png"),
@@ -300,19 +359,19 @@ export default {
            des: 'A simulation or sample version of a final product, which is used for testing prior to launch. The goal of a prototype is to test products & product ideas before sinking lots of time and money into the final product. Prototyping is essential for resolving usability issues before launch. It can also reveal areas that need improvement. Once a draft of your product idea is in the hands of real users, you will finally see how they want to use the product. You can then go back and adjust your initial guesswork.'
          },
          {
-           src: require("@/assets/mood-board.png"),
+           src: require("@/assets/Moodded.png"),
            title: 'Mood Boards',
            des: 'Mood boards are a collage of images, fonts, interactions, features, icons, and UI elements to communicate the artistic direction of a project. As everything in user experience design your mood board should be focused on meeting user needs and problem-solving.'
          },
          {
            src: require("@/assets/ComplexityColor.png"),
            title: 'Complexity breakdown in color desing',
-           des: 'In professional environments, the work produced is complex. As long as the content is in the hands of the creator, complexity is easily manageable. Remember, that complexity is subjective, and everything makes sense in the head of the creator.'
+           des: 'In professional environments, the work produced is complex. As long as the content is in the hands of the creator, complexity is easily manageable. Remember, that complexity is subjective, and everything makes sense in the head of the creator. While an increase in alignment between the agent and the designer leads to more complex but better quality products, higher product demand or lower competition among designers leads to more complex and lower quality products.'
          },
          {
-           src: require("@/assets/interlex.png"),
-           title: 'Complexity breakdown in color desing',
-           des: 'While an increase in alignment between the agent and the designer leads to more complex but better quality products, higher product demand or lower competition among designers leads to more complex and lower quality products. '
+           src: require("@/assets/elevator-ui-wireframe.png"),
+           title: 'Wireframing',
+           des: 'Wireframe service contains information about the user interface architecture, it provides us a detailed description of its behavior and user interaction. It will demonstrate the flow of transitions within the application in order to give a better comprehensive idea of how to build the actual code layout.'
          },
        ],
      }

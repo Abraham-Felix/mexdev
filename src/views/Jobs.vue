@@ -98,7 +98,7 @@
     <div
     class="jobs-card ">
     <div v-if="errored">
-      <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
+      <p>LOL, must of done something wrong... don't worry i will fix it soon! :) </p>
     </div>
     <div v-else class="Agrid ">
            <v-progress-circular
