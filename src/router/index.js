@@ -1,14 +1,13 @@
-import firebase from '../plugins/firebase'
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import firebase from '../plugins/firebase';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-import Contact from '../views/Contact.vue'
-import Jobs from '../views/Jobs.vue'
-import Tutorials from '../views/Tutorials.vue'
-import Profile from '../views/Profile.vue'
-import Portfolio from '../views/Portfolio.vue'
-import Login from '../views/Login.vue'
-import SignUp from '../views/SignUp.vue'
+import Contact from '../views/Contact.vue';
+import Jobs from '../views/Jobs.vue';
+import Tutorials from '../views/Tutorials.vue';
+import Profile from '../views/Profile.vue';
+import Portfolio from '../views/Portfolio.vue';
+import Landing from '../views/Landing.vue';
 
 Vue.use(VueRouter)
 
@@ -73,24 +72,18 @@ Vue.use(VueRouter)
     }
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: Login
-  },
-  {
-    path: '/sign-up',
-    name: 'SignUp',
-    component: SignUp
+    path: '/landing',
+    name: 'Landing',
+    component: Landing
   },
   {
   path: '/home',
   name: 'Home',
-  component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
+  component: () => import(/* webpackChunkName: "Home" */ '../views/Home.vue'),
   meta: {
     requiresAuth:true
   }
   }
-
 ]
 
 const router = new VueRouter({
@@ -98,11 +91,10 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
-
     router.beforeEach((to, from, next) =>  {
       const currentUser = firebase.auth().currentUser;
       const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
-      if (requiresAuth && !currentUser) next('login');
+      if (requiresAuth && !currentUser) next('landing');
       else if (!requiresAuth && currentUser) next('home');
       next(firebase.auth().onAuthStateChanged(currentUser => {
           currentUser}));

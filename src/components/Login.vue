@@ -21,20 +21,15 @@ button {
     border-radius: 10px;
     margin: 2vh;
 }
-h5 {
-  color: dodgerblue;
-}
 </style>
 
 <template>
 
 
 <v-form class="contactForm">
-  <h1> Hello, please try our auth proccess we developt :) </h1>
-  <v-divider/>
-    <v-card class="center">
+    <v-card class="center my-15">
         <div class="login">
-            <h3>Log In</h3>
+            <h5>Log In</h5>
             <br>
             <div class="form-group">
                 <v-text-field class="form-control" type="text" v-model="email" placeholder="Email">
@@ -42,15 +37,18 @@ h5 {
             </div>
             <v-text-field class="form-control" type="password" @keyup.enter="login" v-model="password" placeholder="Password">
             </v-text-field>
-            <v-btn depressed small color="primary"  @click="login">connect</v-btn>
-            <p>Or you can
-                <router-link to="/sign-up">create one.</router-link>
-            </p>
-            <div class="oneH">
+            <v-btn depressed small color="primary"  @click="login">Log in</v-btn>
+            <div class="oneH mt-5">
             <div class="grid-50">
-            <h5>Sign in with</h5>
+            <h5>Other methods</h5>
             <v-btn @click.native="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
           </div>
+          </div>
+          <v-divider/>
+          <div class="d-flex text-center">
+            <p>Or you can
+              <router-link to="/sign-up">create an account.</router-link>
+            </p>
           </div>
         </div>
     </v-card>
@@ -64,7 +62,7 @@ import firebase from 'firebase';
 import toastr from 'toastr';
 
 export default {
-    name: 'login',
+    name: 'Login',
     data() {
         return {
             email: '',
@@ -76,7 +74,7 @@ export default {
             firebase.auth().signInWithEmailAndPassword(this.email, this.password)
             .then(
                 (user) => {
-                    this.$router.go('home' + user.message + this.created || true)
+                    this.$router.go('/profile' + user.message + this.created || true)
                 }
             )
             .catch (err =>
@@ -89,7 +87,7 @@ export default {
           firebase.auth().signInWithPopup(provider)
           .then(
               (user) => {
-                  this.$router.go('/home' + user.message + this.created || true)
+                  this.$router.go('/profile' + user.message + this.created || true)
                 }
           )
           .catch (err =>

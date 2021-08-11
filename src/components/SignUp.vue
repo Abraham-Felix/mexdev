@@ -1,6 +1,5 @@
 <template>
 <body>
-
  <v-card v-if="authUser" class="center block">
  <h5> sign in as <p>{{authUser.email}} </p> </h5>
  <img :src="authUser.photoURL" width="150">
@@ -9,20 +8,21 @@
 
 </v-card>
  <v-card v-else class="center block">
-   <h3> Sign up </h3>
-   <form @submit.prevent="register" class="sign-up">
- <p>Let's create a new account!</p>
-   <input type="text" v-model="email" placeholder="Email"><br>
-   <input type="password"  @keyup.enter="register" v-model="password" placeholder="Password"><br>
-     <v-btn depressed small color="primary" @click="register">sign up</v-btn>
-   <p>or go back to <router-link to="/login">login</router-link>.</p>
+   <h5> Sign up </h5>
+   <form @submit.prevent="register" class="d-sign-up">
+ <p class="center">Let's create a new account!</p>
+   <input class="my-5" type="text" v-model="email" placeholder="Email"><br>
+   <input class="mb-5" type="password"  @keyup.enter="register" v-model="password" placeholder="Password"><br>
+     <v-btn depressed small color="primary" @click="register">sign up</v-btn><br>
   </form>
   <div class="oneH">
   <div class="grid-50">
-  <h5>Sign in with</h5>
+  <h5>Other methods</h5>
   <v-btn @click="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
 </div>
 </div>
+<v-divider/>
+ <p class="center">or go to <router-link to="/login">login</router-link>.</p>
 </v-card>
   </body>
 </template>
@@ -33,7 +33,7 @@ import firebase from 'firebase';
 import toastr from 'toastr';
 
   export default {
-    name:  'signUp',
+    name:  'SignUp',
     data() {
       return {
         email: '',
