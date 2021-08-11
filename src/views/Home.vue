@@ -7,7 +7,7 @@
           your project done <br>
         <span class="in">I</span>n simple steps
        </h1>
-        <vs-container class="text-sm-body-2 mb-15 ">
+        <v-container class="text-sm-body-2 mb-15 ">
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
             <span class="text--primary">what is mexdev?</span> MexDev is a web development agency providing coding solutions as a service for individuals,
