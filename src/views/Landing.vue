@@ -15,14 +15,110 @@
         </p>
         <p class=" center">PS:"se habla español"</p>
       </v-container>
+      <div class="center nav-col-mid d-flex justify-center align-center">
+        <v-dialog
+          transition="dialog-bottom-transition"
+          max-width="600"
+
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              v-if="!user.loggedIn"
+              class="mx-10 nav-btns"
+              dark
+              small
+              title="login"
+              color="primary"
+              v-bind="attrs"
+              v-on="on"
+            >
+            <span class="web-nav-btns"> login </span>
+            <span class="mobile-icons mdi mdi-account-key"></span></v-btn>
+          </template>
+          <template v-slot:default="dialog">
+            <v-card class="my-0">
+              <v-card-actions class="justify-end">
+                <v-btn
+                  text
+                  @click="dialog.value = false"
+                ><v-icon>mdi-close</v-icon></v-btn>
+              </v-card-actions>
+              <v-card-text>
+                <!-- Login Component  -->
+              <Login/>
+              </v-card-text>
+            </v-card>
+          </template>
+        </v-dialog>
+        <v-dialog
+          transition="dialog-bottom-transition"
+          max-width="600"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+            v-if="!user.loggedIn"
+            class="mx-10 nav-btns"
+            dark
+            small
+            title="sign up"
+            color="primary"
+            v-bind="attrs"
+            v-on="on"
+            >
+            <span class="mobile-icons mdi mdi-account-edit"></span>
+            <span class="web-nav-btns"> sign up</span>
+          </v-btn>
+          </template>
+          <template v-slot:default="dialog">
+            <v-card class="my-0">
+
+             <v-card-actions class="justify-end">
+               <v-btn
+                 text
+                 @click="dialog.value = false"
+               ><v-icon>mdi-close</v-icon></v-btn>
+             </v-card-actions>
+               <SignUp/>
+            </v-card>
+          </template>
+        </v-dialog>
+      </div>
    </v-card>
  </v-container>
 </div>
 </template>
 
 <script>
+import firebase from 'firebase';
+import toastr from 'toastr';
+import { mapGetters } from "vuex";
+import Login from "../components/Login.vue";
+import SignUp from "../components/SignUp.vue";
+
 export default {
-  name: 'Landing'
+  name: 'Landing',
+  components: {
+    Login,
+    SignUp
+  },
+  computed: {
+    // map `this.user` to `this.$store.getters.user`
+    ...mapGetters({
+      user: "user",
+    })
+  },
+  methods: {
+  logout: function() {
+    firebase.auth().signOut()
+    .then(() => {
+      this.$router.replace('landing')
+    })
+    .catch (err =>
+      toastr.error('Yikes! '+ err.message))
+    .catch (
+      toastr.success('You have logged out, Thanks for using Mexdev app, see ya!'))
+  },
+}
 }
 </script>
 
