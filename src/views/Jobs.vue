@@ -138,6 +138,7 @@
   </div>
   </div>
 </div>
+<p class="center">Api sponsored by <a href="www.vuejobs.com">Vuejobs!</a></p>
 </div>
 </template>
 

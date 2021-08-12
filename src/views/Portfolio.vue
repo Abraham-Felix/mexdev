@@ -166,7 +166,7 @@
 <template>
   <v-container>
     <div class="shocase-card">
-    <h2> ShowCase </h2>
+    <h2> welcome to showcase </h2>
     <div class="Fgrid">
       <div class=" col-12 py-10 back" >
       <h3> Fintech Horizons Media </h3>
