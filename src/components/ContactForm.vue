@@ -1,6 +1,7 @@
-<style scoped>
-
-
+<style>
+.form-group {
+    padding: 0px;
+}
 </style>
 
 <template>
@@ -10,6 +11,7 @@
     </div>
     <div>
         <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
+          <div class="d-flex justify-space-between">
             <div class="form-group">
                 <v-text-field
                 :rules="nameRules"
@@ -30,6 +32,7 @@
                 v-model="newMessage.last">
                 </v-text-field>
             </div>
+          </div>
             <div class="form-group">
                 <v-text-field
                 :rules="emailRules"
@@ -39,6 +42,17 @@
                 id="messageEmail"
                 class="form-control"
                 v-model="newMessage.email">
+                </v-text-field>
+            </div>
+            <div class="form-group">
+                <v-text-field
+                :rules="phoneRules"
+                required label="Phone"
+                name="phone"
+                type="number"
+                id="clientPhone"
+                class="form-control"
+                v-model="newMessage.phone">
                 </v-text-field>
             </div>
             <div class="form-group">
@@ -91,10 +105,14 @@ export default {
                 last: '',
                 content: '',
                 email: '',
+                phone: '',
             },
             nameRules: [
                 v => !!v || 'you must type something',
-                v => v.length <= 15 || 'hum.. this monk smelling somthing strange... must be less than 10 characters',
+                v => v.length <= 15 || 'hum.. this monk smelling somthing strange... must be less than 15 characters',
+            ],
+            phoneRules: [
+                v => v.length <= 12 || 'hum.. this monk smelling somthing strange... must be less than 12 numbers',
             ],
             emailRules: [
                 v => !!v || 'E-mail is required',
@@ -114,14 +132,17 @@ export default {
             this.newMessage.last = '';
             this.newMessage.content = '';
             this.newMessage.email = '';
+            this.newMessage.phone = '';
             toastr.success('Horray! message sent successfully');
             this.displayText = 'Nice job!';
             this.nameRules = true;
+            this.namePhone = true;
             this.emailRules = true;
             this.contentRules = true;
             emailjs.sendForm('service_qe62coj','template_2oa9x3s', e.target,'user_1hqcYgrszmW6XZSBq6v5n', {
             name: this.newMessage.first,
             email: this.newMessage.email,
+            phone: this.newMessage.phone,
             message: this.newMessage.content,
           })
         },
