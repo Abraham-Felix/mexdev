@@ -66,6 +66,20 @@
     .job-detail {
       height:125px ;
     }
+    .j-title {
+      font-size: 1.5vw ;
+    }
+    .des-over {
+      overflow:auto;
+      height: 200px !important;
+    }
+    .job-detail {
+    height: 170px !important;
+    transition: 1s;
+    }
+    .Amodule {
+      min-height: 700px;
+    }
   }
 
   .col-50 {
