@@ -16,24 +16,23 @@
     color: #474747;
   }
   .Amodule {
-      background: white;
-      display: inline-table;
-      align-items: center;
-      justify-content: center;
-      min-height: 500px;
-      padding: 15px;
-      border-radius: 10px;
-      -webkit-box-shadow: 0px 0px 25px -16px rgba(161,161,161,1);
-      -moz-box-shadow: 0px 0px 25px -16px rgba(161,161,161,1);
-      box-shadow: inset 0px 0px 25px -16px rgba(161,161,161,1);
-      text-align: center;
-      text-decoration: none;
-      margin-left: 5px;
-      margin-right: 5px;
-      flex: 1 1 300px;
-      margin: 0;
-      color:#4f81bd !important;
-      transition: all 0.3s ease-in ;
+    background: white;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 25px -16px rgb(161 161 161);
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1 1 300px;
+    margin: 10px;
+    width: 31%;
+    color: #4f81bd !important;
+    transition: all 0.3s ease-in;
   }
   .Amodule:hover {
       background: #fbfbfb;
@@ -47,7 +46,7 @@
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-rows: minmax(150px, auto);
       grid-gap: 1em;
-      max-width: 1200px !important;
+      max-width: 1600px !important;
       width: 100%;
       margin-left:auto;
       margin-right:auto;
@@ -76,6 +75,7 @@
 
   .des-over {
     overflow:auto;
+    height: 80px;
   }
   .v-progress-circular {
   margin: 1rem;
@@ -90,6 +90,28 @@
   height:115px;
   transition: 1s;
 }
+/* Paginated */
+ul.paginate-links.languages {
+    display: inline-flex;
+    margin: auto;
+    align-self: center;
+}
+li.number {
+    align-content: space-between;
+    margin-left: 3px;
+    margin-right: 3px;
+    box-shadow: 0px 0px 4px -2px #313233;
+    padding: 3px;
+    width: 25px;
+    background: #313233;
+    border-radius:3px;
+}
+li.number:visited, li.number:hover, li.number:target, li.number:active, li.number:focus {
+  box-shadow: 0px 0px 3px -2px #313233 !important;
+}
+li.number a {
+    color: #ffffff !important;
+}
 </style>
 <template>
   <div>
@@ -98,7 +120,7 @@
     <div
     class="jobs-card ">
     <div v-if="errored">
-      <p>LOL, must of done something wrong... don't worry i will fix it soon! :) </p>
+      <p>Woops must of done something wrong... don't worry i will fix it soon! :) </p>
     </div>
     <div v-else class="Agrid ">
            <v-progress-circular
@@ -108,9 +130,14 @@
            v-if="loading"
            class="center my-10"
          ></v-progress-circular>
+      <paginate
+         v-else
+         name="languages"
+         :list="jobs"
+         :per="6"
+         >
       <div
-        v-else
-        v-for="job in jobs"
+        v-for="job in paginated('languages')"
         v-bind:key="job.id"
         class="Amodule  back"
       >
@@ -135,6 +162,8 @@
    v-bind:href="job.url"><span class="mdi mdi-open-in-new"></span> Apply </v-btn>
  </div>
   </div>
+    </paginate>
+    <paginate-links for="languages"></paginate-links>
   </div>
   </div>
 </div>
@@ -143,16 +172,19 @@
 </template>
 
 <script>
+import Vue from "vue";
+import VuePaginate from 'vue-paginate'
 import axios from "axios";
 
-
+Vue.use(VuePaginate)
 export default {
   name: 'Jobs',
   data () {
       return {
         jobs: null,
         loading: true,
-        errored: false
+        errored: false,
+        paginate: ['languages']
       }
     },
     filters: {

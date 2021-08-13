@@ -15,6 +15,8 @@
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "firebase": "^7.18.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "native-toast": "^2.0.0",
     "serve-static": "^1.14.1",
     "tiptap": "^1.29.6",
@@ -22,14 +24,13 @@
     "toastr": "^2.1.4",
     "vue": "^2.6.11",
     "vue-gtag": "^1.11.0",
+    "vue-paginate": "^3.6.0",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.4.3",
     "vue-zoomer": "^0.3.9",
     "vuelidate": "^0.7.5",
     "vuetify": "^2.2.11",
-    "vuex": "^3.5.1",
-    "less": "^3.0.4",
-    "less-loader": "^4.1.0"
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
