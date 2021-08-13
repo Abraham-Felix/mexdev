@@ -54,13 +54,13 @@ h4 {
     <v-container class="mt-15" >
      <v-card>
        <h1>
-        <span class="get" transition="scroll-y-transition"> Dream big </span>
+        <span class="get" transition="scroll-y-transition"> Dream big! </span>
        </h1>
        <h3> give yourself a break! :D </h3> <br>
         <v-container class="text-sm-body-2 mb-15 ">
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-            <span class="text--primary">what is mexdev?</span> MexDev is a USA and Mexico web development agency providing coding solutions as a service for individuals,
+            <span class="text--primary">what is mexdev?</span> MexDev is a USA and Mexico web/app development agency providing coding solutions as a service for individuals,
             companies & contractors, upgrading into the online business model or updating their current app progress.
           </p>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
