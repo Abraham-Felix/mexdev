@@ -13,6 +13,9 @@
 .v-list-item__title {
     color: #313233;
 }
+.v-list-item {
+    padding: 0px;
+}
 </style>
 <template>
   <div id="nav">
@@ -68,12 +71,6 @@
           <span class="web-nav-btns"> portfolio </span>
         </v-btn>
         </router-link>
-      <router-link to="/about">
-      <v-btn v-if="user.loggedIn" class="nav-btns" depressed small color="primary" title="about us">
-        <span class="mobile-icons mdi mdi-information-outline"></span>
-        <span class="web-nav-btns"> about us </span>
-      </v-btn>
-      </router-link>
       <router-link to="/contact">
       <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="contact us">
         <span class="mobile-icons mdi mdi-at"></span>
@@ -112,25 +109,27 @@
      </v-badge><v-icon>mdi-account</v-icon>
      </v-btn>
    </template>
-   <v-list >
+   <v-list class="nav-d-c">
      <v-list-item
-       v-for="(item, i) in items"
-       :key="i"
+         v-for="(item, i) in items"
+         :key="i"
      >
-     <a
-          :href="item.url"
-          :target="item.target">
-       <v-list-item-title >{{ item.title }}
-       </v-list-item-title>
-     </a>
+       <v-list-item
+          class="px-5"
+         :href="item.url"
+         :target="item.target"
+       >
+         {{ item.title }}
+       </v-list-item>
      </v-list-item>
      <!-- Logout button -->
      <v-list-item
+      class="px-5"
      @click="logout"
      >Logout
    </v-list-item>
    <v-list-item>
-     <router-link to="/tutorials">
+     <router-link to="/tutorials" class="px-5">
      <v-btn depressed dark small color="primary">Request Developer</v-btn>
      </router-link>
    </v-list-item>
