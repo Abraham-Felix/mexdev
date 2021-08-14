@@ -49,7 +49,6 @@
                 :rules="phoneRules"
                 required label="Phone"
                 name="phone"
-                type="number"
                 id="clientPhone"
                 class="form-control"
                 v-model="newMessage.phone">
@@ -112,6 +111,7 @@ export default {
                 v => v.length <= 15 || 'hum.. this monk smelling somthing strange... must be less than 15 characters',
             ],
             phoneRules: [
+                v => !!v || 'type your phone number',
                 v => v.length <= 12 || 'hum.. this monk smelling somthing strange... must be less than 12 numbers',
             ],
             emailRules: [
@@ -124,15 +124,14 @@ export default {
             ],
         }
     },
-
     methods: {
         addMessage: function(e) {
             messagesRef.push(this.newMessage);
             this.newMessage.first = '';
             this.newMessage.last = '';
-            this.newMessage.content = '';
             this.newMessage.email = '';
             this.newMessage.phone = '';
+            this.newMessage.content = '';
             toastr.success('Horray! message sent successfully');
             this.displayText = 'Nice job!';
             this.nameRules = true;
