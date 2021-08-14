@@ -10,6 +10,9 @@
 .v-badge {
   z-index:99;
 }
+.v-list-item__title {
+    color: #313233;
+}
 </style>
 <template>
   <div id="nav">
@@ -121,11 +124,11 @@
        </v-list-item-title>
      </a>
      </v-list-item>
+     <!-- Logout button -->
      <v-list-item
      @click="logout"
      >Logout
    </v-list-item>
-
    <v-list-item>
      <router-link to="/tutorials">
      <v-btn depressed dark small color="primary">Request Developer</v-btn>
@@ -149,7 +152,12 @@ data: () => ({
         {
           title: "Profile",
           url: "/profile",
-          active: true,
+          //active:null,
+        },
+        {
+          title: "About",
+          url: "/about",
+          //active:null,
         }
       ]
 }),

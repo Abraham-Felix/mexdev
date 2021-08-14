@@ -75,7 +75,7 @@ h4 {
               Our management team is bilingual, as is most of our staff. Our
               two founers have more than 15 years of combined software development experience.</p>
               <br>
-              <h4 class="mt-10"> Vision, Objectives and Services: </h4>
+              <h4 class="mt-10"><b> Vision, Objectives and Services:</b> </h4>
               <p>
               <br>  <br>
               Software development talent is expensive.

@@ -134,16 +134,22 @@ li.number a {
     <div
     class="jobs-card ">
     <div v-if="errored">
-      <p>Woops must of done something wrong... don't worry i will fix it soon! :) </p>
+      <p> Woops! i must of done something wrong... don't worry i will fix it soon! :P </p>
     </div>
-    <div v-else class="Agrid ">
-           <v-progress-circular
-           :size="50"
-           color="blue"
-           indeterminate
-           v-if="loading"
-           class="center my-10"
-         ></v-progress-circular>
+    <div v-else class="Agrid d-grid">
+        <v-col
+          md="6"
+          offset-md="3"
+          v-if="loading"
+          justify="center"
+          class=" ">
+            <v-progress-circular
+             :size="50"
+             color="blue"
+             indeterminate
+            >
+            </v-progress-circular>
+        </v-col>
       <paginate
          v-else
          name="languages"
@@ -173,6 +179,7 @@ li.number a {
    depressed
    elevation="2"
    color="primary"
+   target="_blank"
    v-bind:href="job.url"><span class="mdi mdi-open-in-new"></span> Apply </v-btn>
  </div>
   </div>

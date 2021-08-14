@@ -47,6 +47,9 @@ h4 {
       transition: 1s;
     }
 }
+.break {
+  color: #5388E6;
+}
 </style>
 
 <template>
@@ -56,7 +59,7 @@ h4 {
        <h1>
         <span class="get" transition="scroll-y-transition"> Dream big! </span>
        </h1>
-       <h3> give yourself a break! :D </h3> <br>
+       <h3> give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 mb-15 ">
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
