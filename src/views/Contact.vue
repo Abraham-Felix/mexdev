@@ -16,7 +16,7 @@
 
   <v-card-text>
     <p> send us a request, one our agents will get back to you as soon as posible,
-      our stimate response time is 4hr, sincerly, <a href="mailto:mexdev@fintechhorizonsmedia.com"><b>mexdev support</b>.</a></p>
+      our stimate response time is 4hr, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev support</b>.</a></p>
      <ContactForm/>
     </v-card-text>
   </v-card>
