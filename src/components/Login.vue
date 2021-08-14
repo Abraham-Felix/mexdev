@@ -6,10 +6,10 @@ display:grid;
 
 .v-card {
     margin: 10vw;
-    height: 500px;
-    padding: 2vh;
+    height: auto;
     max-width: 600px !important;
-    width: 300px;
+    width: min-content;
+    width: auto;
     -webkit-box-pack: center;
 }
 
@@ -45,11 +45,6 @@ button {
           </div>
           </div>
           <v-divider/>
-          <div class="d-flex text-center">
-            <p>Or you can
-              <router-link to="/sign-up">create an account.</router-link>
-            </p>
-          </div>
         </div>
     </v-card>
 </v-form>

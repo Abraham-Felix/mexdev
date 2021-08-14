@@ -81,6 +81,45 @@
       min-height: 700px;
     }
   }
+  /* surface DUO*/
+  @media (max-width:540px) {
+    .Amodule {
+      width: 100% !important;
+      margin: 0px;
+    }
+    .j-title {
+      font-size: 4vw ;
+    }
+    .v-application ul, .v-application ol {
+    padding-left: 0px;
+    }
+  }
+  /* iphone 6/7/8+ display*/
+  @media (max-width:414px) {
+    .Amodule {
+      width: 100% !important;
+      margin: 0px;
+    }
+    .j-title {
+      font-size: 4vw ;
+    }
+    .v-application ul, .v-application ol {
+    padding-left: 0px;
+    }
+  }
+  /* iphone x display*/
+  @media (max-width:375px) {
+    .Amodule {
+      width: 100% !important;
+      margin: 0px;
+    }
+    .j-title {
+      font-size: 4vw ;
+    }
+    .v-application ul, .v-application ol {
+    padding-left: 0px;
+    }
+  }
 
   .col-50 {
     width: 50%;

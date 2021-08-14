@@ -1,9 +1,39 @@
+<style scoped>
+.v-card {
+  margin: 10vw;
+  height: auto;
+  max-width: 600px !important;
+  width: min-content;
+  width: auto;
+  -webkit-box-pack: center;
+}
+button {
+  box-shadow: 0px 0px 3px -2px #b6bbc0 ;
+  background: #b6bbc0;
+  color:white;
+  padding:.5vh;
+  border-radius: 10px;
+  margin:2vh;
+}
+.signUp {
+    margin-top:40px;
+  }
+  span {
+  display:block;
+  margin-top: 20px;
+  font-size: 11px;
+  }
+.block {
+  display:block!important;
+}
+</style>
+
 <template>
-<body>
+<div>
  <v-card v-if="authUser" class="center block">
  <h5> sign in as <p>{{authUser.email}} </p> </h5>
  <img :src="authUser.photoURL" width="150">
- <p>What's up, {{authUser.displayName || 'my friend? you can asign your self a name below'}} </p>
+ <p>What's up, {{authUser.displayName || 'brother! you can asign yourself a name below'}} </p>
  <br>
 
 </v-card>
@@ -22,9 +52,9 @@
 </div>
 </div>
 <v-divider/>
- <p class="center">or go to <router-link to="/login">login</router-link>.</p>
+
 </v-card>
-  </body>
+</div>
 </template>
 
 <script>
@@ -74,34 +104,3 @@ import toastr from 'toastr';
 }
 
 </script>
-
-  <style scoped>
-  .v-card {
-    margin: 10vw;
-    height: auto;
-    padding: 2vh;
-    max-width: 600px !important;
-    width: min-content;
-    width: 300px;
-    -webkit-box-pack: center;
-  }
-  button {
-    box-shadow: 0px 0px 3px -2px #b6bbc0 ;
-    background: #b6bbc0;
-    color:white;
-    padding:.5vh;
-    border-radius: 10px;
-    margin:2vh;
-  }
-  .signUp {
-      margin-top:40px;
-    }
-    span {
-    display:block;
-    margin-top: 20px;
-    font-size: 11px;
-    }
-  .block {
-    display:block!important;
-  }
-</style>

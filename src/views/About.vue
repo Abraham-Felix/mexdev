@@ -60,7 +60,7 @@ h4 {
 <template>
     <v-card class="mx-auto">
       <h1> About us </h1>
-      <h4 class="text-center"> Mexdev Coding solutions </h4>
+      <h4 class="text-center"> MXDV </h4>
       <v-card-text class="text-justify p10s">
             <h4><b>About Vision:</b></h4><br>
             <v-divider class="mb-5"></v-divider>
