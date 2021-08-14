@@ -194,7 +194,7 @@
         </div>
         <div class="Fgrid">
             <div class=" col-12 py-10 back">
-                <v-container class="p-box ">
+                <v-container class="p-box mt-n15">
                     <h5>highlights:</h5>
                     <hr>
                     <p class="text--primary">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
