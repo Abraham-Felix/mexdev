@@ -3,8 +3,7 @@
   <v-container class="mt-15" >
    <v-card>
      <h1>
-      <span class="get" transition="scroll-y-transition"> Get </span>
-        your project done! <br>
+      <span class="get" transition="scroll-y-transition"> welcome! </span>
      </h1>
       <v-container class="text-sm-body-2 mb-15 ">
         <v-divider/>
