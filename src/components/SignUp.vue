@@ -40,7 +40,7 @@ button {
  <v-card v-else class="center block">
    <h5> Sign up </h5>
    <form @submit.prevent="register" class="d-sign-up">
- <p class="center">Let's create a new account!</p>
+ <p class="center">Let's create a new account!</p><br>
    <input class="my-5" type="text" v-model="email" placeholder="Email"><br>
    <input class="mb-5" type="password"  @keyup.enter="register" v-model="password" placeholder="Password"><br>
      <v-btn depressed small color="primary" @click="register">sign up</v-btn><br>
