@@ -30,14 +30,7 @@ button {
 
 <template>
 <div>
- <v-card v-if="authUser" class="center block">
- <h5> sign in as <p>{{authUser.email}} </p> </h5>
- <img :src="authUser.photoURL" width="150">
- <p>What's up, {{authUser.displayName || 'brother! you can asign yourself a name below'}} </p>
- <br>
-
-</v-card>
- <v-card v-else class="center block">
+ <v-card class="center block">
    <h5> Sign up </h5>
    <form @submit.prevent="register" class="d-sign-up">
  <p class="center">Let's create a new account!</p><br>
