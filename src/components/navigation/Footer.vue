@@ -39,7 +39,13 @@
 
 <style scoped>
 #footer {
-  align-self: end;
+    align-self: end;
+    position: fixed;
+    width: -webkit-fill-available;
+    /* mozzila firefox */
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
 }
 .footer {
   border-radius: 3px !important;

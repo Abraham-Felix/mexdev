@@ -50,6 +50,10 @@ export default {
 .nav-btns {
   width: 100px;
 }
+#body {
+  position: absolute;
+width: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -58,9 +62,8 @@ export default {
 }
 
 #nav {
-  padding: 30px;
+      height: fit-content;
       z-index: 10;
-
   a {
     font-weight: bold;
     color: #2c3e50;

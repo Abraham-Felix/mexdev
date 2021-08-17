@@ -51,7 +51,7 @@
       <div center >
         <v-img
           alt="Mexdev Small Navbar Logo"
-          class="shrink d-none d-sm-flex"
+          class="shrink d-none t-l d-sm-flex"
           contain
           src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
           transition="scale-transition"

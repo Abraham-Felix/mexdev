@@ -22,10 +22,11 @@ h5 {
   font-size: 16px;
 }
 main  {
-    height: 700px !important;
-    position: relative;
-    display: table;
-    width: -webkit-fill-available;
+  height: max-content;
+  position: relative;
+  width: -webkit-fill-available;
+  margin-top: 64px;
+  margin-bottom: 100px;
 }
 input {
    border-radius: 3px;
