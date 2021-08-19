@@ -28,7 +28,7 @@ button {
 
 <template>
 <v-form class="contactForm">
-    <v-card class=" my-15">
+    <v-card>
         <div class="login">
             <h5>Log In</h5>
             <br>
