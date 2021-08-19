@@ -3,7 +3,10 @@
 width:100%;
 display:grid;
 }
-
+.login {
+  max-width: 200px;
+  margin: auto;
+}
 .v-card {
     margin: 10vw;
     height: auto;
@@ -37,12 +40,12 @@ button {
             </v-text-field>
             <v-btn depressed small color="primary"  @click="login">Log in</v-btn>
             <div class="oneH mt-5">
+              <v-divider class="mb-5"/>
             <div class="grid-50">
             <h5>Other methods</h5>
             <v-btn @click.native="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
           </div>
           </div>
-          <v-divider/>
         </div>
     </v-card>
 </v-form>
