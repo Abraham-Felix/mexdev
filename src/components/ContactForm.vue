@@ -6,9 +6,19 @@
 
 <template>
 
-<div id="app">
-    <div class="panel-heading">
-    </div>
+<v-card>
+  <v-img
+    alt="mexdev logo"
+    class="shrink mr-2 margin center"
+    contain
+    src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
+    transition="scale-transition"
+    width="100"
+  />
+  <v-text>
+  <p> send us a request, one our agents will get back to you as soon as posible,
+    our stimate response time is 4hr, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev support</b>.</a></p>
+  </v-text>
     <div>
         <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
           <div class="d-flex justify-space-between">
@@ -73,7 +83,7 @@
             </v-btn>
         </form>
     </div>
-</div>
+</v-card>
 
 </template>
 
