@@ -180,6 +180,10 @@
   max-width: 300px !important;
   margin: auto;
 }
+.main-img {
+  max-width:600px !important;
+  margin-right: 40px !important;
+}
 </style>
 
 <template>
@@ -189,8 +193,8 @@
         <h1> welcome to showcase </h1>
         <h3> Fintech Horizons Media </h3>
         <v-divider class="w-80 d-flex "></v-divider>
-        <div class="showcase-img" style="width: 800px; height: 500px;">
-            <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Ffhm-mockup.png?alt=media&token=39813dd2-672d-4574-bc0b-afba2d4cb14b" style="object-fit: contain; width: 100%; height: 100%;">
+        <div class="showcase-img">
+            <img class="main-img" src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Ffhm-mockup.png?alt=media&token=39813dd2-672d-4574-bc0b-afba2d4cb14b" style="object-fit: contain; width: 100%; height: 100%;">
         </div>
         <div class="Fgrid">
             <div class=" col-12 py-10 back">
