@@ -1,8 +1,8 @@
 <template>
 <div id="app">
+  <ChatApp/>
   <h1>Contact</h1>
   <ContactForm/>
-  <ChatApp/>
 </div>
 </template>
 

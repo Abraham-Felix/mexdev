@@ -1,14 +1,12 @@
 <style>
-.v-btn {
-  bottom: 3px;
-  z-index: 9
+.chat-btn{
+ z-index: 99;
 }
-
 </style>
 
 <template>
 
-<div id="app">
+<div>
     <v-dialog v-model="dialog" width="500">
         <template v-slot:activator="{ on, attrs }">
             <v-btn
@@ -16,22 +14,16 @@
             dark rounded
             v-bind="attrs"
             v-on="on"
-            class="m-tb-20"
-            fixed right>
-                <v-tooltip left>
-                    <template  v-slot:activator="{ on, attrs }">
-                        <v-icon fab dark v-bind="attrs" v-on="on">
-                            mdi-chat
-                        </v-icon>
-
-                    </template>
-                    <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png"><br>
-                    <v-text>Click & try our Chat Demo APP!</v-text>
-                    <span style="display:inline;">
-
-                      </span>
-                </v-tooltip>
-            </v-btn>
+            class="mb-15 chat-btn"
+            fixed bottom right
+            >
+              <v-icon
+              fab dark
+              v-bind="attrs"
+              v-on="on">
+                mdi-chat
+              </v-icon>
+        </v-btn>
         </template>
         <v-card class="left">
             <v-btn color="primary" @click="dialog = false" width="10px">
