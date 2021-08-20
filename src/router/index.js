@@ -8,6 +8,7 @@ import Tutorials from '../views/Tutorials.vue';
 import Profile from '../views/Profile.vue';
 import Portfolio from '../views/Portfolio.vue';
 import Landing from '../views/Landing.vue';
+import Taskit from '../views/Taskit.vue';
 
 Vue.use(VueRouter)
 
@@ -75,6 +76,14 @@ Vue.use(VueRouter)
     path: '/landing',
     name: 'Landing',
     component: Landing
+  },
+  {
+    path: '/taskit',
+    name: 'Taskit',
+    component: Taskit,
+    meta: {
+      requiresAuth:true
+    }
   },
   {
   path: '/home',

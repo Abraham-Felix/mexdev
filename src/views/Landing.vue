@@ -5,7 +5,7 @@
      <h1>
       <span class="get" transition="scroll-y-transition"> welcome! </span>
      </h1>
-      <v-container class="text-sm-body-2 mb-15 ">
+      <v-container class="text-sm-body-2">
         <v-divider/>
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
           <span class="text--primary">what is mexdev?</span> MexDev is a Latin web/app development agency providing coding solutions as a service for individuals,
@@ -13,11 +13,14 @@
         </p>
         <p class=" center">PS:"se habla español"</p>
       </v-container>
+      <!-- gallery slideshow -->
+      <div class="slideshow">
+        <Slideshow/>
+      </div>
       <div class="center nav-col-mid d-flex justify-center align-center">
         <v-dialog
           transition="dialog-bottom-transition"
           max-width="600"
-
         >
           <template v-slot:activator="{ on, attrs }">
             <v-btn
@@ -69,18 +72,19 @@
           </template>
           <template v-slot:default="dialog">
             <v-card class="my-0">
-
              <v-card-actions class="justify-end">
                <v-btn
                  text
                  @click="dialog.value = false"
-               ><v-icon>mdi-close</v-icon></v-btn>
+               ><v-icon>mdi-close</v-icon>
+               </v-btn>
              </v-card-actions>
                <SignUp/>
             </v-card>
           </template>
         </v-dialog>
       </div>
+
    </v-card>
  </v-container>
 </div>
@@ -92,12 +96,14 @@ import toastr from 'toastr';
 import { mapGetters } from "vuex";
 import Login from "../components/Login.vue";
 import SignUp from "../components/SignUp.vue";
+import Slideshow from "../components/slideshow.vue";
 
 export default {
   name: 'Landing',
   components: {
     Login,
-    SignUp
+    SignUp,
+    Slideshow
   },
   computed: {
     // map `this.user` to `this.$store.getters.user`
@@ -121,6 +127,10 @@ export default {
 </script>
 
 <style>
+.slideshow{
+  padding-top: 50px;
+  display: contents;
+}
 p {
   font-size: 12px !important;
 }
