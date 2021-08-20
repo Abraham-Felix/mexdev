@@ -1,4 +1,7 @@
 <style scoped>
+.my-req-t{
+  margin-right:180px;
+}
 img.preview {
   width:200px;
 }
@@ -36,17 +39,19 @@ padding: 20px;
             v-bind="attrs"
             v-on="on"
             fixed right>
-              <v-tooltip right >
-                  <template  v-slot:activator="{ on, attrs }">
+              <v-tooltip left  class="my-req-t" >
+                  <template   v-slot:activator="{ on, attrs }">
               <v-icon fab dark v-bind="attrs" v-on="on">
                   mdi-eye
               </v-icon>
             </template>
-            <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png">
-            <span style="display:inline;">
-              view entries
-            </span>
-        </v-tooltip>
+             <div >
+              <img class="monk-ico" src="https://celfonica.s3-us-west-1.amazonaws.com/logos/monk-circle+50px.png">
+              <span  style="display:inline;">
+                view entries
+              </span>
+            </div>
+            </v-tooltip>
             </v-btn>
             </template>
             <v-card>
