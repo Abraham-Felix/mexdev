@@ -1,7 +1,7 @@
 <template>
 <div id="app">
-  <v-container class="mt-15" >
-   <v-card class="mt-15">
+  <v-container >
+   <v-card>
      <h1>
       <span class="get" transition="scroll-y-transition"> welcome! </span>
      </h1>
