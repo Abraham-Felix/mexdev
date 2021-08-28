@@ -74,6 +74,9 @@
     margin-top: 100px;
     max-wdth: 1000px;
 }
+.slide-section {
+  display:grid;
+}
 @media screen and (max-width:1400px) {
     .Fgrid {
         max-width: 600px;
@@ -126,9 +129,12 @@
 .Fgrid .v-btn {
     transition: 1s;
 }
+.port-slider {
+  height: auto ;
+}
 @media screen and (max-width:600px) {
   .port-slider {
-    height: 550px !important;
+    height: 550px ;
   }
     .des {
         width: 100%;
@@ -273,8 +279,8 @@
             </v-dialog>
         </v-col>
     </v-row>
-    <div >
-        <v-container class="Gmodule pb-10">
+    <section class="slide-section">
+        <div class="Gmodule pb-10">
             <v-carousel class="port-slider">
                 <v-carousel-item
                 gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
@@ -287,8 +293,8 @@
                     </v-col>
                 </v-carousel-item>
             </v-carousel>
-        </v-container>
-    </div>
+        </div>
+      </section>
 </v-container>
 </template>
 
