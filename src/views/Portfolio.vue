@@ -285,11 +285,11 @@
                 <v-carousel-item
                 gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
                 v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
+                class="pt-5"
                 reverse-transition="fade-transition"
                 transition="fade-transition">
-                    <v-col>
-                        <v-text class="des rounded back text--primary">{{uxitem.title}} </v-text>
-                        <v-text class="des py-10 px-10 back text--primary rounded">{{uxitem.des}}</v-text>
+                    <v-col class="mt-5">
+                        <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}} <br>{{uxitem.des}}</v-text>
                     </v-col>
                 </v-carousel-item>
             </v-carousel>
