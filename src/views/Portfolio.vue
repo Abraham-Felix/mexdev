@@ -130,16 +130,14 @@
     transition: 1s;
 }
 .port-slider {
-  height: auto ;
+  height: auto !important;
 }
 @media screen and (max-width:600px) {
-  .port-slider {
-    height: 550px ;
-  }
+
     .des {
         width: 100%;
         display: inline-block;
-        text-align: justify;
+        text-align: left;
         height: -webkit-fill-available;
         margin-top: -20px !important;
     }
@@ -164,6 +162,9 @@
 .main-img {
   max-width:600px !important;
   margin-right: 40px !important;
+}
+.v-image.v-responsive.v-carousel__item.theme--dark {
+  height: auto !important;
 }
 </style>
 
@@ -285,7 +286,7 @@
                 <v-carousel-item
                 gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
                 v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
-                class="pt-5"
+                class="pt-5 carousel"
                 reverse-transition="fade-transition"
                 transition="fade-transition">
                     <v-col class="mt-5">
