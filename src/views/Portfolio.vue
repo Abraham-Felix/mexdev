@@ -1,46 +1,37 @@
 <style>
-
 .showcase-card {
     width: 1200px !important;
 }
-
 .showcase-img {
     width: auto !important;
     height: auto !important;
 }
-
 .p-box {
     padding: 20px;
     max-height: 232px;
     overflow: auto;
 }
-
 .p-box h5 {
     text-align: left;
 }
-
 .gardient-button {
     padding: 10px;
     border-radius: 10px;
     background: #474747;
     color: #ffffff !important;
 }
-
 .i {
     color: lightgray !important;
     margin-top: 20px;
 }
-
 .i:hover {
     color: darkgray !important;
 }
-
 .module-showcase {}
 
 .Gmodule p {
     color: #474747;
 }
-
 .Gmodule {
     background: white;
     display: inline-table;
@@ -60,14 +51,12 @@
     margin: 0;
     transition: 0.6s;
 }
-
 .Gmodule:hover {
     background: #fbfbfb;
     -webkit-box-shadow: 0px 0px 35px -16px rgba(161, 161, 161, 1);
     -moz-box-shadow: 0px 0px 35px -16px rgba(161, 161, 161, 1);
     box-shadow: 0px 0px 35px -16px rgba(161, 161, 161, 1);
 }
-
 .Fgrid {
     display: flex;
     flex-wrap: wrap;
@@ -81,30 +70,23 @@
     margin-bottom: 50px;
     transition: 1s;
 }
-
 .exespotbody {
     margin-top: 100px;
     max-wdth: 1000px;
 }
-
 @media screen and (max-width:1400px) {
     .Fgrid {
         max-width: 600px;
     }
 }
-
 .v-dialog {
     background: #FFFFFF;
 }
-
 .col-50 {
     width: 50%;
     display: inline-grid;
 }
-
-
 /* toggle css */
-
 .toggle_container {
     margin: 0px auto;
     background: #efefef;
@@ -113,33 +95,27 @@
     border-radius: 30px;
     transition: all .25s;
 }
-
 .toggle_container.active {
     background: #e9ffef;
 }
-
 .box {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .e4 {
     width: 400px;
     margin: auto;
 }
-
 .des {
     transition: .3s;
     background: #313233b0;
     display: inline-grid;
     width: 80%;
 }
-
 .des:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px -5px black;
 }
-
 .uiux-title {
     background: #ffffff;
     box-shadow: 0px 0px 10px -5px gray;
@@ -147,12 +123,13 @@
     padding: 5px;
     width: 100%;
 }
-
 .Fgrid .v-btn {
     transition: 1s;
 }
-
 @media screen and (max-width:600px) {
+  .port-slider {
+    height: 550px !important;
+  }
     .des {
         width: 100%;
         display: inline-block;
@@ -168,11 +145,9 @@
         transition: 1s;
     }
 }
-
 .hover-shadow {
     box-shadow: 0px 0px 10px -7px #5388e6;
 }
-
 .hover-shadow:hover {
     box-shadow: 0px 0px 10px -3px #5388e6;
 }
@@ -187,7 +162,6 @@
 </style>
 
 <template>
-
 <v-container>
     <div class="shocase-card">
         <h1> welcome to showcase </h1>
@@ -252,7 +226,6 @@
             </div>
         </div>
     </div>
-
     <div>
         <h2> Our approach </h2>
         <div class="Fgrid">
@@ -274,7 +247,7 @@
         <v-col cols="auto">
             <v-dialog transition="dialog-bottom-transition" max-width="600">
                 <template v-slot:activator="{ on, attrs }">
-                    <v-btn color="primary" v-bind="attrs" v-on="on">Ui demo</v-btn>
+                    <v-btn class="mb-10" color="primary" v-bind="attrs" v-on="on">Ui demo</v-btn>
                 </template>
                 <template v-slot:default="dialog">
                     <v-card class="px-10">
@@ -300,24 +273,26 @@
             </v-dialog>
         </v-col>
     </v-row>
-    <div class="Fgrid">
+    <div >
         <v-container class="Gmodule pb-10">
-            <v-carousel>
-                <v-carousel-item gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)" v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src" reverse-transition="fade-transition" transition="fade-transition">
+            <v-carousel class="port-slider">
+                <v-carousel-item
+                gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
+                reverse-transition="fade-transition"
+                transition="fade-transition">
                     <v-col>
                         <v-text class="des rounded back text--primary">{{uxitem.title}} </v-text>
-                        <p class="des py-10 px-10 back text--primary rounded">{{uxitem.des}}</p>
+                        <v-text class="des py-10 px-10 back text--primary rounded">{{uxitem.des}}</v-text>
                     </v-col>
                 </v-carousel-item>
             </v-carousel>
         </v-container>
     </div>
 </v-container>
-
 </template>
 
 <script>
-
 export default {
     name: 'Portfolio',
     data() {
