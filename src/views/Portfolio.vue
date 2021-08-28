@@ -129,11 +129,11 @@
 .Fgrid .v-btn {
     transition: 1s;
 }
-.port-slider {
-  height: auto !important;
-}
-@media screen and (max-width:600px) {
 
+@media screen and (max-width:600px) {
+  .port-slider {
+    height: auto !important;
+  }
     .des {
         width: 100%;
         display: inline-block;
