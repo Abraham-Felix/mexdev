@@ -22,7 +22,7 @@
 </style>
 <template>
   <v-container>
-    <TutForm/>
+    <WorkRequest/>
     <TutShowMyTuts/>
     <v-card>
         <p style="text-align: center;">" Fill in your request form start by pressing the <span class="mdi mdi-plus"> ,</span><br>
@@ -34,13 +34,13 @@
 
 <script>
 
-import TutForm from '../components/TutForm.vue';
+import WorkRequest from '../components/WorkRequest.vue';
 import TutShowMyTuts from '../components/TutShowMyTuts.vue';
 
 export default {
   name: 'tutorials',
   components: {
-    TutForm,
+    WorkRequest,
     TutShowMyTuts,
   }
 }

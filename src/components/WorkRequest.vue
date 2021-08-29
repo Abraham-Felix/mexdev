@@ -1,4 +1,5 @@
 <style scoped>
+
 img.preview {
   width:200px;
 }
@@ -8,15 +9,27 @@ img.preview {
 }
 .txt-e-btn {
   padding: 0px !important;
+  margin: 0px 2px;
+  min-width: 20px !important;
+  height: 20px !important;
 }
-.up-pic {
-  display: grid;
-}
-.top {
- top:100px !importants;
+.top-r {
+ text-align: -webkit-right;
 }
 .v-card {
   padding:10px;
+}
+/* upload img css */
+.up-pic {
+  isplay: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.choose-img {
+  text-align-last: center;
+  border: none !important;
+  max-inline-size: -webkit-fill-available;
+  padding: 0px !important;
 }
 </style>
 
@@ -40,21 +53,21 @@ img.preview {
         </template>
         <v-card>
         <div class="panel-heading">
-          <div class="left top">
+          <div class="right top-r">
               <v-btn class="form-close-btn" color="primary" @click="dialog = false" width="10px">
                   <v-icon>
                       mdi-close
                   </v-icon>
               </v-btn>
           </div>
-          <h1>Hire a developer</h1>
-          <h3> send us a request</h3>
+          <h1> Work request</h1>
+          <p class="center">Hire a developer by sending a workrequest</p>
         </div>
         <div>
             <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
               <v-card>
                 <v-divider class="m-tb-20"></v-divider>
-                <h4>contact details:</h4><br>
+                <h4>Contact details:</h4><br>
                 <div class="form-group">
                     <v-text-field :rules="nameRules" required label="First Name" type="text" id="tutorialFirst" class="form-control" v-model="newTutorial.first">
                     </v-text-field>
@@ -69,20 +82,20 @@ img.preview {
                 </div>
                 <div class="form-goup">
                   <!-- Img upload input field-->
-                  <h4 class="m-tb-20">choose picture and click upload</h4><br>
+                  <h4 class="m-tb-20">Select an image, then click upload up arrow</h4><br>
                   <div class="up-pic">
-                  <input color="secondary" class="form-control tertiary"  type="file" @change="previewImage" accept="image/+">
-                  <br><v-btn title="upload" color="primary" class="m-tb-20" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
+                  <input color="secondary" class="form-control tertiary choose-img" type="file" @change="previewImage" accept="image/+">
+                  <v-btn title="upload" color="primary" class="m-tb-20 center" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
                 </div>
                 <div>
-                  <p> Progress: {{uploadValue.toFixed()+"%"}}
+                  <p class="center"> Progress: {{uploadValue.toFixed()+"%"}}
                     <progress :value="uploadValue" max="100"></progress>
                   </p>
                 </div>
               </div>
 
                 <v-divider class="m-tb-20"></v-divider>
-                <h4>work request details </h4><br>
+                <h4>Work request details </h4><br>
                 <div class="form-group">
                     <v-select required label="Technology resquested"
                     id="tutorialLanguage" v-model="newTutorial.language"
@@ -101,59 +114,57 @@ img.preview {
                 </v-card>
   <!--tiptap-->   <v-card >
                   <div >
+
                     <editor-menu-bar v-on:submit.prevent="addTutorial" :editor="editor" v-slot="{ commands, isActive }">
                       <div>
-                      <v-btn :class="{ 'is-active': isActive.bold() }" @click="commands.bold">
-                      <v-icon class="txt-e-btn mdi mdi-format-bold mdi-24px"> </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.bold() }" class="txt-e-btn" @click="commands.bold">
+                      <v-icon class="mdi mdi-format-bold mdi-24px"> </v-icon>
                     </v-btn>
-                    <v-btn :class="{ 'is-active': isActive.strike() }" @click="commands.strike">
-                          <v-icon class="txt-e-btn mdi mdi-format-strikethrough mdi-24px " />
+                    <v-btn :class="{ 'is-active': isActive.strike() }" class="txt-e-btn" @click="commands.strike">
+                          <v-icon class=" mdi mdi-format-strikethrough mdi-24px " />
                         </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.italic() }" @click="commands.italic">
-                        <v-icon class="txt-e-btn mdi mdi-format-italic mdi-24px "> </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.italic() }" class="txt-e-btn" @click="commands.italic">
+                        <v-icon class=" mdi mdi-format-italic mdi-24px "> </v-icon>
                       </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.underline() }" @click="commands.underline">
-                        <v-icon class="txt-e-btn mdi mdi-format-underline mdi-24px "> </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.underline() }" class="txt-e-btn" @click="commands.underline">
+                        <v-icon class=" mdi mdi-format-underline mdi-24px "> </v-icon>
                       </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.code() }" @click="commands.code">
-                        <v-icon class="txt-e-btn mdi mdi-code-tags mdi-24px "> </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.code() }" class="txt-e-btn" @click="commands.code">
+                        <v-icon class=" mdi mdi-code-tags mdi-24px "> </v-icon>
                       </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.paragraph() }" @click="commands.paragraph">
-                        <v-icon class="txt-e-btn mdi mdi-format-paragraph mdi-24px ">  </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.paragraph() }" class="txt-e-btn" @click="commands.paragraph">
+                        <v-icon class=" mdi mdi-format-paragraph mdi-24px ">  </v-icon>
                       </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.bullet_list() }" @click="commands.bullet_list">
-                        <v-icon class="txt-e-btn mdi mdi-format-list-bulleted mdi-24px ">  </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.bullet_list() }" class="txt-e-btn" @click="commands.bullet_list">
+                        <v-icon class=" mdi mdi-format-list-bulleted mdi-24px ">  </v-icon>
                       </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.ordered_list() }" @click="commands.ordered_list">
-                        <v-icon class="txt-e-btn mdi mdi-format-list-numbered mdi-24px ">  </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.ordered_list() }" class="txt-e-btn" @click="commands.ordered_list">
+                        <v-icon class=" mdi mdi-format-list-numbered mdi-24px ">  </v-icon>
                       </v-btn>
-                      <v-btn :class="{ 'is-active': isActive.blockquote() }" @click="commands.blockquote">
-                        <v-icon class="txt-e-btn mdi mdi-code-not-equal-variant mdi-24px ">  </v-icon>
+                      <v-btn :class="{ 'is-active': isActive.blockquote() }" class="txt-e-btn" @click="commands.blockquote">
+                        <v-icon class=" mdi mdi-code-not-equal-variant mdi-24px ">  </v-icon>
                       </v-btn>
-                      <v-btn class="txt-e-btn" :class="{ 'is-active': isActive.heading({ level: 1 }) }" @click="commands.heading({ leve: 1 })">
+                      <v-btn class="txt-e-btn" :class="{ 'is-active': isActive.heading({ level: 1 }) }"  @click="commands.heading({ leve: 1 })">
                         <v-icon > H1 </v-icon>
                       </v-btn>
                       <v-btn class="txt-e-btn" :class="{ 'is-active': isActive.heading({ level: 2 }) }" @click="commands.heading({ leve: 2 })">
                         <v-icon > H2 </v-icon>
                       </v-btn>
-                      <v-btn class="txt-e-btn" :class="{ 'is-active': isActive.heading({ level: 3 }) }" @click="commands.heading({ leve: 3 })">
+                      <v-btn class="txt-e-btn" :class="{ 'is-active': isActive.heading({ level: 3 }) }"  @click="commands.heading({ leve: 3 })">
                         <v-icon > H3 </v-icon>
                       </v-btn>
-                      <v-btn @click="commands.horizontal_rule">
-                          <v-icon class="txt-e-btn mdi mdi-minus mdi-24px"></v-icon>
+                      <v-btn @click="commands.horizontal_rule" class="txt-e-btn">
+                          <v-icon class=" mdi mdi-minus mdi-24px"></v-icon>
                       </v-btn>
-                      <v-btn @click="commands.undo">
-                          <v-icon class="txt-e-btn mdi mdi-undo mdi-24px"></v-icon>
+                      <v-btn @click="commands.undo" class="txt-e-btn">
+                          <v-icon class=" mdi mdi-undo mdi-24px"></v-icon>
                       </v-btn>
-                      <v-btn @click="commands.redo">
-                          <v-icon class="txt-e-btn mdi mdi-redo mdi-24px"></v-icon>
+                      <v-btn @click="commands.redo" class="txt-e-btn">
+                          <v-icon class=" mdi mdi-redo mdi-24px"></v-icon>
                       </v-btn>
-
-
-
-                      <v-divider></v-divider>
-                    </div>
+                      </div>
                     </editor-menu-bar>
+
                     <editor-content  label="Tutorial content"  :editor="editor" v-model="newTutorial.content" />
                   </div>
                   </v-card>
@@ -234,7 +245,7 @@ let db = firebase.database();
 
 let messagesRef = db.ref('tutorials');
 export default {
-    name: 'tutform',
+    name: 'WorkRequest',
     firebase: {
         tutorials: messagesRef
     },
@@ -282,7 +293,7 @@ export default {
                 code: '',
             },
             languages: [
-                'Html', 'CSS', 'VUE', 'Ruby', 'JS', 'SASS', "Web Design", "Other"
+                'Html', 'CSS', 'VUE', 'RoR', 'JS', "Web Design", "Other"
             ],
             nameRules: [
                 v => !!v || 'you must type something',
