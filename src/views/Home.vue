@@ -53,14 +53,14 @@ h4 {
 </style>
 
 <template>
-<div id="app">
-    <v-container class="mt-15" >
-     <v-card class="mt-15">
-       <h1>
+<main>
+  <v-container>
+     <v-card class="mt-5">
+       <h1 class="mt-n3">
         <span class="get" transition="scroll-y-transition"> Dream big! </span>
        </h1>
        <h3> give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
-        <v-container class="text-sm-body-2 mb-15 ">
+        <v-container class="text-sm-body-2 ">
           <v-img src="https://media4.giphy.com/media/oLD4lwEJcbQtY1USD7/giphy.gif"/>
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
@@ -72,10 +72,10 @@ h4 {
           </p>
           <v-btn primary dark class="mt-5" href="contact"> contact </v-btn><br>
           <p class="center mt-10">PS:"se habla español"</p>
-        </v-container>
+          </v-container>
      </v-card>
-   </v-container>
-</div>
+     </v-container>
+</main>
 </template>
 
 <script>
