@@ -8,7 +8,8 @@
 }
 .p-box {
     padding: 20px;
-    max-height: 232px;
+    max-height: 332px;
+    min-height: 280px;
     overflow: auto;
 }
 .p-box h5 {
@@ -27,8 +28,6 @@
 .i:hover {
     color: darkgray !important;
 }
-.module-showcase {}
-
 .Gmodule p {
     color: #474747;
 }
@@ -63,7 +62,6 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 2em;
-    max-width: 1000px !important;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -237,10 +235,10 @@
         <h2> Our approach </h2>
         <div class="Fgrid">
             <div class="Gmodule py-10 back">
-                <div class="p-box">
+                <div class="pa-5">
                     <h3> Organized & clean code. </h3>
-                    <v-divider></v-divider>
-                    <p class="text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity. Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
+                    <v-divider class="mx-15"></v-divider>
+                    <p class="center text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity. Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
                 </div>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38

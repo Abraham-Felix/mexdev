@@ -65,10 +65,10 @@
           <span class="web-nav-btns"> home </span>
         </v-btn>
         </router-link>
-        <router-link to="/portfolio">
-        <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Portfolio">
+        <router-link to="/Showcase">
+        <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Showcase">
           <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
-          <span class="web-nav-btns"> portfolio </span>
+          <span class="web-nav-btns"> Showcase </span>
         </v-btn>
         </router-link>
       <router-link to="/contact">
@@ -149,8 +149,8 @@ export default {
 data: () => ({
   items: [
         {
-          title: "Profile",
-          url: "/profile",
+          title: "Showcase",
+          url: "/showcase",
           //active:null,
         },
         {
