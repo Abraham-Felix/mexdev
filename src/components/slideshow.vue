@@ -142,18 +142,18 @@ animation-delay: 0;
   <div id="cf4a" >
      <img
      id="img"
-     src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Ffhm-mockup.png?alt=media&token=39813dd2-672d-4574-bc0b-afba2d4cb14b">
+     src="../assets/fhm-mockup.png">
      <img
        id="img"
-       src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2FLaguna%20Shores%20Resort%20-%20responsive%20mockup.png?alt=media&token=a25608b9-e68f-4992-8a3b-35cca734b5e1"
+       src="../assets/ls-mockup.png"
        >
      <img
        id="img"
-       src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2FCCP%20-%20responsive%20mockup.png?alt=media&token=28e626bc-6846-417e-9f7f-142ef477c52e"
+       src="../assets/ccp-mockup.png"
        >
      <img
        id="img"
-       src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Fdealfunnel%20-%20responsive%20mockup.png?alt=media&token=2a305f96-61d9-43ef-a975-24deff614a6b"
+       src="../assets/df-mockup.png"
        >
   </div>
 </template>
