@@ -138,7 +138,7 @@
         width: 100%;
         display: inline-block;
         text-align: left;
-        height: -webkit-fill-available;
+        height: max-content;
         margin-top: -20px !important;
     }
     .Fgrid .v-btn {
