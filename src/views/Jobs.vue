@@ -155,7 +155,7 @@ li.number {
     margin-right: 3px;
     box-shadow: 0px 0px 4px -2px #313233;
     padding: 3px;
-    width: 25px;
+    width: 35px;
     background: #313233;
     border-radius:3px;
 }
