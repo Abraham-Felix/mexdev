@@ -71,18 +71,17 @@ h4 {
             </p>
             <h4 class="mt-10"><b>About the project:</b></h4><br>
             <v-divider></v-divider><br>
-            <p>MexDev.io Is a remote agency with founders in the USA and MX.
-              Our management team is bilingual, as is most of our staff. Our
-              two founers have more than 15 years of combined software development experience.</p>
+            <p>MexDev.io Is a brand new fresh remote project with founders in the USA and MX.
+              we are bilingual. we got more than 15 years of combined software development experience.</p>
               <br>
-              <h4 class="mt-10"><b> Vision, Objectives and Services:</b> </h4>
+              <h4 class="mt-10"><b>Project Vision, Objectives and Services:</b> </h4>
               <p>
               <br>  <br>
               Software development talent is expensive.
               Hiring new developers for a project is risky too, as a developer's skills may not
               match their resume and because some engineers fail to keep current on the latest languages,
               platforms and best practices. As remote work expands, so do the number of applicants,
-              creating even greater risk for hiring managers.
+              creating even greater risk for hiring managers. so why not hire a team like Mexdev?
               </p>
               <p>
               <br>  <br>
@@ -96,13 +95,13 @@ h4 {
 <v-list-item>
       <v-list-item-content>
         <v-list-item class="text-sm-left">● Mexdev provides an alternative to hiring new personnel for large and small projects.</v-list-item>
-        <v-list-item>● Our teams are available for hire for projects of any length.</v-list-item>
+        <v-list-item>● Our team is available for hire for projects of any length, by streching our learning curve or adding new members.</v-list-item>
         <v-list-item>● We offer simple, clear and affordable pricing on all of our work.</v-list-item>
-        <v-list-item>● Mexdev provides transparency, value, trust and flexibility. We never take commissions, instead we serve as a trusted partner.</v-list-item>
+        <v-list-item>● Mexdev provides transparency, value, trust and flexibility in the developtment proccess.</v-list-item>
         <v-list-item>● We help you achieve your goals without the need to make expensive new hires that can harm your bottom line, now and for years to come.</v-list-item>
        </v-list-item-content>
 </v-list-item>
-<h4 class="mt-10"><b>Team Leads:</b></h4><br>
+<h4 class="mt-10"><b>Project Leads:</b></h4><br>
 <v-divider></v-divider><br>
       </v-card-text>
             <div>
