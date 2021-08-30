@@ -85,7 +85,7 @@ h4 {
               </p>
               <p>
               <br>  <br>
-              Our goal is to deliver high-quality nearshoring and software development at an affordable
+              Our goal is to deliver high-quality ideas and software development at an affordable
               price, from developers whose skills and productivity are regularly evaluated. We use agile
               methodologies, secure information exchange, and productivity and skills assessment tools to
               eliminate the risks of hiring outside help.
