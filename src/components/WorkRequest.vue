@@ -287,7 +287,7 @@ export default {
                 last: '',
                 language: [],
                 title: '',
-                content: '<br>Enter content here to create space use double tap :) <br>👏',
+                content: '<br>Enter content here, to create space use double tap :) ps: working on it<br>👏',
                 date: '',
                 picture:'',
                 code: '',
