@@ -288,7 +288,7 @@
                 reverse-transition="fade-transition"
                 transition="fade-transition">
                     <v-col class="mt-5">
-                        <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}} <br>{{uxitem.des}}</v-text>
+                        <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}} <v-divider class="mt-2"/> <br>{{uxitem.des}}</v-text>
                     </v-col>
                 </v-carousel-item>
             </v-carousel>
@@ -310,7 +310,7 @@ export default {
                 },
                 uxitems: [{
                     src: require("@/assets/Prototyping.png"),
-                    title: 'Prototyping',
+                    title: 'Prototyping <v-divider/>',
                     des: 'A simulation or sample version of a final product, which is used for testing prior to launch. The goal of a prototype is to test products & product ideas before sinking lots of time and money into the final product. Prototyping is essential for resolving usability issues before launch. It can also reveal areas that need improvement. Once a draft of your product idea is in the hands of real users, you will finally see how they want to use the product. You can then go back and adjust your initial guesswork.'
                 }, {
                     src: require("@/assets/Moodded.png"),
