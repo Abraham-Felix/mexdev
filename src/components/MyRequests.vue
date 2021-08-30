@@ -12,6 +12,9 @@ padding: 20px;
 .v-card{
   padding:10px;
 }
+.top-r {
+ text-align: -webkit-right;
+}
 .v-btn {
     height: 50px !important;
     min-width: 50px !important;
@@ -55,7 +58,7 @@ padding: 20px;
             </v-btn>
             </template>
             <v-card>
-            <div class="left">
+            <div class="top-r">
                 <v-btn class="form-close-btn"  color="primary" @click="dialog = false" width="5px">
                     <v-icon>
                         mdi-close

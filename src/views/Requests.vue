@@ -23,7 +23,7 @@
 <template>
   <v-container>
     <WorkRequest/>
-    <TutShowMyTuts/>
+    <MyRequests/>
     <v-card>
         <p style="text-align: center;">" Fill in your request form start by pressing the <span class="mdi mdi-plus"> ,</span><br>
          you will be contacted shortly by one of our developers "</p>
@@ -35,13 +35,13 @@
 <script>
 
 import WorkRequest from '../components/WorkRequest.vue';
-import TutShowMyTuts from '../components/TutShowMyTuts.vue';
+import MyRequests from '../components/MyRequests.vue';
 
 export default {
   name: 'Requests',
   components: {
     WorkRequest,
-    TutShowMyTuts,
+    MyRequests,
   }
 }
 
