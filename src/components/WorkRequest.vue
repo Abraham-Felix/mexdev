@@ -51,10 +51,10 @@ img.preview {
                 </v-tooltip>
             </v-btn>
         </template>
-        <v-card>
+        <v-card class="mt-0">
         <div class="panel-heading">
           <div class="right top-r">
-              <v-btn class="form-close-btn" color="primary" @click="dialog = false" width="10px">
+              <v-btn class="form-close-btn"  @click="dialog = false" width="10px">
                   <v-icon>
                       mdi-close
                   </v-icon>

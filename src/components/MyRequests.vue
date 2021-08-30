@@ -19,9 +19,6 @@ padding: 20px;
     height: 50px !important;
     min-width: 50px !important;
 }
-#my-tutorials {
-  margin-top: 20px;
-}
 .tech-requested {
   display: inline;
 }
@@ -57,19 +54,16 @@ padding: 20px;
             </v-tooltip>
             </v-btn>
             </template>
-            <v-card>
-            <div class="top-r">
-                <v-btn class="form-close-btn"  color="primary" @click="dialog = false" width="5px">
-                    <v-icon>
-                        mdi-close
-                    </v-icon>
-                </v-btn>
-            </div>
-            <v-container id="my-tutorials">
-    <v-card>
+            <v-card class="mt-0">
+      <div class="top-r">
+          <v-btn class="form-close-btn"  @click="dialog = false" width="5px">
+              <v-icon>
+                  mdi-close
+              </v-icon>
+          </v-btn>
+      </div>
       <h1>My requests</h1>
-    </v-card>
-
+      <p class="center">View your requests</p>
       <!-- loop over the tutorials -->
       <div v-for="(tutorial, key) in authUser.myTutorial" :key="key">
         <v-card>
@@ -93,8 +87,7 @@ padding: 20px;
          <!-- and so on -->
         </v-card>
       </div>
-    </v-container>
-  </v-card>
+    </v-card>
 </v-dialog>
 </template>
 
