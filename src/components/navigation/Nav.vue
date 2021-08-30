@@ -149,8 +149,8 @@ export default {
 data: () => ({
   items: [
         {
-          title: "Showcase",
-          url: "/showcase",
+          title: "Profile",
+          url: "/profile",
           //active:null,
         },
         {
