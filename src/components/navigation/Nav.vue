@@ -129,7 +129,7 @@
      >Logout
    </v-list-item>
    <v-list-item>
-     <router-link to="/tutorials" class="px-5">
+     <router-link to="/requests" class="px-5">
      <v-btn depressed dark small color="primary">Request Developer</v-btn>
      </router-link>
    </v-list-item>

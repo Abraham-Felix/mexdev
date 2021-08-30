@@ -4,11 +4,12 @@ import VueRouter from 'vue-router';
 
 import Contact from '../views/Contact.vue';
 import Jobs from '../views/Jobs.vue';
-import Tutorials from '../views/Tutorials.vue';
+import Requests from '../views/Requests.vue';
 import Profile from '../views/Profile.vue';
 import Portfolio from '../views/Portfolio.vue';
 import Landing from '../views/Landing.vue';
 import Taskit from '../views/Taskit.vue';
+import Virtualdom from '../school/virtualdom.vue';
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,14 @@ Vue.use(VueRouter)
       path: '/',
       redirect: '/home'
     },
+    {
+      path: '/school/virtualdom',
+      name: 'virtualdom',
+      component: Virtualdom,
+      meta: {
+        requiresAuth:true
+      }
+    },
   {
     path: '/contact',
     name: 'Contact',
@@ -30,9 +39,9 @@ Vue.use(VueRouter)
     }
   },
   {
-    path: '/tutorials',
-    name: 'Tutorials',
-    component: Tutorials,
+    path: '/requests',
+    name: 'Requests',
+    component: Requests,
     meta: {
       requiresAuth:true
     }

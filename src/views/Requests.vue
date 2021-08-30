@@ -38,7 +38,7 @@ import WorkRequest from '../components/WorkRequest.vue';
 import TutShowMyTuts from '../components/TutShowMyTuts.vue';
 
 export default {
-  name: 'tutorials',
+  name: 'Requests',
   components: {
     WorkRequest,
     TutShowMyTuts,
