@@ -175,7 +175,7 @@
         <h3> Fintech Horizons Media </h3>
         <v-divider class="w-80 d-flex "></v-divider>
         <div class="showcase-img">
-            <img class="main-img" src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2Ffhm-mockup.png?alt=media&token=39813dd2-672d-4574-bc0b-afba2d4cb14b" style="object-fit: contain; width: 100%; height: 100%;">
+            <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
         </div>
         <div class="Fgrid">
             <div class=" col-12 py-10 back">
@@ -196,7 +196,7 @@
                 <h3> Laguna Shores Resorts </h3>
                 <v-divider></v-divider>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2FLaguna%20Shores%20Resort%20-%20responsive%20mockup.png?alt=media&token=a25608b9-e68f-4992-8a3b-35cca734b5e1" style="object-fit: contain; width: 100%; height: 100%;">
+                    <img src="../assets/ls-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
                 <div class="p-box">
                     <h5>highlights:</h5>
@@ -216,7 +216,7 @@
                 <h3> Classic Car Pal </h3>
                 <v-divider></v-divider>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/showcase%2FCCP%20-%20responsive%20mockup.png?alt=media&token=28e626bc-6846-417e-9f7f-142ef477c52e" style="object-fit: contain; width: 100%; height: 100%;">
+                    <img src="../assets/ccp-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
                 <div class="p-box">
                     <h5>highlights:</h5>
