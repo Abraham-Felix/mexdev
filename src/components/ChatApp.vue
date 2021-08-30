@@ -2,6 +2,9 @@
 .chat-btn{
  z-index: 99;
 }
+.top-r {
+ text-align: -webkit-right;
+}
 </style>
 
 <template>
@@ -25,15 +28,15 @@
               </v-icon>
         </v-btn>
         </template>
-        <v-card class="left">
-            <v-btn color="primary" @click="dialog = false" width="10px">
-                <v-icon>
-                    mdi-close
-                </v-icon>
-            </v-btn>
+        <v-card class="my-0 left">
+          <div class="top-r">
+              <v-btn class="form-close-btn"  @click="dialog = false" width="5px">
+                  <v-icon>
+                      mdi-close
+                  </v-icon>
+              </v-btn>
+          </div>
             <div id="chat" class="container">
-              <h1>Vue.js Chat App</h1>
-
               <v-card  padding="10px" class="pa-3 m-tb-20 form-group">
                 <h4>Welcome</h4>
                 <p>Hello, can we help you with something? </p>
