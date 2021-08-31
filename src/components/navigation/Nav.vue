@@ -175,7 +175,7 @@ logout: function() {
   .catch (err =>
     toastr.error('Yikes! '+ err.message))
   .catch (
-    toastr.success('You have logged out, Thanks for using Mexdev app, see ya!'))
+    toastr.success('You have logged out, Thanks for using Mexdev app, have a good day!'))
 },
 
 },
