@@ -62,9 +62,10 @@ h4 {
        <h3> give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 ">
           <v-img src="https://media4.giphy.com/media/oLD4lwEJcbQtY1USD7/giphy.gif"/>
+          <p class="center">we like to make our day easier, with funny moments :)</p>
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-            <span class="text--primary">what is mexdev?</span> MexDev is a USA and Mexico web/app development agency providing coding solutions as a service for individuals,
+            <span class="text--primary">what is mexdev?</span> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
             companies & contractors, upgrading into the online business model or updating their current app progress.
           </p>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
