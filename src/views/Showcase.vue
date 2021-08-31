@@ -181,7 +181,7 @@
                     <h5>highlights:</h5>
                     <hr>
                     <p class="text--primary">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
-                        app built with Ionic/ Vue.js.
+                        app project built with Ionic/ Vue.js.
                     </p>
                     <p class="text--primary"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
                 </v-container>
