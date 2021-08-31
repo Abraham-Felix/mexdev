@@ -68,7 +68,7 @@ h4 {
             companies & contractors, upgrading into the online business model or updating their current app progress.
           </p>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-            <span class="text--primary">know more?</span> MexDev is backed up by experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
+            <span class="text--primary">know more?</span> MexDev is backed up by 2 experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
           </p>
           <v-btn primary dark class="mt-5" href="contact"> contact </v-btn><br>
           <p class="center mt-10">PS:"se habla español"</p>
