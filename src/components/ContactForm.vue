@@ -16,8 +16,7 @@
     width="100"
   />
   <v-text>
-  <p> send us a request, one our developers will get back to you as soon as posible,
-    our stimate response time is 4hr, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev support</b>.</a></p>
+  <p> send us a request, one our developers will get back to you as soon as posible, we will do our best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev support</b>.</a></p>
   </v-text>
     <div>
         <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
