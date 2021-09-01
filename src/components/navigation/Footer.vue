@@ -48,6 +48,30 @@
   background-size: cover;
   clip-path: polygon(100% 100%, 100% 10%, 0% 80%, 0% 100%);
 }
+.rainbowelement1 {
+    background: linear-gradient(270deg, #cc298c, #f5b30d, #0df516, #0dabf5, #ac0df5);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 #footer {
     align-self: end;
     position: fixed;
