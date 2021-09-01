@@ -84,13 +84,15 @@
           </template>
         </v-dialog>
       </div>
-
+     <h2 style="color:dodgerblue">Goals met: 5 happy clients!</h2>
    </v-card>
  </v-container>
+ <AnimatedSlide class="anislide"/>
 </div>
 </template>
 
 <script>
+import AnimatedSlide from '../components/AnimatedSlide.vue'
 import firebase from 'firebase';
 import toastr from 'toastr';
 import { mapGetters } from "vuex";
@@ -103,7 +105,8 @@ export default {
   components: {
     Login,
     SignUp,
-    Slideshow
+    Slideshow,
+    AnimatedSlide
   },
   computed: {
     // map `this.user` to `this.$store.getters.user`
@@ -170,5 +173,13 @@ h4 {
       width:80%;
       transition: 1s;
     }
+}
+.anislide {
+  margin-bottom: -80px;
+}
+@media (max-width:400px){
+  .anislide {
+    margin-bottom: -180px;
+  }
 }
 </style>
