@@ -8,6 +8,9 @@ h1 {
 h4 {
   text-align: revert !important;
 }
+.anislide {
+  margin-bottom: -80px;
+}
 .get {
   font-size: min(3rem, 200%, 20vw);
   color: #5388E6;
@@ -76,11 +79,18 @@ h4 {
           </v-container>
      </v-card>
      </v-container>
+
+       <AnimatedSlide class="anislide"/>
 </main>
 </template>
 
 <script>
+import AnimatedSlide from '../components/AnimatedSlide.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    AnimatedSlide,
+  }
 }
 </script>
