@@ -164,6 +164,13 @@
 .v-image.v-responsive.v-carousel__item.theme--dark {
   height: auto !important;
 }
+.t-c {
+  text-align:center;
+  color: dodgerblue;
+}
+.main-pbox {
+  max-width:600px ;
+}
 </style>
 
 <template>
@@ -180,7 +187,7 @@
         </div>
         <div class="Fgrid">
             <div class=" col-12 py-10 back">
-                <v-container class="p-box mt-n15">
+                <v-container class="p-box main-pbox mt-n15">
                     <h5>highlights:</h5>
                     <hr>
                     <p class="text--primary">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
@@ -189,9 +196,11 @@
                     <p class="text--primary"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
                 </v-container>
                 <v-btn align-center depressed elevation="2" color="primary" class="gardient-button" target="_blank" href="http://fintechhorizonsmedia.com">
-                    <p>We are out of money! help us get back on track! </p>
-                    <p>We can sell the project & if posible work for you in it</p>
-                </v-btn>
+                  site is down
+                </v-btn><br>
+                <b>
+                <p class="center t-c">We can sell the project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
+                </b>
             </div>
             <div class="Gmodule py-10 back">
                 <h3> Laguna Shores Resorts </h3>

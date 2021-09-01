@@ -112,7 +112,7 @@ h4 {
     <div>
         <div class="col-100">
             <div class="col-b">
-                <v-img alt="Abraham Felix" class="shrink mr-2 margin center" contain src="" transition="scale-transition" width="100" />
+                <v-img alt="Abraham Felix" class="shrink mr-2 margin center" contain src="../assets/abraham-felix.png" transition="scale-transition" width="100" />
                 <br>
                 <p> Abraham Felix </p>
                 <br>
@@ -122,7 +122,7 @@ h4 {
             <v-divider vertical class="gray"></v-divider>
 
             <div class="col-b">
-                <v-img alt="Abraham Felix" class="shrink mr-2 margin center" contain src="" transition="scale-transition" width="100" />
+                <v-img alt="Abraham Felix" class="shrink mr-2 margin center" contain src="../assets/KevinNaf.png" transition="scale-transition" width="100" />
                 <br>
                 <p> Kevin Nafziger </p>
                 <br>

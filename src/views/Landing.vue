@@ -85,7 +85,7 @@
         <Slideshow/>
       </div>
 
-     <h2 style="color:dodgerblue">Goals met: 5 happy clients!</h2>
+     <h2 style="color:dodgerblue">Goals met: 5 happy international clients!</h2>
    </v-card>
  </v-container>
  <AnimatedSlide class="anislide"/>
