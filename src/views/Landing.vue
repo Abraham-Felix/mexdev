@@ -5,6 +5,73 @@
      <h1>
       <span class="get" transition="scroll-y-transition"> welcome! </span>
      </h1>
+     <div class="center nav-col-mid d-flex justify-center align-center">
+       <v-dialog
+         transition="dialog-bottom-transition"
+         max-width="600"
+       >
+         <template v-slot:activator="{ on, attrs }">
+           <v-btn
+             v-if="!user.loggedIn"
+             class="mx-10 nav-btns"
+             dark
+             small
+             title="login"
+             color="primary"
+             v-bind="attrs"
+             v-on="on"
+           >
+           <span class="web-nav-btns"> login </span>
+           <span class="mobile-icons mdi mdi-account-key"></span></v-btn>
+         </template>
+         <template v-slot:default="dialog">
+           <v-card class="my-0">
+             <v-card-actions class="justify-end">
+               <v-btn
+                 text
+                 @click="dialog.value = false"
+               ><v-icon>mdi-close</v-icon></v-btn>
+             </v-card-actions>
+             <v-card-text>
+               <!-- Login Component  -->
+             <Login/>
+             </v-card-text>
+           </v-card>
+         </template>
+       </v-dialog>
+       <v-dialog
+         transition="dialog-bottom-transition"
+         max-width="600"
+       >
+         <template v-slot:activator="{ on, attrs }">
+           <v-btn
+           v-if="!user.loggedIn"
+           class="mx-10 nav-btns"
+           dark
+           small
+           title="sign up"
+           color="primary"
+           v-bind="attrs"
+           v-on="on"
+           >
+           <span class="mobile-icons mdi mdi-account-edit"></span>
+           <span class="web-nav-btns"> sign up</span>
+         </v-btn>
+         </template>
+         <template v-slot:default="dialog">
+           <v-card class="my-0">
+            <v-card-actions class="justify-end">
+              <v-btn
+                text
+                @click="dialog.value = false"
+              ><v-icon>mdi-close</v-icon>
+              </v-btn>
+            </v-card-actions>
+              <SignUp/>
+           </v-card>
+         </template>
+       </v-dialog>
+     </div>
       <v-container class="text-sm-body-2">
         <v-divider/>
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
@@ -17,73 +84,7 @@
       <div class="slideshow">
         <Slideshow/>
       </div>
-      <div class="center nav-col-mid d-flex justify-center align-center">
-        <v-dialog
-          transition="dialog-bottom-transition"
-          max-width="600"
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              v-if="!user.loggedIn"
-              class="mx-10 nav-btns"
-              dark
-              small
-              title="login"
-              color="primary"
-              v-bind="attrs"
-              v-on="on"
-            >
-            <span class="web-nav-btns"> login </span>
-            <span class="mobile-icons mdi mdi-account-key"></span></v-btn>
-          </template>
-          <template v-slot:default="dialog">
-            <v-card class="my-0">
-              <v-card-actions class="justify-end">
-                <v-btn
-                  text
-                  @click="dialog.value = false"
-                ><v-icon>mdi-close</v-icon></v-btn>
-              </v-card-actions>
-              <v-card-text>
-                <!-- Login Component  -->
-              <Login/>
-              </v-card-text>
-            </v-card>
-          </template>
-        </v-dialog>
-        <v-dialog
-          transition="dialog-bottom-transition"
-          max-width="600"
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-            v-if="!user.loggedIn"
-            class="mx-10 nav-btns"
-            dark
-            small
-            title="sign up"
-            color="primary"
-            v-bind="attrs"
-            v-on="on"
-            >
-            <span class="mobile-icons mdi mdi-account-edit"></span>
-            <span class="web-nav-btns"> sign up</span>
-          </v-btn>
-          </template>
-          <template v-slot:default="dialog">
-            <v-card class="my-0">
-             <v-card-actions class="justify-end">
-               <v-btn
-                 text
-                 @click="dialog.value = false"
-               ><v-icon>mdi-close</v-icon>
-               </v-btn>
-             </v-card-actions>
-               <SignUp/>
-            </v-card>
-          </template>
-        </v-dialog>
-      </div>
+
      <h2 style="color:dodgerblue">Goals met: 5 happy clients!</h2>
    </v-card>
  </v-container>
