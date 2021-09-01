@@ -264,7 +264,8 @@
     </div>
       <div class="design-card">
       <v-row justify="space-around">
-          <v-col cols="2">
+        <v-hover>
+          <v-col cols="12" sm="6" class="pa-10"  :elevation="hover ? 24 : 6">
             <h2> Ui/Ux </h2>
           <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif"/>
           <p class="center">we like to make our day easier, with funny moments :)</p>
@@ -308,7 +309,8 @@
                   </template>
               </v-dialog>
           </v-col>
-          <v-col cols="6">
+        </v-hover>
+          <v-col cols="12" sm="6" >
             <h2> Ui/Ux Key Concepts </h2>
           <section class="slide-section">
               <div class="Gmodule pb-10">
@@ -328,9 +330,7 @@
             </section>
             </v-col>
       </v-row>
-
   </div>
-
 </v-container>
 </template>
 
