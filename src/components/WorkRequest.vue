@@ -86,9 +86,9 @@ img.preview {
                 <div class="form-goup">
                   <!-- Img upload input field-->
                   <h4 class="m-tb-20">Select an image, then click upload up arrow</h4><br>
-                  <div class="up-pic">
+                  <div class="up-pic ">
                   <input color="secondary" class="form-control tertiary choose-img" type="file" @change="previewImage" accept="image/+">
-                  <v-btn title="upload" color="primary" class="m-tb-20 center" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
+                  <v-btn title="upload" color="primary" class="m-tb-20 center rainbow" @click=" onUpload();"><v-icon>mdi-upload</v-icon></v-btn>
                 </div>
                 <div>
                   <p class="center"> Progress: {{uploadValue.toFixed()+"%"}}
@@ -203,7 +203,7 @@ img.preview {
                 </v-card>
 
                 <!-- Form push btn -->
-                <v-btn class="m-tb-20" @click="markcompleted();" type="submit" small color="primary" dark>
+                <v-btn class="m-tb-20 rainbow" @click="markcompleted();" type="submit" small color="primary" dark>
                     {{ displayText }}
                 </v-btn>
             </form>
@@ -296,7 +296,7 @@ export default {
                 code: '',
             },
             languages: [
-                'Html', 'CSS', 'VUE', 'RoR', 'JS', "Web Design", "Other"
+                'Html', 'CSS', 'VUE', 'RoR', 'UX/UI','Front-end', "Web Design", "Other"
             ],
             nameRules: [
                 v => !!v || 'you must type something',

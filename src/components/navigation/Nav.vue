@@ -1,4 +1,7 @@
 <style>
+.rainbow {
+  background: linear-gradient(90deg, rgba(38,145,83,1) 0%, rgba(154,255,63,1) 23%, rgba(83,136,230,1) 50%, rgba(123,0,136,1) 77%, rgba(255,25,25,1) 100%);
+}
 .v-application .d-flex {
     display: flex !important;
     align-self: center;
@@ -140,7 +143,7 @@
    </v-list-item>
    <v-list-item>
      <router-link to="/requests" class="px-5">
-     <v-btn depressed dark small color="primary">Request Developer</v-btn>
+     <v-btn depressed dark small class="rainbow" color="primary">Request Developer</v-btn>
      </router-link>
    </v-list-item>
    </v-list>
