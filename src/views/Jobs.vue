@@ -96,6 +96,11 @@
   }
   /* iphone 6/7/8+ display*/
   @media (max-width:414px) {
+    li.number {
+        width: 20px !important;
+        height: 20px !important;
+        padding: 0px !important;
+    }
     .Amodule {
       width: 100% !important;
       margin: 0px;
