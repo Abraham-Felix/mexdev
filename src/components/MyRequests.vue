@@ -2,6 +2,9 @@
 .my-req-t{
   margin-right:180px;
 }
+.mr-btn {
+  margin-top:100px;
+}
 img.preview {
   width:200px;
 }
@@ -32,7 +35,7 @@ padding: 20px;
     <v-dialog v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
             <v-btn
-            top class="mt-15"
+            top class="mr-btn"
             style="z-index:9;"
             color="primary"
              rounded

@@ -1,6 +1,7 @@
 <style>
 .chat-btn{
  z-index: 99;
+ margin-bottom:100px !important;
 }
 .top-r {
  text-align: -webkit-right;
@@ -13,11 +14,11 @@
     <v-dialog v-model="dialog" width="500">
         <template v-slot:activator="{ on, attrs }">
             <v-btn
-            color="orange darken-5"
+            color="lime darken-5"
             dark rounded
             v-bind="attrs"
             v-on="on"
-            class="mb-15 chat-btn"
+            class="chat-btn"
             fixed bottom right
             >
               <v-icon

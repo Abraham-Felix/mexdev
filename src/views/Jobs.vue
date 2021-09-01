@@ -168,7 +168,7 @@ li.number a {
 </style>
 <template>
   <div>
-    <div>
+    <div><br>
       <h1 color="primary" class="mb-10 mt-5"> Front end & Back end Jobs </h1>
     <div
     class="jobs-card ">

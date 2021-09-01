@@ -31,13 +31,16 @@ img.preview {
   max-inline-size: -webkit-fill-available;
   padding: 0px !important;
 }
+.wr-btn {
+  margin-top:100px;
+}
 </style>
 
 <template>
   <v-container id="app">
     <v-dialog class="v-card" v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
-            <v-btn top class="mt-15" style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
+            <v-btn top class="wr-btn" style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
                 <v-tooltip right >
                     <template  v-slot:activator="{ on, attrs }">
                         <v-icon fab v-bind="attrs" v-on="on">
