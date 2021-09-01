@@ -1,7 +1,7 @@
 <template>
   <section id="animate-area">
         <div  class="newfeaturesheader">
-         <v-img src="../assets/CloudSlideTech.png" />
+         <v-img class="mx-5" src="../assets/CloudSlideTech.png" />
       </div>
     </section>
 </template>
