@@ -50,6 +50,12 @@ h4 {
 .break {
   color: #5388E6;
 }
+.hrain {
+    transition: all 1s;
+}
+.hrain:hover {
+  background: linear-gradient(90deg, rgba(38,145,83,1) 0%, rgba(154,255,63,1) 23%, rgba(83,136,230,1) 50%, rgba(123,0,136,1) 77%, rgba(255,25,25,1) 100%);
+}
 </style>
 
 <template>
@@ -71,7 +77,7 @@ h4 {
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
             <span class="text--primary">know more?</span> MexDev is backed up by 2 experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
           </p>
-          <v-btn primary dark class="mt-5" href="contact"> contact </v-btn><br>
+          <v-btn primary dark class="mt-5 hrain" href="contact"> contact </v-btn><br>
           <p class="center mt-10">PS:"se habla español"</p>
           </v-container>
      </v-card>
