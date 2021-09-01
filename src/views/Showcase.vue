@@ -260,7 +260,7 @@
           <v-col cols="auto">
               <v-dialog transition="dialog-bottom-transition" max-width="600">
                   <template v-slot:activator="{ on, attrs }">
-                      <v-btn class="mt-5" color="primary" v-bind="attrs" v-on="on">Ui demo</v-btn>
+                      <v-btn class="mt-5" color="primary" v-bind="attrs" v-on="on">UX/UI showcase</v-btn>
                   </template>
                   <template v-slot:default="dialog">
                       <v-card class="px-5">
