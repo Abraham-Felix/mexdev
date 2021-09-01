@@ -50,12 +50,6 @@ h4 {
 .break {
   color: #5388E6;
 }
-.hrain {
-    transition: all 1s;
-}
-.hrain:hover {
-  background: linear-gradient(90deg, rgba(38,145,83,1) 0%, rgba(154,255,63,1) 23%, rgba(83,136,230,1) 50%, rgba(123,0,136,1) 77%, rgba(255,25,25,1) 100%);
-}
 </style>
 
 <template>
