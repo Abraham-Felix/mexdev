@@ -171,7 +171,10 @@
     <div class="shocase-card">
         <h1> welcome to showcase </h1>
         <h3> Fintech Horizons Media </h3>
-        <v-divider class="w-80 d-flex "></v-divider>
+        <v-divider class="w-80 d-flex mb-10"></v-divider>
+        <v-btn class="rainbow" href="/contact">
+        <b class="center white">For sale - send us a message</b>
+        </v-btn>
         <div class="showcase-img">
             <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
         </div>
@@ -185,9 +188,9 @@
                     </p>
                     <p class="text--primary"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
                 </v-container>
-                <br>
                 <v-btn align-center depressed elevation="2" color="primary" class="gardient-button" target="_blank" href="http://fintechhorizonsmedia.com">
-                    <b class="mdi mdi-open-in-new"> live view </b>
+                    <p>We are out of money! help us get back on track! </p>
+                    <p>We can sell the project & if posible work for you in it</p>
                 </v-btn>
             </div>
             <div class="Gmodule py-10 back">
@@ -247,37 +250,56 @@
             </div>
         </div>
     </div>
-    <h2> Ui/Ux </h2>
-    <v-row justify="space-around">
-        <v-col cols="auto">
-            <v-dialog transition="dialog-bottom-transition" max-width="600">
-                <template v-slot:activator="{ on, attrs }">
-                    <v-btn class="mb-10" color="primary" v-bind="attrs" v-on="on">Ui demo</v-btn>
-                </template>
-                <template v-slot:default="dialog">
-                    <v-card class="px-10">
-                        <h2 class="py-3"> Vue UI Demo on Codepen </h2>
-                        <v-divider/>
-                        <h5 class="my-3"> Layout from Mockup </h5>
-                        <v-card-text class="hover-shadow pa-10">
-                            <a target="_blank" href="https://codepen.io/apesyntax/pen/ExmpVRB">
-                                <v-img src="@/assets/Ux-Design-Potrait-Ipad.png"></v-img>
-                            </a>
-                        </v-card-text>
-                        <h5 class="my-3"> Wireframe Live Figma Project </h5>
-                        <v-zoomer title="Scroll to zoom-in" class="showcase-img hover-shadow pa-10" style="width: 500px; height: 500px;">
-                            <a target="_blank" href="https://www.figma.com/file/1R0sVqlkEPWupn2gbmxFGA/Wireframing-in-Figma?node-id=109%3A276">
-                                <v-img class="pa-10" src="@/assets/elevator-ui-wireframe.png"></v-img>
-                            </a>
-                        </v-zoomer>
+    <div>
+      <v-card>
+        <h2> Ui/Ux </h2>
+      <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif"/>
+      <p class="center">we like to make our day easier, with funny moments :)</p>
+      <v-divider/>
+      <v-row justify="space-around">
+          <v-col cols="auto">
+              <v-dialog transition="dialog-bottom-transition" max-width="600">
+                  <template v-slot:activator="{ on, attrs }">
+                      <v-btn class="mt-5" color="primary" v-bind="attrs" v-on="on">Ui demo</v-btn>
+                  </template>
+                  <template v-slot:default="dialog">
+                      <v-card class="px-5">
                         <v-card-actions class="justify-end">
-                            <v-btn text @click="dialog.value = false">Close</v-btn>
+                            <v-btn text @click="dialog.value = false"> X </v-btn>
                         </v-card-actions>
-                    </v-card>
-                </template>
-            </v-dialog>
-        </v-col>
-    </v-row>
+                          <h2> Vue UI Demo on Codepen </h2>
+                          <v-divider/>
+
+                          <v-card-text class="hover-shadow my-10 pa-10">
+                          <h5 class="my-3"> Wireframe Live Figma Project </h5>
+                          <v-divider class="mb-5"/>
+                              <a target="_blank" href="https://www.figma.com/file/1R0sVqlkEPWupn2gbmxFGA/Wireframing-in-Figma?node-id=109%3A276">
+                                  <v-img class="pa-10" src="@/assets/elevator-ui-wireframe.png"></v-img>
+                              </a>
+                        </v-card-text>
+
+                          <v-card-text class="hover-shadow my-10 pa-10 ">
+                            <h5 class="my-3"> Layout from Mockup </h5>
+                              <v-divider class="mb-5"/>
+                              <a target="_blank" href="https://codepen.io/apesyntax/pen/ExmpVRB">
+                                  <v-img src="@/assets/Ux-Design-Potrait-Ipad.png"></v-img>
+                              </a>
+                          </v-card-text>
+
+                        <v-card-text class="hover-shadow my-10 pa-10">
+                        <h5 class="my-3"> Character Creation Gallery </h5>
+                        <v-divider class="mb-5"/>
+                            <a target="_blank" href="https://codepen.io/apesyntax/full/poJboNm">
+                              <v-img class="pa-10" src="@/assets/thanks.png"></v-img>
+                            </a>
+                      </v-card-text>
+                      </v-card>
+                  </template>
+              </v-dialog>
+          </v-col>
+      </v-row>
+    </v-card>
+  </div>
     <section class="slide-section">
         <div class="Gmodule pb-10">
             <v-carousel class="port-slider">
