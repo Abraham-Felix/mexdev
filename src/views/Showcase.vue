@@ -171,6 +171,9 @@
 .main-pbox {
   max-width:600px ;
 }
+.design-card {
+  width:100%;
+}
 </style>
 
 <template>
@@ -259,14 +262,13 @@
             </div>
         </div>
     </div>
-    <div>
-      <v-card>
-        <h2> Ui/Ux </h2>
-      <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif"/>
-      <p class="center">we like to make our day easier, with funny moments :)</p>
-      <v-divider/>
+      <div class="design-card">
       <v-row justify="space-around">
-          <v-col cols="auto">
+          <v-col cols="2">
+            <h2> Ui/Ux </h2>
+          <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif"/>
+          <p class="center">we like to make our day easier, with funny moments :)</p>
+          <v-divider/>
               <v-dialog transition="dialog-bottom-transition" max-width="600">
                   <template v-slot:activator="{ on, attrs }">
                       <v-btn class="mt-5" color="primary" v-bind="attrs" v-on="on">UX/UI showcase</v-btn>
@@ -306,25 +308,29 @@
                   </template>
               </v-dialog>
           </v-col>
+          <v-col cols="6">
+            <h2> Ui/Ux Key Concepts </h2>
+          <section class="slide-section">
+              <div class="Gmodule pb-10">
+                  <v-carousel class="port-slider">
+                      <v-carousel-item
+                      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                      v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
+                      class="pt-5 carousel"
+                      reverse-transition="fade-transition"
+                      transition="fade-transition">
+                          <v-col class="mt-5">
+                              <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}} <v-divider class="mt-2"/> <br>{{uxitem.des}}</v-text>
+                          </v-col>
+                      </v-carousel-item>
+                  </v-carousel>
+              </div>
+            </section>
+            </v-col>
       </v-row>
-    </v-card>
+
   </div>
-    <section class="slide-section">
-        <div class="Gmodule pb-10">
-            <v-carousel class="port-slider">
-                <v-carousel-item
-                gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-                v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
-                class="pt-5 carousel"
-                reverse-transition="fade-transition"
-                transition="fade-transition">
-                    <v-col class="mt-5">
-                        <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}} <v-divider class="mt-2"/> <br>{{uxitem.des}}</v-text>
-                    </v-col>
-                </v-carousel-item>
-            </v-carousel>
-        </div>
-      </section>
+
 </v-container>
 </template>
 
