@@ -267,14 +267,14 @@
 .center-img {
   margin-top: -550px;
 }
-main {
+.s-main {
   background: linear-gradient(0deg, black, gray, white)  ;
 }
 </style>
 
 <template>
 
-<main class="my-n7 pt-5">
+<main class="my-n7 s-main pt-5">
     <div class="shocase-card">
       <!-- main top division -->
         <v-row class="top-div">
