@@ -1,44 +1,60 @@
 <style>
+.gray {
+  background-color: #e1e1e1 !important;
+}
 .showcase-card {
     width: 1200px !important;
 }
+
 .showcase-img {
     width: auto !important;
     height: auto !important;
 }
+
 .p-box {
     padding: 20px;
     max-height: 332px;
     min-height: 280px;
     overflow: auto;
 }
+.p-box-main {
+    padding: 20px;
+    max-height: 300px;
+    min-height: 250px;
+    overflow: auto;
+    text-align: left;
+}
+
 .p-box h5 {
     text-align: left;
 }
+
 .gardient-button {
     padding: 10px;
     border-radius: 10px;
     background: #474747;
     color: #ffffff !important;
 }
+
 .i {
     color: lightgray !important;
     margin-top: 20px;
 }
+
 .i:hover {
     color: darkgray !important;
 }
+
 .Gmodule p {
     color: #474747;
 }
+
 .Gmodule {
-    background: white;
     display: inline-table;
     align-items: center;
     justify-content: center;
     height: 350px;
-    padding: 15px;
-    border-radius: 10px;
+    border-radius: 2px;
     -webkit-box-shadow: 0px 0px 25px -16px rgba(161, 161, 161, 1);
     -moz-box-shadow: 0px 0px 25px -16px rgba(161, 161, 161, 1);
     box-shadow: 0px 0px 25px -16px rgba(161, 161, 161, 1);
@@ -50,12 +66,13 @@
     margin: 0;
     transition: 0.6s;
 }
+
 .Gmodule:hover {
-    background: #fbfbfb;
     -webkit-box-shadow: 0px 0px 35px -16px rgba(161, 161, 161, 1);
     -moz-box-shadow: 0px 0px 35px -16px rgba(161, 161, 161, 1);
     box-shadow: 0px 0px 35px -16px rgba(161, 161, 161, 1);
 }
+
 .Fgrid {
     display: flex;
     flex-wrap: wrap;
@@ -68,26 +85,34 @@
     margin-bottom: 50px;
     transition: 1s;
 }
+
 .exespotbody {
     margin-top: 100px;
     max-wdth: 1000px;
 }
+
 .slide-section {
-  display:grid;
+    display: grid;
 }
+
 @media screen and (max-width:1400px) {
     .Fgrid {
         max-width: 600px;
     }
 }
+
 .v-dialog {
     background: #FFFFFF;
 }
+
 .col-50 {
     width: 50%;
     display: inline-grid;
 }
+
+
 /* toggle css */
+
 .toggle_container {
     margin: 0px auto;
     background: #efefef;
@@ -96,27 +121,33 @@
     border-radius: 30px;
     transition: all .25s;
 }
+
 .toggle_container.active {
     background: #e9ffef;
 }
+
 .box {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .e4 {
     width: 400px;
     margin: auto;
 }
+
 .des {
     transition: .3s;
     background: #313233b0;
     display: inline-grid;
     width: 80%;
 }
+
 .des:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px -5px black;
 }
+
 .uiux-title {
     background: #ffffff;
     box-shadow: 0px 0px 10px -5px gray;
@@ -124,14 +155,15 @@
     padding: 5px;
     width: 100%;
 }
+
 .Fgrid .v-btn {
     transition: 1s;
 }
 
 @media screen and (max-width:600px) {
-  .port-slider {
-    height: auto !important;
-  }
+    .port-slider {
+        height: auto !important;
+    }
     .des {
         width: 100%;
         display: inline-block;
@@ -147,99 +179,182 @@
         transition: 1s;
     }
 }
+
 .hover-shadow {
     box-shadow: 0px 0px 10px -7px #5388e6;
 }
+
 .hover-shadow:hover {
     box-shadow: 0px 0px 10px -3px #5388e6;
 }
-.w-80{
-  max-width: 300px !important;
-  margin: auto;
+
+.w-80 {
+    max-width: 300px !important;
+    margin: auto;
 }
+
 .main-img {
-  max-width:600px !important;
-  margin-right: 40px !important;
+    max-width: 600px !important;
+    margin-right: 40px !important;
 }
+
 .v-image.v-responsive.v-carousel__item.theme--dark {
-  height: auto !important;
+    height: auto !important;
 }
+
 .t-c {
-  text-align:center;
-  color: dodgerblue;
+    text-align: center;
+    color: dodgerblue;
 }
+
 .main-pbox {
-  max-width:600px ;
+    max-width: 800px;
 }
+
 .design-card {
-  width:100%;
+    width: 100%;
 }
+
 .t-white {
-  color: #ffffff;
+    color: #ffffff;
+}
+.top-div {
+  background-color: black;
+}
+.l-div{
+  background: linear-gradient(308deg, #25ee15, #359eff, #da30e0);
+      border-radius: 0px 356px 0px 0px;
+      box-shadow: -4px 18px 20px 0px #212f34;
+}
+
+.bl-div{
+  background: #000000;
+}
+
+.piggy {
+  background: url(../assets/cofeetime.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media screen and (max-width:600px) {
+  .piggy {
+    display:none !important;
+  }
+  .l-div {
+    min-width: 100% !important;
+    border-radius: 100%;
+    margin-top: 20px !important;
+  }
+  .hr-1 {
+    margin-bottom:30px !important;
+  }
+  .r-div {
+    min-width: 100% !important;
+  }
+  .bl-div {
+    min-width:100%;
+    display: flex;
+  flex-direction: column-reverse;
+  }
+}
+.laguna {
+  background: url(../assets/lagunalogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.center-img {
+  margin-top: -550px;
+}
+main {
+  background: linear-gradient(0deg, black, gray, white)  ;
 }
 </style>
 
 <template>
-<main>
+
+<main class="my-n7 pt-5">
     <div class="shocase-card">
-        <h1> welcome to showcase </h1>
-        <h3> Fintech Horizons Media </h3>
-        <v-divider class="w-80 d-flex mb-10"></v-divider>
-        <v-btn class="rainbow" href="/contact">
-        <b class="center t-white" >For sale - send us a message</b>
-        </v-btn>
-        <div class="showcase-img">
-            <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
-        </div>
-        <div class="Fgrid">
-            <div class=" col-12 py-10 back">
-                <v-container class="p-box main-pbox mt-n15">
-                    <h5>highlights:</h5>
+      <!-- main top division -->
+        <v-row class="top-div">
+            <v-col class="col-6 py-10 l-div">
+                <h2 class="t-white  hr-1"> Fintech Horizons Media </h2>
+                <hr class="w-80 d-flex mt-n7 mb-10"/>
+                <div class="showcase-img">
+                    <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+            </v-col>
+            <v-col class="mt-15 col-4 md-col-6 py-10 r-div">
+                <v-container class="p-box-main main-pbox  ">
+                    <h5 class="t-white mb-5">highlights:</h5>
                     <hr>
-                    <p class="text--primary">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
+                    <p class="t-white">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
                         app project built with Ionic/ Vue.js.
                     </p>
-                    <p class="text--primary"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
+                    <p class="t-white"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
                 </v-container>
-                <v-btn align-center depressed elevation="2" color="primary" class="gardient-button" target="_blank" href="http://fintechhorizonsmedia.com">
-                  site is down
-                </v-btn><br>
-                <b>
-                <p class="center t-c">We can sell the project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
-                </b>
+                <div class="center mt-n15">
+                  <b>
+                  <p class=" t-c">We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
+                  </b><br>
+                  <v-btn class="rainbow" href="/contact">
+                  <b class="center t-white">For sale!</b>
+                  </v-btn>
+                </div>
+            </v-col>
+            <v-col class="mt-15 piggy">
+            </v-col>
+        </v-row>
+        <!-- 2nd division -->
+        <v-row class="pt-15 bl-div t-white">
+          <v-spacer class="col-1"/>
+          <div class="mt-15 col-4  bl-div xs-col-12 py-10" >
+            <div class="p-box mt-15 ">
+                <h5 class="mb-5">highlights:</h5>
+                <hr>
+                <p>The app/content management system was created in WordPress and transferred to Adobe Catalyst.
+                </p>
+                <p> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
+                <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
+                </p>
             </div>
-            <div class="Gmodule py-10 back">
-                <h3> Laguna Shores Resorts </h3>
+            <br>
+            <v-btn
+            align-center
+            depressed
+            elevation="2"
+            color="primary"
+            class="gardient-button"
+            target="_blank"
+            href="http://www.lagunashoresresort.com">
+                <b class="mdi mdi-open-in-new "> live view </b>
+            </v-btn>
+      </div>
+        <div class="bl-div col-6" >
+                <h2> Laguna Shores Resorts </h2>
                 <v-divider></v-divider>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="../assets/ls-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
-                <div class="p-box">
-                    <h5>highlights:</h5>
-                    <hr>
-                    <p class="text--primary">The app/content management system was created in WordPress and transferred to Adobe Catalyst.
-                    </p>
-                    <p class="text--primary"> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
-                    <p class="text--primary"> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
-                    </p>
-                </div>
-                <br>
-                <v-btn align-center depressed elevation="2" color="primary" class="gardient-button" target="_blank" href="http://www.lagunashoresresort.com">
-                    <b class="mdi mdi-open-in-new "> live view </b>
-                </v-btn>
-            </div>
-            <div class="Gmodule py-10 back">
+              </div>
+            </v-row>
+            <!--  third division -->
+            <v-row class="pt-15 bl-div t-white">
+            <div class="bl-div col-6 t-white" >
                 <h3> Classic Car Pal </h3>
                 <v-divider></v-divider>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="../assets/ccp-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
-                <div class="p-box">
-                    <h5>highlights:</h5>
+              </div>
+                <div class="bl-div col-6  mt-15" >
+                <div class="p-box mt-15">
+                    <h5 class="mb-5">highlights:</h5>
                     <hr>
-                    <p class="text--primary">A classic car showcase webdesign, it uses gallery and event most of the project was design and migrating the website from and old CMS system.
+                    <p>A classic car showcase webdesign, it uses gallery and event most of the project was design using a thirdparty system, after it was migrated from wix the old CMS system.
                     </p>
-                    <p class="text--primary"> The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
+                    <p> The services provided icluded our certified knowledge from Google an Hp on digital marketing as social media marketing & social media management, The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
 
                 </div>
                 <br>
@@ -247,17 +362,17 @@
                     <b class="mdi mdi-open-in-new"> live view </b>
                 </v-btn>
             </div>
-        </div>
+        </v-row>
     </div>
     <div>
-        <h2> Our approach </h2>
+        <h2 class="t-white"> Developtment & Design approach </h2>
         <div class="Fgrid">
-            <div class="Gmodule py-10 back">
+            <div class="Gmodule py-10 gray">
                 <div class="pa-5">
                     <h3> Organized & clean code. </h3>
                     <v-divider class="mx-15"></v-divider>
                     <p class="center text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity. Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
-                </div>
+                    </div>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
 " style="object-fit: contain; width: 90%; height: 100%; border-radius:10px; box-shadow: 0px 0px 10px -3px black; ">
@@ -265,79 +380,77 @@
             </div>
         </div>
     </div>
-      <div class="design-card">
-      <v-row justify="space-around">
-        <v-hover>
-          <v-col cols="12" sm="6" class="pa-10"  :elevation="hover ? 24 : 6">
-            <h2> Ui/Ux </h2>
-          <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif"/>
-          <p class="center">we like to make our day easier, with funny moments :)</p>
-          <v-divider/>
-              <v-dialog transition="dialog-bottom-transition" max-width="600">
-                  <template v-slot:activator="{ on, attrs }">
-                      <v-btn class="mt-5" color="primary" v-bind="attrs" v-on="on">UX/UI showcase</v-btn>
-                  </template>
-                  <template v-slot:default="dialog">
-                      <v-card class="px-5">
-                        <v-card-actions class="justify-end">
-                            <v-btn text @click="dialog.value = false"> X </v-btn>
-                        </v-card-actions>
-                          <h2> Vue UI Demo on Codepen </h2>
-                          <v-divider/>
+    <div class="design-card t-white">
+      <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
+  <p class="center "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
 
-                          <v-card-text class="hover-shadow my-10 pa-10">
-                          <h5 class="my-3"> Wireframe Live Figma Project </h5>
-                          <v-divider class="mb-5"/>
-                              <a target="_blank" href="https://www.figma.com/file/1R0sVqlkEPWupn2gbmxFGA/Wireframing-in-Figma?node-id=109%3A276">
-                                  <v-img class="pa-10" src="@/assets/elevator-ui-wireframe.png"></v-img>
-                              </a>
-                        </v-card-text>
+        <v-row justify="space-around">
+            <v-col cols="12" sm="6" class="pa-10" :elevation="hover ? 24 : 6">
+                <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif" />
+                <p class="center">we like to make our day easier, with funny moments :)</p>
+                <v-divider/>
+                <v-dialog transition="dialog-bottom-transition" max-width="600">
+                    <template v-slot:activator="{ on, attrs }">
+                        <v-btn class="center-img rainbow" v-bind="attrs" v-on="on">UX/UI showcase</v-btn>
+                    </template>
+                    <template v-slot:default="dialog">
+                        <v-card class="px-5">
+                            <v-card-actions class="justify-end">
+                                <v-btn text @click="dialog.value = false"> X </v-btn>
+                            </v-card-actions>
+                            <h2> Vue UI Demo on Codepen </h2>
+                            <v-divider/>
 
-                          <v-card-text class="hover-shadow my-10 pa-10 ">
-                            <h5 class="my-3"> Layout from Mockup </h5>
-                              <v-divider class="mb-5"/>
-                              <a target="_blank" href="https://codepen.io/apesyntax/pen/ExmpVRB">
-                                  <v-img src="@/assets/Ux-Design-Potrait-Ipad.png"></v-img>
-                              </a>
-                          </v-card-text>
+                            <v-card-text class="hover-shadow my-10 pa-10">
+                                <h5 class="my-3"> Wireframe Live Figma Project </h5>
+                                <v-divider class="mb-5" />
+                                <a target="_blank" href="https://www.figma.com/file/1R0sVqlkEPWupn2gbmxFGA/Wireframing-in-Figma?node-id=109%3A276">
+                                    <v-img class="pa-10" src="@/assets/elevator-ui-wireframe.png"></v-img>
+                                </a>
+                            </v-card-text>
 
-                        <v-card-text class="hover-shadow my-10 pa-10">
-                        <h5 class="my-3"> Character Creation Gallery </h5>
-                        <v-divider class="mb-5"/>
-                            <a target="_blank" href="https://codepen.io/apesyntax/full/poJboNm">
-                              <v-img class="pa-10" src="@/assets/thanks.png"></v-img>
-                            </a>
-                      </v-card-text>
-                      </v-card>
-                  </template>
-              </v-dialog>
-          </v-col>
-        </v-hover>
-          <v-col cols="12" sm="6" >
-            <h2> Ui/Ux Key Concepts </h2>
-          <section class="slide-section">
-              <div class="Gmodule pb-10">
-                  <v-carousel class="port-slider">
-                      <v-carousel-item
-                      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-                      v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
-                      class="pt-5 carousel"
-                      reverse-transition="fade-transition"
-                      transition="fade-transition">
-                          <v-col class="mt-5">
-                              <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}} <v-divider class="mt-2"/> <br>{{uxitem.des}}</v-text>
-                          </v-col>
-                      </v-carousel-item>
-                  </v-carousel>
-              </div>
-            </section>
+                            <v-card-text class="hover-shadow my-10 pa-10 ">
+                                <h5 class="my-3"> Layout from Mockup </h5>
+                                <v-divider class="mb-5" />
+                                <a target="_blank" href="https://codepen.io/apesyntax/pen/ExmpVRB">
+                                    <v-img src="@/assets/Ux-Design-Potrait-Ipad.png"></v-img>
+                                </a>
+                            </v-card-text>
+
+                            <v-card-text class="hover-shadow my-10 pa-10">
+                                <h5 class="my-3"> Character Creation Gallery </h5>
+                                <v-divider class="mb-5" />
+                                <a target="_blank" href="https://codepen.io/apesyntax/full/poJboNm">
+                                    <v-img class="pa-10" src="@/assets/thanks.png"></v-img>
+                                </a>
+                            </v-card-text>
+                        </v-card>
+                    </template>
+                </v-dialog>
             </v-col>
-      </v-row>
-  </div>
+            <v-col cols="12" sm="6">
+                <section class="slide-section">
+                    <div class="Gmodule pb-10">
+                        <v-carousel class="port-slider">
+                            <v-carousel-item gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)" v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src" class="pt-5 carousel" reverse-transition="fade-transition" transition="fade-transition">
+                                <v-col class="mt-5">
+                                    <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}}
+                                        <v-divider class="mt-2" />
+                                        <br>{{uxitem.des}}</v-text>
+                                </v-col>
+                            </v-carousel-item>
+                        </v-carousel>
+                    </div>
+                </section>
+            </v-col>
+        </v-row>
+    </div>
 </main>
+
 </template>
 
 <script>
+
 export default {
     name: 'Portfolio',
     data() {
