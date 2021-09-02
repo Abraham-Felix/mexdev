@@ -296,7 +296,7 @@
                 </v-container>
                 <div class="center mt-n15">
                   <b>
-                  <p class=" t-c">We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
+                  <p class="mt-10 t-c">We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
                   </b><br>
                   <v-btn class="rainbow" href="/contact">
                   <b class="t-white">For sale!</b>
