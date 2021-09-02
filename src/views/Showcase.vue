@@ -174,16 +174,19 @@
 .design-card {
   width:100%;
 }
+.t-white {
+  color: #ffffff;
+}
 </style>
 
 <template>
-<v-container>
+<main>
     <div class="shocase-card">
         <h1> welcome to showcase </h1>
         <h3> Fintech Horizons Media </h3>
         <v-divider class="w-80 d-flex mb-10"></v-divider>
         <v-btn class="rainbow" href="/contact">
-        <b class="center white">For sale - send us a message</b>
+        <b class="center t-white" >For sale - send us a message</b>
         </v-btn>
         <div class="showcase-img">
             <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
@@ -331,7 +334,7 @@
             </v-col>
       </v-row>
   </div>
-</v-container>
+</main>
 </template>
 
 <script>
