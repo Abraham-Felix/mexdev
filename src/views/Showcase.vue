@@ -295,13 +295,13 @@
                     <p class="t-white"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
                 </v-container>
                 <div class="center mt-n15">
-                  <b>
-                  <p class="mt-10 t-c">We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
-                  </b><br>
-                  <v-btn class="rainbow" href="/contact">
-                  <b class="t-white">For sale!</b>
-                  </v-btn>
+                  <p class="mt-10 t-c"><b>We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!</b> </p>
+                  <br>
                 </div>
+                <br>
+                <v-btn class="rainbow" href="/contact">
+                <b class="t-white">For sale!</b>
+              </v-btn><br>
                 <hr width="300px" class="mt-10 center">
             </v-col>
             <v-col class="mt-15 piggy">
