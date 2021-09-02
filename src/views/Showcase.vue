@@ -299,7 +299,7 @@
                   <p class=" t-c">We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!  </p>
                   </b><br>
                   <v-btn class="rainbow" href="/contact">
-                  <b class="center t-white">For sale!</b>
+                  <b class=" t-white">For sale!</b>
                   </v-btn>
                 </div>
             </v-col>
