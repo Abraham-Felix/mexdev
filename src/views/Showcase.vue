@@ -285,7 +285,7 @@
                     <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
             </v-col>
-            <v-col class="mt-15 col-4 md-col-6 py-10 r-div">
+            <v-col class="mt-15 col-4  py-10 r-div">
                 <v-container class="p-box-main main-pbox  ">
                     <h5 class="t-white mb-5">highlights:</h5>
                     <hr>
