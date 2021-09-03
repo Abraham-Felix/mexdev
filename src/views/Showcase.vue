@@ -270,6 +270,9 @@
 .s-main {
   background: linear-gradient(0deg, black, gray, white)  ;
 }
+.welike {
+  mix-blend-mode: overlay;
+}
 </style>
 
 <template>
@@ -387,13 +390,13 @@
     </div>
     <div class="design-card t-white">
       <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
-  <p class="center "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
+  <p class="center  px-5 "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
     <v-container>
         <v-row  justify="space-around" class="py-10">
             <v-col cols="12" sm="6" >
-                <v-img height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif" />
-                <p class="center">we like to make our day easier, with funny moments :)</p>
-                <v-divider/>
+                <v-img class="d-flex align-end" height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif">
+                <h3 class="mb-5 center t-white welike">we like to make our day easier, with funny moments :D</h3>
+              </v-img>
                 <v-dialog transition="dialog-bottom-transition" max-width="600">
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn class="center-img rainbow" v-bind="attrs" v-on="on">UX/UI showcase</v-btn>
