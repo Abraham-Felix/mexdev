@@ -277,7 +277,7 @@
 <main class="my-n7 s-main pt-5">
     <div class="shocase-card">
       <!-- main top division -->
-        <v-row class="top-div">
+        <v-row class="mx-0 top-div">
             <v-col class="col-6 py-10 l-div">
                 <h2 class="t-white  hr-1"> Fintech Horizons Media </h2>
                 <hr class="w-80 d-flex mt-n7 mb-10"/>
@@ -308,8 +308,9 @@
             </v-col>
         </v-row>
         <!-- 2nd division -->
+        <section class="black">
+        <v-container>
         <v-row class="pt-15 bl-div t-white">
-          <v-spacer class="col-1"/>
           <div class="mt-15 col-4  bl-div xs-col-12 py-10" >
             <div class="p-box mt-15 ">
                 <h5 class="mb-5">highlights:</h5>
@@ -349,7 +350,7 @@
                     <img src="../assets/ccp-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
               </div>
-                <div class="bl-div col-6  mt-15" >
+                <div class="mt-15 col-4  bl-div xs-col-12 py-10" >
                 <div class="p-box mt-15">
                     <h5 class="mb-5">highlights:</h5>
                     <hr>
@@ -364,6 +365,8 @@
                 </v-btn>
             </div>
         </v-row>
+      </v-container>
+    </section>
     </div>
     <div>
         <h2 class="t-white"> Developtment & Design approach </h2>
@@ -384,10 +387,10 @@
     <div class="design-card t-white">
       <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
   <p class="center "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
-
-        <v-row justify="space-around">
-            <v-col cols="12" sm="6" class="pa-10" :elevation="hover ? 24 : 6">
-                <v-img height="450px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif" />
+    <v-container>
+        <v-row  justify="space-around" class="py-10">
+            <v-col cols="12" sm="6" >
+                <v-img height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif" />
                 <p class="center">we like to make our day easier, with funny moments :)</p>
                 <v-divider/>
                 <v-dialog transition="dialog-bottom-transition" max-width="600">
@@ -445,6 +448,7 @@
                 </section>
             </v-col>
         </v-row>
+      </v-container>
     </div>
 </main>
 
