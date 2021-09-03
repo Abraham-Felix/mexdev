@@ -279,8 +279,9 @@
       <!-- main top division -->
         <v-row class="mx-0 top-div">
             <v-col class="col-6 py-10 l-div">
-                <h2 class="t-white  hr-1"> Fintech Horizons Media </h2>
-                <hr class="w-80 d-flex mt-n7 mb-10"/>
+                <h1 class="t-white  hr-1"> Fintech Horizons Media </h1>
+                <p class="center t-white" > Wonderful energy for fascinating experience!</p>
+                <hr class="w-80 d-flex "/>
                 <div class="showcase-img">
                     <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
@@ -311,7 +312,7 @@
         <section class="black">
         <v-container>
         <v-row class="pt-15 bl-div t-white">
-          <div class="mt-15 col-4  bl-div xs-col-12 py-10" >
+          <div class="mt-15 col-6  bl-div xs-col-12 py-10" >
             <div class="p-box mt-15 ">
                 <h5 class="mb-5">highlights:</h5>
                 <hr>
@@ -350,7 +351,7 @@
                     <img src="../assets/ccp-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
               </div>
-                <div class="mt-15 col-4  bl-div xs-col-12 py-10" >
+                <div class="mt-15 col-6  bl-div xs-col-12 py-10" >
                 <div class="p-box mt-15">
                     <h5 class="mb-5">highlights:</h5>
                     <hr>
