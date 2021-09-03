@@ -352,7 +352,7 @@
               </div>
             </v-row>
             <!--  third division -->
-            <v-row class="pt-15 bl-div t-white">
+            <v-row class="pt-15  t-white">
             <div class="bl-div col-6 t-white" >
                 <h3> Classic Car Pal </h3>
                 <v-divider></v-divider>
