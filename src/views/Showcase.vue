@@ -1,4 +1,7 @@
 <style>
+/* wavy design*/
+
+
 .gray {
   background-color: #e1e1e1 !important;
 }
@@ -273,6 +276,9 @@
 .welike {
   mix-blend-mode: overlay;
 }
+.ndiv{
+  background-color: #E7E8E8;
+}
 </style>
 
 <template>
@@ -372,10 +378,14 @@
       </v-container>
     </section>
     </div>
-    <div>
-        <h2 class="t-white"> Developtment & Design approach </h2>
-        <div class="Fgrid">
-            <div class="Gmodule py-10 gray">
+    <div class="ndiv">
+      <div style="height: 150px; overflow: hidden;">
+  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+    <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #000000;"></path>
+  </svg>
+        </div><h2> Developtment & Design approach </h2>
+        <div>
+            <div class="Gmodule py-10 gray mb-15">
                 <div class="pa-5">
                     <h3> Organized & clean code. </h3>
                     <v-divider class="mx-15"></v-divider>
