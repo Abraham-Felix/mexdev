@@ -394,7 +394,7 @@
     <v-container>
         <v-row  justify="space-around" class="py-10">
             <v-col cols="12" sm="6" >
-                <v-img class="d-flex align-end" height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif">
+                <v-img class="d-flex align-end rounded-xl" height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif">
                 <h3 class="mb-5 center t-white welike">we like to make our day easier, with funny moments :D</h3>
               </v-img>
                 <v-dialog transition="dialog-bottom-transition" max-width="600">
@@ -437,9 +437,9 @@
                 </v-dialog>
             </v-col>
             <v-col cols="12" sm="6">
-                <section class="slide-section">
-                    <div class="Gmodule">
-                        <v-carousel class="port-slider">
+                <section class="slide-section ">
+                    <div class="Gmodule ">
+                        <v-carousel class="port-slider rounded-xl">
                             <v-carousel-item gradient=" rgba(100,115,201,.33), rgba(25,32,72,.7)" v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
                             class="carousel" reverse-transition="fade-transition" transition="fade-transition">
                                 <v-col class="mt-5">
