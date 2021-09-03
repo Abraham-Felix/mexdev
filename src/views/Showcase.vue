@@ -390,7 +390,7 @@
     </div>
     <div class="design-card t-white">
       <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
-  <p class="center  px-5 "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
+  <p class="center px-5 "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
     <v-container>
         <v-row  justify="space-around" class="py-10">
             <v-col cols="12" sm="6" >
@@ -438,9 +438,10 @@
             </v-col>
             <v-col cols="12" sm="6">
                 <section class="slide-section">
-                    <div class="Gmodule pb-10">
+                    <div class="Gmodule">
                         <v-carousel class="port-slider">
-                            <v-carousel-item gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)" v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src" class="pt-5 carousel" reverse-transition="fade-transition" transition="fade-transition">
+                            <v-carousel-item gradient=" rgba(100,115,201,.33), rgba(25,32,72,.7)" v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
+                            class="carousel" reverse-transition="fade-transition" transition="fade-transition">
                                 <v-col class="mt-5">
                                     <v-text class="des py-10 px-10 text--tertiary rounded">{{uxitem.title}}
                                         <v-divider class="mt-2" />
