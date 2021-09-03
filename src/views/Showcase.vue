@@ -250,7 +250,7 @@
     margin-top: 20px !important;
   }
   .hr-1 {
-    margin-bottom:10px !important;
+    margin-bottom:0px !important;
   }
   .r-div {
     min-width: 100% !important;
@@ -290,7 +290,7 @@
             <v-col class="col-6 py-10 l-div">
                 <h1 class="t-white hr-1"> Fintech Horizons Media </h1>
                 <p class="center t-white" > Wonderful energy for fascinating experience!</p>
-                <hr class="w-80 d-flex "/>
+                <hr class="w-80 "/>
                 <div class="showcase-img">
                     <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
