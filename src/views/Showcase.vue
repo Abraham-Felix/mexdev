@@ -287,7 +287,7 @@
     <div class="shocase-card">
       <!-- main top division -->
         <v-row class="mx-0 top-div">
-            <v-col class="col-6 py-10 l-div">
+            <v-col class="col-6 pa-10 l-div">
                 <h1 class="t-white hr-1"> Fintech Horizons Media </h1>
                 <p class="center t-white" > Wonderful energy for fascinating experience!</p>
                 <hr class="w-80 "/>
