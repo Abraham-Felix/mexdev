@@ -10,6 +10,7 @@ import Showcase from '../views/Showcase.vue';
 import Landing from '../views/Landing.vue';
 import Taskit from '../views/Taskit.vue';
 import Virtualdom from '../school/virtualdom.vue';
+import Google from '../views/Google.vue';
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,14 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: Contact,
+    meta: {
+      requiresAuth:true
+    }
+  },
+  {
+    path: '/google',
+    name: 'Google',
+    component: Google,
     meta: {
       requiresAuth:true
     }
