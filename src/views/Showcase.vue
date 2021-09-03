@@ -250,7 +250,7 @@
     margin-top: 20px !important;
   }
   .hr-1 {
-    margin-bottom:30px !important;
+    margin-bottom:10px !important;
   }
   .r-div {
     min-width: 100% !important;
@@ -288,7 +288,7 @@
       <!-- main top division -->
         <v-row class="mx-0 top-div">
             <v-col class="col-6 py-10 l-div">
-                <h1 class="t-white  hr-1"> Fintech Horizons Media </h1>
+                <h1 class="t-white hr-1"> Fintech Horizons Media </h1>
                 <p class="center t-white" > Wonderful energy for fascinating experience!</p>
                 <hr class="w-80 d-flex "/>
                 <div class="showcase-img">
