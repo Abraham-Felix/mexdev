@@ -1,10 +1,10 @@
 <template>
 <div class="channeldata">
    <h2>RAW JSON</h2><br>
-    <div v-for="question in questions" v-bind:key="question">
-        <p>
-            {{ question.title }}
-        </p>
+    <div  v-for="question in questions" v-bind:key="question">
+        <h1>
+            {{ question.innerText }}
+        </h1>
     </div>
 </div>
 </template>
@@ -21,7 +21,7 @@ export default {
         return {
             questions: [],
             api: {
-                baseUrl: "https://docs.google.com/spreadsheets/d/10a44rqtdWcPQqYtBtne0ImmNOaqSuPsiM2YNiTdMiWo/edit#gid=0",
+                baseUrl: "https://spreadsheets.google.com/feeds/cells/1-10a44rqtdWcPQqYtBtne0ImmNOaqSuPsiM2YNiTdMiWo/1/public/values?alt=json-in-script",
             },
         };
     },
