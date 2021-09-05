@@ -86,6 +86,7 @@
         <Slideshow/>
       </div>
      <h2 class="mt-3" style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
+      <v-divider class="mb-3"></v-divider>  
      <v-btn dark href="/contact" title="get deeper by contacting us">contact us</v-btn>
    </v-card>
  </v-container>
@@ -183,5 +184,11 @@ h4 {
   .anislide {
     margin-bottom: -180px;
   }
+}
+@media all and (max-width:500px){
+  #cf4a {
+    height: 350px;
+    margin: -93px auto !important;
+}
 }
 </style>
