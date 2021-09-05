@@ -56,6 +56,8 @@
       elevate-on-scroll
     >
     <div class="center" >
+      <a
+        href="/Landing">
       <v-img
         alt="Mexdev Small Navbar Logo"
         class="shrink d-none d-sm-flex"
@@ -64,6 +66,7 @@
         transition="scale-transition"
         width="40"
       />
+    </a>
     </div>
   </v-app-bar>
 
