@@ -1,9 +1,13 @@
 <template>
+  <div>
+    <h3>Get back on track with top Tech</h3>
+    <v-divider class="my-3"/>
   <section id="animate-area">
         <div  class="newfeaturesheader">
          <v-img class="mx-5" src="../assets/CloudSlideTech.png" />
       </div>
     </section>
+  </div>
 </template>
 <script>
 export default {

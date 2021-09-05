@@ -81,7 +81,8 @@ h4 {
           </p>
           <v-btn primary dark class="mt-5 hrain" href="contact"> contact </v-btn><br>
           <p class="center mt-10">PS:"se habla español"</p>
-          <a href="/showcase"><h3>Goals met: 5 happy international clients!.</h3></a>
+          <a href="/showcase"><h2 style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
+       </a>
           </v-container>
      </v-card>
      </v-container>

@@ -123,7 +123,7 @@ h4 {
                 <br>
                 <p> Front-End </p>
                 <br>
-                <p>Mexico</p>
+                <p><b>Mexico</b></p>
             </div>
 
             <v-divider vertical class="gray"></v-divider>
@@ -135,7 +135,7 @@ h4 {
                 <br>
                 <p> Back-End </p>
                 <br>
-                <p>USA</p>
+                <p><b>USA</b></p>
             </div>
         </div>
         <br>
