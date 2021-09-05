@@ -7,7 +7,7 @@
 <template>
 
 <v-card>
-  <a href="/contact">
+  <a href="/landing">
   <v-img
     alt="mexdev logo"
     class="shrink mr-2 margin center"
