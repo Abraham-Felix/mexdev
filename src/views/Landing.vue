@@ -3,8 +3,10 @@
   <v-container >
    <v-card>
      <h1>
-      <span class="get" transition="scroll-y-transition"> welcome! </span>
+      <span class="get " transition="scroll-y-transition"> welcome</span>
      </h1>
+
+       <v-divider class="mb-5" />
      <div class="center nav-col-mid d-flex justify-center align-center">
        <v-dialog
          transition="dialog-bottom-transition"
@@ -55,7 +57,7 @@
            v-on="on"
            >
            <span class="mobile-icons mdi mdi-account-edit"></span>
-           <span class="web-nav-btns"> sign up</span>
+           <span class="web-nav-btns" title="create an account"> sign up</span>
          </v-btn>
          </template>
          <template v-slot:default="dialog">
@@ -73,18 +75,18 @@
        </v-dialog>
      </div>
       <v-container class="text-sm-body-2">
-        <v-divider/>
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-          <span class="text--primary">what is mexdev?</span> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
+          <span class="text--primary">What is Mexdev?</span><br><br> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
           companies & contractors, upgrading into the online business model or updating their current app progress.
         </p>
-        <p class=" center">PS:"se habla español"</p>
+        <p class="center"><b>PS:"se habla español"</b></p>
       </v-container>
       <!-- gallery slideshow -->
       <div class="slideshow">
         <Slideshow/>
       </div>
      <h2 style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
+     <v-btn dark href="/contact" title="get deeper by contacting us">contact us</v-btn>
    </v-card>
  </v-container>
  <AnimatedSlide class="anislide"/>

@@ -34,10 +34,10 @@ Vue.use(VueRouter)
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact,
-    meta: {
-      requiresAuth:true
-    }
+    component: Contact
+    //meta: {
+  //    requiresAuth:true
+  //  }
   },
   {
     path: '/google',
