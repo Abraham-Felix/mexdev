@@ -65,7 +65,7 @@ h4 {
   <v-container>
      <v-card class="mt-5">
        <h1 class="mt-n3">
-        <span class="get" transition="scroll-y-transition"> Dream big! </span>
+        <span class="get pulsate-css" transition="scroll-y-transition"> Dream BIG! </span>
        </h1>
        <h3> give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 ">

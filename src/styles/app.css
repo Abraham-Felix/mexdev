@@ -46,6 +46,18 @@ p {
   margin: 20px auto;
   transition: 1s;
 }
+/* pulsate */
+
+.pulsate-css {
+        animation: opacityPulse 1.7s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 0;
+}
+@-webkit-keyframes opacityPulse {
+    0% {opacity: 0.7;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.7;}
+}
 
 /*css-classes*/
 .hrain {

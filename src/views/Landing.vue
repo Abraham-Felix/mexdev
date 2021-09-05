@@ -3,7 +3,7 @@
   <v-container >
    <v-card>
      <h1>
-      <span class="get " transition="scroll-y-transition"> welcome</span>
+      <span class="get pulsate-css" transition="scroll-y-transition"> Welcome World</span>
      </h1>
 
        <v-divider class="mb-5" />
