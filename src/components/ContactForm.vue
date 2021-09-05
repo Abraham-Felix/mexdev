@@ -7,6 +7,7 @@
 <template>
 
 <v-card>
+  <a href="/contact">
   <v-img
     alt="mexdev logo"
     class="shrink mr-2 margin center"
@@ -15,6 +16,7 @@
     transition="scale-transition"
     width="100"
   />
+  </a>
   <v-text>
   <p> send us a request, one our developers will get back to you as soon as posible, we will do our best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a></p>
   </v-text>
