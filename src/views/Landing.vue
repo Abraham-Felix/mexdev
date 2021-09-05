@@ -1,14 +1,15 @@
 <template>
 <div id="app">
-  <v-container >
-    <div id="clouds">
-	<div class="cloud x1"></div>
-	<!-- Time for multiple clouds to dance around -->
-	<div class="cloud x2"></div>
-	<div class="cloud x3"></div>
-	<div class="cloud x4"></div>
-	<div class="cloud x5"></div>
+  <div id="clouds">
+<div class="cloud x1"></div>
+<!-- Time for multiple clouds to dance around -->
+<div class="cloud x2"></div>
+<div class="cloud x3"></div>
+<div class="cloud x4"></div>
+<div class="cloud x5"></div>
 </div>
+  <v-container >
+
    <v-card>
      <h1>
       <span class="get pulsate-css" transition="scroll-y-transition"> Welcome World</span>
@@ -205,7 +206,7 @@ h4 {
 
 /* cloud animation 1 */
 #clouds{
-  margin-top: 150px;
+  padding-top: 150px;
   margin-bottom: -400px;
 }
 
