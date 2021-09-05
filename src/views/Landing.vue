@@ -199,7 +199,7 @@ h4 {
     margin: -93px auto !important;
 }
 .es-talk {
-  display:none;
+  display:none !important;
 }
 }
 
