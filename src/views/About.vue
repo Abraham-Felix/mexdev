@@ -59,18 +59,22 @@ h4 {
 .gray {
     color: gray;
 }
-
+.fav {
+  height: 50px;
+  width: 50px;
+}
 </style>
 
 <template>
 
 <v-card class="mx-auto">
     <h1> About us </h1>
-    <h4 class="text-center"> MXDV </h4>
+    <v-img class="center fav" src="../assets/mxdv-fav.png" />
     <v-card-text class="text-justify p10s">
         <h4><b>About Vision:</b></h4>
         <br>
         <v-divider class="mb-5"></v-divider>
+        <v-img src="../assets/home-office.png" />
         <p>
             MexDev is a web development team providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress.
         </p>
