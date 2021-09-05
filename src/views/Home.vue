@@ -73,11 +73,11 @@ h4 {
           <p class="center">we like to make our day easier, with funny moments :)</p>
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-            <span class="text--primary">what is mexdev?</span> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
+            <span class="text--primary">What is mexdev?</span> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
             companies & contractors, upgrading into the online business model or updating their current app progress.
           </p>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-            <span class="text--primary">know more?</span> MexDev is backed up by 2 experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
+            <span class="text--primary">Know more?</span> MexDev is backed up by 2 experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
           </p>
           <v-btn primary dark class="mt-5 hrain" href="contact"> contact </v-btn><br>
           <p class="center mt-10">PS:"se habla español"</p>

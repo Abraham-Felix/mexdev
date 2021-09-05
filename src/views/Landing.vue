@@ -316,4 +316,8 @@ h4 {
 	0% {margin-left: 1000px;}
 	100% {margin-left: -1000px;}
 }
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	overflow: hidden;
+}
 </style>
