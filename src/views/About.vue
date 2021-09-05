@@ -72,13 +72,14 @@ h4 {
         <br>
         <v-divider class="mb-5"></v-divider>
         <p>
-            MexDev is a web development agency providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress.
+            MexDev is a web development team providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress.
         </p>
         <h4 class="mt-10"><b>About the project:</b></h4>
         <br>
         <v-divider></v-divider>
         <br>
-        <p>MexDev.io Is a brand new fresh remote project with founders in the USA and MX. we are bilingual. we got more than 15 years of combined software development experience.</p>
+        <p>MexDev.io Is a brand new fresh remote project with project founders in the USA and MX. we are bilingual. we got more than 15 years of combined software development experience.
+           we currently have to funds but we povide all with our fingers skills programing and developing our own products :D, all you see in this side has been coded to maximize the UX. </p>
         <br>
         <h4 class="mt-10"><b>Project Vision, Objectives and Services:</b> </h4>
         <p>
