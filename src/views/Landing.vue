@@ -88,7 +88,7 @@
           <span class="text--primary">What is Mexdev?</span><br><br> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
           companies & contractors, upgrading into the online business model or updating their current app progress.
         </p>
-        <p class="center es-talk"><b>PS:"se habla español"</b></p>
+        <p class="center estalk"><b>PS:"se habla español"</b></p>
       </v-container>
       <!-- gallery slideshow -->
       <div class="slideshow">
@@ -199,8 +199,8 @@ h4 {
     height: 350px;
     margin: -93px auto !important;
 }
-.es-talk {
-  display:none !important;
+.estalk {
+  display: none !important;
 }
 }
 
