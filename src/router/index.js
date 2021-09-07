@@ -122,7 +122,8 @@ const router = new VueRouter({
       const currentUser = firebase.auth().currentUser;
       const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
       if (requiresAuth && !currentUser) next('landing');
-      else if (!requiresAuth && currentUser) next('home');
+      else if (!requiresAuth && currentUser) next();
+      else next();
       next(firebase.auth().onAuthStateChanged(currentUser => {
           currentUser}));
     });
