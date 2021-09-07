@@ -69,7 +69,8 @@ import toastr from 'toastr';
     },
     methods: {
       register: function() {
-        firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
+        firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+        .then(
       (user) => {
           this.$router.go('home' + user.message)
         } ,

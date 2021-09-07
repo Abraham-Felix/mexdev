@@ -71,12 +71,11 @@ export default {
             .then(
                 (user) => {
                     this.$router.go('/profile' + user.message + this.created || true)
+                    toastr.success('Welcome visitor! nice having you around!')
                 }
             )
             .catch (err =>
               toastr.error('Yikes! '+ err.message))
-            .catch (
-              toastr.success('Welcome visitor! nice having you around!'))
         },
         signInWithGoogle: function(){
           const provider = new firebase.auth.GoogleAuthProvider()
@@ -84,12 +83,11 @@ export default {
           .then(
               (user) => {
                   this.$router.go('/profile' + user.message + this.created || true)
+                  toastr.success('Welcome visitor! nice having you around!')
                 }
           )
           .catch (err =>
             toastr.error('Yikes! '+ err.message))
-          .catch (
-            toastr.success('Welcome visitor! nice having you around!'))
         },
     },
     created () {
