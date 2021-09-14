@@ -155,6 +155,10 @@ animation-delay: 0;
        id="img"
        src="../assets/df-mockup.png"
        >
+       <img
+         id="img"
+         src="../assets/sd-mockup.png"
+         >
   </div>
 </template>
 
