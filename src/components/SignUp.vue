@@ -72,18 +72,19 @@ import toastr from 'toastr';
         firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
         .then(
       (user) => {
-          this.$router.go('home' + user.message)
-        } ,
-       (err) => {
-          alert('Oops.' + err.message)
+          this.$router.go('home' + user.message + this.authUser || true )
+          toastr.success('Welcome visitor! nice having you around!')
         }
-      );
+      )
+      .catch (err =>
+        toastr.error('Yikes! '+ err.message))
     },
     signInWithGoogle: function(){
       const provider = new firebase.auth.GoogleAuthProvider()
       firebase.auth().signInWithPopup(provider)
       .then(
-        data => console.log(data.user, data.credential.accessToken)
+        data => console.log(data.user, data.credential.accessToken),
+        toastr.success('Welcome visitor! nice having you around!')
       ).catch(err =>
         toastr.error('Yikes '+ err.message))
     },
