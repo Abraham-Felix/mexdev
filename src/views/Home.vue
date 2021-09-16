@@ -63,6 +63,7 @@ h4 {
 <template>
 <main>
   <v-container>
+    <transition appear name="slide-ub">
      <v-card class="mt-5">
        <h1 class="mt-n3">
         <span class="get pulsate-css" transition="scroll-y-transition"> Dream BIG! </span>
@@ -85,6 +86,7 @@ h4 {
        </a>
           </v-container>
      </v-card>
+   </transition> 
      </v-container>
 
        <AnimatedSlide class="anislide"/>

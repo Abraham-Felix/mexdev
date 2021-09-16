@@ -9,7 +9,7 @@
 <div class="cloud x5"></div>
 </div>
   <v-container >
-
+  <transition appear name="fade">
    <v-card>
      <h5>
       <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
@@ -99,6 +99,7 @@
      <br>
        <p class="center "><b>PS: “Mi reino no es parte de este mundo” (JUAN 18:37).</b></p>
    </v-card>
+ </transition>
  </v-container>
  <AnimatedSlide class="anislide"/>
 </div>

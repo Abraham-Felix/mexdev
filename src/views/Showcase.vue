@@ -287,6 +287,7 @@
     <div class="shocase-card">
       <!-- main top division -->
         <v-row class="mx-0 top-div">
+            <transition appear name="slide-lr">
             <v-col class="col-6 pa-10 l-div">
                 <h1 class="t-white hr-1"> Fintech Horizons Media </h1>
                 <p class="center t-white text-md-h6" > Wonderful energy for fascinating experiences!</p>
@@ -295,6 +296,8 @@
                     <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
             </v-col>
+            </transition>
+              <transition appear name="slide-ub">
             <v-col class="mt-15 col-4  py-10 r-div">
                 <v-container class="p-box-main main-pbox  ">
                     <h5 class="t-white mb-5">highlights:</h5>
@@ -314,8 +317,11 @@
               </v-btn><br>
                 <hr width="300px" class="mt-10 center">
             </v-col>
+              </transition>
+            <transition appear name="slide-rl">
             <v-col class="mt-15 piggy">
             </v-col>
+          </transition>
         </v-row>
         <!-- 2nd division -->
         <section class="black">

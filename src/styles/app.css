@@ -174,3 +174,46 @@ p {
 ::-webkit-scrollbar-thumb:window-inactive {
     background: none;
 }
+/* css animations */
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-rl-enter-active {
+  transition: all .5s ease;
+}
+.slide-rl-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-rl-enter, .slide-rl-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-lr-enter-active {
+  transition: all 2.5s ease;
+}
+.slide-lr-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-lr-enter, .slide-lr-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.slide-ub-enter-active {
+  transition: all 1s ease;
+}
+.slide-ub-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-ub-enter, .slide-ub-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(2000px);
+  opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .9s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
