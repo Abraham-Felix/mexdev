@@ -32,7 +32,7 @@
   />
   </a>
   <v-text>
-  <p> send me a request, I will get back to you as soon as posible, will do my best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a></p>
+  <p class="px-md-15 py-md-5 text-md-body-2"> Send me a request, I will get back to you as soon as posible, will do my best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a></p>
   </v-text>
     <div>
         <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
