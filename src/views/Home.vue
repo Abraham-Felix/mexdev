@@ -68,7 +68,7 @@ h4 {
        <h1 class="mt-n3">
         <span class="get pulsate-css" transition="scroll-y-transition"> Dream BIG! </span>
        </h1>
-       <h3> give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
+       <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 ">
           <v-img class="center" width="300px" src="../assets/thanks.png"/>
           <p class="center">we like to make our day easier, with funny moments :)</p>
@@ -86,7 +86,7 @@ h4 {
        </a>
           </v-container>
      </v-card>
-   </transition> 
+   </transition>
      </v-container>
 
        <AnimatedSlide class="anislide"/>
