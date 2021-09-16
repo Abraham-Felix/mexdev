@@ -95,7 +95,7 @@
       </div>
      <h2 class="mt-3" style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
       <v-divider class="mb-5"></v-divider>
-     <v-btn dark href="/contact" title="get deeper by contacting us">contact us</v-btn>
+     <v-btn dark href="/contact" title="Get your products done!">Hire me!</v-btn>
      <br>
        <p class="center "><b>PS: “Mi reino no es parte de este mundo” (JUAN 18:37).</b></p>
    </v-card>
