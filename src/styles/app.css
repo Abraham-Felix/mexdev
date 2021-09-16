@@ -35,7 +35,12 @@ input {
 input.form-control {
 padding: 10px !important;
 }
-a {
+.form-control {
+  border: none;
+  padding: 10px !important;
+}
+
+a, a:hover {
     text-decoration: none;
 }
 p {

@@ -2,6 +2,20 @@
 .form-group {
     padding: 0px !important;
 }
+.form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: stretch;
+    align-content: space-around;
+    flex-direction: column;
+}
 </style>
 
 <template>

@@ -69,7 +69,7 @@ h4 {
        </h1>
        <h3> give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 ">
-          <v-img src="https://media4.giphy.com/media/oLD4lwEJcbQtY1USD7/giphy.gif"/>
+          <v-img class="center" width="300px" src="../assets/thanks.png"/>
           <p class="center">we like to make our day easier, with funny moments :)</p>
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">

@@ -1,7 +1,7 @@
 import firebase from '../plugins/firebase';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-
+import Gigs from '../views/Gigs.vue';
 import Contact from '../views/Contact.vue';
 import Jobs from '../views/Jobs.vue';
 import Requests from '../views/Requests.vue';
@@ -35,6 +35,14 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: Contact
+    //meta: {
+  //    requiresAuth:true
+  //  }
+  },
+  {
+    path: '/gigs',
+    name: 'Gigs',
+    component: Gigs
     //meta: {
   //    requiresAuth:true
   //  }

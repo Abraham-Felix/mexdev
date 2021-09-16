@@ -11,9 +11,9 @@
   <v-container >
 
    <v-card>
-     <h1>
-      <span class="get pulsate-css" transition="scroll-y-transition"> Welcome World</span>
-     </h1>
+     <h5>
+      <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
+    </h5>
 
        <v-divider class="mb-5" />
      <div class="center nav-col-mid d-flex justify-center align-center">
@@ -97,7 +97,7 @@
       <v-divider class="mb-5"></v-divider>
      <v-btn dark href="/contact" title="get deeper by contacting us">contact us</v-btn>
      <br>
-       <p class="center "><b>PS:"se habla español"</b></p>
+       <p class="center "><b>PS: “Mi reino no es parte de este mundo” (JUAN 18:37).</b></p>
    </v-card>
  </v-container>
  <AnimatedSlide class="anislide"/>

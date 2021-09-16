@@ -1,5 +1,6 @@
 {
   "name": "Mexdev",
+  "loader": "vue-loader",
   "contact": "mexdevservice@gmail.com",
   "author": "abraham felix <apesyntax@gmail.com>",
   "version": "0.2.0",
@@ -15,6 +16,7 @@
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "firebase": "^7.18.0",
+    "google-spreadsheet": "^3.1.15",
     "googleapis": "^39.2.0",
     "jquery": "^3.6.0",
     "less": "^3.0.4",

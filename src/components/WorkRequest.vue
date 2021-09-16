@@ -171,7 +171,9 @@ img.preview {
                     <editor-content  label="Tutorial content"  :editor="editor" v-model="newTutorial.content" />
                   </div>
                   </v-card>
-               <v-card>
+               <v-card width="100%">
+                 <v-divider class="m-tb-20"></v-divider>
+                 <h4> Preview </h4>
                 <div class="form-group">
                     <v-text-field required label="Date" class="form-control" type='date' v-model='newTutorial.date'>
                     </v-text-field>
@@ -181,14 +183,10 @@ img.preview {
                     </v-text-field>
                 </div>
                 </v-card>
-              <div>
 
-                <br>
-
-              </div>
-                <v-divider class="m-tb-20"></v-divider>
-                <h4> Preview </h4>
                 <v-card class="m-tb-20" v-model="newTutorial">
+                  <v-divider class="m-tb-20"></v-divider>
+                  <h4> Preview </h4>
                   <img class="preview " :src="picture"><br>
                     <v-card-title class="center">{{ newTutorial.title }} </v-card-title>
                     <v-card-subtitle> {{ newTutorial.first }} {{ newTutorial.last }} </v-card-subtitle>
