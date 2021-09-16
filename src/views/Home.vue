@@ -79,7 +79,7 @@ h4 {
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
             <span class="text--primary">Know more?</span> MexDev is backed up by 2 experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
           </p>
-          <v-btn primary dark class="mt-5" href="contact"> contact </v-btn><br>
+          <v-btn primary dark class="mt-5" href="contact"> Hire me! </v-btn><br>
           <p class="center mt-10">PS:"se habla español"</p>
           <a href="/showcase"><h2 style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
        </a>
