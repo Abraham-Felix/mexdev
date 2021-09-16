@@ -124,7 +124,7 @@ export default {
 
     data() {
         return {
-            displayText: 'Send Message',
+            displayText: 'send message',
             newMessage: {
                 first: '',
                 last: '',
