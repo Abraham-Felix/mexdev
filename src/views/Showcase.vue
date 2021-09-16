@@ -289,7 +289,7 @@
         <v-row class="mx-0 top-div">
             <v-col class="col-6 pa-10 l-div">
                 <h1 class="t-white hr-1"> Fintech Horizons Media </h1>
-                <p class="center t-white" > Wonderful energy for fascinating experience!</p>
+                <p class="center t-white text-md-h6" > Wonderful energy for fascinating experiences!</p>
                 <hr class="w-80 "/>
                 <div class="showcase-img">
                     <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
@@ -299,13 +299,13 @@
                 <v-container class="p-box-main main-pbox  ">
                     <h5 class="t-white mb-5">highlights:</h5>
                     <hr>
-                    <p class="t-white">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
+                    <p class="t-white text-md-h6">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
                         app project built with Ionic/ Vue.js.
                     </p>
-                    <p class="t-white"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
+                    <p class="t-white text-md-h6"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
                 </v-container>
                 <div class="center mt-n15">
-                  <p class="mt-10 t-c"><b>We are selling our project & if posible work for you in it! <br> We are out of money! help us get back on track!</b> </p>
+                  <p class="mt-16 t-c text-md-h5"><b> Whoops! I ran out of money! <br> Help us get back on track!</b> </p>
                   <br>
                 </div>
                 <br>
@@ -325,10 +325,10 @@
             <div class="p-box mt-15 ">
                 <h5 class="mb-5">highlights:</h5>
                 <hr>
-                <p>The app/content management system was created in WordPress and transferred to Adobe Catalyst.
+                <p class="text-md-h6">The app/content management system was created in WordPress and transferred to Adobe Catalyst.
                 </p>
-                <p> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
-                <p> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
+                <p class="text-md-h6"> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
+                <p class="text-md-h6"> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
                 </p>
             </div>
             <br>
@@ -364,9 +364,9 @@
                 <div class="p-box mt-15">
                     <h5 class="mb-5">highlights:</h5>
                     <hr>
-                    <p>A classic car showcase webdesign, it uses gallery and event most of the project was design using a thirdparty system, after it was migrated from wix the old CMS system.
+                    <p class="text-md-h6">A classic car showcase webdesign, it uses gallery and event most of the project was design using a thirdparty system, after it was migrated from wix the old CMS system.
                     </p>
-                    <p> The services provided icluded our certified knowledge from Google an Hp on digital marketing as social media marketing & social media management, The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
+                    <p class="text-md-h6"> The services provided icluded our certified knowledge from Google an Hp on digital marketing as social media marketing & social media management, The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
 
                 </div>
                 <br>
@@ -389,7 +389,7 @@
                 <div class="pa-5">
                     <h3> Organized & clean code. </h3>
                     <v-divider class="mx-15"></v-divider>
-                    <p class="center text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity. Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
+                    <p class="center text-md-h5 pa-15 text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity. Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
                     </div>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
@@ -400,7 +400,7 @@
     </div>
     <div class="design-card t-white">
       <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
-  <p class="center px-5 "> our UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
+  <p class="center px-5 text-md-h6"> My UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
     <v-container>
         <v-row  justify="space-around" class="py-10">
             <v-col cols="12" sm="6" >
