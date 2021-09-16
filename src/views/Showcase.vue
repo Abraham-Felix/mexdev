@@ -400,8 +400,9 @@
     </div>
     <div class="design-card t-white">
       <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
-  <p class="center px-5 text-md-h6"> My UX/Ui concepts are based on accessibility, usability, information architecture, wireframes, interaction design, agile Ux/Ui, graphic Design, mobile-first, target persona & A/B testing.  </p>
-    <v-container>
+      <p class="center px-5 text-md-h6"> My UX/Ui concepts are based on Accessibility, Usability, Information Architecture, Wireframes, Interaction design, Agile Ux/Ui, Graphic Design, Mobile-first, Target persona & A/B testing.  </p>
+      <v-img class="ma-md-15 mx-5 " src="@/assets/UxUi-tech.png"></v-img>
+      <v-container>
         <v-row  justify="space-around" class="py-10">
             <v-col cols="12" sm="6" >
                 <v-img class="d-flex align-end rounded-xl" height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif">
@@ -416,7 +417,8 @@
                             <v-card-actions class="justify-end">
                                 <v-btn text @click="dialog.value = false"> X </v-btn>
                             </v-card-actions>
-                            <h2> Vue UI Demo on Codepen </h2>
+                            <h2> UX/UI Demos </h2>
+                            <p class="center">click on images to visit them</p>
                             <v-divider/>
 
                             <v-card-text class="hover-shadow my-10 pa-10">
@@ -439,7 +441,13 @@
                                 <h5 class="my-3"> Character Creation Gallery </h5>
                                 <v-divider class="mb-5" />
                                 <a target="_blank" href="https://codepen.io/apesyntax/full/poJboNm">
-                                    <v-img class="pa-10" src="@/assets/thanks.png"></v-img>
+                                    <v-img width="300px" class="center pa-10" src="@/assets/thanks.png"></v-img>
+                                </a>
+                            </v-card-text><v-card-text class="hover-shadow my-10 pa-10">
+                                <h5 class="my-3"> Google Sheets API Table UI </h5>
+                                <v-divider class="mb-5" />
+                                <a target="_blank" href="/gigs">
+                                    <v-img width="600px" class="center pa-10" src="@/assets/gs-api.svg"></v-img>
                                 </a>
                             </v-card-text>
                         </v-card>
@@ -462,6 +470,17 @@
                     </div>
                 </section>
             </v-col>
+        </v-row>
+      </v-container>
+      <v-container class="mb-10"  >
+        <v-row >
+          <v-col class="mb-10 ">
+            <section >
+              <h1 class="mb-16">Certified by:</h1>
+              <v-divider dark class="pb-10"></v-divider>
+              <v-img width="70%" class="center mx-md-15"  src="@/assets/certified.png"></v-img>
+            </section>
+          </v-col>
         </v-row>
       </v-container>
     </div>
