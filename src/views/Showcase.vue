@@ -461,9 +461,12 @@
                             <v-carousel-item gradient=" rgba(100,115,201,.33), rgba(25,32,72,.7)" v-for="(uxitem,i) in uxitems" :key="i" :src="uxitem.src"
                             class="carousel" reverse-transition="fade-transition" transition="fade-transition">
                                 <v-col class="mt-5">
-                                    <v-text class="des py-10 px-10 text--tertiary rounded text-md-body-1">{{uxitem.title}}
-                                        <v-divider class="mt-2" />
-                                        <br>{{uxitem.des}}</v-text>
+                                    <v-text
+                                    class="des py-10 px-10 text--tertiary rounded text-md-body-1"
+                                    >
+                                    {{uxitem.title}}
+                                    <v-divider class="mt-2" />
+                                    <br> {{uxitem.des}} </v-text>
                                 </v-col>
                             </v-carousel-item>
                         </v-carousel>
@@ -476,7 +479,7 @@
         <v-row >
           <v-col class="mb-10 ">
             <section >
-              <h1 class="mb-16">Certified by:</h1>
+              <h1 class="mb-8 md-mb-16">Certified by:</h1>
               <v-divider dark class="pb-10"></v-divider>
               <v-img width="70%" class="center mx-md-15"  src="@/assets/certified.png"></v-img>
             </section>
