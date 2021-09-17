@@ -117,11 +117,11 @@ h4 {
     <div>
         <div class="col-100">
             <div class="col-b">
-                <v-img alt="Abraham Felix" class="shrink mr-2 margin center" contain src="../assets/ab-felix.png" transition="scale-transition" width="100" />
+                <v-img alt="Abraham Felix" class="shrink mr-2 margin center rounded-lg" contain src="../assets/ab-felix.png" transition="scale-transition" width="200" />
                 <br>
                 <p><b> <a target="_blank" href="https:/www.github.com/abraham-felix"> Abraham Felix</a> </b></p>
                 <br>
-                <p> Front-End </p>
+                <p> FullStack </p>
                 <br>
                 <p><b>Mexico</b></p>
             </div>
@@ -129,11 +129,11 @@ h4 {
             <v-divider vertical class="gray"></v-divider>
 
             <div class="col-b">
-                <v-img alt="Abraham Felix" class="shrink mr-2 margin center" contain src="../assets/kevin-naf.jpg" transition="scale-transition" width="100" />
+                <v-img alt="Abraham Felix" class="shrink mr-2 margin center rounded-lg" contain src="../assets/kevin-naf.jpg" transition="scale-transition" width="200" />
                 <br>
                 <p> <b> <a target="_blank" href="https:/www.github.com/kevinnafziger"> Kevin Nafziger </a> </b></p>
                 <br>
-                <p> Back-End </p>
+                <p> FullStack </p>
                 <br>
                 <p><b>USA</b></p>
             </div>
