@@ -102,7 +102,7 @@
         <v-divider class="mb-5  mt-md-15"></v-divider>
         <v-btn dark href="/contact" title="Get your products done!">Hire me!</v-btn>
         <br>
-        <p class="center "><b>PS: “Mi reino no es parte de este mundo” (JUAN 18:37).</b></p>
+        <p class="center "><b>PS: “disfruten de todo su duro trabajo. Eso es un regalo de Dios” <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">(Eclesiastés 3:13)</a>.</b></p>
       </v-container>
    </v-card>
  </transition>
