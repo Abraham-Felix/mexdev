@@ -89,9 +89,9 @@
           companies & contractors, upgrading into the online business model or updating their current app progress.
         </p>
       </v-container>
-      <!-- gallery slideshow -->
+      <!-- Mockup Slider -->
       <div class="slideshow">
-        <Slideshow/>
+        <MockupSlider/>
       </div>
      <h2 class="mt-3" style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
       <v-divider class="mb-5"></v-divider>
@@ -112,14 +112,14 @@ import toastr from 'toastr';
 import { mapGetters } from "vuex";
 import Login from "../components/Login.vue";
 import SignUp from "../components/SignUp.vue";
-import Slideshow from "../components/slideshow.vue";
+import MockupSlider from "@/components/animations/MockupSlider.vue";
 
 export default {
   name: 'Landing',
   components: {
     Login,
     SignUp,
-    Slideshow,
+    MockupSlider,
     AnimatedSlide
   },
   computed: {

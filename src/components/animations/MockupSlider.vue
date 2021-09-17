@@ -1,3 +1,42 @@
+<template>
+  <div id="cf4a">
+    <img
+      id="img"
+      v-for="(img,i) in imgs"
+      :key="i"
+      :src="img.src"
+      >
+  </div>
+</template>
+
+<script>
+export default {
+  name: "MockupSlider",
+  data() {
+    return {
+      // refactoring components to reduce markup using items in array
+      imgs: [
+        {
+        src: require("@/assets/sd-mockup.png")
+      },
+      {
+        src: require("@/assets/df-mockup.png")
+      },
+      {
+        src: require("@/assets/ccp-mockup.png")
+      },
+      {
+        src: require("@/assets/ls-mockup.png")
+      },
+      {
+        src: require("@/assets/fhm-mockup.png")
+      }
+    ]
+    }
+  }
+}
+</script>
+
 <style scoped>
 img#img {
     max-width: 600px;
@@ -137,33 +176,3 @@ animation-delay: 2s;
 animation-delay: 0;
 }
 </style>
-
-<template>
-  <div id="cf4a" >
-     <img
-     id="img"
-     src="../assets/fhm-mockup.png">
-     <img
-       id="img"
-       src="../assets/ls-mockup.png"
-       >
-     <img
-       id="img"
-       src="../assets/ccp-mockup.png"
-       >
-     <img
-       id="img"
-       src="../assets/df-mockup.png"
-       >
-       <img
-         id="img"
-         src="../assets/sd-mockup.png"
-         >
-  </div>
-</template>
-
-<script>
-  export default {
-    name: "Slideshow"
-  }
-</script>
