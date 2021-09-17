@@ -71,7 +71,13 @@ h4 {
        <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 ">
           <v-img class="center" width="300px" src="../assets/thanks.png"/>
-          <p class="center">we like to make our day easier, with funny moments :)</p>
+          <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
+            <span class="text--primary">Why am i so energetic?</span> I love working hard, it is what I have been though to do,
+            my loving god has teched me to,and this means I study high-end technologies, not the obsolete hard, and hard to use,
+            that can end up being hard to maintain & very expensive. Sounds painful, right?... but don't you worry because the more sophisticated technology is
+            here providing simple and easy to maintain modular & effectively fast-paced development! and instead of using 100 hands,
+            I use 2, my own hands! and sometimes "A whole team that helps me get huge amazing projects!" <b> - Abraham Felix </b>
+          </p>
           <v-divider/>
           <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
             <span class="text--primary">What is mexdev?</span> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals,
@@ -81,7 +87,7 @@ h4 {
             <span class="text--primary">Know more?</span> MexDev is backed up by 2 experienced developers covering fullstack, if you like to know more about the type of solutions, we offer send us a message and we will get back to you ASAP!
           </p>
           <v-btn primary dark class="mt-5" href="contact"> Hire me! </v-btn><br>
-          <p class="center mt-10">PS:"se habla español"</p>
+          <p class="center mt-10"><b>PS:"Se habla español, dejame saber que es lo que tienes en mente!"</b></p>
           <a href="/showcase"><h2 style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
        </a>
           </v-container>
