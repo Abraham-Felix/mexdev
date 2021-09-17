@@ -68,7 +68,7 @@ h4 {
 <template>
 
 <v-card class="mx-auto">
-    <h1> About us </h1>
+    <h1> About </h1>
     <v-img class="center fav" src="../assets/mxdv-fav.png" />
     <v-card-text class="text-justify p10s">
         <h4><b>Vision:</b></h4>
@@ -78,7 +78,7 @@ h4 {
         <p>
             Hello, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>, I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress, we are home office individuals with great energy.
         </p>
-        <h4 class="mt-10"><b>The project:</b></h4>
+        <h4 class="mt-10"><b>The project Big vision:</b></h4>
         <br>
         <v-divider></v-divider>
         <br>
