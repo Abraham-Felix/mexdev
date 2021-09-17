@@ -116,7 +116,7 @@ p {
 }
 .v-card {
   margin: 20px auto !important;
-  max-width: 600px !important;
+  max-width: 600px;
   min-width: auto !important;
   transition:1s;
 }

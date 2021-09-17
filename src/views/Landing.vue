@@ -10,11 +10,14 @@
 </div>
   <v-container >
   <transition appear name="fade">
-   <v-card>
-     <h5>
-      <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
-    </h5>
+   <v-card class="mt-n5">
+      <h5>
+        <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
+      </h5>
+      <h3 class="mt-3" style="color:dodgerblue">
 
+        Success: <h5> 5 happy international clients! <v-icon color="green"> mdi-clipboard-check </v-icon></h5>
+      </h3>
        <v-divider class="mb-5" />
      <div class="center nav-col-mid d-flex justify-center align-center">
        <v-dialog
@@ -89,15 +92,18 @@
           companies & contractors, upgrading into the online business model or updating their current app progress.
         </p>
       </v-container>
+      <v-container class="mt-10 mt-md-n7">
       <!-- Mockup Slider -->
-      <div class="slideshow">
+      <div class="slideshow ">
         <MockupSlider/>
-      </div>
-     <h2 class="mt-3" style="color:dodgerblue"><v-icon color="green"> mdi-clipboard-check </v-icon> Success: 5 happy international clients!</h2>
-      <v-divider class="mb-5"></v-divider>
-     <v-btn dark href="/contact" title="Get your products done!">Hire me!</v-btn>
-     <br>
-       <p class="center "><b>PS: “Mi reino no es parte de este mundo” (JUAN 18:37).</b></p>
+      </div><br>
+    </v-container>
+      <v-container class="mt-n15 mt-md-15">
+        <v-divider class="mb-5  mt-md-15"></v-divider>
+        <v-btn dark href="/contact" title="Get your products done!">Hire me!</v-btn>
+        <br>
+        <p class="center "><b>PS: “Mi reino no es parte de este mundo” (JUAN 18:37).</b></p>
+      </v-container>
    </v-card>
  </transition>
  </v-container>
@@ -167,6 +173,7 @@ h4 {
 }
 .v-card {
   padding: 20px;
+  max-width: 900px !important;
 }
 .h-des {
   font-size: 16px ;
