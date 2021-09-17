@@ -75,7 +75,7 @@
 #footer {
     align-self: end;
     position: fixed;
-    width: -webkit-fill-available;
+    width: 100%;
     /* mozzila firefox */
     width: 100%;
     bottom: 0;

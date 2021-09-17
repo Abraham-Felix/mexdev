@@ -61,7 +61,7 @@ export default {
   .v-card{
     display:inline-block;
     max-width: 600px !important;
-    width: -webkit-fill-available !important;
+    width: 100% !important;
   }
   .margin {
     margin:10px !important;

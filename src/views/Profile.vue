@@ -1,6 +1,6 @@
 <style scoped>
  input.form-control {
-   width: -webkit-fill-available;
+   width: 100%;
  }
 
 img.preview {

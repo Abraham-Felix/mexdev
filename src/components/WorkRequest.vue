@@ -28,7 +28,7 @@ img.preview {
 .choose-img {
   text-align-last: center;
   border: none !important;
-  max-inline-size: -webkit-fill-available;
+  max-inline-size: 100%;
   padding: 0px !important;
 }
 .wr-btn {

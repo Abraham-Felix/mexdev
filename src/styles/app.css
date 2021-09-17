@@ -24,7 +24,7 @@ h5 {
 main  {
   height: max-content;
   position: relative;
-  width: -webkit-fill-available;
+  width: 100%;
   margin-top: 64px;
   margin-bottom: 100px;
 }
@@ -135,7 +135,7 @@ p {
     left: 50%;
     min-width: 100%;
     /* min-height: 100%; */
-    height: -webkit-fill-available;
+    height: 100%;
     display: inline-grid;
     transform: translate(-50%, 0);
     will-change: transform;

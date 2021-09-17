@@ -4,7 +4,7 @@ img#img {
 }
 @media (max-width:900px){
   img#img {
-      max-width: fill !important;
+      max-width: 100% !important;
   }
 }
  .header-zoom img {
