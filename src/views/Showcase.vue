@@ -293,7 +293,7 @@
                 <p class="center t-white text-md-h6" > Wonderful energy for fascinating experiences!</p>
                 <hr class="w-80 "/>
                 <div class="showcase-img">
-                    <img class="main-img" src="../assets/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
+                    <img class="main-img" src="../assets/mockups/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
             </v-col>
             </transition>
@@ -353,7 +353,7 @@
                 <h2> Laguna Shores Resorts </h2>
                 <v-divider></v-divider>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
-                    <img src="../assets/ls-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
+                    <img src="../assets/mockups/ls-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
               </div>
             </v-row>
@@ -363,7 +363,7 @@
                 <h3> Classic Car Pal </h3>
                 <v-divider></v-divider>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
-                    <img src="../assets/ccp-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
+                    <img src="../assets/mockups/ccp-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
               </div>
                 <div class="mt-15 col-6  bl-div xs-col-12 py-10" >
@@ -464,7 +464,7 @@
                 <section class="slide-section ">
                     <div class="Gmodule ">
                         <v-carousel class="port-slider rounded-xl">
-                            <v-carousel-item 
+                            <v-carousel-item
                             gradient=" rgba(100,115,201,.33), rgba(25,32,72,.7)"
                             v-for="(uxitem,i) in uxitems"
                             :key="i"

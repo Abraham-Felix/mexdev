@@ -76,7 +76,16 @@ h4 {
         <v-divider class="mb-5"></v-divider>
         <v-img class="mb-5" src="../assets/home-office.png" />
         <p>
-            Hello, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>, I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions as a service for individuals, companies & contractors, upgrading into the online business model or updating their current app progress, we are home office individuals with great energy.
+            Hello, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
+            I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions
+            as a service for individuals, companies & contractors, upgrading into the online business model or updating
+            their current app progress, we are home office individuals with great energy.
+            <br>
+            Why am i so energetic? I love working hard, it is what I have been though to do, my loving god has teched me to,
+            and this means I study high-end technologies, not the obsolete hard, and hard to use, that can end up being hard
+            to maintain & very expensive. Sounds painful, right?... but don't you worry because the more sophisticated technology
+            is here providing simple and easy to maintain modular & effectively fast-paced development! and instead of using 100 hands,
+             I use 2, my own hands! and sometimes "A whole team that helps me get huge amazing projects!" - Abraham Felix
         </p>
         <h4 class="mt-10"><b>The project Big vision:</b></h4>
         <br>
@@ -114,33 +123,42 @@ h4 {
         <v-divider></v-divider>
         <br>
     </v-card-text>
-    <div>
-        <div class="col-100">
-            <div class="col-b">
-                <v-img alt="Abraham Felix" class="shrink mr-2 margin center rounded-lg" contain src="../assets/ab-felix.png" transition="scale-transition" width="200" />
-                <br>
-                <p><b> <a target="_blank" href="https:/www.github.com/abraham-felix"> Abraham Felix</a> </b></p>
-                <br>
-                <p> FullStack </p>
-                <br>
-                <p><b>Mexico</b></p>
-            </div>
-
-            <v-divider vertical class="gray"></v-divider>
-
-            <div class="col-b">
-                <v-img alt="Abraham Felix" class="shrink mr-2 margin center rounded-lg" contain src="../assets/kevin-naf.jpg" transition="scale-transition" width="200" />
-                <br>
-                <p> <b> <a target="_blank" href="https:/www.github.com/kevinnafziger"> Kevin Nafziger </a> </b></p>
-                <br>
-                <p> FullStack </p>
-                <br>
-                <p><b>USA</b></p>
-            </div>
-        </div>
-        <br>
-        <br>
-    </div>
+    <v-row>
+          <v-col cols="6" >
+              <div>
+                  <v-img
+                  alt="Abraham Felix"
+                  class="pleads center rounded-lg"
+                  src="../assets/ab-felix.png"
+                   />
+              </div>
+              <div>
+               <p><b> <a target="_blank" href="https:/www.github.com/abraham-felix"> Abraham Felix</a> </b></p>
+               <br>
+               <p> FullStack </p>
+               <br>
+               <p><b>Mexico</b></p>
+              </div>
+          </v-col>
+          <v-col cols="6">
+              <div >
+                  <v-img
+                  alt="Abraham Felix"
+                  class="pleads center rounded-lg"
+                  src="../assets/kevin-naf.jpg"
+                    />
+              </div>
+              <div>
+              <p> <b> <a target="_blank" href="https:/www.github.com/kevinnafziger"> Kevin Nafziger </a> </b></p>
+              <br>
+              <p> FullStack </p>
+              <br>
+              <p><b>USA</b></p>
+             </div>
+           </v-col>
+          <br>
+          <br>
+      </v-row>
 </v-card>
 
 </template>
