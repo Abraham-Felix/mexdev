@@ -100,7 +100,7 @@
     </v-container>
       <v-container class="mt-n15 mt-md-15">
         <v-divider class="mb-5  mt-md-15"></v-divider>
-        <v-btn dark href="/contact" title="Get your products done!">Hire me!</v-btn>
+        <v-btn dark href="/products" title="Get your products done!">Products</v-btn>
         <br>
         <p class="center "><b>PS: “disfruten de todo su duro trabajo. Eso es un regalo de Dios” <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">(Eclesiastés 3:13)</a>.</b></p>
       </v-container>
