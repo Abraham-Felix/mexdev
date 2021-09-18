@@ -82,7 +82,7 @@ h4 {
     <transition appear name="slide-ub">
      <v-card class="product-card mt-5">
        <h1 class="mt-n3">
-        <span class="get pulsate-css" transition="scroll-y-transition"> DreamBig </span>
+        <span class="get pulsate-css" transition="scroll-y-transition"> MXDV </span>
        </h1>
        <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
         <v-container class="text-sm-body-2 ">
@@ -133,8 +133,8 @@ h4 {
         <span><v-icon>mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
-        <span class="blue--text">What is DreamBig?</span><br><br>
-        <b>DreamBig</b> is a support team that is here to help out! dont worry we got your back, you can explain for what purpose you need the application and we will help
+        <span class="blue--text">What is MexDev?</span><br><br>
+        <b>MexDev</b> is a support team that is here to help out! dont worry we got your back, you can explain for what purpose you need the application and we will help
         you trhougout the whole process of installation and configuration even escalating to fit your business purpose, we been in the developtment
         business for decades! that is right this is our lifestyle and we are here you help you and your busines grow!  give us a call today!
         <span><v-icon>mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
