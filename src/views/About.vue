@@ -78,14 +78,14 @@ h4 {
         <v-divider class="mb-5"></v-divider>
         <v-img class="mb-5" src="../assets/home-office.png" />
         <p>
-            Hello, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
+            <b>Hello!</b>, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
             I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions
-            as a service for individuals, companies & contractors, upgrading into the online business model or updating
+            as a service and digital products for individuals, companies & contractors, upgrading into the online business model or updating
             their current app progress, we are home office individuals with great energy.
           </p>
           <br><br>
           <p>
-            <b> Why am i so energetic?</b> I love working hard, it is what I have been though to do, my loving god has teched me to,
+            <b> Energetic! </b> I love working hard, it is what I have been though to do, my loving <b>God</b> has teched me to,
             and this means I study high-end technologies, not the obsolete hard, and hard to use, that can end up being hard
             to maintain & very expensive. Sounds painful, right?... but don't you worry because the more sophisticated technology
             is here providing simple and easy to maintain modular & effectively fast-paced development! and instead of using 100 hands,
