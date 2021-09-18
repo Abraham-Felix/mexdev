@@ -105,7 +105,6 @@
             @click="markcompleted"
             type="submit"
             value="send"
-            class="hrain"
             small color="primary" dark>
                 {{ displayText }}
             </v-btn>

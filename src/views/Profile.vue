@@ -207,7 +207,7 @@ form.mt-10.center {
                                  <v-text-field
                                  type="email"
                                  background-color="tertiary"
-                                 class="form-control"
+                                 class="form-control mx-md-n7"
                                  v-model="email"
                                  placeholder="enter new email"
                                  label="Email (press enter)"
@@ -229,7 +229,7 @@ form.mt-10.center {
                               >
                                 <v-text-field
                                 type="password"
-                                class="form-control"
+                                class="form-control mx-md-n7"
                                 background-color="tertiary"
                                 v-model="newPassword"
                                 placeholder="enter new password"
