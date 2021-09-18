@@ -89,8 +89,7 @@
       <v-container class="text-sm-body-2">
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
           <span class="text--primary">What is Mexdev?</span><br><br> MexDev is a USA and Mexico web/app development team providing coding solutions as a service for individuals &
-          digital products to enhance your business in a digital way,
-          companies & contractors, upgrading into the online business model or updating their current app progress.
+          digital products to enhance your business in a digital way, we help companies & contractors by upgrading into the online business model or updating their current app progress.
         </p>
       </v-container>
       <v-container class="mt-10 mt-md-n7">
