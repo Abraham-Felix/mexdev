@@ -130,14 +130,14 @@ h4 {
         axios, express.js, vuetify, firebase, vue-cli, email.js, vue-gtag, sass-loaders, google sheets api & other important things to make it run...</b>
         Yes you heard right! i took all the pain to build this easy start up app, just for you to go on install configure your accounts
         and kaboom! start editing the project as much as you need, you can customize it as much as you love. "Enjoy your new journey in the digital business!"
-        <span><v-icon>mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
+        Give us a call today! <span><v-icon class="green--text"> mdi-phone </v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
         <span class="blue--text">What is MexDev?</span><br><br>
         <b>MexDev</b> is a support team that is here to help out! dont worry we got your back, you can explain for what purpose you need the application and we will help
         you trhougout the whole process of installation and configuration even escalating to fit your business purpose, we been in the developtment
         business for decades! that is right this is our lifestyle and we are here you help you and your busines grow!  give us a call today!
-        <span><v-icon>mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
+        <span><v-icon class="green--text">mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
         <span class="blue--text">What is NuStack?</span><br><br>
@@ -145,7 +145,7 @@ h4 {
         and you can't fin an easy way to organize your gigs and present them in a nice way for developers to call you and start the interview process,
         well then NuStack is designed to help you out in a simple way using google sheets! yes you can easily fill your sheets on google and have your jobs
         presented in a beautifull ui that is mobile friendly for developers to start contacting you for your gigs! we are here you help you and your busines grow!  give us a call today!
-        <span><v-icon>mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
+        <span><v-icon class="green--text">mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
     </v-container>
 </main>
