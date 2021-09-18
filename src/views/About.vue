@@ -24,7 +24,9 @@ h1 {
 .v-image {
     z-index: 0;
 }
-
+.pleads {
+  width: 50%;
+}
 ul {
 
     display: inline-flex;
@@ -70,7 +72,7 @@ h4 {
 <v-card class="mx-auto">
     <h1> About </h1>
     <v-img class="center fav" src="../assets/mxdv-fav.png" />
-    <v-card-text class="text-justify p10s">
+    <v-card-text class="text-justify text-body-1 p10s">
         <h4><b>Vision:</b></h4>
         <br>
         <v-divider class="mb-5"></v-divider>
@@ -80,8 +82,10 @@ h4 {
             I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions
             as a service for individuals, companies & contractors, upgrading into the online business model or updating
             their current app progress, we are home office individuals with great energy.
-            <br>
-            Why am i so energetic? I love working hard, it is what I have been though to do, my loving god has teched me to,
+          </p>
+          <br><br>
+          <p>
+            <b> Why am i so energetic?</b> I love working hard, it is what I have been though to do, my loving god has teched me to,
             and this means I study high-end technologies, not the obsolete hard, and hard to use, that can end up being hard
             to maintain & very expensive. Sounds painful, right?... but don't you worry because the more sophisticated technology
             is here providing simple and easy to maintain modular & effectively fast-paced development! and instead of using 100 hands,
@@ -129,7 +133,7 @@ h4 {
                   <v-img
                   alt="Abraham Felix"
                   class="pleads center rounded-lg"
-                  src="../assets/ab-felix.png"
+                  src="@/assets/ab-felix.png"
                    />
               </div>
               <div>
@@ -145,7 +149,7 @@ h4 {
                   <v-img
                   alt="Abraham Felix"
                   class="pleads center rounded-lg"
-                  src="../assets/kevin-naf.jpg"
+                  src="@/assets/kevin-naf.jpg"
                     />
               </div>
               <div>
