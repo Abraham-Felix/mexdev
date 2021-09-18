@@ -42,7 +42,6 @@
     padding: 0px;
 }
 
-
 </style>
 <template>
   <div id="nav">
@@ -80,6 +79,7 @@
       elevate-on-scroll
     >
       <div center >
+        <a href="/landing">
         <v-img
           alt="Mexdev Small Navbar Logo"
           class="shrink d-none t-l d-sm-flex"
@@ -88,12 +88,13 @@
           transition="scale-transition"
           width="40"
         />
+      </a>
       </div>
       <div class="nav-col-mid d-flex justify-space-around align-center">
-        <router-link to="/home">
-        <v-btn v-if="user.loggedIn" class="nav-btns pa-2" depressed small color="primary" title="home" >
+        <router-link to="/products">
+        <v-btn v-if="user.loggedIn" class="nav-btns pa-2" depressed small color="primary" title="products" >
           <span class="mobile-icons mdi mdi-home"></span>
-          <span class="web-nav-btns"> home </span>
+          <span class="web-nav-btns"> products </span>
         </v-btn>
         </router-link>
         <router-link to="/Showcase">

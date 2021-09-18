@@ -17,11 +17,11 @@ Vue.use(VueRouter)
   const routes = [
     {
       path: '*',
-      redirect: '/home'
+      redirect: '/landing'
     },
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/landing'
     },
     {
       path: '/school/virtualdom',
@@ -112,9 +112,9 @@ Vue.use(VueRouter)
     }
   },
   {
-  path: '/home',
-  name: 'Home',
-  component: () => import(/* webpackChunkName: "Home" */ '../views/Home.vue'),
+  path: '/products',
+  name: 'Products',
+  component: () => import(/* webpackChunkName: "Home" */ '../views/Products.vue'),
   meta: {
     requiresAuth:true
   }
