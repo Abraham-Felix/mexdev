@@ -21,21 +21,27 @@
 <template>
 
 <v-card>
-  <a href="/landing">
-  <v-img
-    alt="mexdev logo"
-    class="shrink mr-2 margin center"
-    contain
-    src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
-    transition="scale-transition"
-    width="100"
-  />
-  </a>
-  <br>
-  <v-text>
-  <p class="px-md-15 py-md-5 text-md-body-2 center"> Send me a request, I will get back to you as soon as posible,<br>
-     will do my best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a></p>
-  </v-text>
+  <div>
+    <a href="/landing">
+    <v-img
+      alt="mexdev logo"
+      class="shrink mr-2 margin center"
+      contain
+      src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
+      transition="scale-transition"
+      width="100"
+    />
+    </a>
+      <br>
+    <v-text>
+      <p class="px-md-15 pt-md-5 text-md-body-2 center"> Send me a request, I will get back to you as soon as posible,<br>
+        will do my best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a>
+      </p>
+    </v-text >
+    <br>
+    <p class="text-md-body-2 center mt-n16 pb-10">
+     +52 638 113 4196 </p> <v-icon class="green--text mb-3"> mdi-whatsapp </v-icon>
+  </div>
     <div>
         <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
           <div class="d-flex justify-space-between">
