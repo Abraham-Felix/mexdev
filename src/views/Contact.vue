@@ -1,6 +1,7 @@
 <template>
 <div id="app">
-  <ChatApp/><br>
+  <!-- <ChatApp/> -->
+  <br>
   <h1>Contact</h1>
   <ContactForm/>
 </div>
@@ -9,13 +10,13 @@
 <script>
 
 import ContactForm from '../components/ContactForm.vue';
-import ChatApp from '../components/ChatApp.vue';
+//import ChatApp from '../components/ChatApp.vue';
 
 export default {
   name: 'contact',
   components: {
     ContactForm,
-    ChatApp
+    //ChatApp
   }
 }
 
