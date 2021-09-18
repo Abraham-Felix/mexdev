@@ -81,6 +81,16 @@
                 v-model="newMessage.phone">
                 </v-text-field>
             </div>
+            <div>
+              <v-select
+               name="product"
+               :rules="productRules"
+               :items="newMessage.product"
+               v-model="newMessage.product"
+               required label="Product"
+               class="mx-2"
+        ></v-select>
+            </div>
             <div class="form-group">
                 <v-textarea
                 :rules="contentRules"
@@ -130,21 +140,25 @@ export default {
             newMessage: {
                 first: '',
                 last: '',
-                content: '',
                 email: '',
                 phone: '',
+                product: ['Mxdv Support', 'NuStack', 'NuDream'],
+                content: ''
             },
             nameRules: [
                 v => !!v || 'you must type something',
                 v => v.length <= 15 || 'hum.. this monk smelling somthing strange... must be less than 15 characters',
             ],
-            phoneRules: [
-                v => !!v || 'type your phone number',
-                v => v.length <= 12 || 'hum.. this monk smelling somthing strange... must be less than 12 numbers',
-            ],
             emailRules: [
                 v => !!v || 'E-mail is required',
                 v => /.+@.+/.test(v) || 'Please enter a valid email containing @ ',
+            ],
+            phoneRules: [
+                v => !!v || 'type your phone number',
+                v => v.length <= 13 || 'hum.. this monk smelling somthing strange... must be less than 12 numbers',
+            ],
+            productRules: [
+                v => !!v || 'Content is required amigo!',
             ],
             contentRules: [
                 v => !!v || 'Content is required amigo!',
@@ -159,17 +173,20 @@ export default {
             this.newMessage.last = '';
             this.newMessage.email = '';
             this.newMessage.phone = '';
+            this.newMessage.product = '';
             this.newMessage.content = '';
             toastr.success('Horray! message sent successfully');
             this.displayText = 'Nice job!';
             this.nameRules = true;
-            this.namePhone = true;
             this.emailRules = true;
+            this.namePhone = true;
+            this.productRules = true;
             this.contentRules = true;
             emailjs.sendForm('service_qe62coj','template_2oa9x3s', e.target,'user_1hqcYgrszmW6XZSBq6v5n', {
             name: this.newMessage.first,
             email: this.newMessage.email,
             phone: this.newMessage.phone,
+            product: this.newMessage.products,
             message: this.newMessage.content,
           })
         },

@@ -265,7 +265,7 @@ form.mt-10.center {
               <v-card>
               <h4><v-icon> mdi-account-cowboy-hat </v-icon>Extra details  </h4>
               <v-divider></v-divider>
-              <v-toolbar
+<!--          <v-toolbar
                   flat
                   height="75"
                   class="center my-10 py-2 rounded"
@@ -277,6 +277,7 @@ form.mt-10.center {
                       persistent-hint
                     ></v-switch>
               </v-toolbar>
+              -->
               <v-text-field type="text" v-model="favoriteFood" label="Fav food" placeholder="enter favorite food" background-color="tertiary" class="form-control">
               </v-text-field>
               <v-btn type="submit" depressed small color="primary" @keyup.enter="updateCustomDetails" class="update"> <v-icon> mdi-pencil </v-icon> </v-btn>
