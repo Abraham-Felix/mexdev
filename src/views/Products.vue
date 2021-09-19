@@ -140,6 +140,10 @@ h4 {
        {{productDescription.description}}
      </p>
      </v-container>
+     <v-container>
+       <p> Product preview </p>
+       <v-img src="@/assets/gif/NuStack.gif"></v-img>
+     </v-container>
 </main>
 </template>
 
