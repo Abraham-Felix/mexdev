@@ -112,7 +112,7 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuDream </span>
   </h1>
-  <h3 class="medium-opt"> All in one <span class="text-decoration-line-through break">struggle!</span> Product! </h3> <br>
+  <h3 class="medium-opt"> All in-one <span class=" break"> <a href="https://nudream.herokuapp.com/landing"> live preview </a> </span> Product! </h3> <br>
    <v-container class="text-sm-body-2 mt-sm-n16 mt-md-0">
      <NuDreamTechSlide/>
      </v-container>
@@ -125,18 +125,22 @@ h4 {
      <v-container class="text-sm-body-2">
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
         <span class="blue--text">What is NuDream? (Beta)</span><br><br>
-        <b>NuDream</b> is a sophisticaded mobile first scalable solution designed for you! it will help you build your new product without going
-        through the hard parts of the initial configurations and installation of technologies like <b> vue.js, vue-router, vuex,
+        <b>NuDream</b> is a sophisticated mobile-first scalable app solution designed for you!. We deliver it as you request!. It means integrating a design
+         and customizing it to fit your needs if you prefer to buy our Mexdev support service, you can see a preview to get an idea of what  we can build,
+         but if you request a blank product you get a blank product with no design, or if you request a customization product to fit your business model we
+         can build it for you with a custom quote, or we can sell the template for you that will help you build your new product without going through the
+         hard parts of the initial configurations and installation of technologies like  <b> vue.js, vue-router, vuex,
         axios, express.js, vuetify, firebase, vue-cli, email.js, vue-gtag, sass-loaders, google sheets api & other important things to make it run...</b>
-        Yes you heard right! i took all the pain to build this easy start up app, just for you to go on install configure your accounts
-        and kaboom! start editing the project as much as you need, you can customize it as much as you love. "Enjoy your new journey in the digital business!"
+        Yes you heard right! we went through all the pain to build this easy start up app, just for you to go on install configure your accounts
+        and kaboom! start editing the project as much as you need, hire a programmer to help you build your ideas or hire us for costumzing it, the paplication comes with Documentation
+        for intalling and setting up the db and server, it includes authentition, user login, contact form & other pages. you can customize it as much as you love.<br> "Enjoy your new journey in the digital business!"
         Give us a call today! <span><v-icon class="green--text"> mdi-phone </v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
-        <span class="blue--text">What is MexDev?</span><br><br>
-        <b>MexDev</b> is a support team that is here to help out! dont worry we got your back, you can explain for what purpose you need the application and we will help
-        you trhougout the whole process of installation and configuration even escalating to fit your business purpose, we been in the developtment
-        business for decades! that is right this is our lifestyle and we are here you help you and your busines grow!  give us a call today!
+        <span class="blue--text">What is MexDev support?</span><br><br>
+        <b>MexDev support</b> is a support team that is here to help out!. we got your back, you can explain for what purpose you need the application &
+        we will help you throughout the whole process of installation and configuration, even escalating to fit your business purpose. We have
+        been in the development business for decades!. That is correct! this is our lifestyle & we are here you help you and your business grow! Call us today!
         <span><v-icon class="green--text">mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
