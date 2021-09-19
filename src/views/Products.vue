@@ -84,7 +84,9 @@ h4 {
        <h1 class="mt-n3">
         <span class="get pulsate-css" transition="scroll-y-transition"> MXDV </span>
        </h1>
-       <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3> <br>
+       <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3>
+       <p class="center">"Leave the hard work to our supprt team"</p> <br>
+
         <v-container class="text-sm-body-2 ">
           <v-img class="center" width="380px" src="../assets/thanks.png"/>
           </v-container>
@@ -125,9 +127,10 @@ h4 {
      <v-container class="text-sm-body-2">
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
         <span class="blue--text">What is NuDream? (Beta)</span><br><br>
-        <b>NuDream</b> is a sophisticated mobile-first scalable app solution designed for you!. We deliver it as you request!. It means integrating a design
-         and customizing it to fit your needs if you prefer to buy our Mexdev support service, you can see a preview to get an idea of what  we can build,
-         but if you request a blank product you get a blank product with no design, or if you request a customization product to fit your business model we
+        <b>NuDream</b> is a sophisticated super fast light speed! "Test it out!. Tell us if there is a faster app around beacuase we havent found a faster application",
+         this is a mobile-first scalable app solution designed and programmed to fit your business!. We deliver it as you request!. It means integrating a design
+         and customizing it to fit your needs, we also offer Mexdev support service for mentoring your developers!, you can see a preview <a target="_blank" href="https://nudream.herokuapp.com/landing">here</a>
+         to get an idea of what  we can build, but if you request a blank product you get a blank product with no design, or if you request a customization product to fit your business model we
          can build it for you with a custom quote, or we can sell the template for you that will help you build your new product without going through the
          hard parts of the initial configurations and installation of technologies like  <b> vue.js, vue-router, vuex,
         axios, express.js, vuetify, firebase, vue-cli, email.js, vue-gtag, sass-loaders, google sheets api & other important things to make it run...</b>

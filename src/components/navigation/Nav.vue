@@ -55,8 +55,7 @@
       elevate-on-scroll
     >
     <div class="center" >
-      <a
-        href="/Landing">
+      <router-link to="/landing">
       <v-img
         alt="Mexdev Small Navbar Logo"
         class="shrink d-none d-sm-flex"
@@ -65,7 +64,7 @@
         transition="scale-transition"
         width="40"
       />
-    </a>
+    </router-link>
     </div>
   </v-app-bar>
 
@@ -79,7 +78,7 @@
       elevate-on-scroll
     >
       <div center >
-        <a href="/landing">
+        <router-link to="/landing">
         <v-img
           alt="Mexdev Small Navbar Logo"
           class="shrink d-none t-l d-sm-flex"
@@ -88,7 +87,7 @@
           transition="scale-transition"
           width="40"
         />
-      </a>
+      </router-link>
       </div>
       <div class="nav-col-mid d-flex justify-space-around align-center">
         <router-link to="/products">
@@ -146,13 +145,13 @@
          v-for="(item, i) in items"
          :key="i"
      >
-       <v-list-item
+       <router-link
           class="px-5"
-         :href="item.url"
+         :to="item.to"
          :target="item.target"
        >
          {{ item.title }}
-       </v-list-item>
+       </router-link>
      </v-list-item>
      <!-- Logout button -->
      <v-list-item
@@ -182,14 +181,14 @@ data: () => ({
   items: [
         {
           title: "Profile",
-          url: "/profile",
+          to: "/profile",
           //active:null,
         },
         {
           title: "About",
-          url: "/about",
+          to: "/about",
           //active:null,
-        }
+        },
       ]
 }),
 computed: {
