@@ -89,7 +89,7 @@
         />
       </router-link>
       </div>
-      <div class="nav-col-mid d-flex justify-space-around align-center">
+      <div class="nav-col-mid pt-3 d-flex justify-space-around align-center">
         <router-link to="/products">
         <v-btn v-if="user.loggedIn" class="nav-btns pa-2" depressed small color="primary" title="products" >
           <span class="mobile-icons mdi mdi-home"></span>
