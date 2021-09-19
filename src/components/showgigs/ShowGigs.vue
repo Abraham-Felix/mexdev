@@ -46,7 +46,7 @@
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-rows: minmax(150px, auto);
       grid-gap: 1em;
-      max-width: 1600px !important;
+      max-width: 1200px !important;
       width: 100%;
       margin-left:auto;
       margin-right:auto;
@@ -178,7 +178,7 @@ li.number a {
              <v-container >
              <br>
              <div class="d-flex align-start">
-               <h3 class="j-title center mb-n12">{{ gig.gigtitle}}</h3>
+               <h3 class="j-title center mb-00">{{ gig.gigtitle}}</h3>
              </div>
              <h6 class="">{{gig.companyname}}</h6>
              <v-row class="d-flex ">

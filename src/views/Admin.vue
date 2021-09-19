@@ -98,7 +98,7 @@
                             <v-text-field
                             v-model="newGig.giglocation"
                             :rules="giglocationRules"
-                            :counter="200"
+                            :counter="15"
                             label="Gig location"
                             required>
                           </v-text-field>
