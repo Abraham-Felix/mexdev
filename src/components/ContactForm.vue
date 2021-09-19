@@ -187,7 +187,8 @@ export default {
             this.namePhone = true;
             this.productRules = true;
             this.contentRules = true;
-            emailjs.sendForm('service_qe62coj','template_2oa9x3s', e.target,'user_1hqcYgrszmW6XZSBq6v5n', {
+            // Swap this credentials to your service credential from emailjs.com this is Important! so you get email to your business email account
+            emailjs.sendForm('service_qe62coj','template_bin13y4', e.target,'user_1hqcYgrszmW6XZSBq6v5n', {
             name: this.newMessage.first,
             email: this.newMessage.email,
             phone: this.newMessage.phone,
