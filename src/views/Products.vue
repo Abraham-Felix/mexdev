@@ -124,39 +124,19 @@ h4 {
 </v-col>
  </v-row>
      </v-container>
-     <v-container class="text-sm-body-2">
-      <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
-        <span class="blue--text">What is NuDream? (Beta)</span><br><br>
-        <b>NuDream</b> is a sophisticated super fast light speed! "Test it out!. Tell us if there is a faster app around beacuase we havent found a faster application",
-         this is a mobile-first scalable app solution designed and programmed to fit your business!. We deliver it as you request!. It means integrating a design
-         and customizing it to fit your needs, we also offer Mexdev support service for mentoring your developers!, you can see a preview <a target="_blank" href="https://nudream.herokuapp.com/landing">here</a>
-         to get an idea of what  we can build, but if you request a blank product you get a blank product with no design, or if you request a customization product to fit your business model we
-         can build it for you with a custom quote, or we can sell the template for you that will help you build your new product without going through the
-         hard parts of the initial configurations and installation of technologies like  <b> vue.js, vue-router, vuex,
-        axios, express.js, vuetify, firebase, vue-cli, email.js, vue-gtag, sass-loaders, google sheets api & other important things to make it run...</b>
-        Yes you heard right! we went through all the pain to build this easy start up app, just for you to go on install configure your accounts
-        and kaboom! start editing the project as much as you need, hire a programmer to help you build your ideas or hire us for costumzing it, the paplication comes with Documentation
-        for intalling and setting up the db and server, it includes authentition, user login, contact form & other pages. you can customize it as much as you love.<br> "Enjoy your new journey in the digital business!"
-        Give us a call today! <span><v-icon class="green--text"> mdi-phone </v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
-      </p>
-      <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
-        <span class="blue--text">What is MexDev support?</span><br><br>
-        <b>MexDev support</b> is a support team that is here to help out!. we got your back, you can explain for what purpose you need the application &
-        we will help you throughout the whole process of installation and configuration, even escalating to fit your business purpose. We have
-        been in the development business for decades!. That is correct! this is our lifestyle & we are here you help you and your business grow! Call us today!
-        <span><v-icon class="green--text">mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
-      </p>
-      <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
-        <span class="blue--text">What is NuStack?</span><br><br>
-        <b>NuStack</b> imagine you are a contractor and have hundreds of gigs to start with, you want to have a way to expose them easily to developers looking for gigs/jobs,
-        and you can't fin an easy way to organize your gigs and present them in a nice user interface, well guess what? I designed a solution that will fit your needs!,
-        NuStack is designed to help you out in a simple way using a admin form applicatin to fill in those jobs and present them to the world, yes you can easily fill
-        a form inside an admin pannel and they will layout in a beatifull scalable interface without exposint the data you dont want them to see, so then they can apply
-        using a contact form for you to set up the interviews for them, sounds awesome right, but thats not all this applicatin is 100% mobile friendly, oh yes, so you have no competition
-        with other recruiters, so waht are you waiting for? sart your digital business, we are here you help you grow!  give us a call today!
-        <span><v-icon class="green--text">mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
-      </p>
-    </v-container>
+      <v-container
+      v-for="(productDescription, i) in productDescriptions"
+      :key="i"
+      class="text-sm-body-2">
+      <v-divider></v-divider>
+       <p
+       class="f-p text-sm-body-2 font-weight-medium align-justify "
+       >
+       <span class="blue--text">Whats is {{ productDescription.title }} ?</span><br><br>
+       <b>{{ productDescription.title }}</b>
+       {{productDescription.description}}
+     </p>
+     </v-container>
 </main>
 </template>
 
@@ -168,6 +148,22 @@ export default {
   components: {
     NuDreamTechSlide,
     NuStackTechSlide
-  }
-}
+  },
+  data: () => ({
+    productDescriptions: [
+          {
+            title: "Nudream",
+            description: 'is a sophisticated super fast light speed! Test it out!. Tell us if there is a faster app around beacuase we havent found a faster application, this is a mobile-first scalable app solution designed and programmed to fit your business!. We deliver it as you request!. It means integrating a design and customizing it to fit your needs, we also offer Mexdev support service for mentoring your developers!, you can see a preview to get an idea of what we can build, but if you request a blank product you get a blank product with no design, or if you request a customization product to fit your business model we can build it for you with a custom quote, or we can sell the template for you that will help you build your new product without going through the hard parts of the initial configurations and installation of technologies like vue.js, vue-router, vuex, axios, express.js, vuetify, firebase, vue-cli, email.js, vue-gtag, sass-loaders, google sheets api & other important things to make it run... Yes you heard right! we went through all the pain to build this easy start up app, just for you to go on install configure your accounts and kaboom! call us today! ',
+          },
+          {
+            title: "Mxdv",
+            description: 'is a support team that is here to help out!. we got your back, you can explain for what purpose you need the application & we will help you throughout the whole process of installation and configuration, even escalating to fit your business purpose. We have been in the development business for decades!. That is correct! this is our job & we are here you help you and your business grow! Call us today!',
+          },
+          {
+            title: "NuStack",
+            description: "is an app for recruiters, imagine you are a recruiter/contractor and have hundreds of gigs to start with, you want to have a way to expose them easily to developers looking for gigs/jobs, and you can't fin an easy way to organize your gigs and present them in a nice user interface, well guess what? I designed a solution that will fit your needs!, NuStack is designed to help you out in a simple way using a admin form applicatin to fill in those jobs and present them to the world, yes you can easily fill a form inside an admin pannel and they will layout in a beatifull scalable interface without exposint the data you dont want them to see, so then they can apply using a contact form for you to set up the interviews for them, sounds awesome right, but thats not all this applicatin is 100% mobile friendly, oh yes, so you have no competition with other recruiters, so waht are you waiting for? sart your digital business, we are here you help you grow!  give us a call today!",
+          },
+        ],
+      }),
+     }
 </script>

@@ -189,11 +189,6 @@ data: () => ({
           to: "/profile",
           //active:null,
         },
-        {
-          title: "About",
-          to: "/about",
-          //active:null,
-        },
       ]
 }),
 computed: {

@@ -11,14 +11,18 @@
       color="primary"
       width="100%"
     >
-      <v-row
-      class="mb-n3"
-      justify="center"
-      no-gutters>
+    <v-row
+    class="mt-2"
+    v-for="(contactDetail, i) in contactDetails"
+    :key="i">
+      <v-col cols="5" md="4">
+        <v-icon></v-icon>{{ contactDetail.email }}
+      </v-col>
+      <v-col cols="2" md="4">
         <v-btn
         v-for="icon in icons"
         :key="icon.id"
-        class="mx-3 f-btn mt-n3"
+        class="mx-3 my-3 f-btn mt-n3"
         dark
         icon
       >
@@ -26,16 +30,20 @@
           <v-icon class="white--text" size="24px">{{ icon.name }}</v-icon>
         </router-link>
       </v-btn>
-      <br>
-      <v-col
-       class="primary lighten-1 text-center mt-1 white--text"
-       cols="12"
-     >
-      <strong>  {{ new Date().getFullYear() }} | © MexDev  </strong>
+      </v-col>
+      <v-col cols="5" md="4"> {{ contactDetail.telephone }}
       </v-col>
     </v-row>
-
   </v-footer>
+  <v-row
+  >
+    <v-col
+     class="primary lighten-1 text-center white--text"
+     cols="12"
+   >
+    <strong>  {{ new Date().getFullYear() }} | © MexDev  </strong>
+    </v-col>
+  </v-row>
 </div>
 </template>
 
@@ -82,8 +90,13 @@
     bottom: 0;
     z-index: 999;
 }
+@media screen and (max-width:900px){
+  .footer {
+    height: 90px !important;
+  }
+}
 .footer {
-  height: 70px;
+  height: 50px;
 }
 </style>
 
@@ -101,6 +114,12 @@ data: () => ({
       url: '/privacy',
   },
   ],
+contactDetails: [
+    {
+      email: "mexdevservice@gmail.com",
+      telephone: "+52 638 113 4196",
+    }
+  ]
 })
 }
 </script>
