@@ -92,15 +92,15 @@ export default {
 data: () => ({
   icons: [
     {
-        name:'mdi-gmail',
-        url: 'mailto:mexdevservice@gmail.com',
-        target: '_blank'
-    },
-    {
-        name:'mdi-github',
-        url: 'https://www.github.com/abraham-felix',
-        target: '_blank'
-    },
+      name:'mdi-github',
+      url: 'https://www.github.com/abraham-felix',
+      target: '_blank'
+  },
+  {
+      name:'mdi-text-box',
+      url: '/privacy',
+      target: '_blank'
+  },
   ],
 })
 }

@@ -11,6 +11,7 @@ import Landing from '../views/Landing.vue';
 import Taskit from '../views/Taskit.vue';
 import Virtualdom from '../school/virtualdom.vue';
 import Google from '../views/Google.vue';
+import Privacy from '../views/Privacy.vue';
 
 Vue.use(VueRouter)
 
@@ -118,7 +119,12 @@ Vue.use(VueRouter)
   meta: {
     requiresAuth:true
   }
-  }
+},
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy
+  },
 ]
 
 const router = new VueRouter({
