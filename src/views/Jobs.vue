@@ -210,7 +210,7 @@ li.number a {
       >
       <div>
         <v-container class="inner-effect">
-         <h3 class="j-title" v-bind:href="job.url" >{{ job.title }}</h3>
+         <h3 class="j-title" v-bind:href="job.url" >{{ job.title.substring(0,40)+".." }}</h3>
          <img class="job-pic" :src="job.company.avatar" width="150">
          <br>
         <div class="my-1 job-detail ">
