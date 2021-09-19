@@ -69,7 +69,7 @@ h4 {
   color: #5388E6;
 }
 .product-card {
-  min-height: 730px;
+  min-height: 750px;
 }
 </style>
 
@@ -105,6 +105,7 @@ h4 {
       <NuStackTechSlide/>
      </v-container>
      <v-btn primary dark class="mt-5 center" href="contact"> 699$ USD </v-btn><br>
+     <h4 class="mt-5">Special limited price, ending soon!</h4>
 </v-card>
 </transition>
 </v-col>
@@ -119,6 +120,7 @@ h4 {
      <NuDreamTechSlide/>
      </v-container>
      <v-btn primary dark class="mt-5 center" href="contact"> 699$ USD </v-btn><br>
+     <h4 class="mt-5">Special limited price, ending soon!</h4>
 </v-card>
 </transition>
 </v-col>
