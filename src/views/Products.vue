@@ -77,7 +77,7 @@ h4 {
 <main>
   <h1 class="pt-7"> MXDV Products </h1>
   <v-container>
-    <v-row>
+    <v-row class="d-flex">
       <v-col col="4">
     <transition appear name="slide-ub">
      <v-card class="product-card mt-5">
@@ -88,7 +88,7 @@ h4 {
         <v-container class="text-sm-body-2 ">
           <v-img class="center" width="380px" src="../assets/thanks.png"/>
           </v-container>
-          <v-btn primary dark class="mt-5 center" href="contact"> Hire Us! </v-btn><br>
+          <v-btn primary dark class="mt-5 center" href="contact"> Get quote! </v-btn><br>
      </v-card>
    </transition>
  </v-col>
