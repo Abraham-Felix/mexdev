@@ -1,5 +1,12 @@
 
 <style>
+.v-application ul, .v-application ol {
+    padding-left: 0px;
+}
+.inner-effect {
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 25px -16px rgb(161 161 161);
+}
   .jobs-card .col-tres {
     width:33%;
     display:inline-grid;
@@ -12,29 +19,27 @@
     height: 80px;
     width: 80px;
   }
-  .Amodule p {
+  .jobmodule p {
     color: #474747;
   }
-  .Amodule {
+  .jobmodule {
     background: white;
     display: inline-grid;
     align-items: center;
     justify-content: center;
     min-height: 500px;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 25px -16px rgb(161 161 161);
+    margin-left:0px !important;
+    margin-right:0px !important;
     text-align: center;
     text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-bottom: 10px !important;
     flex: 1 1 300px;
-    margin: 10px;
-    width: 31%;
+    width: 33%;
     color: #4f81bd !important;
     transition: all 0.3s ease-in;
   }
-  .Amodule:hover {
+  .inner-effect:hover {
       background: #fbfbfb;
       -webkit-box-shadow:inset 0px 0px 35px -16px rgba(161,161,161,1);
       -moz-box-shadow:inset 0px 0px 35px -16px rgba(161,161,161,1);
@@ -69,7 +74,7 @@
     .j-title {
       font-size: 1.5vw ;
     }
-    .des-over {
+    .job-des-over {
       overflow:auto;
       height: 200px !important;
     }
@@ -77,15 +82,14 @@
     height: 170px !important;
     transition: 1s;
     }
-    .Amodule {
+    .jobmodule {
       min-height: 700px;
     }
   }
   /* surface DUO*/
   @media (max-width:540px) {
-    .Amodule {
+    .jobmodule {
       width: 100% !important;
-      margin: 0px;
     }
     .j-title {
       font-size: 4vw ;
@@ -101,7 +105,7 @@
         height: 20px !important;
         padding: 0px !important;
     }
-    .Amodule {
+    .jobmodule {
       width: 100% !important;
       margin: 0px;
     }
@@ -114,9 +118,8 @@
   }
   /* iphone x display*/
   @media (max-width:375px) {
-    .Amodule {
+    .jobmodule {
       width: 100% !important;
-      margin: 0px;
     }
     .j-title {
       font-size: 4vw ;
@@ -131,9 +134,9 @@
     display: inline-grid;
   }
 
-  .des-over {
+  .job-des-over {
     overflow:auto;
-    height: 80px;
+    height: 100px;
   }
   .v-progress-circular {
   margin: 1rem;
@@ -203,10 +206,10 @@ li.number a {
       <div
         v-for="job in paginated('languages')"
         v-bind:key="job.id"
-        class="Amodule  back"
+        class="jobmodule  back"
       >
       <div>
-        <v-container>
+        <v-container class="inner-effect">
          <h3 class="j-title" v-bind:href="job.url" >{{ job.title }}</h3>
          <img class="job-pic" :src="job.company.avatar" width="150">
          <br>
@@ -216,17 +219,19 @@ li.number a {
           <p class="col-tres mdi mdi-calendar text--secondary">   {{job.published_at.date}} </p>
         </div>
         <v-divider class="mx-4"></v-divider>
-      <p class="des-over text--secondary">  {{ job.description }} </p>
+      <p class="job-des-over text--secondary">  {{ job.description }} </p>
+      <div class="t-row center">
+      <v-btn
+       depressed
+       elevation="2"
+       color="primary"
+       target="_blank"
+       v-bind:href="job.url">
+       <span class="mdi mdi-open-in-new"></span> Apply </v-btn>
+     </div>
     </v-container>
   </div>
-  <div class="t-row">
-  <v-btn
-   depressed
-   elevation="2"
-   color="primary"
-   target="_blank"
-   v-bind:href="job.url"><span class="mdi mdi-open-in-new"></span> Apply </v-btn>
- </div>
+
   </div>
     </paginate>
     <paginate-links for="languages"></paginate-links>
