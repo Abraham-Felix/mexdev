@@ -16,6 +16,7 @@
     align-content: space-around;
     flex-direction: column;
 }
+
 </style>
 
 <template>

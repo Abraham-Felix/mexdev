@@ -1,9 +1,9 @@
 <template>
 <div id="app">
   <!-- <ChatApp/> -->
+  <h1 class="pt-1">Contact</h1>
+  <ContactForm />
   <br>
-  <h1>Contact</h1>
-  <ContactForm/>
 </div>
 </template>
 
