@@ -76,7 +76,7 @@ h4 {
 <template>
 <main>
   <h1 class="pt-7"> MXDV Products </h1>
-  <h3 class="blue--text">More comming soon!</h3>
+  <h3 class="blue--text">We take your business model to the Top!</h3>
   <v-container>
     <v-row class="d-flex">
       <v-col col="4">
