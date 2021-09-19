@@ -107,7 +107,7 @@
    </v-card>
  </transition>
  </v-container>
- <AnimatedSlide class="anislide"/>
+ <AnimatedSlide class="anislide mb-n13"/>
 </div>
 </template>
 
