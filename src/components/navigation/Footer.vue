@@ -22,9 +22,9 @@
         dark
         icon
       >
-        <a :href="icon.url" :target="icon.target">
+        <router-link :to="icon.url">
           <v-icon class="white--text" size="24px">{{ icon.name }}</v-icon>
-        </a>
+        </router-link>
       </v-btn>
       <br>
       <v-col
@@ -93,14 +93,12 @@ export default {
 data: () => ({
   icons: [
     {
-      name:'mdi-github',
-      url: 'https://www.github.com/abraham-felix',
-      target: '_blank'
+      name:'mdi-information',
+      url: '/about',
   },
   {
       name:'mdi-text-box',
       url: '/privacy',
-      target: '_blank'
   },
   ],
 })

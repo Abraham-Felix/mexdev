@@ -85,7 +85,7 @@ h4 {
         <span class="get pulsate-css" transition="scroll-y-transition"> MXDV </span>
        </h1>
        <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3>
-       <p class="center">"Leave the hard work to our supprt team"</p> <br>
+       <p class="center">"Leave the hard work to our support team"</p> <br>
 
         <v-container class="text-sm-body-2 ">
           <v-img class="center" width="380px" src="../assets/thanks.png"/>
