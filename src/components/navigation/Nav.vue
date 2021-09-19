@@ -194,12 +194,6 @@ data: () => ({
           to: "/about",
           //active:null,
         },
-
-        {
-          title: "Admin",
-          to: "/admin",
-          //active:null,
-        },
       ]
 }),
 computed: {
