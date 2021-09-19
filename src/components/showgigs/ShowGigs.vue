@@ -67,7 +67,7 @@
       height:125px ;
     }
     .j-title {
-      font-size: 1.5vw ;
+      font-size: 3.5vw ;
     }
     .des-over {
       overflow:auto;
