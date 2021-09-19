@@ -76,6 +76,7 @@ h4 {
 <template>
 <main>
   <h1 class="pt-7"> MXDV Products </h1>
+  <h3 class="blue--text">More comming soon!</h3>
   <v-container>
     <v-row class="d-flex">
       <v-col col="4">
@@ -100,8 +101,7 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuStack </span>
   </h1>
-  <h3> The contractor <span class="blue--text"> solution </span>
-    Product! </h3> <br>
+  <h3> The recruiter <span class="blue--text"> solution! </span> </h3> <br>
    <v-container class="text-sm-body-2 ">
       <NuStackTechSlide/>
      </v-container>
@@ -116,8 +116,7 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuDream </span>
   </h1>
-  <h3 > All in-one <span class="blue--text"> <a href="https://nudream.herokuapp.com/landing"> live preview </a> </span>
-    Product! </h3> <br>
+  <h3 > All in-one <span class="blue--text"> <a href="https://nudream.herokuapp.com/landing"> live preview! </a> </span> </h3> <br>
    <v-container class="text-sm-body-2 ">
      <NuDreamTechSlide/>
      </v-container>
@@ -161,7 +160,7 @@ export default {
           },
           {
             title: "Mxdv",
-            description: 'is a support team that is here to help out!. we got your back, you can explain for what purpose you need the application & we will help you throughout the whole process of installation and configuration, even escalating to fit your business purpose. We have been in the development business for decades!. That is correct! this is our job & we are here you help you and your business grow! Call us today!',
+            description: 'is a support team that is here to help out!. made 916 contributions in Github the last year! Explain for what purpose you need the application & we will help you throughout the whole process of installation and configuration, even escalating to fit your business purpose. We have been in the development business for decades!. That is correct! this is our job & we are here you help you and your business grow! Call us today!',
           },
           {
             title: "NuStack",
