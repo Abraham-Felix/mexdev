@@ -83,7 +83,7 @@
     transition: 1s;
     }
     .jobmodule {
-      min-height: 700px;
+      min-height: 750px;
     }
   }
   /* surface DUO*/
@@ -208,8 +208,7 @@ li.number a {
         v-bind:key="job.id"
         class="jobmodule  back"
       >
-      <div>
-        <v-container class="inner-effect">
+        <div class="inner-effect pt-3">
          <h3 class="j-title" v-bind:href="job.url" >{{ job.title.substring(0,40)+".." }}</h3>
          <img class="job-pic" :src="job.company.avatar" width="150">
          <br>
@@ -220,7 +219,7 @@ li.number a {
         </div>
         <v-divider class="mx-4"></v-divider>
       <p class="job-des-over text--secondary">  {{ job.description }} </p>
-      <div class="t-row center">
+      <div class="t-row center mb-3">
       <v-btn
        depressed
        elevation="2"
@@ -229,8 +228,7 @@ li.number a {
        v-bind:href="job.url">
        <span class="mdi mdi-open-in-new"></span> Apply </v-btn>
      </div>
-    </v-container>
-  </div>
+   </div>
 
   </div>
     </paginate>
