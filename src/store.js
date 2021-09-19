@@ -3,6 +3,7 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
+    authenticated: false,
     user: {
       loggedIn: false,
       data: null
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     SET_USER(state, data) {
       state.user.data = data;
+    },
+    setAuthentication(state, status) {
+    state.authenticated = status;
     }
   },
   actions: {

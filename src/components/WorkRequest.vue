@@ -40,7 +40,14 @@ img.preview {
   <v-container id="app">
     <v-dialog class="v-card" v-model="dialog" width="500">
         <template  v-slot:activator="{ on, attrs }">
-            <v-btn top class="wr-btn" style="z-index:9;" color="primary" light rounded v-bind="attrs" v-on="on" fixed left>
+            <v-btn top
+            class="wr-btn"
+            style="z-index:9;"
+            color="primary"
+            light rounded
+            v-bind="attrs"
+            v-on="on"
+            fixed left>
                 <v-tooltip right >
                     <template  v-slot:activator="{ on, attrs }">
                         <v-icon fab v-bind="attrs" v-on="on">
@@ -57,7 +64,9 @@ img.preview {
         <v-card class="mt-0">
         <div class="panel-heading">
           <div class="right top-r">
-              <v-btn class="form-close-btn"  @click="dialog = false" width="10px">
+              <v-btn class="form-close-btn"
+              @click="dialog = false"
+              width="10px">
                   <v-icon>
                       mdi-close
                   </v-icon>
@@ -71,8 +80,14 @@ img.preview {
               <v-card>
                 <v-divider class="m-tb-20"></v-divider>
                 <h4>Contact details:</h4><br>
+<!-- first name -->
                 <div class="form-group">
-                    <v-text-field :rules="nameRules" required label="First Name" type="text" id="tutorialFirst" class="form-control" v-model="newTutorial.first">
+                    <v-text-field
+                    :rules="nameRules"
+                    required label="First Name"
+                    type="text" id="tutorialFirst"
+                    class="form-control"
+                    v-model="newTutorial.first">
                     </v-text-field>
                 </div>
                 <div class="form-group">
@@ -100,9 +115,17 @@ img.preview {
                 <v-divider class="m-tb-20"></v-divider>
                 <h4>Work request details </h4><br>
                 <div class="form-group">
-                    <v-select required label="Technology resquested"
-                    id="tutorialLanguage" v-model="newTutorial.language"
-                    multiple type="text" autocomplete tags :items="languages" class="form-control">
+<!-- languages -->
+                    <v-select
+                    required
+                    label="Technology resquested"
+                    id="tutorialLanguage"
+                    v-model="newTutorial.language"
+                    multiple type="text"
+                    autocomplete
+                    tags
+                    :items="languages"
+                    class="form-control">
                         <template slot="selection" slot-scope="data">
                             <v-btn>
                                 {{ data.item }}
@@ -111,7 +134,11 @@ img.preview {
                     </v-select>
                 </div>
                 <div class="form-group">
-                    <v-text-field :rules="titleRules" required label="Work Request Title" type="text" id="tutorialTitle" class="form-control" v-model="newTutorial.title">
+                    <v-text-field :rules="titleRules"
+                    required label="Work Request Title"
+                    type="text" id="tutorialTitle"
+                    class="form-control"
+                    v-model="newTutorial.title">
                     </v-text-field>
                 </div>
                 </v-card>
@@ -175,7 +202,11 @@ img.preview {
                  <v-divider class="m-tb-20"></v-divider>
                  <h4> Preview </h4>
                 <div class="form-group">
-                    <v-text-field required label="Date" class="form-control" type='date' v-model='newTutorial.date'>
+                    <v-text-field
+                    required label="Date"
+                    class="form-control"
+                    type='date'
+                    v-model='newTutorial.date'>
                     </v-text-field>
                 </div>
                 <div class="form-group">
@@ -201,7 +232,12 @@ img.preview {
                 </v-card>
 
                 <!-- Form push btn -->
-                <v-btn class="m-tb-20 hrain" @click="markcompleted();" type="submit" small color="primary" dark>
+                <v-btn
+                class="m-tb-20 "
+                @click="markcompleted();"
+                type="submit" small
+                color="primary" dark
+                >
                     {{ displayText }}
                 </v-btn>
             </form>

@@ -161,8 +161,13 @@
    </v-list-item>
    <v-list-item>
      <router-link to="/requests" class="px-5">
-     <v-btn depressed dark small class="rainbow" color="primary">Request Developer</v-btn>
+     <v-btn depressed dark small class="rainbow" color="primary">Stack Request</v-btn>
      </router-link>
+   </v-list-item>
+   <v-list-item>
+   <router-link to="/admin" class="px-5">
+     <v-btn depressed small block color="primary">admin console</v-btn>
+   </router-link>
    </v-list-item>
    </v-list>
  </v-menu>
@@ -189,12 +194,19 @@ data: () => ({
           to: "/about",
           //active:null,
         },
+
+        {
+          title: "Admin",
+          to: "/admin",
+          //active:null,
+        },
       ]
 }),
 computed: {
   // map `this.user` to `this.$store.getters.user`
   ...mapGetters({
     user: "user",
+    admin: "admin"
   })
 },
 methods: {

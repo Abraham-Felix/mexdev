@@ -148,10 +148,12 @@ h4 {
       </p>
       <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
         <span class="blue--text">What is NuStack?</span><br><br>
-        <b>NuStack</b> imagine you are a contractor and have hundreds of gigs to start looking for tech individuals to fill you gigs (positions)
-        and you can't fin an easy way to organize your gigs and present them in a nice way for developers to call you and start the interview process,
-        well then NuStack is designed to help you out in a simple way using google sheets! yes you can easily fill your sheets on google and have your jobs
-        presented in a beautifull ui that is mobile friendly for developers to start contacting you for your gigs! we are here you help you and your busines grow!  give us a call today!
+        <b>NuStack</b> imagine you are a contractor and have hundreds of gigs to start with, you want to have a way to expose them easily to developers looking for gigs/jobs,
+        and you can't fin an easy way to organize your gigs and present them in a nice user interface, well guess what? I designed a solution that will fit your needs!,
+        NuStack is designed to help you out in a simple way using a admin form applicatin to fill in those jobs and present them to the world, yes you can easily fill
+        a form inside an admin pannel and they will layout in a beatifull scalable interface without exposint the data you dont want them to see, so then they can apply
+        using a contact form for you to set up the interviews for them, sounds awesome right, but thats not all this applicatin is 100% mobile friendly, oh yes, so you have no competition
+        with other recruiters, so waht are you waiting for? sart your digital business, we are here you help you grow!  give us a call today!
         <span><v-icon class="green--text">mdi-phone</v-icon><b> +52 638-113-4196 </b></span> or send us an <v-icon>mdi-email</v-icon> <a href="/contact" > email </a>.
       </p>
     </v-container>

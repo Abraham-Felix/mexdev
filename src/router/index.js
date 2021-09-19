@@ -12,6 +12,10 @@ import Taskit from '../views/Taskit.vue';
 import Virtualdom from '../school/virtualdom.vue';
 import Google from '../views/Google.vue';
 import Privacy from '../views/Privacy.vue';
+import Admin from '../views/Admin.vue';
+import GigsAvailable from '../views/GigsAvailable.vue';
+import store from '@/store'
+import AdminLogin from '../components/AdminLogin.vue'
 
 Vue.use(VueRouter)
 
@@ -24,6 +28,11 @@ Vue.use(VueRouter)
       path: '/',
       redirect: '/landing'
     },
+    {
+          path: "/adminlogin",
+          name: "AdminLogin",
+          component: AdminLogin
+      },
     {
       path: '/school/virtualdom',
       name: 'virtualdom',
@@ -49,9 +58,30 @@ Vue.use(VueRouter)
   //  }
   },
   {
+    path: '/admin',
+    name: 'Admin',
+    component: Admin,
+    beforeEnter: (to, from, next) => {
+                if(store.state.authenticated == false) {
+                    next(false);
+                    next("adminlogin")
+                } else {
+                    next();
+                }
+            }
+  },
+  {
     path: '/google',
     name: 'Google',
     component: Google,
+    meta: {
+      requiresAuth:true
+    }
+  },
+  {
+    path: '/gigsavailable',
+    name: 'GigsAvailable',
+    component: GigsAvailable,
     meta: {
       requiresAuth:true
     }

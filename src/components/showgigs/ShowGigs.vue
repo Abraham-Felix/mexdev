@@ -141,13 +141,7 @@
 .t-row {
   display: table-footer-group;
 }
-.j-title {
-  height:100px;
-}
-.job-detail {
-  height:115px;
-  transition: 1s;
-}
+
 /* Paginated */
 ul.paginate-links.languages {
     display: inline-flex;
@@ -172,102 +166,74 @@ li.number a {
 }
 </style>
 <template>
-  <div>
-    <div><br>
-      <h1 color="primary" class="mb-10 mt-5"> Front end & Back end Jobs </h1>
-    <div
-    class="jobs-card ">
-    <div v-if="errored">
-      <p> Woops! i must of done something wrong... don't worry i will fix it soon! :P </p>
-    </div>
-    <div v-else class="Agrid d-grid">
-        <v-col
-          md="6"
-          offset-md="3"
-          v-if="loading"
-          justify="center"
-          class=" ">
-            <v-progress-circular
-             :size="50"
-             color="blue"
-             indeterminate
-            >
-            </v-progress-circular>
-        </v-col>
-      <paginate
-         v-else
-         name="languages"
-         :list="jobs"
-         :per="6"
-         >
-      <div
-        v-for="job in paginated('languages')"
-        v-bind:key="job.id"
-        class="Amodule  back"
-      >
-      <div>
-        <v-container>
-         <h3 class="j-title" v-bind:href="job.url" >{{ job.title }}</h3>
-         <img class="job-pic" :src="job.company.avatar" width="150">
-         <br>
-        <div class="my-1 job-detail ">
-          <p class="col-tres mdi mdi-clock text--secondary"> {{ job.type }} </p>
-          <p class="col-tres mdi mdi-earth text--secondary"> {{ job.location }} </p>
-          <p class="col-tres mdi mdi-calendar text--secondary">   {{job.published_at.date}} </p>
-        </div>
-        <v-divider class="mx-4"></v-divider>
-      <p class="des-over text--secondary">  {{ job.description }} </p>
-    </v-container>
-  </div>
-  <div class="t-row">
-  <v-btn
-   depressed
-   elevation="2"
-   color="primary"
-   target="_blank"
-   v-bind:href="job.url"><span class="mdi mdi-open-in-new"></span> Apply </v-btn>
- </div>
-  </div>
-    </paginate>
-    <paginate-links for="languages"></paginate-links>
-  </div>
-  </div>
-</div>
-<p class="center">Api sponsored by <a href="www.vuejobs.com">Vuejobs!</a></p>
-</div>
+  <v-container id="tutorials">
+      <h1>Gigs Available!</h1>
+           <!-- loop over the tutorials -->
+           <div  class="Agrid d-grid">
+           <div
+           class="Amodule  back"
+           v-for="gig in allGigs"
+           :key="gig._key">
+           <div class="fill-height">
+             <v-container >
+             <br>
+             <div class="d-flex align-start">
+               <h3 class="j-title center mb-n12">{{ gig.gigtitle}}</h3>
+             </div>
+             <h6 class="">{{gig.companyname}}</h6>
+             <v-row class="d-flex ">
+               <p class="col-tres mdi mdi-clock text--secondary"> {{ gig.vacanttype }} </p>
+               <p class="col-tres mdi mdi-earth text--secondary"> {{ gig.giglocation }} </p>
+               <p class="col-tres mdi mdi-calendar text--secondary">{{gig.gigdate}} </p>
+             </v-row>
+             <v-divider class="mx-4"></v-divider>
+             <h5 class="left text-body-2">Company description</h5><br>
+             <p class="content"> {{ gig.companydescription}}</p><br>
+             <h5 class="left text-body-2">Gig description</h5><br>
+             <p class="content"> {{ gig.gigdescription}}</p><br>
+             <h5 class="left text-body-2">Gig benefits</h5><br>
+             <p class="content"> {{ gig.gigbenefits}}</p><br>
+             <h5 class="left text-body-2">Skills</h5><br>
+             <p class="content"> {{ gig.gigskills}}</p><br>
+           </v-container>
+         </div>
+     </div>
+   </div>
+     <br>
+
+  </v-container>
 </template>
-
 <script>
-import Vue from "vue";
-import VuePaginate from 'vue-paginate'
-import axios from "axios";
+import firebase from '@/plugins/firebase'
 
-Vue.use(VuePaginate)
+let db = firebase.database();
+//let usersRef = db.ref('users');
+let tutRef = db.ref('gigs');
+
 export default {
-  name: 'Jobs',
-  data () {
-      return {
-        jobs: null,
-        loading: true,
-        errored: false,
-        paginate: ['languages']
-      }
-    },
-    filters: {
-      currencydecimal (value) {
-        return value.toFixed(2)
-      }
-    },
-    mounted () {
-      axios.get('https://vuejobs.com/api/jobs')
-        .then(response => {
-          this.jobs = response.data
-        })
-        .catch(error => {
-          console.log(error)
-          this.errored = true
-        })
-        .finally(() => this.loading = false)
-    }
+  name: 'ShowGigs',
+  data: () => ({
+  authUser: null,
+  allGigs: [] // initialise an array
+}),
+  methods: {
+  },
+  created: function() {
+    data => console.log(data.user, data.credential.accessToken)
+    firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          tutRef.once('value', snapshot => {
+            const val = snapshot.val()
+            if (val) {
+              this.allGigs = Object.values(val).flatMap(gigs =>
+              Object.entries(gigs).map(([ _key, gig ]) => ({ _key, ...gig})))
+            }
+            console.log(snapshot.val())
+
+          });
+        }
+
+     })
+   }
 }
 </script>
