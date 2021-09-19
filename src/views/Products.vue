@@ -100,7 +100,8 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuStack </span>
   </h1>
-  <h3> The contractor <span class="blue--text"> solution </span> Product! </h3> <br>
+  <h3> The contractor <span class="blue--text"> solution </span>
+    Product! </h3> <br>
    <v-container class="text-sm-body-2 ">
       <NuStackTechSlide/>
      </v-container>
@@ -115,8 +116,9 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuDream </span>
   </h1>
-  <h3 class="medium-opt"> All in-one <span class=" break"> <a href="https://nudream.herokuapp.com/landing"> live preview </a> </span> Product! </h3> <br>
-   <v-container class="text-sm-body-2 mt-sm-n16 mt-md-0">
+  <h3 > All in-one <span class="blue--text"> <a href="https://nudream.herokuapp.com/landing"> live preview </a> </span>
+    Product! </h3> <br>
+   <v-container class="text-sm-body-2 ">
      <NuDreamTechSlide/>
      </v-container>
      <v-btn primary dark class="mt-5 center" href="contact"> 699$ USD </v-btn><br>

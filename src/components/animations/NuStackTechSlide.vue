@@ -1,5 +1,5 @@
 <template>
-  <v-col class="pa-16">
+  <v-col class="pa-16 mb-sm-n16 mb-md-0">
   <div id="cf6a">
     <v-img
       class="v-img mt-n16"
