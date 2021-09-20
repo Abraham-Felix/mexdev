@@ -150,6 +150,9 @@ export default {
 </script>
 
 <style>
+#body {
+      overflow: hidden !important;
+}
 .slideshow{
   padding-top: 50px;
   display: contents;
