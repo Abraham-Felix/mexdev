@@ -27,7 +27,7 @@
             >
 
             <h4 class="center mt-2">
-                Task Category 2 container
+                Gig form
             </h4>
                 <v-container>
                     <v-row>
