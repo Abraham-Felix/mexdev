@@ -81,7 +81,7 @@
         <router-link to="/landing">
         <v-img
           alt="Mexdev Small Navbar Logo"
-          class="shrink d-none t-l d-sm-flex"
+          class="shrink  t-l d-sm-flex"
           contain
           src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
           transition="scale-transition"
@@ -91,8 +91,9 @@
       </div>
       <div class="nav-col-mid pt-3 d-flex justify-space-around align-center">
         <router-link to="/products">
-        <v-btn v-if="user.loggedIn" class="nav-btns pa-2" depressed small color="primary" title="products" >
-          <span class="mobile-icons mdi mdi-home"></span>
+        <v-btn v-if="user.loggedIn" class="nav-btns pa-2"
+        depressed small color="primary" title="products" >
+          <span class="mobile-icons mdi mdi-store"></span>
           <span class="web-nav-btns"> products </span>
         </v-btn>
         </router-link>
