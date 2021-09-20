@@ -5,7 +5,7 @@
         <h1> Admin pannel </h1>
         <v-col cols="auto">
         </v-col>
-        <!-- modal -->
+        <!-- add gig modal -->
         <v-dialog
         class="mb-16"
         v-model="dialog"
@@ -21,6 +21,27 @@
             </v-btn>
           </div>
           <GigForm/>
+            <v-card-actions>
+                <v-spacer></v-spacer>
+            </v-card-actions>
+
+        </v-dialog>
+        <!-- view/delete gigs modal -->
+        <v-dialog
+        class="mb-16"
+        v-model="viewgigdialog"
+        max-width="1650px"
+        >
+        <div class=" top-r">
+            <v-btn
+            class="form-close-btn"
+            width="10px"
+            @click="viewgigdialog = false"
+            >
+                <v-icon> mdi-close </v-icon>
+            </v-btn>
+          </div>
+          <EditGigs/>
             <v-card-actions>
                 <v-spacer></v-spacer>
             </v-card-actions>
@@ -57,10 +78,8 @@
                     <v-list-item-icon>
                         <v-icon>mdi-briefcase-check</v-icon>
                     </v-list-item-icon>
-                    <v-list-item-title >
-                      <router-link to="gigsavailable">
-                        view gigs
-                      </router-link>
+                    <v-list-item-title @click.stop="viewgigdialog = true">
+                      View/delete gigs
                     </v-list-item-title>
                 </v-list-item>
 
@@ -74,16 +93,19 @@
 <script>
 import firebase from '../plugins/firebase'
 import GigForm from '@/components/forms/GigForm.vue'
+import EditGigs from '@/components/showgigs/EditGigs.vue'
 export default {
     name: 'Admin',
     components: {
       GigForm,
+      EditGigs,
     },
     data: () => ({
         menu: false,
         drawer: true,
         mini: true,
         dialog: false,
+        viewgigdialog: false,
         authUser: '',
         displayName: '',
       }),
