@@ -218,5 +218,5 @@ p {
   opacity: 0;
 }
 .container {
-    max-width: 80%;
+    max-width: 80% !important;
 }
