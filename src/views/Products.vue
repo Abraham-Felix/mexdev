@@ -105,7 +105,7 @@ h4 {
    <v-container class="text-sm-body-2 ">
       <NuStackTechSlide/>
      </v-container>
-     <v-btn primary dark class="mt-5 center" href="contact"> 699$ USD </v-btn><br>
+     <v-btn primary dark class="mt-5 center" href="contact"> Get quote! </v-btn><br>
      <h4 class="mt-5">Special limited price, ending soon!</h4>
 </v-card>
 </transition>
@@ -120,7 +120,7 @@ h4 {
    <v-container class="text-sm-body-2 ">
      <NuDreamTechSlide/>
      </v-container>
-     <v-btn primary dark class="mt-5 center" href="contact"> 699$ USD </v-btn><br>
+     <v-btn primary dark class="mt-5 center" href="contact"> Get quote! </v-btn><br>
      <h4 class="mt-5">Special limited price, ending soon!</h4>
 </v-card>
 </transition>
