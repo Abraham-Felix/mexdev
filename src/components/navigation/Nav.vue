@@ -137,7 +137,8 @@
        overlap
        class="py-2"
      >
-     </v-badge><v-icon>mdi-account</v-icon>
+     </v-badge>
+     <v-img :src="authUser.photoURL"></v-img>
      </v-btn>
    </template>
    <v-list class="nav-d-c">
@@ -183,6 +184,8 @@ import { mapGetters } from "vuex";
 export default {
   name: "Nav",
 data: () => ({
+  authUser: '',
+  displayName: '',
   items: [
         {
           title: "Profile",
@@ -211,6 +214,25 @@ logout: function() {
 },
 
 },
+created: function() {
+    // functions
+    var user = firebase.auth().currentUser;
+    var uid;
+    if (user != null) {
+      uid = user.uid; // The user's ID, unique to the Firebase project. Do NOT use
+                       // this value to authenticate with your backend server, if
+                       // you have one. Use User.getToken() instead.
+    }
+      this.userID= uid;
+    //data => console.log(data.user, data.credential.accessToken)
+    firebase.auth().onAuthStateChanged(user => {
+        this.authUser = user
+        if (user) {
+            this.displayName = user.displayName
+            this.photoURL = user.photoURL
+            }
+          })
+    }
 
 }
 </script>
