@@ -40,8 +40,6 @@
       </p>
     </v-text >
     <br>
-    <p class="text-md-body-2 center mt-n16 pb-10">
-     +52 638 113 4196 </p> <v-icon class="green--text mb-3"> mdi-whatsapp </v-icon>
   </div>
     <div>
         <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
@@ -115,6 +113,17 @@
             small color="primary" dark>
                 {{ displayText }}
             </v-btn>
+            <container>
+
+
+              <v-divider/>
+            <p class="center text-body-1 "> <b> Horario PST: </b> </p>
+              <v-row class="justify-center">
+                <v-col cols="12">
+                    10:00am - 01:00pm | 2:00pm - 6:00pm
+                </v-col>
+              </v-row>
+           </container>
         </form>
     </div>
 </v-card>
