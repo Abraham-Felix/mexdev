@@ -12,13 +12,22 @@
       width="100%"
     >
     <v-row
-    class="mt-2"
-    v-for="(contactDetail, i) in contactDetails"
-    :key="i">
-      <v-col cols="5" md="4">
-        <v-icon></v-icon>{{ contactDetail.email }}
+    class="mt-2">
+      <v-col cols="2">
+
       </v-col>
-      <v-col cols="2" md="4">
+      <v-col cols="">
+        <v-btn
+        v-for="contacticon in contacticons"
+        :key="contacticon.id"
+        class="mx-3 my-3 f-btn mt-n3"
+        dark
+        icon
+      >
+          <a target="_blank" :href="contacticon.url">
+            <v-icon class="white--text" size="24px">{{ contacticon.name }}</v-icon>
+          </a>
+      </v-btn>
         <v-btn
         v-for="icon in icons"
         :key="icon.id"
@@ -31,7 +40,8 @@
         </router-link>
       </v-btn>
       </v-col>
-      <v-col cols="5" md="4"> {{ contactDetail.telephone }}
+      <v-col cols="2">
+
       </v-col>
     </v-row>
   </v-footer>
@@ -104,6 +114,16 @@
 export default {
   name: "Footer",
 data: () => ({
+  contacticons: [
+      {
+        name:'mdi-email',
+        url:'mailto:mexdevservice@gmail.com',
+      },
+      {
+        name:'mdi-phone',
+        url:'tel:+52+6381134196',
+      }
+  ],
   icons: [
     {
       name:'mdi-information',
@@ -113,12 +133,6 @@ data: () => ({
       name:'mdi-text-box',
       url: '/privacy',
   },
-  ],
-contactDetails: [
-    {
-      email: "mexdevservice@gmail.com",
-      telephone: "+52 638 113 4196",
-    }
   ]
 })
 }
