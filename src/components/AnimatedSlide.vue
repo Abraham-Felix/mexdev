@@ -79,7 +79,7 @@
 <template>
 
 <div>
-    <h3 class="as-h3">Get back on track with top Tech:</h3>
+    <h3 class="as-h3">Get back on track with top technology:</h3>
     <v-divider class="my-3" />
     <section id="animate-area">
         <div class="newfeaturesheader">
