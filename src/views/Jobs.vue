@@ -137,6 +137,7 @@
   .job-des-over {
     overflow:auto;
     height: 100px;
+    padding: 0px 10px;
   }
   .v-progress-circular {
   margin: 1rem;
