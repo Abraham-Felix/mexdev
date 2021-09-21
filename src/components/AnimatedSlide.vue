@@ -79,11 +79,12 @@
 <template>
 
 <div>
-    <h3 class="as-h3">Get back on track with top technology:</h3>
-    <v-divider class="my-3" />
+    <h3 class="as-h3">Get back on track with top technologies:</h3>
+    <v-divider class="my-10" />
+
+          <v-img class="mx-16 mb-n16" src="../assets/UxUi-tech.png" />
     <section id="animate-area">
-        <div class="newfeaturesheader">
-            <v-img class="mx-5" src="../assets/CloudSlideTech.png" />
+        <div class="newfeaturesheader mx-16 ">
         </div>
     </section>
 </div>
