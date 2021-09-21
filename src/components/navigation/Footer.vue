@@ -102,7 +102,7 @@
 }
 @media screen and (max-width:900px){
   .footer {
-    height: 90px !important;
+    height: 70px !important;
   }
 }
 .footer {
