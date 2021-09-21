@@ -57,6 +57,34 @@
 </div>
 </template>
 
+<script>
+export default {
+  name: "Footer",
+data: () => ({
+  contacticons: [
+      {
+        name:'mdi-email',
+        url:'mailto:mexdevservice@gmail.com',
+      },
+      {
+        name:'mdi-phone',
+        url:'tel:+52+6381134196',
+      }
+  ],
+  icons: [
+    {
+      name:'mdi-information',
+      url: '/about',
+  },
+  {
+      name:'mdi-text-box',
+      url: '/privacy',
+  },
+  ]
+})
+}
+</script>
+
 <style>
 .rainbowelement1 {
   width: 100%;
@@ -109,31 +137,3 @@
   height: 50px;
 }
 </style>
-
-<script>
-export default {
-  name: "Footer",
-data: () => ({
-  contacticons: [
-      {
-        name:'mdi-email',
-        url:'mailto:mexdevservice@gmail.com',
-      },
-      {
-        name:'mdi-phone',
-        url:'tel:+52+6381134196',
-      }
-  ],
-  icons: [
-    {
-      name:'mdi-information',
-      url: '/about',
-  },
-  {
-      name:'mdi-text-box',
-      url: '/privacy',
-  },
-  ]
-})
-}
-</script>
