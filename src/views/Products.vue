@@ -101,12 +101,11 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuStack </span>
   </h1>
-  <h3> The recruiter <span class="blue--text"> solution! </span> </h3> <br>
+  <h3> The recruiter <span class="blue--text"> <a target="_blank" href="https://forms.gle/FPr6DBgpEMdLf51T7" >solution! </a> </span> </h3> <br>
    <v-container class="text-sm-body-2 ">
       <NuStackTechSlide/>
      </v-container>
-     <v-btn primary dark class="mt-5 center" href="contact"> Get quote! </v-btn><br>
-     <h4 class="mt-5">Special limited price, ending soon!</h4>
+     <v-btn primary dark class="mt-5 center" href="contact"> Learn more! </v-btn><br>
 </v-card>
 </transition>
 </v-col>
@@ -116,7 +115,7 @@ h4 {
   <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuDream </span>
   </h1>
-  <h3 > All in-one <span class="blue--text"> <a href="https://nudream.herokuapp.com/landing"> live preview! </a> </span> </h3> <br>
+  <h3 > Create your startup<span class="blue--text"> <a href="https://nudream.herokuapp.com/landing"> live preview! </a> </span> </h3> <br>
    <v-container class="text-sm-body-2 ">
      <NuDreamTechSlide/>
      </v-container>
@@ -139,10 +138,6 @@ h4 {
        <b>{{ productDescription.title }}</b>
        {{productDescription.description}}
      </p>
-     </v-container>
-     <v-container>
-       <p> Product preview </p>
-       <v-img src="@/assets/gif/NuStack.gif"></v-img>
      </v-container>
 </main>
 </template>
