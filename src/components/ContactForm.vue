@@ -117,10 +117,10 @@
 
 
               <v-divider/>
-            <p class="center text-body-1 "> <b> Office Hours PST: </b> </p>
+            <p class="center text-body-1 "> <b> Home Office Hours: </b> </p>
               <v-row>
                 <v-col cols="12" class="text-body-2">
-                    10:00am - 01:00pm | 2:00pm - 6:00pm
+                    10:00am - 01:00pm | 2:00pm - 6:00pm (PST)
                 </v-col>
               </v-row>
            </container>
