@@ -1,7 +1,7 @@
 <template>
 <div id="app">
+<!-- cloud transitions -->
   <CloudTransitions/>
-
   <v-container >
   <transition appear name="fade">
    <div class="mt-n5">
@@ -9,7 +9,6 @@
         <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
       </h5>
       <h3 class="mt-3" style="color:dodgerblue">
-
         Success: <h5> 5 happy international clients! <v-icon color="green"> mdi-clipboard-check </v-icon></h5>
       </h3>
        <v-divider class="mb-5" />
@@ -41,7 +40,7 @@
                ><v-icon>mdi-close</v-icon></v-btn>
              </v-card-actions>
              <v-card-text>
-               <!-- Login Component  -->
+<!-- Login Component  -->
              <Login/>
              </v-card-text>
            </v-card>
@@ -106,6 +105,7 @@
    </div>
  </transition>
  </v-container>
+<!-- TechStackIcons Slider -->
  <TechStackIcons/>
 </div>
 </template>
