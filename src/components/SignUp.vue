@@ -1,6 +1,5 @@
 <style scoped>
 .v-card {
-  margin: 10vw;
   height: auto;
   max-width: 600px !important;
   width: min-content;
@@ -33,7 +32,6 @@ button {
 </style>
 
 <template>
- <v-card class="center block">
    <div class="d-sign-up">
    <h5> Sign up </h5>
    <form @submit.prevent="register" >
@@ -50,7 +48,6 @@ button {
   </div>
 </div>
 </div>
-</v-card>
 </template>
 
 <script>
