@@ -79,16 +79,16 @@ h4 {
         <v-img class="mb-5 office-img" src="../assets/graphics/mxdv-home-office.jpg" />
         <div class="pt-10">
             <b class="text-h4">Hello!</b>, my name is <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
-            I am just a human being that would love to introduce you to <b>MexDev!</b>, a web development support team providing coding solutions
-            as a service and digital products for individuals, companies & contractors, upgrading into the online business model or updating
+            a human being that would love to introduce you to <b>MexDev!</b>, a web app development support team, we provide coding solutions
+            as a service creating digital products for individuals, companies & contractors, upgrading into the online business model or updating
             their current app progress, we are home office individuals with great energy.
           <br><br>
-            I love working hard, I have been though to do my <b>loving God</b>, which has taught me to, & this means I study high-end concepts and constantly improve by learning new technologies, don't like the obsolete hard to use that can be to maintain & very expensive. Sounds painful, right?... but many companies are suffering today by this means. But do not worry, because the more sophisticated technology is here, providing simple, easy to maintain, modular & effectively fast-paced development! & instead of using 100 hands, we design a better system that helps to optimize digital emerging companies!" 
+            I love working hard, I have been though to do my <b>loving God</b>, which has taught me to, & this means I study high-end concepts and constantly improve by learning new technologies, don't like the obsolete hard to use that can be to maintain & very expensive. Sounds painful, right?... but many companies are suffering today by this means. But do not worry, because the more sophisticated technology is here, providing simple, easy to maintain, modular & effectively fast-paced development! & instead of using 100 hands, we design a better system that helps to optimize digital emerging companies!"
         <h4 class="mt-10"><b>The project Big vision:</b></h4>
         <br>
         <v-divider></v-divider>
         <br>
-           MexDev.io Is a brand new fresh remote project with project founders in the USA and MX. we are bilingual. we got more than 15 years of combined software development experience.
+           MexDev.io vision is fresh & cool, a remote project with project founders in the USA and MX. we are bilingual. we got more than 15 years of combined software development experience.
            we currently have to funds but we povide all with our fingers skills programing and developing our own products :D, all you see in this side has been coded to maximize the UX.
         <br>
         <h4 class="mt-10"><b>Project services & objectives:</b> </h4>
