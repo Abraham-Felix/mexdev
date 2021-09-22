@@ -88,8 +88,7 @@ h4 {
         <br>
         <v-divider></v-divider>
         <br>
-           MexDev.io vision is fresh & cool, a remote project with project founders in the USA and MX, we are bilingual. we got more than 15 years of combined software development experience.
-           we currently have to funds but we povide all with our fingers skills programing and developing our own products :D, all you see in this side has been coded to maximize the UX.
+           MexDev.io vision is fresh & cool!. We provide a service that is 100% remote, with project founders in the USA and MX. We got more than 15 years of combined software development experience. Mexdev is currently looking for funds, but we provide our support service regardless, all with our fingers skills programming & developing our products. :D
         <br>
         <h4 class="mt-10"><b>Project services & objectives:</b> </h4>
 
