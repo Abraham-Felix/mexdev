@@ -1,7 +1,6 @@
 <template>
 <div>
     <v-divider  />
-
       <h3 class="as-h3 text-body-2">Get back on track with top technologies:</h3>
     <section id="animate-area">
          <v-row class="mx-3">
@@ -30,7 +29,7 @@
 <script>
 
 export default {
-    name: 'AnimatedSlide',
+    name: 'TechStackIcons',
     data() {
           return {
         imgs:[
@@ -132,67 +131,11 @@ export default {
     color: white !important;
 }
 
-@keyframes animatedBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -300px 0;
-    }
-}
-
-@-moz-keyframes animatedBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -300px 0;
-    }
-}
-
-@-webkit-keyframes animatedBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -300px 0;
-    }
-}
-
-@-ms-keyframes animatedBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -300px 0;
-    }
-}
-
-@-o-keyframes animatedBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -300px 0;
-    }
-}
 
 .hover-up:hover {
   margin-top: -15px;
   transition: 0.5s;
 }
 
-#animate-area {
-    width: 100%;
-    position: inherit;
-    height: 120px;
-    background-image: url(../assets/graphics/just-clouds.png);
-    background-position: 0px 0px;
-    animation: animatedBackground 10s linear infinite;
-    -moz-animation: animatedBackground 10s linear infinite;
-    -webkit-animation: animatedBackground 10s linear infinite;
-    -ms-animation: animatedBackground 10s linear infinite;
-    -o-animation: animatedBackground 10s linear infinite;
-}
 
 </style>

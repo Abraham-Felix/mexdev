@@ -10,7 +10,7 @@
 </div>
   <v-container >
   <transition appear name="fade">
-   <v-card class="mt-n5">
+   <div class="mt-n5">
       <h5>
         <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
       </h5>
@@ -92,33 +92,38 @@
           digital products to enhance your business in a digital way, we help companies & contractors by upgrading into the online business model or updating their current app progress.
         </p>
       </v-container>
-      <v-container class="mt-10 mt-md-n7">
-      <!-- Mockup Slider -->
-      <div class="slideshow ">
-        <MockupSlider/>
-      </div><br>
-    </v-container>
+<!-- Mockup Slider -->
+      <div class=" pb-md-16 slide-card">
+        <MockupSlider class="mb-16" />
+      </div>
       <v-container class=" mt-n16 mt-md-15">
-        <v-divider class="mb-5 mt-n16 mt-md-15"></v-divider>
+        <v-divider class="mb-5 mt-n16"></v-divider>
         <v-btn dark href="/products" title="Get your products done!">Products</v-btn>
         <br>
-        <p class="center "><b>PS: “disfruten de todo su duro trabajo. Eso es un regalo de Dios” <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">(Eclesiastés 3:13)</a>.</b></p>
+        <p class="center ">
+          <b>
+          PS: “disfruten de todo su duro trabajo. Eso es un regalo de Dios”
+          <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">
+            (Eclesiastés 3:13)
+          </a>.
+        </b>
+      </p>
       </v-container>
-   </v-card>
+   </div>
  </transition>
  </v-container>
- <AnimatedSlide class="anislide mb-n13"/>
+ <TechStackIcons/>
 </div>
 </template>
 
 <script>
-import AnimatedSlide from '../components/AnimatedSlide.vue'
 import firebase from 'firebase';
 import toastr from 'toastr';
 import { mapGetters } from "vuex";
 import Login from "../components/Login.vue";
 import SignUp from "../components/SignUp.vue";
 import MockupSlider from "@/components/animations/MockupSlider.vue";
+import TechStackIcons from '../components/animations/TechStackIcons.vue'
 
 export default {
   name: 'Landing',
@@ -126,7 +131,7 @@ export default {
     Login,
     SignUp,
     MockupSlider,
-    AnimatedSlide
+    TechStackIcons
   },
   computed: {
     // map `this.user` to `this.$store.getters.user`
@@ -153,10 +158,6 @@ export default {
 #body {
       overflow: hidden !important;
 }
-.slideshow{
-  padding-top: 50px;
-  display: contents;
-}
 p {
   font-size: 12px !important;
 }
@@ -174,9 +175,12 @@ h4 {
   font-size: 25px ;
   font-family: poppins ;
 }
-.v-card {
-  padding: 20px;
-  max-width: 900px !important;
+.slide-card {
+    margin: 20px auto !important;
+    max-width: 900px !important;
+    min-width: auto !important;
+    transition: 1s;
+    display: block;
 }
 .h-des {
   font-size: 16px ;
@@ -198,20 +202,7 @@ h4 {
       transition: 1s;
     }
 }
-.anislide {
-  margin-bottom: -80px;
-}
-@media (max-width:400px){
-  .anislide {
-    margin-bottom: -180px;
-  }
-}
-@media all and (max-width:500px){
-  #cf4a {
-    height: 350px;
-    margin: -33px auto !important;
-}
-}
+
 
 /* cloud animation 1 */
 #clouds{

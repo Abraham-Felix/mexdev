@@ -38,13 +38,83 @@ export default {
 </script>
 
 <style scoped>
+#cf4a img {
+  position: absolute;
+    display: block;
+}
+
+#cf4a {
+height:350px;
+margin:0 auto;
+}
+
+
+#cf4a img {
+-webkit-animation-name: cf4FadeInOut;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 10s;
+
+-moz-animation-name: cf4FadeInOut;
+-moz-animation-timing-function: ease-in-out;
+-moz-animation-iteration-count: infinite;
+-moz-animation-duration: 10s;
+
+-o-animation-name: cf4FadeInOut;
+-o-animation-timing-function: ease-in-out;
+-o-animation-iteration-count: infinite;
+-o-animation-duration: 10s;
+
+animation-name: cf4FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+}
+#cf4a img:nth-of-type(1) {
+-webkit-animation-delay: 8s;
+-moz-animation-delay: 8s;
+-o-animation-delay: 8s;
+animation-delay: 8s;
+}
+#cf4a img:nth-of-type(2) {
+-webkit-animation-delay: 6s;
+-moz-animation-delay: 6s;
+-o-animation-delay: 6s;
+animation-delay: 6s;
+}
+#cf4a img:nth-of-type(3) {
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;
+-o-animation-delay: 4s;
+animation-delay: 4s;
+}
+#cf4a img:nth-of-type(4) {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+-o-animation-delay: 2s;
+animation-delay: 2s;
+}
+#cf4a img:nth-of-type(5) {
+-webkit-animation-delay: 0;
+-moz-animation-delay: 0;
+-o-animation-delay: 0;
+animation-delay: 0;
+}
+
 img#img {
     max-width: 900px;
 }
-@media (max-width:900px){
-  img#img {
-      max-width: 100% !important;
-  }
+@media (max-width:1200px){
+  #cf4a img {
+      max-width: 75% !important;
+ }
+}
+
+@media all and (max-width:500px){
+  #cf4a img {
+    height: 350px;
+    margin: -33px auto !important;
+}
 }
  .header-zoom img {
    max-width:600px;
@@ -121,64 +191,4 @@ opacity:1;
 }
 }
 
-#cf4a {
-height:350px;
-margin:0 auto;
-}
-#cf4a img {
-position:absolute;
-left:0;
-}
-
-#cf4a img {
--webkit-animation-name: cf4FadeInOut;
--webkit-animation-timing-function: ease-in-out;
--webkit-animation-iteration-count: infinite;
--webkit-animation-duration: 10s;
-
--moz-animation-name: cf4FadeInOut;
--moz-animation-timing-function: ease-in-out;
--moz-animation-iteration-count: infinite;
--moz-animation-duration: 10s;
-
--o-animation-name: cf4FadeInOut;
--o-animation-timing-function: ease-in-out;
--o-animation-iteration-count: infinite;
--o-animation-duration: 10s;
-
-animation-name: cf4FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 10s;
-}
-#cf4a img:nth-of-type(1) {
--webkit-animation-delay: 8s;
--moz-animation-delay: 8s;
--o-animation-delay: 8s;
-animation-delay: 8s;
-}
-#cf4a img:nth-of-type(2) {
--webkit-animation-delay: 6s;
--moz-animation-delay: 6s;
--o-animation-delay: 6s;
-animation-delay: 6s;
-}
-#cf4a img:nth-of-type(3) {
--webkit-animation-delay: 4s;
--moz-animation-delay: 4s;
--o-animation-delay: 4s;
-animation-delay: 4s;
-}
-#cf4a img:nth-of-type(4) {
--webkit-animation-delay: 2s;
--moz-animation-delay: 2s;
--o-animation-delay: 2s;
-animation-delay: 2s;
-}
-#cf4a img:nth-of-type(5) {
--webkit-animation-delay: 0;
--moz-animation-delay: 0;
--o-animation-delay: 0;
-animation-delay: 0;
-}
 </style>
