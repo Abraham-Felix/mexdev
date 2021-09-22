@@ -3,9 +3,15 @@
 h1 {
     margin-bottom: 1vw;
 }
-
+.office-img{
+  margin:50px;
+}
 .bold {
     -webkit-text-stroke-width: medium;
+}
+
+.about-card {
+  max-width:900px;
 }
 
 .v-card {
@@ -69,14 +75,14 @@ h4 {
 
 <template>
 
-<v-card class="mx-auto">
+<v-card class="mx-auto about-card">
     <h1> About </h1>
     <v-img class="center fav" src="../assets/mxdv-fav.png" />
     <v-card-text class="text-justify text-body-1 p10s">
         <h4><b>Vision:</b></h4>
         <br>
         <v-divider class="mb-5"></v-divider>
-        <v-img class="mb-5" src="../assets/home-office.png" />
+        <v-img class="mb-5 office-img" src="../assets/graphics/mxdv-home-office.jpg" />
         <p>
             <b>Hello!</b>, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
             I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions

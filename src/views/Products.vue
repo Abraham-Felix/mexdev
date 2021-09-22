@@ -74,8 +74,8 @@
     </v-container>
     <v-container v-for="(productDescription, i) in productDescriptions" :key="i" class="text-sm-body-2">
         <v-divider></v-divider>
-        <p class="f-p text-sm-body-2 font-weight-medium align-justify ">
-            <span class="blue--text">Whats is {{ productDescription.title }} ?</span>
+        <p class="f-p text-sm-body-2 font-weight-medium  text-left">
+            <span class="blue--text ">Whats is {{ productDescription.title }} ?</span>
             <br>
             <br>
             <b>{{ productDescription.title }}</b> {{productDescription.description}}
