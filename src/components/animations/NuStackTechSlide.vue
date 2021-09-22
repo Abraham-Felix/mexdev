@@ -1,8 +1,8 @@
 <template>
-  <v-col class="pa-16 mb-sm-n16 mb-md-0">
+  <v-col>
   <div id="cf6a">
     <v-img
-      class="v-img mt-n16"
+      class="v-img "
       id="img"
       v-for="(img,i) in imgs"
       :key="i"
