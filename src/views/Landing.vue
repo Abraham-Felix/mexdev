@@ -91,7 +91,7 @@
         <MockupSlider class="mb-16" />
       </div>
       <v-container class=" mt-n16 mt-md-15">
-        <v-divider class="mb-5 mt-n16"></v-divider>
+        <v-divider class="mb-10 mt-5"></v-divider>
         <v-btn dark href="/products" title="Get your products done!">Products</v-btn>
         <br>
         <p class="center ">
