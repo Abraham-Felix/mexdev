@@ -195,7 +195,7 @@ export default {
 <style>
 .contact-form {
   max-width: max-content;
-  margin: auto;
+  margin: 10px auto;
   padding-top:10px;
 }
 .form-group {
