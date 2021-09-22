@@ -37,8 +37,8 @@ button {
    <h5> Sign up </h5>
 
     <p class="center">Let's create a new account!</p><br>
-   <input class="my-5" type="text" v-model="email" placeholder="Email"><br>
-   <input class="mb-5" type="password"  @keyup.enter="register" v-model="password" placeholder="Password"><br>
+   <v-text-field class=" form-control" type="text" v-model="email" placeholder="Email"></v-text-field><br>
+   <v-text-field class="form-control" type="password"  @keyup.enter="register" v-model="password" placeholder="Password"></v-text-field><br>
      <v-btn depressed small color="primary" @click="register">sign up</v-btn><br>
 
   <div class="oneH">
