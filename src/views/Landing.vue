@@ -96,7 +96,7 @@
         <br>
         <p class="center ">
           <b>
-          PS: “disfruten de todo su duro trabajo. Eso es un regalo de Dios”
+          PS: “Everyone should eat and drink and find enjoyment for all his hard work. It is the gift of God.”
           <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">
             (Eclesiastés 3:13)
           </a>.
