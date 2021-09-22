@@ -137,7 +137,7 @@ export default {
 }
 
 .hover-up {
-  transition: all ease-out 0.3s;
+  transition: all ease-out 0.1s;
 }
 
 .hover-up:hover {
