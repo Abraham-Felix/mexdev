@@ -72,16 +72,17 @@
             </v-col>
         </v-row>
     </v-container>
-    <v-container v-for="(productDescription, i) in productDescriptions" :key="i" class="text-sm-body-2">
-        <v-divider></v-divider>
+    <v-container v-for="(productDescription, i) in productDescriptions" :key="i">
+        <v-card>
         <v-card-text>
-        <p class="f-p text-sm-body-1 font-weight-medium  text-left">
+        <p class="f-p text-sm-body-1 font-weight-medium text-justify  text-left">
             <span class="blue--text ">Whats is {{ productDescription.title }} ?</span>
-            <br>
+                <v-divider></v-divider>
             <br>
             <b>{{ productDescription.title }}</b> {{productDescription.description}}
         </p>
       </v-card-text>
+    </v-card>
     </v-container>
 </main>
 
@@ -152,12 +153,6 @@ h4 {
 
 .v-card {
     padding: 20px;
-}
-
-.mdi-code-tags {
-    font-size: 16px;
-    display: inline;
-    color: #5388E6;
 }
 
 .h-des {
