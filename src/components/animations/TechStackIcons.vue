@@ -5,7 +5,7 @@
     <section id="animate-area">
          <v-row class="mx-3">
            <v-col
-           class="pa-sm-5"
+           class="icon-col"
            v-for="(img,i) in imgs"
            :key="i"
            >
@@ -121,6 +121,11 @@ export default {
 </script>
 <style>
 
+.icon-col {
+  padding-left:5px !important;
+  padding-right:5px !important;
+}
+
 .as-h3 {
     color: #47484a;
 }
@@ -131,10 +136,13 @@ export default {
     color: white !important;
 }
 
+.hover-up {
+  transition: all ease-out 0.3s;
+}
 
 .hover-up:hover {
   margin-top: -15px;
-  transition: 0.5s;
+  height: 3vw !important;
 }
 
 
