@@ -85,7 +85,7 @@ export default {
           {
             src: require("@/assets/tech-icons/git-logo-46px.png"),
             title: "git",
-            href: "https://www.git.com/"
+            href: "https://git-scm.com/"
           },
           {
             src: require("@/assets/tech-icons/github-logo-46px.png"),
