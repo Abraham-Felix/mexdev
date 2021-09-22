@@ -72,12 +72,16 @@ h4 {
 <v-card class="mt-5 mb-5 about-card">
     <h1> About </h1>
     <v-img class="center fav" src="../assets/mxdv-fav.png" />
-    <v-card-text class="text-justify font-weight-medium  text-body-1 p10s">
+    <v-card-text class="text-justify font-weight-medium  text-body-1">
         <h4><b>Vision:</b></h4>
         <br>
         <v-divider class="mb-5"></v-divider>
         <v-img class="mb-5 office-img" src="../assets/graphics/mxdv-home-office.jpg" />
         <div class="pt-10">
+          <h4 class="mt-10"><b>Introduction:</b></h4>
+          <br>
+          <v-divider></v-divider>
+          <br>
             <b class="text-h4">Hello!</b>, my name is <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
             a human being that would love to introduce you to <b>MexDev!</b>, a web app development support team, we provide coding solutions
             as a service creating digital products for individuals, companies & contractors, upgrading into the online business model or updating
