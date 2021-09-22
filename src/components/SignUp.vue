@@ -32,14 +32,15 @@ button {
 </style>
 
 <template>
+  <v-form @submit.prevent="register" >
    <div class="d-sign-up">
    <h5> Sign up </h5>
-   <form @submit.prevent="register" >
+
     <p class="center">Let's create a new account!</p><br>
    <input class="my-5" type="text" v-model="email" placeholder="Email"><br>
    <input class="mb-5" type="password"  @keyup.enter="register" v-model="password" placeholder="Password"><br>
      <v-btn depressed small color="primary" @click="register">sign up</v-btn><br>
-  </form>
+
   <div class="oneH">
   <div class="grid-50">
     <v-divider class="mb-5"/>
@@ -48,6 +49,7 @@ button {
   </div>
 </div>
 </div>
+</v-form>
 </template>
 
 <script>

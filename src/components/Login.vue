@@ -29,9 +29,9 @@ button {
 </style>
 
 <template>
-<v-form class="contactForm">
+<v-form  class="contactForm">
         <div class="login pt-3">
-            <h5>Log In</h5>
+            <h5 class="primary--text ">Log In</h5>
             <br>
             <div class="form-group">
                 <v-text-field class="form-control" type="text" v-model="email" placeholder="Email">
@@ -40,10 +40,10 @@ button {
             <v-text-field class="form-control" type="password" @keyup.enter="login" v-model="password" placeholder="Password">
             </v-text-field>
             <v-btn depressed small color="primary"  @click="login">Log in</v-btn>
-            <div class="oneH mt-5">
-              <v-divider class="mb-5"/>
+            <div class="oneH">
             <div class="grid-50">
-            <h5>Other methods</h5>
+              <v-divider class="mb-5"/>
+            <h5 class="primary--text">Other methods</h5>
             <v-btn @click.native="signInWithGoogle"><v-icon>mdi-google</v-icon></v-btn>
           </div>
           </div>
