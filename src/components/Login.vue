@@ -30,8 +30,7 @@ button {
 
 <template>
 <v-form class="contactForm">
-    <v-card>
-        <div class="login">
+        <div class="login pt-3">
             <h5>Log In</h5>
             <br>
             <div class="form-group">
@@ -49,7 +48,6 @@ button {
           </div>
           </div>
         </div>
-    </v-card>
 </v-form>
 
 </template>
