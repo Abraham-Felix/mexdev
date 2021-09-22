@@ -8,10 +8,9 @@ display:grid;
   margin: auto;
 }
 .v-card {
-    margin: 10vw;
     height: auto;
     max-width: 600px !important;
-    width: min-content;
+    width: fit-content;
     width: auto;
     -webkit-box-pack: center;
 }
@@ -23,6 +22,9 @@ button {
     padding: .5vh;
     border-radius: 10px;
     margin: 2vh;
+}
+.contactForm {
+  max-width: 600px;
 }
 </style>
 
