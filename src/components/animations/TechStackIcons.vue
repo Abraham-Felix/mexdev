@@ -10,11 +10,11 @@
            :key="i"
            >
              <a
+             class="icon-a"
               target="_blank"
              :href="img.href">
                <v-img
-               class="hover-up "
-               height="46px"
+               class="icon-img hover-up "
                contain
                :title="img.title"
                :src="img.src">
@@ -136,14 +136,31 @@ export default {
     color: white !important;
 }
 
-.hover-up {
-  transition: all ease-out 0.1s;
+.icon-img {
+  height:46px;
 }
 
-.hover-up:hover {
-  margin-top: -15px;
-  height: 3vw !important;
+.icon-col {
+  transition: all ease 0.1s;
 }
 
+.icon-col:hover {
+  padding-top: 3px;
+}
+
+@media screen and (max-width:1260px){
+  .icon-col:hover {
+    margin-top: -7px;
+  }
+  .icon-col {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:960px){
+
+  .icon-col {
+    margin-bottom: 10px;
+  }
+}
 
 </style>
