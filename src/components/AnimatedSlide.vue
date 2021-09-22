@@ -4,8 +4,9 @@
 
       <h3 class="as-h3 text-body-2">Get back on track with top technologies:</h3>
     <section id="animate-area">
-         <v-row>
+         <v-row class="mx-3">
            <v-col
+           class="pa-sm-5"
            v-for="(img,i) in imgs"
            :key="i"
            >
