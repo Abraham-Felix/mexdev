@@ -33,12 +33,6 @@ h1 {
 .pleads {
   width: 50%;
 }
-ul {
-
-    display: inline-flex;
-    white-space: pre-wrap;
-    font-family: monospace;
-}
 
 .col-b {
     width: 33%;
@@ -75,48 +69,46 @@ h4 {
 
 <template>
 
-<v-card class="mx-auto about-card">
+<v-card class="mt-5 mb-5 about-card">
     <h1> About </h1>
     <v-img class="center fav" src="../assets/mxdv-fav.png" />
-    <v-card-text class="text-justify text-body-1 p10s">
+    <v-card-text class="text-justify font-weight-medium  text-body-1 p10s">
         <h4><b>Vision:</b></h4>
         <br>
         <v-divider class="mb-5"></v-divider>
         <v-img class="mb-5 office-img" src="../assets/graphics/mxdv-home-office.jpg" />
-        <p>
-            <b>Hello!</b>, it's <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
-            I would love to introduce you to <b>MexDev</b> is a web development team providing coding solutions
+        <div class="pt-10">
+            <b class="text-h4">Hello!</b>, my name is <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
+            I am just a human being that would love to introduce you to <b>MexDev!</b> is a web development support team providing coding solutions
             as a service and digital products for individuals, companies & contractors, upgrading into the online business model or updating
             their current app progress, we are home office individuals with great energy.
-          </p>
           <br><br>
-          <p>
-            <b> Energetic! </b> I love working hard, it is what I have been though to do, my loving <b>God</b> has teched me to,
+            I love working hard, it is what I have been though to do, my loving <b>God</b> has teched me to,
             and this means I study high-end technologies, not the obsolete hard, and hard to use, that can end up being hard
             to maintain & very expensive. Sounds painful, right?... but don't you worry because the more sophisticated technology
             is here providing simple and easy to maintain modular & effectively fast-paced development! and instead of using 100 hands,
-             I use 2, my own hands! and sometimes "A whole team that helps me get huge amazing projects!" - Abraham Felix
-        </p>
+             I use 2, my own hands! and sometimes "A whole team that helps me get huge amazing projects!"
         <h4 class="mt-10"><b>The project Big vision:</b></h4>
         <br>
         <v-divider></v-divider>
         <br>
-        <p>MexDev.io Is a brand new fresh remote project with project founders in the USA and MX. we are bilingual. we got more than 15 years of combined software development experience.
-           we currently have to funds but we povide all with our fingers skills programing and developing our own products :D, all you see in this side has been coded to maximize the UX. </p>
+           MexDev.io Is a brand new fresh remote project with project founders in the USA and MX. we are bilingual. we got more than 15 years of combined software development experience.
+           we currently have to funds but we povide all with our fingers skills programing and developing our own products :D, all you see in this side has been coded to maximize the UX.
         <br>
         <h4 class="mt-10"><b>Project services & objectives:</b> </h4>
-        <p>
+
             <br>
             <br> Software development talent is expensive. Hiring new developers for a project is risky too, as a developer's skills may not match their resume and because some engineers fail to keep current on the latest languages, platforms and best practices.
             As remote work expands, so do the number of applicants, creating even greater risk for hiring managers. so why not hire a team like Mexdev?
-        </p>
-        <p>
+
+
             <br>
             <br> Our goal is to deliver high-quality ideas and software development at an affordable price, from developers whose skills and productivity are regularly evaluated. We use agile methodologies, secure information exchange, and productivity and
             skills assessment tools to eliminate the risks of hiring outside help.
-        </p>
+
         <h4 class="mt-10"><b>Why are we different?</b></h4>
         <br>
+      </div>
         <v-divider></v-divider>
         <br>
         <v-list-item>
