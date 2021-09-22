@@ -88,12 +88,12 @@ h4 {
         <br>
         <v-divider></v-divider>
         <br>
-           MexDev.io vision is fresh & cool!. We provide a service that is 100% remote, with project founders in the USA and MX. We got more than 15 years of combined software development experience. Mexdev is currently looking for funds, but we provide our support service regardless, all with our fingers skills programming & developing products.
+           <b>Mexdev</b> vision is fresh & cool!. We provide a service that is 100% remote, with project founders in the USA and MX. We got more than 15 years of combined software development experience. Mexdev is currently looking for funds, but we provide our support service regardless, all with our fingers skills programming & developing products.
         <br>
         <h4 class="mt-10"><b>Project services & objectives:</b> </h4>
 
             <br>
-            <br> Software development talent is expensive. Hiring new developers for a project is risky too, as a developer's skills may not match their resume and because some engineers fail to keep current on the latest languages, platforms and best practices.
+            <br> <b>Software development</b> talent is expensive. Hiring new developers for a project is risky too, as a developer's skills may not match their resume and because some engineers fail to keep current on the latest languages, platforms and best practices.
             As remote work expands, so do the number of applicants, creating even greater risk for hiring managers. so why not hire a team like Mexdev?
 
 
