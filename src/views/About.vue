@@ -83,11 +83,7 @@ h4 {
             as a service and digital products for individuals, companies & contractors, upgrading into the online business model or updating
             their current app progress, we are home office individuals with great energy.
           <br><br>
-            I love working hard, it is what I have been though to do, my loving <b>God</b> has teched me to,
-            and this means I study high-end technologies, not the obsolete hard, and hard to use, that can end up being hard
-            to maintain & very expensive. Sounds painful, right?... but don't you worry because the more sophisticated technology
-            is here providing simple and easy to maintain modular & effectively fast-paced development! and instead of using 100 hands,
-             I use 2, my own hands! and sometimes "A whole team that helps me get huge amazing projects!"
+            I love working hard, I have been though to do my <b>loving God</b>, which has taught me to, & this means I study high-end concepts and constantly improve by learning new technologies, don't like the obsolete hard to use that can be to maintain & very expensive. Sounds painful, right?... but many companies are suffering today by this means. But do not worry, because the more sophisticated technology is here, providing simple, easy to maintain, modular & effectively fast-paced development! & instead of using 100 hands, we design a better system that helps to optimize digital emerging companies!" 
         <h4 class="mt-10"><b>The project Big vision:</b></h4>
         <br>
         <v-divider></v-divider>
