@@ -1,7 +1,6 @@
 <template>
-<div id="app">
+<div id="app" class="pt-5">
   <!-- <ChatApp/> -->
-  <h1 class="pt-1">Contact</h1>
   <ContactForm />
   <br>
 </div>

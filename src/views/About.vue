@@ -79,7 +79,7 @@ h4 {
         <v-img class="mb-5 office-img" src="../assets/graphics/mxdv-home-office.jpg" />
         <div class="pt-10">
             <b class="text-h4">Hello!</b>, my name is <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
-            I am just a human being that would love to introduce you to <b>MexDev!</b> is a web development support team providing coding solutions
+            I am just a human being that would love to introduce you to <b>MexDev!</b>, a web development support team providing coding solutions
             as a service and digital products for individuals, companies & contractors, upgrading into the online business model or updating
             their current app progress, we are home office individuals with great energy.
           <br><br>

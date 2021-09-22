@@ -1,5 +1,9 @@
 <style scoped>
 
+.privacy-card {
+   max-width: 900px;
+}
+
 h1 {
     margin-bottom: 1vw;
 }
@@ -26,7 +30,7 @@ h4 {
 
 <template>
 
-<v-card class="mx-auto">
+<v-card class="mx-auto privacy-card mt-5 mb-5">
     <h1> Privacy Policy </h1>
     <v-divider></v-divider>
     <v-card-text class="text-justify p10s">

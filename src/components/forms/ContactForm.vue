@@ -1,10 +1,12 @@
 <template>
 <v-card class="contact-form">
+
+  <h1>Contact</h1>
   <div>
     <a href="/landing">
     <v-img
       alt="mexdev logo"
-      class="shrink mr-2 margin center"
+      class="shrink center"
       contain
       src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
       transition="scale-transition"
