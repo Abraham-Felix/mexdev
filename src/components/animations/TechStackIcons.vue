@@ -10,11 +10,10 @@
            :key="i"
            >
              <a
-             class="icon-a"
               target="_blank"
              :href="img.href">
                <v-img
-               class="icon-img hover-up "
+               class="icon-img"
                contain
                :title="img.title"
                :src="img.src">
