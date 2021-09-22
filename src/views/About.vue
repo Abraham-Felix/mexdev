@@ -88,7 +88,7 @@ h4 {
         <br>
         <v-divider></v-divider>
         <br>
-           MexDev.io vision is fresh & cool, a remote project with project founders in the USA and MX we are bilingual. we got more than 15 years of combined software development experience.
+           MexDev.io vision is fresh & cool, a remote project with project founders in the USA and MX, we are bilingual. we got more than 15 years of combined software development experience.
            we currently have to funds but we povide all with our fingers skills programing and developing our own products :D, all you see in this side has been coded to maximize the UX.
         <br>
         <h4 class="mt-10"><b>Project services & objectives:</b> </h4>
