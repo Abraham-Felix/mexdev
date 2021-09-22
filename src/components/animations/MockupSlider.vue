@@ -17,19 +17,19 @@ export default {
       // refactoring components to reduce markup using items in array
       imgs: [
         {
-        src: require("@/assets/mockups/sd-mockup.png")
+        src: require("@/assets/mockups/sd-mockup-900px.png")
       },
       {
-        src: require("@/assets/mockups/df-mockup.png")
+        src: require("@/assets/mockups/df-mockup-900px.png")
       },
       {
-        src: require("@/assets/mockups/ccp-mockup.png")
+        src: require("@/assets/mockups/ccp-mockup-900px.png")
       },
       {
-        src: require("@/assets/mockups/ls-mockup.png")
+        src: require("@/assets/mockups/ls-mockup-900px.png")
       },
       {
-        src: require("@/assets/mockups/fhm-mockup.png")
+        src: require("@/assets/mockups/fhm-mockup-900px.png")
       }
     ]
     }
