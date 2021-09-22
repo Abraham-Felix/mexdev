@@ -9,7 +9,7 @@
 
 <script>
 
-import ContactForm from '../components/ContactForm.vue';
+import ContactForm from '@/components/forms/ContactForm.vue';
 //import ChatApp from '../components/ChatApp.vue';
 
 export default {

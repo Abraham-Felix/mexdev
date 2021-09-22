@@ -1,27 +1,5 @@
-<style>
-.form-group {
-    padding: 0px !important;
-}
-.form-inline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: stretch;
-    align-content: space-around;
-    flex-direction: column;
-}
-
-</style>
-
 <template>
-
-<v-card>
+<v-card class="contact-form">
   <div>
     <a href="/landing">
     <v-img
@@ -132,7 +110,7 @@
 
 <script>
 
-import firebase from '../plugins/firebase'
+import firebase from '@/plugins/firebase'
 
 import toastr from 'toastr';
 import emailjs from 'emailjs-com';
@@ -214,3 +192,28 @@ export default {
 }
 
 </script>
+<style>
+.contact-form {
+  max-width: max-content;
+  margin: auto;
+  padding-top:10px;
+}
+.form-group {
+    padding: 0px !important;
+}
+.form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: stretch;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+</style>
