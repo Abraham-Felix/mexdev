@@ -47,6 +47,7 @@ export default {
 	-webkit-border-radius: 100px;
 
 	-webkit-transform: rotate(30deg);
+  transition: opacity 0.3s linear 2s;
 	transform: rotate(30deg);
 	-moz-transform: rotate(30deg);
 }
@@ -119,19 +120,65 @@ export default {
 }
 
 @-webkit-keyframes moveclouds {
-	0% {margin-left: 1000px;}
-	100% {margin-left: -1000px;}
+  0% {
+  margin-left: 1000px;
+  opacity:0;
+  }
+  17% {
+  opacity:1;
+  }
+  25% {
+  opacity:0.7;
+  }
+  92% {
+  opacity:1;
+  }
+  100% {
+  opacity:0;
+  margin-left: -1000px;
+  }
 }
 @-moz-keyframes moveclouds {
-	0% {margin-left: 1000px;}
-	100% {margin-left: -1000px;}
+  0% {
+  margin-left: 1000px;
+  opacity:0;
+  }
+  17% {
+  opacity:1;
+  }
+  25% {
+  opacity:0.7;
+  }
+  92% {
+  opacity:1;
+  }
+  100% {
+  opacity:0;
+  margin-left: -1000px;
+  }
 }
 @-o-keyframes moveclouds {
-	0% {margin-left: 1000px;}
-	100% {margin-left: -1000px;}
+  0% {
+  margin-left: 1000px;
+  opacity:0;
+  }
+  17% {
+  opacity:1;
+  }
+  25% {
+  opacity:0.7;
+  }
+  92% {
+  opacity:1;
+  }
+  100% {
+  opacity:0;
+  margin-left: -1000px;
+  }
 }
 #clouds {
 	/*To hide the horizontal scroller appearing during the animation*/
 	overflow: hidden;
 }
+
 </style>
