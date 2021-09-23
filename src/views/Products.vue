@@ -107,7 +107,7 @@ export default {
 
            {
               title: "Mxdv",
-              description: 'is a web app development support team, made 916 contributions in Github the last year! we can build a custom solution or help designing solutions to optimize your service digitally, you can help us with money, & we can help you with your online business. We have been in the development business for decades! we are here you help you and your business grow! Call us today!',
+              description: 'is a web app development support team, made 916 contributions to Github the last year! we can build a custom solution or help designing solutions to optimize your service digitally, you can help us with money, & we can help you with your online business. We have been in the development business for decades! we are here you help you and your business grow! Call us today!',
           },
           {
             title: "Nudream",
