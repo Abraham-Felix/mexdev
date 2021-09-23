@@ -6,6 +6,7 @@
     <h3 class="blue--text">We take your business model to the clouds!</h3>
     <v-container>
         <v-row class="d-flex">
+<!-- mxdvsupport -->          
             <v-col col="4">
                 <transition appear name="slide-ub">
                     <v-card class="product-card mt-5">
@@ -27,28 +28,7 @@
                     </v-card>
                 </transition>
             </v-col>
-            <v-col col="4">
-                <transition appear name="slide-ub">
-                    <v-card class="product-card mt-5">
-                        <div class="product-card-title">
-                            <h1 class="mt-n3">
-   <span class="get pulsate-css" transition="scroll-y-transition"> NuStack </span>
-  </h1>
-                            <h3> The recruiter <span class="blue--text"> <a target="_blank" href="https://forms.gle/FPr6DBgpEMdLf51T7" >solution! </a> </span> </h3>
-                        </div>
-
-                        <v-container class="text-sm-body-2 ">
-                            <NuStackTechSlide/>
-                        </v-container>
-                        <div class="product-card-button">
-                        <v-btn primary dark class=" center" href="contact"> Learn more! </v-btn>
-                        <br>
-                        <p class="center">"Build the best product for you!, suggestions <a target="_blank" href="https://forms.gle/FPr6DBgpEMdLf51T7"> here!"</a> </p>
-                        <br>
-                        </div>
-                    </v-card>
-                </transition>
-            </v-col>
+<!-- nuedream -->
             <v-col col="4">
                 <transition appear name="slide-ub">
                     <v-card class="product-card mt-5">
@@ -70,6 +50,30 @@
                     </v-card>
                 </transition>
             </v-col>
+<!-- nustack -->
+            <v-col col="4">
+                <transition appear name="slide-ub">
+                    <v-card class="product-card mt-5">
+                        <div class="product-card-title">
+                            <h1 class="mt-n3">
+          <span class="get pulsate-css" transition="scroll-y-transition"> NuStack </span>
+          </h1>
+                            <h3> The recruiter <span class="blue--text"> <a target="_blank" href="https://forms.gle/FPr6DBgpEMdLf51T7" >solution! </a> </span> </h3>
+                        </div>
+
+                        <v-container class="text-sm-body-2 ">
+                            <NuStackTechSlide/>
+                        </v-container>
+                        <div class="product-card-button">
+                        <v-btn primary dark class=" center" href="contact"> Learn more! </v-btn>
+                        <br>
+                        <p class="center">"Build the best product for you!, suggestions <a target="_blank" href="https://forms.gle/FPr6DBgpEMdLf51T7"> here!"</a> </p>
+                        <br>
+                        </div>
+                    </v-card>
+                </transition>
+            </v-col>
+
         </v-row>
     </v-container>
     <v-container v-for="(productDescription, i) in productDescriptions" :key="i">
@@ -99,13 +103,15 @@ export default {
         NuStackTechSlide
     },
     data: () => ({
-        productDescriptions: [{
+        productDescriptions: [
+
+           {
+              title: "Mxdv",
+              description: 'is a web app development support team, made 916 contributions in Github the last year! we can build a custom solution or help designing solutions to optimize your service digitally, you can help us with money, & we can help you with your online business. We have been in the development business for decades! we are here you help you and your business grow! Call us today!',
+          },
+          {
             title: "Nudream",
             description: "is a sophisticated web App Start-up template, a super-fast one, build with real-time data! Build based on mobile-first scalable concepts, a custom solution to fit your business!. We deliver it as you request!. It means integrating a design and customizing it to fit your needs. Since the app comes with a custom service, we can provide a custom quote, we want it to fit everyone's budget, we can even sell the template for you to escalate it with your developers or learn about web App development since it includes documentation for installing it. We can set it up for you with Vue.js, Vue-router, Vuex, Axios, Express.js, Vuetify, Bootstrap Firebase Auth & Real-time DB, Vue-cli, email.js, Vue-gtag, Sass-loaders, google sheets API to give you the sweetest jumpstart from zero to hero!. Yes, you heard right! we went through all the pain to build this easy start-up app template, you only have to configure your accounts & kaboom! you got your app for managing your online business, if you get stuck you can always contact our support during office hours and we will help you with the configuration.",
-        },
-         {
-            title: "Mxdv",
-            description: 'is a support team that is here to help out!. made 916 contributions in Github the last year! Explain for what purpose you need the application & we will help you throughout the whole process of installation and configuration, even escalating to fit your business purpose. We have been in the development business for decades!. That is correct! this is our job & we are here you help you and your business grow! Call us today!',
         },
         {
             title: "NuStack",
