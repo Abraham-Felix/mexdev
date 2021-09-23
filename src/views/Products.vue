@@ -3,10 +3,10 @@
 
 <main>
     <h1 class="pt-7"> MXDV Products </h1>
-    <h3 class="blue--text">We take your business model to the clouds!</h3>
+    <h3 class="blue--text">We can optimize your digital business model!</h3>
     <v-container>
         <v-row class="d-flex">
-<!-- mxdvsupport -->          
+<!-- mxdvsupport -->
             <v-col col="4">
                 <transition appear name="slide-ub">
                     <v-card class="product-card mt-5">
