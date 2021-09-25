@@ -9,8 +9,9 @@
            :key="gig._key">
            <div class="fill-height">
              <v-container >
-<!--               <a @click.prevent="deleteGigs(gig.id)" href="#" class="card-link">
-                 <v-icon color=red>mdi-delete</v-icon></a> -->
+              <a @click.prevent="deleteGigs(gig._key)" class="card-link">
+                 <v-icon color=red>mdi-delete</v-icon>
+               </a>
              <br>
              <div class="d-flex align-start">
                <h3 class="j-title center mb-00">{{ gig.gigtitle}}</h3>
@@ -48,12 +49,13 @@ export default {
   name: 'EditGigs',
   data: () => ({
   authUser: null,
-  allGigs: [] // initialise an array
+  allGigs: [], // initialise an array
 }),
   methods: {
-    deleteGigs(gigsId) {
-    gigRef.child(gigsId).remove()
-}
+       deleteGigs(gig) {
+       (gigRef.child(gig).remove())
+        console.log(gig)
+    }
   },
   created: function() {
     //data => console.log(data.user, data.credential.accessToken)
@@ -65,11 +67,12 @@ export default {
               this.allGigs = Object.values(val).flatMap(gigs =>
               Object.entries(gigs).map(([ _key, gig ]) => ({ _key, ...gig})))
             }
+
             console.log(snapshot.val())
           });
         }
      })
-   }
+}
 }
 </script>
 
