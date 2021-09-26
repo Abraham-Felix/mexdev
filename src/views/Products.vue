@@ -17,7 +17,7 @@
                             <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3>
                         </div>
                         <v-container class="text-sm-body-2 ape-pic">
-                            <v-img class="center ape-img" width="100%" src="../assets/thanks.png" />
+                            <v-img class="center ape-img" width="auto" src="../assets/graphics/ape-thumbs-up.png" />
                         </v-container>
                         <div class="product-card-button">
                           <v-btn primary dark class="mt-5 center" href="contact"> Get quote! </v-btn>
