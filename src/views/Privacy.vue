@@ -1,4 +1,4 @@
-<style> 
+<style>
 
 h1 {
     margin-bottom: 1vw;
@@ -20,27 +20,34 @@ h4 {
     text-align: left;
     color: #313233;
 }
-
+.privacy-policy {
+  max-width: 900px;
+}
 </style>
 
 <template>
 
-<v-container>
-    <v-card class="mx-auto privacy-card mt-5 mb-5">
+<v-container class="privacy-policy">
+    <v-card class="privacy-card mt-5 mb-5">
         <h1> Privacy Policy </h1>
         <v-divider></v-divider>
-        <v-card-text class="text-justify p10s">
+        <v-card-text class="text-justify p10s font-weight-medium  text-body-2">
             <b>Last updated: September 19, 2021</b>
             <br>
-            <br> This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to
-            provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Privacy Policy Generator.
+            <br> This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of
+            Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+            We use Your Personal data to
+            provide and improve the Service. By using the Service, You agree to the collection and use of information in
+            accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Privacy Policy
+            Generator.
             <br>
             <br>
             <h4>Interpretation and Definitions</h4>
             <br>
             <b>Interpretation</b>
             <br>
-            <br> The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+            <br> The words of which the initial letter is capitalized have meanings defined under the following conditions.
+            The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
             <br>
             <br>
             <b>Definitions</b>

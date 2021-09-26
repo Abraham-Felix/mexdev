@@ -79,7 +79,7 @@
     <v-container v-for="(productDescription, i) in productDescriptions" :key="i">
         <v-card>
         <v-card-text>
-        <p class="f-p text-sm-body-1 font-weight-medium text-justify  text-left">
+        <p class="f-p text-sm-body-2 font-weight-medium text-justify  text-left">
             <span class="blue--text ">Whats is {{ productDescription.title }} ?</span>
                 <v-divider></v-divider>
             <br>

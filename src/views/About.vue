@@ -72,7 +72,7 @@ h4 {
 <v-card class="mt-5 mb-5 about-card">
     <h1> About </h1>
     <v-img class="center fav" src="../assets/mxdv-fav.png" />
-    <v-card-text class="text-justify font-weight-medium  text-body-1">
+    <v-card-text class="text-justify font-weight-medium  text-body-2">
         <h4><b>Vision:</b></h4>
         <br>
         <v-divider class="mb-5"></v-divider>
