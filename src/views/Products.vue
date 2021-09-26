@@ -67,7 +67,7 @@
                         <div class="product-card-button">
                         <v-btn primary dark class=" center" href="contact"> Learn more! </v-btn>
                         <br>
-                        <p class="center">"Build the best product for you!, suggestions <a target="_blank" href="https://forms.gle/FPr6DBgpEMdLf51T7"> here!"</a> </p>
+                        <p class="center"><a target="_blank" href="https://forms.gle/RkwW8hkiVbUg8C9H8"> Help us</a> build the best product for you! </p>
                         <br>
                         </div>
                     </v-card>
