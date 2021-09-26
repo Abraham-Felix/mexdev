@@ -79,7 +79,7 @@
          </template>
        </v-dialog>
      </div>
-      <v-container class="text-sm-body-2">
+      <v-container class="landing-intro text-sm-body-2">
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
           <span class="text--primary">What is Mexdev?</span><br><br> MexDev is an international Web App development support service providing coding solutions as a service for individuals &
           digital products to enhance your business in a digital way, we help companies & contractors by upgrading into the online business model or updating their current app progress and design.
@@ -162,6 +162,9 @@ h1 {
 }
 h4 {
   text-align: revert !important;
+}
+.landing-intro {
+  max-width: 900px;
 }
 .get {
   font-size: min(3rem, 200%, 20vw);

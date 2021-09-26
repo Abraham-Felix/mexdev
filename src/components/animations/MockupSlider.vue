@@ -106,15 +106,12 @@ img#img {
 }
 @media (max-width:1200px){
   #cf4a img {
-      max-width: 75% !important;
+     width: -webkit-fill-available;
+     margin: 10% 20%;
  }
 }
 
 @media all and (max-width:500px){
-  #cf4a img {
-    height: 350px;
-    margin: -33px auto !important;
-}
 }
  .header-zoom img {
    max-width:600px;
