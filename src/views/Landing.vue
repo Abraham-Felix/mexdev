@@ -114,8 +114,8 @@
 import firebase from 'firebase';
 import toastr from 'toastr';
 import { mapGetters } from "vuex";
-import Login from "../components/Login.vue";
-import SignUp from "../components/SignUp.vue";
+import Login from "@/components/forms/Login.vue";
+import SignUp from "@/components/forms/SignUp.vue";
 import MockupSlider from "@/components/animations/MockupSlider.vue";
 import TechStackIcons from '../components/animations/TechStackIcons.vue'
 import CloudTransitions from "@/components/animations/CloudTransitions.vue"

@@ -51,8 +51,7 @@ export default {
   width: 100px;
 }
 #body {
-  position: absolute;
-width: 100%;
+  width: 100%;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

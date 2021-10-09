@@ -15,7 +15,7 @@ import Privacy from '../views/Privacy.vue';
 import Admin from '../views/Admin.vue';
 import GigsAvailable from '../views/GigsAvailable.vue';
 import store from '@/store'
-import AdminLogin from '../components/AdminLogin.vue'
+import AdminLogin from '@/components/forms/AdminLogin.vue'
 
 Vue.use(VueRouter)
 

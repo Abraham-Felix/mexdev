@@ -1,15 +1,15 @@
 <template>
  <v-container class="fill-height" fluid>
-  <v-form class="center d-flex ">
     <v-card class="mt-n15 pa-5 center ">
+       <v-form class="center ">
       <div class="login">
         <h2>Login</h2>
         <v-text-field class="form-control"  type="text" name="username" v-model="input.username" placeholder="Username" />
         <v-text-field class="form-control"  type="password" name="password" v-model="input.password" placeholder="Password" />
         <v-btn class="primary ma-3" type="button" v-on:click="login()">Login</v-btn>
       </div>
+    </v-form>
     </v-card>
-  </v-form>
 </v-container>
 </template>
 
