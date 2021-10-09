@@ -5,9 +5,9 @@
     <h1 class="pt-7"> MXDV Products </h1>
     <h3 class="blue--text">We can optimize your digital business model!</h3>
     <v-container>
-        <v-row class="d-flex">
+        <v-row class="d-flex justify-space-around" >
 <!-- mxdvsupport -->
-            <v-col col="4">
+            <v-col col="4" >
                 <transition appear name="slide-ub">
                     <v-card class="product-card mt-5">
                         <div class="product-card-title">
@@ -17,7 +17,7 @@
                             <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3>
                         </div>
                         <v-container class="text-sm-body-2 ape-pic">
-                            <v-img class="center ape-img" width="auto" src="../assets/graphics/ape-thumbs-up.png" />
+                            <v-img class="center ape-img" width="auto" src="../assets/graphics/apesyntax.png" />
                         </v-container>
                         <div class="product-card-button">
                           <v-btn primary dark class="mt-5 center" href="contact"> Get quote! </v-btn>
@@ -36,13 +36,21 @@
                             <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuDream </span>
   </h1>
-                            <h3> Start your startup,<span class="blue--text"> <a href="https://nudream.herokuapp.com/landing"> demo! </a> </span> </h3>
+                            <h3> Start your startup</h3>
+                            <v-btn
+                            class="mt-10"
+                            color="blue--text"
+                            href="https://nudream.herokuapp.com/landing"
+                            > live preview!
+                            </v-btn>
                         </div>
-                        <v-container class="text-sm-body-2 ">
+                        <v-container  class="text-sm-body-2 ape-pic">
+                          <v-img class="center ape-img"  width="auto" src="../assets/graphics/ape-thumbs-up.png" />
+
                             <NuDreamTechSlide/>
                         </v-container>
                         <div class="product-card-button">
-                        <v-btn primary dark class=" center" href="contact"> Get quote! </v-btn>
+                        <v-btn primary dark class="mt-5 center" href="contact"> $599.00 </v-btn>
                         <br>
                         <p title="If you are form Mexico let us know!" class="center">"Special limited price for MEXICO!"</p>
                         <br>
@@ -50,7 +58,7 @@
                     </v-card>
                 </transition>
             </v-col>
-<!-- nustack -->
+<!-- nustack
             <v-col col="4">
                 <transition appear name="slide-ub">
                     <v-card class="product-card mt-5">
@@ -72,7 +80,7 @@
                         </div>
                     </v-card>
                 </transition>
-            </v-col>
+            </v-col> -->
 
         </v-row>
     </v-container>
@@ -81,6 +89,14 @@
         <v-card-text>
         <p class="f-p text-sm-body-2 font-weight-medium text-justify  text-left">
             <span class="blue--text ">Whats is {{ productDescription.title }} ?</span>
+            <v-chip
+              v-if="productDescription.tag"
+              class="ma-2"
+              label
+              outlined
+              color="green"
+            >{{productDescription.tag}}
+            </v-chip>
                 <v-divider></v-divider>
             <br>
             <b>{{ productDescription.title }}</b> {{productDescription.description}}
@@ -94,13 +110,13 @@
 
 <script>
 
-import NuDreamTechSlide from '@/components/animations/NuDreamTechSlide.vue'
-import NuStackTechSlide from '@/components/animations/NuStackTechSlide.vue'
+// import NuDreamTechSlide from '@/components/animations/NuDreamTechSlide.vue'
+// import NuStackTechSlide from '@/components/animations/NuStackTechSlide.vue'
 export default {
     name: 'Products',
     components: {
-        NuDreamTechSlide,
-        NuStackTechSlide
+      //  NuDreamTechSlide,
+      //  NuStackTechSlide
     },
     data: () => ({
         productDescriptions: [
@@ -115,6 +131,7 @@ export default {
         },
         {
             title: "NuStack",
+            tag: "Comming soon!",
             description: "is a Web-App for Recruiters, Developers, & Companies looking for specific Gigs. Imagine you are a recruiter/contractor and have hundreds of gigs to start with, you want to expose them easily or if you are a developer looking for gigs/jobs you can find cool gigs!. Mexdev is building a nice UI for this exact purpose, called: NuStack. Designed to help out on this particular process with enhancements like Real-time data on profile updates, customer & client feedback, internal inbox, task manager all included in the same application, even an administration console for all three parties to manage their data. If you are interested in participating, you can by providing ideas through our feedback form. We listen to every answer and decide what you guys are looking to improve in this business sector.",
         }, ],
     }),
