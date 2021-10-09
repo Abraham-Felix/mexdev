@@ -114,9 +114,6 @@ Vue.use(VueRouter)
     path: '/showcase',
     name: 'Showcase',
     component: Showcase,
-    meta: {
-      requiresAuth:true
-    }
   },
   {
     path: '/about',
@@ -146,9 +143,6 @@ Vue.use(VueRouter)
   path: '/products',
   name: 'Products',
   component: () => import(/* webpackChunkName: "Home" */ '../views/Products.vue'),
-  meta: {
-    requiresAuth:true
-  }
 },
   {
     path: '/privacy',
