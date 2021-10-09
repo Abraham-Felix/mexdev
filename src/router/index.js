@@ -98,9 +98,6 @@ Vue.use(VueRouter)
     path: '/jobs',
     name: 'Jobs',
     component: Jobs,
-    meta: {
-      requiresAuth:true
-    }
   },
   {
     path: '/profile',

@@ -54,16 +54,43 @@
       light
       elevate-on-scroll
     >
-    <div class="center" >
+    <div center >
       <router-link to="/landing">
       <v-img
         alt="Mexdev Small Navbar Logo"
-        class="shrink d-none d-sm-flex"
+        class="shrink  t-l d-sm-flex"
         contain
         src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/logos%2Ffavicon%20-%20Copy.png?alt=media&token=83158426-51b5-40c2-9423-9756710c79f0"
         transition="scale-transition"
         width="40"
       />
+    </router-link>
+    </div>
+    <div class="nav-col-mid pt-3 d-flex justify-space-around align-center">
+      <router-link to="/products">
+      <v-btn v-if="!user.loggedIn" class="nav-btns pa-2"
+      depressed small color="primary" title="products" >
+        <span class="mobile-icons mdi mdi-store"></span>
+        <span class="web-nav-btns"> products </span>
+      </v-btn>
+      </router-link>
+      <router-link to="/Showcase">
+      <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Showcase">
+        <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
+        <span class="web-nav-btns"> Showcase </span>
+      </v-btn>
+      </router-link>
+    <router-link to="/contact">
+    <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="contact us">
+      <span class="mobile-icons mdi mdi-at"></span>
+      <span class="web-nav-btns"> contact </span>
+    </v-btn>
+    </router-link>
+    <router-link to="/jobs">
+    <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="jobs">
+      <span class="mobile-icons mdi mdi-briefcase-search-outline"></span>
+      <span class="web-nav-btns"> jobs </span>
+    </v-btn>
     </router-link>
     </div>
   </v-app-bar>
