@@ -4,15 +4,14 @@ width:100%;
 display:grid;
 }
 .login {
-  max-width: 200px;
+  width: 200px !important;
   margin: auto;
 }
 .v-card {
     height: auto;
     max-width: 600px !important;
-    width: fit-content;
-    width: auto;
     -webkit-box-pack: center;
+    width: 100% !important;
 }
 
 button {
@@ -23,9 +22,7 @@ button {
     border-radius: 10px;
     margin: 2vh;
 }
-.contactForm {
-  max-width: 600px;
-}
+
 </style>
 
 <template>

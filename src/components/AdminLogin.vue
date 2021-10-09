@@ -37,7 +37,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
 .login {
   max-width: 200px;
   margin: auto;
