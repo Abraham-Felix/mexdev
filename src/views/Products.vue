@@ -54,7 +54,7 @@
                         <div class="product-card-button">
                         <v-btn primary dark class="mt-5 center" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMENJA5EKK93S"> $1,999.00 </v-btn>
                         <br>
-                        <p title="If you are form Mexico let us know!" class="center">"Special limited price for MEXICO!"</p>
+                        <p title="If you are form Mexico let us know!" class="center">"Lets start building your dream!"</p>
                         <br>
                         </div>
                     </v-card>
