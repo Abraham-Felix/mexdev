@@ -23,13 +23,8 @@ padding: 20px;
     height: 50px !important;
     min-width: 50px !important;
 }
-.tech-requested {
-  display: inline;
-}
-.requested-card {
-  box-shadow: 0px 0px 10px -5px cadetblue;
-    padding: 3px !important;
-    border-radius: 5px;
+.date {
+  text-align:right;
 }
 </style>
 <template>
@@ -58,7 +53,7 @@ padding: 20px;
             </v-tooltip>
             </v-btn>
             </template>
-            <v-card class="mt-0">
+            <v-card class="mt-0 z-master">
       <div class="top-r">
           <v-btn class="form-close-btn"  @click="dialog = false" width="5px">
               <v-icon>
@@ -66,30 +61,36 @@ padding: 20px;
               </v-icon>
           </v-btn>
       </div>
-      <h1>My requests</h1>
-      <p class="center">View your requests</p>
+      <div class="mt-n10">
+        <h1>My requests</h1>
+        <p class="center">View your requests</p>
+      </div>
       <!-- loop over the tutorials -->
       <div v-for="(tutorial, key) in authUser.myTutorial" :key="key">
-        <v-card>
-          <br>
-          <h3>{{ tutorial.title}}</h3><br>
+        <v-divider/>
+        <div class="mb-15">
           <div class="data-rw dt-corner">
-            <v-icon> mdi-calendar </v-icon>
-            <p> {{ tutorial.date  }} </p>
+            <p class="date">
+               <v-icon> mdi-calendar </v-icon>
+               {{ tutorial.date  }}
+             </p>
           </div>
-          <p class="content" v-html="tutorial.content"> {{ tutorial.content}}</p><br>
+          <br>
+          <h4 >{{ tutorial.title}}</h4>
+          <p class="content" v-html="tutorial.content"> {{ tutorial.content}}</p>
           <br>
           <img class="preview" :src="tutorial.picture"><br>
-          <div class="data-rw requested-card" ><v-icon style="font-size:44px;">mdi-account-tie</v-icon>
-            <h5 style="padding-right:20px;" > requested by: <h3>{{ tutorial.first + ' ' + tutorial.last}} </h3></h5>
+          <div class="data-rw requested-card" >
+            <h5  > requested by:
+            {{ tutorial.first + ' ' + tutorial.last}}
+          </h5>
           </div>
           <br><br>
            <div class="data-rw"><v-icon>mdi-web</v-icon>
              <a  v-bind:href="tutorial.code"> {{ tutorial.code }} </a>
-           </div><br><br>
-           <v-text><h5 class="tech-requested"> Tech Requested:</h5> {{ tutorial.language  }} </v-text><br>
-         <!-- and so on -->
-        </v-card>
+           </div><br>
+           <v-text><h5 class="tech-requested"> Tech Requested:</h5> {{ tutorial.language  }} </v-text>
+       </div>
       </div>
     </v-card>
 </v-dialog>
