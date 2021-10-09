@@ -121,7 +121,7 @@ export default {
 }
 
 </script>
-<style>
+<style scoped>
 
 p {
     font-size: 12px !important;
@@ -165,6 +165,7 @@ h4 {
 
 .v-card {
     padding: 20px;
+    width: 100% !important;
 }
 
 .h-des {
@@ -177,7 +178,7 @@ h4 {
     transition: 1s;
 }
 
-//media queries
+/*media queries */
 @media screen and (max-width:900px) {
     .h-des {
         font-size: 0.8em !important;
