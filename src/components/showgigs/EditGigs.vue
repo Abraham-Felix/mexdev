@@ -5,11 +5,11 @@
            <div  class="Agrid d-grid">
            <div
            class="Amodule  back"
-           v-for="gig in allGigs"
-           :key="gig._key">
+           v-for="(gig, key) in authUser.allGigs"
+           :key="key">
            <div class="fill-height">
              <v-container >
-              <a @click.prevent="deleteGigs(gig._key)" class="card-link">
+              <a @click.prevent="deleteGigs(gig)" class="card-link">
                  <v-icon color=red>mdi-delete</v-icon>
                </a>
              <br>
@@ -44,32 +44,31 @@ import firebase from '@/plugins/firebase'
 let db = firebase.database();
 //let usersRef = db.ref('users');
 let gigRef = db.ref('gigs');
-
+import vue from 'vue'
 export default {
   name: 'EditGigs',
   data: () => ({
-  authUser: null,
-  allGigs: [], // initialise an array
+  authUser: {},
+  allGigs: null, // initialise an array
 }),
   methods: {
-       deleteGigs(gig) {
-       (gigRef.child(gig).remove())
-        console.log(gig)
+       deleteGigs(key) {
+       gigRef.child(key+'value').remove()
+        console.log(key)
     }
   },
   created: function() {
     //data => console.log(data.user, data.credential.accessToken)
     firebase.auth().onAuthStateChanged(user => {
         if (user) {
-          gigRef.once('value', snapshot => {
-            const val = snapshot.val()
-            if (val) {
-              this.allGigs = Object.values(val).flatMap(gigs =>
-              Object.entries(gigs).map(([ _key, gig ]) => ({ _key, ...gig})))
-            }
-
-            console.log(snapshot.val())
-          });
+          gigRef.child(user.uid).once('value', snapshot => {
+            if (snapshot.val()) {
+            this.allGigs = snapshot.val()
+            vue.set(this.authUser, 'allGigs' , this.allGigs , snapshot.key )
+             }
+             const key = snapshot.key
+             console.log(key)
+          })
         }
      })
 }
