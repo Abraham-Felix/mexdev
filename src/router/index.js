@@ -12,6 +12,7 @@ import Taskit from '../views/Taskit.vue';
 import Virtualdom from '../school/virtualdom.vue';
 import Google from '../views/Google.vue';
 import Privacy from '../views/Privacy.vue';
+import Subscriptions from '../views/Subscriptions.vue';
 import Admin from '../views/Admin.vue';
 import GigsAvailable from '../views/GigsAvailable.vue';
 import store from '@/store'
@@ -124,6 +125,11 @@ Vue.use(VueRouter)
     path: '/landing',
     name: 'Landing',
     component: Landing
+  },
+  {
+    path: '/subscriptions',
+    name: 'Subscriptions',
+    component: Subscriptions
   },
   {
     path: '/taskit',
