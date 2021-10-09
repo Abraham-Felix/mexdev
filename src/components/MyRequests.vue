@@ -14,6 +14,7 @@ padding: 20px;
 }
 .v-card{
   padding:10px;
+  width: 100%;
 }
 .top-r {
  text-align: -webkit-right;

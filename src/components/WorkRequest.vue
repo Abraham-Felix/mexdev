@@ -61,23 +61,20 @@ img.preview {
                 </v-tooltip>
             </v-btn>
         </template>
-        <v-card class="mt-0">
-        <div class="panel-heading">
-          <div class="right top-r">
-              <v-btn class="form-close-btn"
-              @click="dialog = false"
-              width="10px">
-                  <v-icon>
-                      mdi-close
-                  </v-icon>
-              </v-btn>
-          </div>
-          <h1> Work request</h1>
-          <p class="center">Hire a developer by sending a workrequest</p>
-        </div>
-        <div>
-            <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
-              <v-card>
+
+              <v-card class="mb-10">
+                  <form id="form" class="form-inline" v-on:submit.prevent="addTutorial">
+                <div class="right top-r">
+                    <v-btn class="form-close-btn"
+                    @click="dialog = false"
+                    width="10px">
+                        <v-icon>
+                            mdi-close
+                        </v-icon>
+                    </v-btn>
+                </div>
+                <h1> Work request</h1>
+                <p class="center">Hire a developer by sending a workrequest</p>
                 <v-divider class="m-tb-20"></v-divider>
                 <h4>Contact details:</h4><br>
 <!-- first name -->
@@ -141,8 +138,6 @@ img.preview {
                     v-model="newTutorial.title">
                     </v-text-field>
                 </div>
-                </v-card>
-  <!--tiptap-->   <v-card >
                   <div >
 
                     <editor-menu-bar v-on:submit.prevent="addTutorial" :editor="editor" v-slot="{ commands, isActive }">
@@ -197,10 +192,8 @@ img.preview {
 
                     <editor-content  label="Tutorial content"  :editor="editor" v-model="newTutorial.content" />
                   </div>
-                  </v-card>
-               <v-card width="100%">
                  <v-divider class="m-tb-20"></v-divider>
-                 <h4> Preview </h4>
+                 <h4> Date </h4>
                 <div class="form-group">
                     <v-text-field
                     required label="Date"
@@ -213,7 +206,6 @@ img.preview {
                     <v-text-field  required label="Reference link" type="url" id="tutorialCode" class="form-control" v-model="newTutorial.code">
                     </v-text-field>
                 </div>
-                </v-card>
 
                 <v-card class="m-tb-20" v-model="newTutorial">
                   <v-divider class="m-tb-20"></v-divider>
@@ -228,21 +220,18 @@ img.preview {
                         <h5>{{ newTutorial.email }}</h5>
                         <h5>{{ newTutorial.date }}</h5>
                     </v-card-text>
-
+                  </v-card>
+                    <!-- Form push btn -->
+                    <v-btn
+                    class="m-tb-20 "
+                    @click="markcompleted();"
+                    type="submit" small
+                    color="primary" dark
+                    >
+                        {{ displayText }}
+                    </v-btn>
+                      </form>
                 </v-card>
-
-                <!-- Form push btn -->
-                <v-btn
-                class="m-tb-20 "
-                @click="markcompleted();"
-                type="submit" small
-                color="primary" dark
-                >
-                    {{ displayText }}
-                </v-btn>
-            </form>
-        </div>
-        </v-card>
     </v-dialog>
 </v-container>
 
