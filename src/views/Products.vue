@@ -5,8 +5,8 @@
   <v-container>
    <!-- mxdvsupport -->
    <div>
-   <h1 class="pt-7"> MXDV Products </h1>
-   <h3 class="blue--text">We can optimize your digital business model!</h3>
+   <h1> Servicios </h1>
+   <h3 class="blue--text">¡Podemos optimizar su modelo de negocio digital!</h3>
    </div>
         <v-row class="d-flex justify-space-around" >
             <v-col col="4" >
@@ -16,15 +16,16 @@
                             <h1 class="mt-n3">
         <span class="get pulsate-css" transition="scroll-y-transition"> MXDV </span>
        </h1>
-                            <h3> Give yourself a <span class="text-decoration-line-through break">break!</span> LIFE :D </h3>
+                            <h3> Dale tiempo a tu <span class="text-decoration-line-through break">descanso</span> VIDA! :D </h3>
                         </div>
                         <v-container class="text-sm-body-2 ape-pic">
                             <v-img class="center ape-img" width="auto" src="../assets/graphics/apesyntax.png" />
                         </v-container>
                         <div class="product-card-button">
-                          <v-btn primary dark class="mt-5 center" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L4GRV2X7J83DN"> $599.00 / Week </v-btn>
+                          <v-btn primary dark class="mt-5 center"
+                          href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L4GRV2X7J83DN"> $600mxn P/Hr </v-btn>
                           <br>
-                          <p class="center">"Leave the hard work to our support team"</p>
+                          <p class="center">"Deje el trabajo duro a nuestro equipo de soporte"</p>
                         <br>
                         </div>
                     </v-card>
@@ -38,12 +39,12 @@
                             <h1 class="mt-n3">
    <span class="get pulsate-css" transition="scroll-y-transition"> NuDream </span>
   </h1>
-                            <h3> Start your startup</h3>
+                            <h3>Comienza tu startup</h3>
                             <v-btn
                             class="mt-10"
                             color="blue--text"
                             href="https://nudream.herokuapp.com/landing"
-                            > live preview!
+                            > ¡vista previa en vivo!
                             </v-btn>
                         </div>
                         <v-container  class="text-sm-body-2 ape-pic">
@@ -52,9 +53,10 @@
                             <NuDreamTechSlide/>
                         </v-container>
                         <div class="product-card-button">
-                        <v-btn primary dark class="mt-5 center" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMENJA5EKK93S"> $1,999.00 </v-btn>
+                        <v-btn primary dark class="mt-5 center"
+                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMENJA5EKK93S"> $20,000.00 mxn </v-btn>
                         <br>
-                        <p title="If you are form Mexico let us know!" class="center">"Lets start building your dream!"</p>
+                        <p title="If you are form Mexico let us know!" class="center">"¡Empecemos a construir tu sueño!"</p>
                         <br>
                         </div>
                     </v-card>
@@ -134,11 +136,11 @@ export default {
 
            {
               title: "Mxdv",
-              description: 'is a web app development support team, made 916 contributions to Github the last year! we can build a custom solution or help designing solutions to optimize your service digitally, you can help us with money, & we can help you with your online business. We have been in the development business for decades! we are here you help you and your business grow! Call us today!',
+              description: 'es un equipo de soporte de desarrollo de aplicaciones web, ¡hizo 916 contribuciones a Github el año pasado! podemos crear una solución personalizada o ayudar a diseñar soluciones para optimizar su servicio digitalmente, usted puede ayudarnos con dinero y podemos ayudarlo con su negocio en línea. ¡Llevamos décadas en el negocio del desarrollo! ¡Estamos aquí para ayudarlo a usted y a su negocio a crecer! ¡Llámenos hoy!',
           },
           {
             title: "Nudream",
-            description: "is a Start-up template, desing based on mobile-first scalable concepts, a custom solution to fit your business!. We deliver it as you request!. It means integrating a design and customizing it to fit your needs. Since the app comes with a custom service, we can provide a custom quote, we want it to fit everyone's budget, we can even sell the template for you to escalate it with your developers or learn about web App development since it includes documentation for installing it."
+            description: "es una plantilla de Start-up, diseñada en base a conceptos escalables con optimización para dispositivos móviles, ¡una solución personalizada que se adapta a su negocio !. ¡Te lo entregamos como lo solicites !. Significa integrar un diseño y personalizarlo para que se adapte a sus necesidades. Dado que la aplicación viene con un servicio personalizado, podemos proporcionar un presupuesto personalizado."
         },
         /* {
             title: "NuStack",

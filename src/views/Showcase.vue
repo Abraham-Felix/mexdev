@@ -290,7 +290,7 @@
             <transition appear name="slide-lr">
             <v-col class="col-6 pa-10 l-div">
                 <h1 class="t-white hr-1"> Fintech Horizons Media </h1>
-                <p class="center t-white text-md-h6" > Wonderful energy for fascinating experiences!</p>
+                <p class="center t-white text-md-h6" > ¡Energía maravillosa para experiencias fascinantes! </p>
                 <hr class="w-80 "/>
                 <div class="showcase-img">
                     <img class="main-img" src="../assets/mockups/fhm-mockup.png" style="object-fit: contain; width: 100%; height: 100%;">
@@ -302,13 +302,14 @@
                 <v-container class="p-box-main main-pbox  ">
                     <h5 class="t-white mb-5">highlights:</h5>
                     <hr>
-                    <p class="t-white text-md-h6">A professional, robust Ruby on Rails App and Fintech Newsletter. Its backend is PostgreSQL, Rails and SendGrid, and includes its own API. The API supports an upgraded site (dealfunnel.net) that has a NUXT/Vue.js frontend and a mobile
-                        app project built with Ionic/ Vue.js.
+                    <p class="t-white text-md-h6">Una aplicación profesional y sólida de Ruby on Rails y un boletín informativo de Fintech. Su backend es PostgreSQL, Rails y SendGrid, e incluye su propia API. La API admite un sitio actualizado (dealfunnel.net) que tiene una interfaz NUXT / Vue.js y una
+                        proyecto de aplicación creado con Ionic / Vue.js..
                     </p>
-                    <p class="t-white text-md-h6"> The project uses Git and GitHub for code storage/management, Heroku for hosting, AWS for storage, Redis for caching, and Google Analytics Tags for optimization. </p>
+                    <p class="t-white text-md-h6"> El proyecto utiliza Git y GitHub para el almacenamiento / administración de código, Heroku para el alojamiento, AWS para el almacenamiento, Redis para el almacenamiento en caché y etiquetas de Google Analytics para la optimización. </p>
                 </v-container>
                 <div class="center mt-n15">
-                  <p class="mt-16 t-c text-md-h5"><b> Whoops! I ran out of money! <br> Help us get back on track!</b> </p>
+                  <p class="mt-16 t-c text-md-h5"><b> ¡Ups! ¡Se me acabó el dinero! <br>
+¡Ayúdanos a volver al camino! </b> </p>
                   <br>
                 </div>
                 <br>
@@ -389,13 +390,14 @@
   <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
     <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #000000;"></path>
   </svg>
-        </div><h2> Developtment & Design approach </h2>
+        </div><h2> Enfoque de desarrollo y diseño </h2>
         <div>
             <div class="Gmodule py-10 gray mb-15">
                 <div class="pa-5">
-                    <h3> Organized & clean code. </h3>
+                    <h3> Código organizado y limpio. </h3>
                     <v-divider class="mx-15"></v-divider>
-                    <p class="center text-md-h5 pa-15 text--primary"> We are experienced software developers who write clean code, adhere to SOLID principles and use git to ensure code-base integrity. Our areas of expertise include Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS and HTML. </p>
+                    <p class="center text-md-h5 pa-15 text--primary">
+                      Desarrollo de software experimentado de escritura de código limpio, con principios SÓLIDOS y usando git para garantizar la integridad de la base del código. Mis áreas de especialización incluyen Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS y HTML. </p>
                     </div>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
@@ -405,14 +407,15 @@
         </div>
     </div>
     <div class="design-card t-white">
-      <h2 class="center"> Ui/Ux Key Concepts </h2> <br>
-      <p class="center px-5 text-md-h6"> My UX/Ui concepts are based on Accessibility, Usability, Information Architecture, Wireframes, Interaction design, Agile Ux/Ui, Graphic Design, Mobile-first, Target persona & A/B testing.  </p>
+      <h2 class="center"> Conceptos clave de Ui / Ux </h2> <br>
+      <p class="center px-5 text-md-h6">
+Mis conceptos de UX / Ui se basan en accesibilidad, usabilidad, arquitectura de información, wireframes, diseño de interacción, Agile Ux / Ui, diseño gráfico, Mobile-first, Target persona y pruebas A / B.  </p>
       <v-img class="ma-md-15 mx-5 " src="@/assets/UxUi-tech.png"></v-img>
       <v-container>
         <v-row  justify="space-around" class="py-10">
             <v-col cols="12" sm="6" >
                 <v-img class="d-flex align-end rounded-xl" height="500px" src="https://media.giphy.com/media/U0dOlZ6QhFqp24uhRi/giphy.gif">
-                <h3 class="mb-5 center t-white welike">we like to make our day easier, with funny moments :D</h3>
+                <h3 class="mb-5 center t-white welike">Nos gusta hacernos el día más fácil, con momentos divertidos: D</h3>
               </v-img>
                 <v-dialog transition="dialog-bottom-transition" max-width="600">
                     <template v-slot:activator="{ on, attrs }">
@@ -491,7 +494,9 @@
         <v-row >
           <v-col class="mb-10 ">
             <section >
-              <h1 class="mb-8 md-mb-16">Certified by:</h1>
+              <h1 class="mb-8 md-mb-16">
+                Certificado por:
+              </h1>
               <v-divider dark class="pb-10"></v-divider>
               <v-img width="70%" class="center mx-md-15"  src="@/assets/certified.png"></v-img>
             </section>
@@ -518,19 +523,19 @@ export default {
                 uxitems: [{
                     src: require("@/assets/Prototyping.png"),
                     title: 'Prototyping',
-                    des: 'A simulation or sample version of a final product, which is used for testing prior to launch. The goal of a prototype is to test products & product ideas before sinking lots of time and money into the final product. Prototyping is essential for resolving usability issues before launch. It can also reveal areas that need improvement. Once a draft of your product idea is in the hands of real users, you will finally see how they want to use the product. You can then go back and adjust your initial guesswork.'
+                    des: 'Una simulación o una versión de muestra de un producto final, que se utiliza para realizar pruebas antes del lanzamiento. El objetivo de un prototipo es probar productos e ideas de productos antes de invertir mucho tiempo y dinero en el producto final. La creación de prototipos es esencial para resolver problemas de usabilidad antes del lanzamiento. También puede revelar áreas que necesitan mejoras. Una vez que un borrador de la idea de su producto esté en manos de usuarios reales, finalmente verá cómo quieren usar el producto. Luego puede volver atrás y ajustar sus conjeturas iniciales.'
                 }, {
                     src: require("@/assets/Moodded.png"),
                     title: 'Mood Boards',
-                    des: 'Mood boards are a collage of images, fonts, interactions, features, icons, and UI elements to communicate the artistic direction of a project. As everything in user experience design your mood board should be focused on meeting user needs and problem-solving.'
+                    des: 'Los pizarrones de humor son un collage de imágenes, fuentes, interacciones, características, íconos y elementos de la interfaz de usuario para comunicar la dirección artística de un proyecto. Como todo en el diseño de la experiencia del usuario, su panel de estado de ánimo debe centrarse en satisfacer las necesidades del usuario y la resolución de problemas.'
                 }, {
                     src: require("@/assets/ComplexityColor.png"),
                     title: 'Complexity breakdown in color desing',
-                    des: 'In professional environments, the work produced is complex. As long as the content is in the hands of the creator, complexity is easily manageable. Remember, that complexity is subjective, and everything makes sense in the head of the creator. While an increase in alignment between the agent and the designer leads to more complex but better quality products, higher product demand or lower competition among designers leads to more complex and lower quality products.'
+                    des: 'En entornos profesionales, el trabajo producido es complejo. Siempre que el contenido esté en manos del creador, la complejidad es fácilmente manejable. Recuerda que la complejidad es subjetiva y todo tiene sentido en la cabeza del creador. Si bien un aumento en la alineación entre el agente y el diseñador conduce a productos más complejos pero de mejor calidad, una mayor demanda de productos o una menor competencia entre los diseñadores conduce a productos más complejos y de menor calidad.'
                 }, {
                     src: require("@/assets/elevator-ui-wireframe.png"),
                     title: 'Wireframing',
-                    des: 'Wireframe service contains information about the user interface architecture, it provides us a detailed description of its behavior and user interaction. It will demonstrate the flow of transitions within the application in order to give a better comprehensive idea of how to build the actual code layout.'
+                    des: 'El servicio Wireframe contiene información sobre la arquitectura de la interfaz de usuario, nos proporciona una descripción detallada de su comportamiento e interacción con el usuario. Demostrará el flujo de transiciones dentro de la aplicación para dar una idea más completa de cómo construir el diseño de código real.'
                 }, ],
         }
     },

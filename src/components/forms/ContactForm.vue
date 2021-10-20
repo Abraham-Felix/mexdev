@@ -15,8 +15,8 @@
     </a>
       <br>
     <v-text>
-      <p class="px-md-15 pt-md-5 text-md-body-2 center"> Send me a request, I will get back to you as soon as posible,<br>
-        will do my best to find a solution, sincerly, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a>
+      <p class="px-md-15 pt-md-5 text-md-body-2 center"> Envíame una solicitud, te responderé lo antes posible, <br>
+        haré todo lo posible para encontrar una solución,<br>sinceramente, <a href="mailto:mexdevservice@gmail.com"><b>mexdev</b>.</a>
       </p>
     </v-text >
     <br>
@@ -97,7 +97,7 @@
 
 
               <v-divider/>
-            <p class="center text-body-2 "> <b> Home office hours: </b> </p>
+            <p class="center text-body-2 "> <b> Horas de oficina en casa: </b> </p>
               <v-row>
                 <v-col cols="12" class="text-body-2">
                     10:00am - 01:00pm | 2:00pm - 6:00pm (PST)
@@ -131,7 +131,7 @@ export default {
 
     data() {
         return {
-            displayText: 'send message',
+            displayText: 'enviar mensaje',
             newMessage: {
                 first: '',
                 last: '',

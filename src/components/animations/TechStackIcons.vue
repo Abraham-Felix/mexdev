@@ -1,7 +1,7 @@
 <template>
 <div>
     <v-divider  />
-      <h3 class="as-h3 text-body-2">Get back on track with top technologies:</h3>
+      <h3 class="as-h3 text-body-2">Vuelva a encaminarse con las mejores tecnologías:</h3>
     <section id="animate-area">
          <v-row class="mx-3">
            <v-col

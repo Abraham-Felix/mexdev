@@ -30,7 +30,7 @@
         <v-dialog
         class="mb-16"
         v-model="viewgigdialog"
-        max-width="1650px"
+        max-width="650px"
         >
         <div class=" top-r">
             <v-btn
@@ -47,6 +47,30 @@
             </v-card-actions>
 
         </v-dialog>
+
+        <!-- add tutorial modal -->
+        <v-dialog
+        class="mb-16"
+        v-model="tutorialdialog"
+        max-width="650px"
+        >
+        <div class=" top-r">
+            <v-btn
+            class="form-close-btn"
+            width="10px"
+            @click="tutorialdialog = false"
+            >
+                <v-icon> mdi-close </v-icon>
+            </v-btn>
+          </div>
+          <TutorialForm/>
+            <v-card-actions>
+                <v-spacer></v-spacer>
+            </v-card-actions>
+
+        </v-dialog>
+
+
     </v-container>
     <v-navigation-drawer class="fill" v-model="drawer" :mini-variant.sync="mini" permanent absolute>
         <!-- user avatar -->
@@ -70,7 +94,7 @@
                     <v-list-item-icon>
                         <v-icon>mdi-briefcase-plus</v-icon>
                     </v-list-item-icon>
-                    <v-list-item-title @click.stop="dialog = true">add new gig
+                    <v-list-item-title @click.stop="dialog = true">New gig
                     </v-list-item-title>
                 </v-list-item>
       <!-- view gigs side nav button -->
@@ -79,7 +103,15 @@
                         <v-icon>mdi-briefcase-check</v-icon>
                     </v-list-item-icon>
                     <v-list-item-title @click.stop="viewgigdialog = true">
-                      View/delete gigs
+                      View gigs
+                    </v-list-item-title>
+                </v-list-item>
+      <!-- add gigs side nav button -->
+                <v-list-item>
+                    <v-list-item-icon>
+                      <v-icon>mdi-text-box-plus</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title @click.stop="tutorialdialog = true">New tutorial
                     </v-list-item-title>
                 </v-list-item>
 
@@ -93,12 +125,14 @@
 <script>
 import firebase from '../plugins/firebase'
 import GigForm from '@/components/forms/GigForm.vue'
+import TutorialForm from '@/components/forms/TutorialForm.vue'
 import EditGigs from '@/components/showgigs/EditGigs.vue'
 export default {
     name: 'Admin',
     components: {
       GigForm,
       EditGigs,
+      TutorialForm,
     },
     data: () => ({
         menu: false,
@@ -106,6 +140,7 @@ export default {
         mini: true,
         dialog: false,
         viewgigdialog: false,
+        tutorialdialog: false,
         authUser: '',
         displayName: '',
       }),

@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import Gigs from '../views/Gigs.vue';
 import Contact from '../views/Contact.vue';
 import Jobs from '../views/Jobs.vue';
-import Requests from '../views/Requests.vue';
+import Tutorials from '../views/Tutorials.vue';
 import Profile from '../views/Profile.vue';
 import Showcase from '../views/Showcase.vue';
 import Landing from '../views/Landing.vue';
@@ -88,12 +88,9 @@ Vue.use(VueRouter)
     }
   },
   {
-    path: '/requests',
-    name: 'Requests',
-    component: Requests,
-    meta: {
-      requiresAuth:true
-    }
+    path: '/tutorials',
+    name: 'Tutorials',
+    component: Tutorials,
   },
   {
     path: '/jobs',

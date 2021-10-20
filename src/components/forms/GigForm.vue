@@ -1,7 +1,9 @@
+
+
 <template>
 <!-- form -->
             <v-form
-            class="mb-10"
+            class="mb-10 px-10"
             v-model="valid"
             v-on:submit.prevent="addGig"
             >

@@ -7,10 +7,8 @@
    <div class="mt-n5">
       <h5>
         <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
+        <h4 v-if="user.loggedIn" class="pt-5">Compartiendo <router-link to="tutorials"> conocimiento a jovenes! </router-link> </h4>
       </h5>
-      <h3 class="mt-3" style="color:dodgerblue">
-        Success: <h5> 5 happy international clients! <v-icon color="green"> mdi-clipboard-check </v-icon></h5>
-      </h3>
        <v-divider class="mb-5" />
      <div class="center nav-col-mid d-flex justify-center align-center">
        <v-dialog
@@ -81,23 +79,24 @@
      </div>
       <v-container class="landing-intro text-sm-body-2">
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
-          <span class="text--primary">What is Mexdev?</span><br><br> MexDev is an international Web App development support service providing coding solutions as a service for individuals &
-          digital products to enhance your business in a digital way, we help companies & contractors by upgrading into the online business model or updating their current app progress and design.
+          <span class="text--primary">Que es Mexdev?</span><br><br>
+          MexDev es un servicio de soporte de desarrollo de aplicaciones web,  desarrollamos productos digitales para mejorar negocios a nivel nacional e internacional,
+          no solo nos gusta ayudar a empresas actualizando el progreso y diseño de su aplicación actual, ademas nos enfocamos en ayudar a niños y jovenes a aprender de codificación como servicio.
         </p>
       </v-container>
-<!-- Mockup Slider -->
+         <!-- Mockup Slider -->
       <div class=" pb-md-16 slide-card">
         <MockupSlider class="mb-16" />
       </div>
       <v-container class=" mt-n16 mt-md-15">
         <v-divider class="mb-10 mt-5"></v-divider>
-        <v-btn dark href="/products" title="Get your products done!">Products</v-btn>
+        <v-btn dark href="/products" title="Get your products done!">Servicios</v-btn>
         <br>
         <p class="center ">
           <b>
-          PS: “Everyone should eat and drink and find enjoyment for all his hard work. It is the gift of God.”
+          “Pero no se alegren porque los espíritus quedan sometidos a ustedes. Más bien, alégrense porque sus nombres han sido escritos en los cielos.”
           <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">
-            (Eclesiastés 3:13)
+            (Lucas 10:20)
           </a>.
         </b>
       </p>

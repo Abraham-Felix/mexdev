@@ -41,7 +41,15 @@
 .v-list-item {
     padding: 0px;
 }
-
+a.px-5.nav-link {
+    width: 100%;
+    text-align: left;
+    color: dimgray;
+}
+a.px-5.nav-link:hover {
+    background: #f3f3f3;
+    padding: 13px;
+}
 </style>
 <template>
   <div id="nav">
@@ -71,25 +79,19 @@
       <v-btn v-if="!user.loggedIn" class="nav-btns pa-2"
       depressed small color="primary" title="products" >
         <span class="mobile-icons mdi mdi-store"></span>
-        <span class="web-nav-btns"> products </span>
+        <span class="web-nav-btns"> servicios </span>
       </v-btn>
       </router-link>
       <router-link to="/Showcase">
-      <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Showcase">
+      <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Exposicion">
         <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
-        <span class="web-nav-btns"> Showcase </span>
+        <span class="web-nav-btns"> Exposicion </span>
       </v-btn>
       </router-link>
-    <router-link to="/contact">
-    <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="contact us">
-      <span class="mobile-icons mdi mdi-at"></span>
-      <span class="web-nav-btns"> contact </span>
-    </v-btn>
-    </router-link>
     <router-link to="/jobs">
-    <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="jobs">
+    <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Empleos">
       <span class="mobile-icons mdi mdi-briefcase-search-outline"></span>
-      <span class="web-nav-btns"> jobs </span>
+      <span class="web-nav-btns"> Empleos </span>
     </v-btn>
     </router-link>
     </div>
@@ -121,25 +123,25 @@
         <v-btn v-if="user.loggedIn" class="nav-btns pa-2"
         depressed small color="primary" title="products" >
           <span class="mobile-icons mdi mdi-store"></span>
-          <span class="web-nav-btns"> products </span>
+          <span class="web-nav-btns"> servicios </span>
         </v-btn>
         </router-link>
         <router-link to="/Showcase">
         <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Showcase">
           <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
-          <span class="web-nav-btns"> Showcase </span>
+          <span class="web-nav-btns"> exposicion </span>
         </v-btn>
         </router-link>
-      <router-link to="/contact">
-      <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="contact us">
+      <router-link to="/tutorials">
+      <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Video Tutoriales">
         <span class="mobile-icons mdi mdi-at"></span>
-        <span class="web-nav-btns"> contact </span>
+        <span class="web-nav-btns"> Tutoriales </span>
       </v-btn>
       </router-link>
       <router-link to="/jobs">
       <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="jobs">
         <span class="mobile-icons mdi mdi-briefcase-search-outline"></span>
-        <span class="web-nav-btns"> jobs </span>
+        <span class="web-nav-btns"> empleos </span>
       </v-btn>
       </router-link>
       </div>
@@ -170,12 +172,14 @@
      </v-btn>
    </template>
    <v-list class="nav-d-c">
+
+          <!-- boton de contacto y perfil -->
      <v-list-item
          v-for="(item, i) in items"
          :key="i"
      >
        <router-link
-          class="px-5"
+          class="px-5 nav-link"
          :to="item.to"
          :target="item.target"
        >
@@ -186,12 +190,7 @@
      <v-list-item
       class="px-5"
      @click="logout"
-     >Logout
-   </v-list-item>
-   <v-list-item>
-     <router-link to="/requests" class="px-5">
-     <v-btn depressed dark small class="rainbow" color="primary">Stack Request</v-btn>
-     </router-link>
+     >Cerrar session
    </v-list-item>
    <v-list-item>
    <router-link to="/admin" class="px-5">
@@ -216,10 +215,16 @@ data: () => ({
   displayName: '',
   items: [
         {
-          title: "Profile",
+          title: "Perfil",
           to: "/profile",
           //active:null,
         },
+        {
+          title: "Contacto",
+          to: "/contact",
+          //active:null,
+        },
+
       ]
 }),
 computed: {

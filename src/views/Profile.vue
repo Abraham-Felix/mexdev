@@ -112,7 +112,7 @@ form.mt-10.center {
 <div id="app">
     <v-container class="v-container">
         <v-card v-if="authUser" class="center p-pad block">
-          <h1> Profile </h1>
+          <h1> Tu Perfil </h1>
           <v-card >
             <v-row>
               <v-col class="col-12 col-md-6">
@@ -125,7 +125,7 @@ form.mt-10.center {
                <!--   <v-icon class="authicons" color=green v-if="linkedGithub" >mdi-github</v-icon> -->
                <v-icon class="authicons" color=green v-if="linkedPassword"> mdi-email-check</v-icon>
                <br>
-               <p class="center">What's up, {{authUser.displayName || 'my friend'}}<br> we know you love {{authUser.favoriteFood || 'Programing'}} </p>
+               <p class="center">Que onda  {{authUser.displayName || 'my friend'}} ?<br> sabemos que te gusta {{authUser.favoriteFood || 'Programing'}} </p>
                <br>
                <v-text-field class="mdi mdi-barcode" readonly v-model="uid">
                </v-text-field>
@@ -134,9 +134,10 @@ form.mt-10.center {
            </v-row>
           </v-card>
             <v-divider class="m-tb-20"></v-divider>
-            <h4 class="center mt-5">User profile</h4><br><br>
+            <h4 class="center mt-5">Perfil de usuario</h4><br><br>
                         <v-card>
-                          <h4><v-icon> mdi-account </v-icon>User details</h4>
+                          <h4 class="left"><v-icon> mdi-account </v-icon>Detalles</h4>
+                          <br>
                           <v-divider class="mb-5"></v-divider>
                           <v-row>
                             <v-col class="col-12 col-md-4">
@@ -198,7 +199,8 @@ form.mt-10.center {
                           </v-row>
                         </v-card>
                         <v-card>
-                          <h4><v-icon> mdi-email mdi-lock </v-icon>Email & password</h4>
+                          <h4 class="left"><v-icon> mdi-email mdi-lock </v-icon>Correo & contraseña</h4>
+                          <br>
                           <v-divider></v-divider>
                           <v-row>
                              <v-col class="col-12 col-md-6">
@@ -263,7 +265,8 @@ form.mt-10.center {
                           </v-card>
             <form  @submit.prevent="updateCustomDetails">
               <v-card>
-              <h4><v-icon> mdi-account-cowboy-hat </v-icon>Extra details  </h4>
+              <h4 class="left"><v-icon> mdi-account-cowboy-hat </v-icon>Extra details  </h4>
+              <br>
               <v-divider></v-divider>
 <!--          <v-toolbar
                   flat
@@ -284,15 +287,17 @@ form.mt-10.center {
               </v-card>
             </form>
             <!-- company profile -->
-            <v-divider class="m-tb-20"></v-divider>
-            <h4 class="center mt-5">Company Profile</h4><br><br>
+
             <v-card>
+              <h4 class="left mt-5">Perfil de tu trabajo</h4><br><br>
+
+              <v-divider class="m-tb-20"></v-divider>
               <v-row
               center
               no-gutters>
               <v-col class="col-6 col-md-4">
               <form @submit.prevent="updateCompanyDetails">
-                <h4><center><v-icon> mdi-domain </v-icon> company details </center> </h4>
+                <h4><center><v-icon> mdi-domain </v-icon> Detalles de empresa </center> </h4>
                 <v-divider class="mb-5"></v-divider>
                 <v-text-field required type="text"
                   v-model="companyName"
@@ -323,7 +328,7 @@ form.mt-10.center {
 
             <v-col class="col-6 col-md-4">
               <form  @submit.prevent="updateCompanyContactDetails">
-                <h4><center><v-icon> mdi-phone  </v-icon>  company contact </center> </h4>
+                <h4><center><v-icon> mdi-phone  </v-icon>  Contacto de empresa </center> </h4>
                 <v-divider class="mb-5"></v-divider>
                 <v-text-field
                   class="form-control"
@@ -348,7 +353,7 @@ form.mt-10.center {
 
             <v-col class="col-12 col-md-4">
               <form  @submit.prevent="updateCompanyPhoto">
-                <h4 class="center"><v-icon> mdi-camera </v-icon> Company Photo</h4>
+                <h4 class="center"><v-icon> mdi-camera </v-icon> Imaegen de empresa</h4>
                 <v-divider></v-divider>
                 <br>
                 <div class="update-profile-inputs">
