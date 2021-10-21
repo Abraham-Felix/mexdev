@@ -85,7 +85,7 @@ a.px-5.nav-link:hover {
       <router-link to="/Showcase">
       <v-btn v-if="!user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Exposicion">
         <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
-        <span class="web-nav-btns"> Exposicion </span>
+        <span class="web-nav-btns"> Exposición </span>
       </v-btn>
       </router-link>
     <router-link to="/jobs">
@@ -129,7 +129,7 @@ a.px-5.nav-link:hover {
         <router-link to="/Showcase">
         <v-btn v-if="user.loggedIn" class="nav-btns" depressed dark small color="primary" title="Showcase">
           <span class="mobile-icons mdi mdi-briefcase-account-outline"></span>
-          <span class="web-nav-btns"> exposicion </span>
+          <span class="web-nav-btns"> Exposición </span>
         </v-btn>
         </router-link>
       <router-link to="/tutorials">
