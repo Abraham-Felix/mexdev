@@ -97,7 +97,7 @@
 
 
               <v-divider/>
-            <p class="center text-body-2 "> <b> Horas de oficina en casa: </b> </p>
+            <p class="center text-body-2 "> <b> Horario de oficina en casa: </b> </p>
               <v-row>
                 <v-col cols="12" class="text-body-2">
                     10:00am - 01:00pm | 2:00pm - 6:00pm (PST)
