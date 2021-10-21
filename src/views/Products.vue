@@ -97,7 +97,7 @@
         <v-card>
           <v-card-text>
           <p class="f-p text-sm-body-2 font-weight-medium text-justify  text-left">
-            <span class="blue--text ">Whats is {{ productDescription.title }} ?</span>
+            <span class="blue--text ">Que es {{ productDescription.title }} ?</span>
             <v-chip
               v-if="productDescription.tag"
               class="ma-2"

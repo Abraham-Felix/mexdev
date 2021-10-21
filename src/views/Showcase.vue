@@ -409,7 +409,10 @@
     <div class="design-card t-white">
       <h2 class="center"> Conceptos clave de Ui / Ux </h2> <br>
       <p class="center px-5 text-md-h6">
-Mis conceptos de UX / Ui se basan en accesibilidad, usabilidad, arquitectura de información, wireframes, diseño de interacción, Agile Ux / Ui, diseño gráfico, Mobile-first, Target persona y pruebas A / B.  </p>
+Mis conceptos de UX / Ui se basan en accesibilidad, usabilidad, arquitectura de información,
+wireframes, diseño de interacción, Agile Ux / Ui, diseño gráfico, Mobile-first, Target persona y pruebas A / B.<br>
+Enfoque de UX: umbral de Doherty, ley de Fits, efecto de usabilidad estética, efecto de gradiente de meta, navaja de Occam,
+ principio de Pareto, ley de Postel, ley de Tesler. Usando las Leyes de UX como estándares.  </p>
       <v-img class="ma-md-15 mx-5 " src="@/assets/UxUi-tech.png"></v-img>
       <v-container>
         <v-row  justify="space-around" class="py-10">

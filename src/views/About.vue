@@ -78,48 +78,55 @@ h4 {
         <v-divider class="mb-5"></v-divider>
         <v-img class="mb-5 office-img" src="../assets/graphics/mxdv-home-office.jpg" />
         <div class="pt-10">
-          <h4 class="mt-10"><b>Introduction:</b></h4>
+          <h4 class="mt-10"><b>Introducción:</b></h4>
           <br>
           <v-divider></v-divider>
           <br>
-            <b class="text-h4">Hello!</b>, my name is <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
-            a human being that would love to introduce you to <b>MexDev!</b>, a web app development support team, we provide coding solutions
-            as a service creating digital products for individuals, companies & contractors, upgrading into the online business model or updating
-            their current app progress, we are home office individuals with great energy.
+            <b class="text-h6">Hola!</b>, mi nombre <a target="_blank" href="https://www.github.com/abraham-felix">Abraham Felix</a>,
+            Soy un ser humano, me encantaría presentarles a <b> MexDev! </b>, un equipo de soporte para el desarrollo de aplicaciones web, como equipo proporcionamos soluciones de codificación
+            como servicio, creando o actualizando productos digitales para particulares, empresas y contratistas, nos enfocamos en modelos de negocio online, somos personas orgánicas de home office con gran energía.
           <br><br>
-            I love working hard, I have been though to do my <b>loving God</b>, which has taught me to, & this means I study high-end concepts and constantly improve by learning new technologies, don't like the obsolete hard to use that can be to maintain & very expensive. Sounds painful, right?... but many companies are suffering today by this means. But do not worry, because the more sophisticated technology is here, providing simple, easy to maintain, modular & effectively fast-paced development! & instead of using 100 hands, we design a better system that helps to optimize digital emerging companies!"
-        <h4 class="mt-10"><b>The project Big vision:</b></h4>
+            Me encanta trabajar duro, lo que e aprendido de mi <b> Dios amoroso </b>, me en foco en el estudio de conceptos de alto nivel y mejorar o implementar constantemente aprendiendo de nuevas tecnologías,
+            no me gusta lo obsoleto y difícil de usar que puede ser de mucho mantenimiento y muy caro. Suena algo doloroso, en especial si son una empresa ¿verdad?.  pero muchas empresas están sufriendo hoy por este motivo.
+            ¡Pero no se preocupen, porque la tecnología más sofisticada está aquí, proporcionando un desarrollo simple, fácil de mantener, modular y eficazmente rápido! y en lugar de usar 100 manos, diseñamos sistemas automatizados
+            creados para disminui el mantenimiento y costo, asi ayudamos a optimizar las empresas digitales emergentes".
+        <h4 class="mt-10">
+          <b>El proyecto posee una gran visión:</b>
+        </h4>
         <br>
         <v-divider></v-divider>
         <br>
-           <b>Mexdev</b> vision is fresh & cool!. We provide a service that is 100% remote, with project founders in the USA and MX. We got more than 15 years of combined software development experience. Mexdev is currently looking for funds, but we provide our support service regardless, all with our fingers skills programming & developing products.
+
+        ¡La visión de <b> Mexdev </b> es fresca y genial!. Brindamos un servicio 100% remoto, con fundadores de proyectos en USA y MX. Tenemos más de 15 años de experiencia combinada en desarrollo de software.
+        Mexdev está buscando fondos actualmente, pero proporcionamos nuestro servicio de soporte independientemente, todo con nuestras habilidades para programar y desarrollar productos.
         <br>
-        <h4 class="mt-10"><b>Project services & objectives:</b> </h4>
-
+        <h4 class="mt-10">
+          <b>Servicios y objetivos del proyecto:</b>
+        </h4>
+        <br>
+        <hr>
             <br>
-            <br> <b>Software development</b> talent is expensive. Hiring new developers for a project is risky too, as a developer's skills may not match their resume and because some engineers fail to keep current on the latest languages, platforms and best practices.
-            As remote work expands, so do the number of applicants, creating even greater risk for hiring managers. so why not hire a team like Mexdev?
-
-
+            <br> <b> El talento en desarrollo de software </b> es caro. Contratar nuevos desarrolladores para un proyecto también es arriesgado, ya que las habilidades de un desarrollador pueden no coincidir con su currículum y porque algunos ingenieros no se mantienen actualizados en los últimos lenguajes, plataformas y mejores prácticas.
+            A medida que se expande el trabajo remoto, también lo hace el número de solicitantes, lo que crea un riesgo aún mayor para los gerentes de contratación. entonces, ¿por qué no contratar a un equipo como Mexdev?
             <br>
-            <br> Our goal is to deliver high-quality ideas and software development at an affordable price, from developers whose skills and productivity are regularly evaluated. We use agile methodologies, secure information exchange, and productivity and
-            skills assessment tools to eliminate the risks of hiring outside help.
+            <br> Nuestro objetivo es entregar ideas y desarrollo de software de alta calidad a un precio asequible, de parte de desarrolladores cuyas habilidades y productividad se evalúan regularmente. Utilizamos metodologías ágiles, intercambio seguro de información y productividad y
+            herramientas de evaluación de habilidades para eliminar los riesgos de contratar ayuda externa.
 
-        <h4 class="mt-10"><b>Why are we different?</b></h4>
+        <h4 class="mt-10"><b>por que somos diferentes?</b></h4>
         <br>
       </div>
         <v-divider></v-divider>
         <br>
         <v-list-item>
             <v-list-item-content>
-                <v-list-item class="text-sm-left">● Mexdev provides an alternative to hiring new personnel for large and small projects.</v-list-item>
-                <v-list-item>● Our team is available for hire for projects of any length, by streching our learning curve or adding new members.</v-list-item>
-                <v-list-item>● We offer simple, clear and affordable pricing on all of our work.</v-list-item>
-                <v-list-item>● Mexdev provides transparency, value, trust and flexibility in the developtment proccess.</v-list-item>
-                <v-list-item>● We help you achieve your goals without the need to make expensive new hires that can harm your bottom line, now and for years to come.</v-list-item>
+              <v-list-item> ● Mexdev ofrece una alternativa a la contratación de nuevo personal para proyectos grandes y pequeños. </v-list-item>
+              <v-list-item> ● Nuestro equipo está disponible para contratar proyectos de cualquier duración, ampliando nuestra curva de aprendizaje o agregando nuevos miembros. </v-list-item>
+              <v-list-item> ● Ofrecemos precios simples, claros y asequibles en todo nuestro trabajo. </v-list-item>
+              <v-list-item> ● Mexdev brinda transparencia, valor, confianza y flexibilidad en el proceso de desarrollo. </v-list-item>
+              <v-list-item> ● Lo ayudamos a lograr sus objetivos sin la necesidad de realizar nuevas contrataciones costosas que pueden dañar sus resultados, ahora y en los años venideros. </v-list-item>
             </v-list-item-content>
         </v-list-item>
-        <h4 class="mt-10"><b>Project Leads:</b></h4>
+        <h4 class="mt-10"><b>Líderes del proyecto:</b></h4>
         <br>
         <v-divider></v-divider>
         <br>
