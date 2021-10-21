@@ -190,7 +190,7 @@ a.px-5.nav-link:hover {
      <v-list-item
       class="px-5"
      @click="logout"
-     >Cerrar session
+     >Cerrar sesión
    </v-list-item>
    <v-list-item>
    <router-link to="/admin" class="px-5">
