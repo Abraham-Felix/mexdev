@@ -178,7 +178,7 @@ li.number a {
 <template>
   <div>
     <div><br>
-      <h1 color="primary" class="mb-10 mt-5"> Front end & Back end Jobs </h1>
+      <h1 color="primary" class="mb-10 mt-5"> Empleos remotos de Front-end & Back-end </h1>
     <div
     class="jobs-card ">
     <div v-if="errored">
