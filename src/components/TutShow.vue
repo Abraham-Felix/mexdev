@@ -118,7 +118,7 @@ p {
                   </v-text>
                 <br>
                 <v-text>
-                    <h5 class="tech-requested"><v-icon class="m-0 p-0">mdi-account-tie</v-icon> Autor </h5>{{ tutorial.first + ' ' + tutorial.last}}
+                    <h5 class="tech-requested"><v-icon class="m-0 p-0">mdi-account-tie</v-icon> Autor: </h5>{{ tutorial.first + ' ' + tutorial.last}}
                 </v-text>
                 </div>
                 <!-- and so on -->
