@@ -77,6 +77,8 @@
          </template>
        </v-dialog>
      </div>
+<!-- Ape animation -->
+<ApeSignAnimation/>
       <v-container class="landing-intro text-sm-body-2">
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
           <span class="text--primary">Que es Mexdev?</span><br><br>
@@ -88,11 +90,12 @@
       <div class=" pb-md-16 slide-card">
         <MockupSlider class="mb-16" />
       </div>
-      <v-container class=" mt-n16 mt-md-15">
-        <v-divider class="mb-10 mt-5"></v-divider>
-        <v-btn dark href="/products" title="Get your products done!">Servicios</v-btn>
+      <v-container  class=" mt-n16 mt-md-15">
+        <v-divider
+        class="mb-10 mt-5"></v-divider>
+        <v-btn id="scrolling-techniques-4"  dark href="/products" title="Get your products done!">Servicios</v-btn>
         <br>
-        <p class="center ">
+        <p  class="center ">
           <b>
           “Pero no se alegren porque los espíritus quedan sometidos a ustedes. Más bien, alégrense porque sus nombres han sido escritos en los cielos.”
           <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/3/#v21003013">
@@ -102,7 +105,7 @@
       </p>
       </v-container>
    </div>
- </transition>
+  </transition>
  </v-container>
 <!-- TechStackIcons Slider -->
  <TechStackIcons/>
@@ -115,6 +118,7 @@ import toastr from 'toastr';
 import { mapGetters } from "vuex";
 import Login from "@/components/forms/Login.vue";
 import SignUp from "@/components/forms/SignUp.vue";
+import ApeSignAnimation from "@/components/animations/ApeSignAnimation.vue"
 import MockupSlider from "@/components/animations/MockupSlider.vue";
 import TechStackIcons from '../components/animations/TechStackIcons.vue'
 import CloudTransitions from "@/components/animations/CloudTransitions.vue"
@@ -126,7 +130,8 @@ export default {
     SignUp,
     MockupSlider,
     TechStackIcons,
-    CloudTransitions
+    CloudTransitions,
+    ApeSignAnimation
   },
   computed: {
     // map `this.user` to `this.$store.getters.user`
@@ -149,7 +154,21 @@ export default {
 }
 </script>
 
-<style>
+<style >
+.z-top {
+  z-index:9999;
+}
+.slide-ape-rl-enter-active {
+  transition: all 1s ease;
+}
+.slide-ape-rl-leave-active {
+  transition: all 2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-ape-rl-enter, .slide-ape-rl-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 #body {
   overflow: hidden !important;
 }
@@ -168,6 +187,20 @@ h4 {
 .get {
   font-size: min(3rem, 200%, 20vw);
   color: #5388E6;
+}
+.ape-form-image {
+  position: absolute;
+    right: -153px;
+    top: 600px;
+    margin-top: -209px;
+    transition: 1s;
+    cursor: pointer;
+    z-index: 9999;
+    transform: rotate3d(1, 1, 1, -48deg);
+}
+.ape-form-image:hover {
+  transform: rotate3d(1, 1, 1, 0deg);
+  right: -23px;
 }
 .on {
   font-size: 25px ;

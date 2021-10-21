@@ -318,9 +318,9 @@
             </v-col>
               </transition>
             <transition appear name="slide-rl">
-            <v-col class="mt-15 piggy">
-            </v-col>
-          </transition>
+              <v-col class="mt-15 piggy">
+              </v-col>
+            </transition>
         </v-row>
         <!-- 2nd division -->
         <section class="black">
