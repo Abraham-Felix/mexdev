@@ -27,7 +27,7 @@
             <div class="form-group">
                 <v-text-field
                 :rules="nameRules"
-                required label="First"
+                required label="Nombre"
                 type="text"
                 name="name"
                 id="messageFirst"
@@ -38,7 +38,7 @@
             <div class="form-group">
                 <v-text-field
                 :rules="nameRules"
-                required label="Last"
+                required label="Apellido"
                 type="text" id="messageLast"
                 class="form-control"
                 v-model="newMessage.last">
@@ -48,7 +48,7 @@
             <div class="form-group">
                 <v-text-field
                 :rules="emailRules"
-                required label="Email"
+                required label="Correo"
                 name="email"
                 type="text"
                 id="messageEmail"
@@ -59,7 +59,7 @@
             <div class="form-group">
                 <v-text-field
                 :rules="phoneRules"
-                required label="Phone"
+                required label="Telefono"
                 name="phone"
                 id="clientPhone"
                 class="form-control"
@@ -72,14 +72,14 @@
                :rules="productRules"
                :items="newMessage.product"
                v-model="newMessage.product"
-               required label="Product"
+               required label="Producto"
                class="mx-2"
         ></v-select>
             </div>
             <div class="form-group">
                 <v-textarea
                 :rules="contentRules"
-                required label="Message"
+                required label="Mensaje"
                 type="text" id="messageContent"
                 class="form-control"
                 name="message"

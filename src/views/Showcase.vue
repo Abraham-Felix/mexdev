@@ -1,7 +1,5 @@
 <style>
 /* wavy design*/
-
-
 .gray {
   background-color: #e1e1e1 !important;
 }
@@ -300,7 +298,7 @@
               <transition appear name="slide-ub">
             <v-col class="mt-15 col-4  py-10 r-div">
                 <v-container class="p-box-main main-pbox  ">
-                    <h5 class="t-white mb-5">highlights:</h5>
+                    <h5 class="t-white mb-5">Destacado:</h5>
                     <hr>
                     <p class="t-white text-md-h6">Una aplicación profesional y sólida de Ruby on Rails y un boletín informativo de Fintech. Su backend es PostgreSQL, Rails y SendGrid, e incluye su propia API. La API admite un sitio actualizado (dealfunnel.net) que tiene una interfaz NUXT / Vue.js y una
                         proyecto de aplicación creado con Ionic / Vue.js..
@@ -330,12 +328,14 @@
         <v-row class="pt-15 bl-div t-white">
           <div class="mt-15 col-6  bl-div xs-col-12 py-10" >
             <div class="p-box mt-15 ">
-                <h5 class="mb-5">highlights:</h5>
+                <h5 class="mb-5">Destacado:</h5>
                 <hr>
-                <p class="text-md-h6">The app/content management system was created in WordPress and transferred to Adobe Catalyst.
+                <p class="text-md-h6">
+                El sistema de administración de aplicaciones se diseño en visual basic y se distribuyo con MySQL. El contenido se creó en WordPress y se transfirió a Adobe Catalyst.
                 </p>
-                <p class="text-md-h6"> It was designed to work seamlessly with the resort’s existing inventory management database and includes a mailing campaign system used by the call center and marketing teams for templating emails. </p>
-                <p class="text-md-h6"> The project makes use of GoDaddy for hosting, AWS for storage, and Google Analytics for search optimization.
+                <p class="text-md-h6"> Fue diseñado para funcionar a la perfección con la base de datos de gestión de inventario existente del complejo e incluye
+                  un sistema de campañas de correo que utilizan el centro de llamadas y los equipos de marketing para crear plantillas de correos electrónicos. </p>
+                <p class="text-md-h6"> El proyecto utiliza GoDaddy para el alojamiento, AWS para el almacenamiento y Google Analytics para la optimización de la búsqueda.
                 </p>
             </div>
             <br>
@@ -369,11 +369,16 @@
               </div>
                 <div class="mt-15 col-6  bl-div xs-col-12 py-10" >
                 <div class="p-box mt-15">
-                    <h5 class="mb-5">highlights:</h5>
+                    <h5 class="mb-5">Destacado:</h5>
                     <hr>
-                    <p class="text-md-h6">A classic car showcase webdesign, it uses gallery and event most of the project was design using a thirdparty system, after it was migrated from wix the old CMS system.
+                    <p class="text-md-h6">
+                      Un diseño web clásico de exhibición de autos, utiliza galería y evento, la mayor parte del proyecto fue diseñado
+                      usando un sistema de terceros, después de que se migró de wix al antiguo sistema CMS.
                     </p>
-                    <p class="text-md-h6"> The services provided icluded our certified knowledge from Google an Hp on digital marketing as social media marketing & social media management, The project uses weebly for hosting and Google Analytics Tags for optimization. </p>
+                    <p class="text-md-h6">
+                      Los servicios proporcionados incluyeron nuestro conocimiento certificado de Google y Hp sobre marketing digital
+                      como marketing en redes sociales y gestión de redes sociales. El proyecto utiliza weebly para alojamiento y etiquetas de Google Analytics para optimización.
+                    </p>
 
                 </div>
                 <br>
@@ -397,7 +402,8 @@
                     <h3> Código organizado y limpio. </h3>
                     <v-divider class="mx-15"></v-divider>
                     <p class="center text-md-h5 pa-15 text--primary">
-                      Desarrollo de software experimentado de escritura de código limpio, con principios SÓLIDOS y usando git para garantizar la integridad de la base del código. Mis áreas de especialización incluyen Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS y HTML. </p>
+                      Desarrollo de software experimentado de escritura de código limpio, con principios SÓLIDOS y usando git para garantizar la integridad de la base del código.
+                      Mis áreas de especialización incluyen Vue, NUXT, node.js, Postgres, Ruby on Rails, CSS, SCSS y HTML. </p>
                     </div>
                 <div class="showcase-img" style="width: 500px; height: 500px;">
                     <img src="https://firebasestorage.googleapis.com/v0/b/mexdev-40fff.appspot.com/o/giff%2FRaisesTour.gif?alt=media&token=010f1b21-0c96-44ab-9c2c-1c295718fa38
