@@ -7,7 +7,7 @@
    <div class="mt-n5">
       <h5>
         <span class="get primary--text pulsate-css" transition="scroll-y-transition"> Mexdev </span>
-        <h4 v-if="user.loggedIn" class="pt-5">Compartiendo <router-link to="tutorials"> conocimiento a jovenes! </router-link> </h4>
+        <h4 v-if="user.loggedIn" class="pt-5">Compartiendo <router-link to="tutorials"> conocimiento gratis! </router-link> </h4>
       </h5>
        <v-divider class="mb-5" />
      <div class="center nav-col-mid d-flex justify-center align-center">
