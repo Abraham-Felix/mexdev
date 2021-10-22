@@ -79,13 +79,13 @@
      </div>
 <!-- Ape animation -->
 <ApeSignAnimation/>
-      <v-container class="landing-intro text-sm-body-2">
+      <div class="landing-intro text-sm-body-2 center">
         <p class="f-p text-sm-body-2 font-weight-medium align-justify text--secondary">
           <span class="text--primary">Que es Mexdev?</span><br><br>
           MexDev es un servicio de soporte de desarrollo de aplicaciones web,  desarrollamos productos digitales para mejorar negocios a nivel nacional e internacional,
           no solo nos gusta ayudar a empresas actualizando el progreso y diseño de su aplicación actual, ademas nos enfocamos en ayudar a niños y jovenes a aprender de codificación como servicio.
         </p>
-      </v-container>
+      </div>
          <!-- Mockup Slider -->
       <div class=" pb-md-16 slide-card">
         <MockupSlider class="mb-16" />

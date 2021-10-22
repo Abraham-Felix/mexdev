@@ -20,7 +20,7 @@ h4 {
     text-align: left;
     color: #313233;
 }
-.privacy-policy {
+.privacy-card {
   max-width: 900px;
 }
 </style>
