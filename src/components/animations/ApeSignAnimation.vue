@@ -50,7 +50,7 @@ export default {
 .ape-form-image {
   position: absolute;
     right: -153px;
-    top: 600px;
+    top: 700px;
     margin-top: -209px;
     transition: 1s;
     cursor: pointer;
