@@ -26,7 +26,11 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
     width:100%;
-    height: 750px;
+    height: 700px;
+    transition: 0.2s;
+}
+.v-card:hover {
+  box-shadow: 0px 20px 20px -7px gray;
 }
 
 .v-icon {
@@ -36,7 +40,8 @@ p {
 
 .content {
     text-align: left;
-    height:200px
+    height:150px;
+    overflow: auto;
 }
 
 .tech-requested {
@@ -46,6 +51,11 @@ p {
    max-width:420px;
    width: 100%;
    height:315px;
+   border-radius:3px;
+   transition:1s;
+}
+.yt-vids:hover {
+  border-radius: 50px 0px 50px 0px;
 }
 .t-title {
   height: 80px;
@@ -79,7 +89,7 @@ p {
                 </div>
                 <br>
                 <iframe
-                class="yt-vids rounded"
+                class="yt-vids"
                 :src="tutorial.video"
                 title="YouTube video player"
                 frameborder="0"
