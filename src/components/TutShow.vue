@@ -26,7 +26,7 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
     width:100%;
-    height: 800px;
+    height: 750px;
 }
 
 .v-icon {
@@ -104,23 +104,35 @@ p {
                 </div>
                 <!-- <p class="content" v-html="tutorial.content"> {{ tutorial.content}}</p> -->
                 <hr>
-                <div class="data-rw d-inline left p-3 ">
-                    <v-text>
-                        <h5 class="tech-requested">
-                          <v-icon class="m-0 p-0">mdi-youtube</v-icon>
-                        </h5>
-                        <a v-bind:href="tutorial.code"> Watch on youtube! </a>
-                    </v-text>
-                    <br>
-                  <v-text>
+                <v-row dense>
+                  <v-col cols="4">
+                        <a v-bind:href="tutorial.code" target="_blank">
+                          <h5 class="tech-requested">
+                            <v-icon class="m-0 p-0">
+                              mdi-youtube
+                            </v-icon>
+                            Youtube
+                          </h5>
+                        </a>
+                  </v-col>
+                  <v-col cols="4">
                     <h5 class="tech-requested">
-                      <v-icon class="m-0 p-0">mdi-code-braces</v-icon> Tecnologias: </h5> {{ tutorial.language }}
-                  </v-text>
-                <br>
-                <v-text>
-                    <h5 class="tech-requested"><v-icon class="m-0 p-0">mdi-account-tie</v-icon> Autor: </h5>{{ tutorial.first + ' ' + tutorial.last}}
-                </v-text>
-                </div>
+                      <v-icon class="m-0 p-0">
+                        mdi-code-braces
+                      </v-icon>
+                      {{ tutorial.language[0] }}
+                    </h5>
+                  </v-col>
+                  <v-col cols="4">
+                    <h5 class="tech-requested">
+                      <v-icon class="m-0 p-0">
+                        mdi-account-tie
+                      </v-icon>
+                      {{ tutorial.first + ' ' + tutorial.last}}
+                    </h5>
+                  </v-col>
+
+              </v-row>
                 <!-- and so on -->
             </v-card>
 
