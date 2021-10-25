@@ -129,6 +129,16 @@ Vue.use(VueRouter)
     component: Subscriptions
   },
   {
+  path: "/upgrade-subscription",
+  name: "Upgrade",
+  component: () => import("@/components/payments/Upgrade.vue")
+},
+{
+  path: "/subscription-payment",
+  name: "Payment",
+  component: () => import("@/components/payments/Payment.vue")
+},
+  {
     path: '/taskit',
     name: 'Taskit',
     component: Taskit,
