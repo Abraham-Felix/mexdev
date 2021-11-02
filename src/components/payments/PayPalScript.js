@@ -12,7 +12,10 @@ const client_secret = process.env.VUE_APP_PAYPAL_CLIENT_SECRET_ID;
 export async function retriveuserinformation(subscriptionID) {
   // 1. Call PayPal to get a token
   const auth = await axios({
-    url: "https://api-m.paypal.com/v1/oauth2/token",
+    //real URL
+    //url: "https://api-m.paypal.com/v1/oauth2/token",
+    //TEst URL
+    url: "https://api-m.sandbox.paypal.com/v1/oauth2/token",
     method: "post",
     headers: {
       Accept: "application/json",
@@ -29,7 +32,7 @@ export async function retriveuserinformation(subscriptionID) {
   });
   // 2. Call PayPal to get the subscription details
   const user_subscription_details = await axios({
-    url: `https://api-m.paypal.com/v1/billing/subscriptions/${subscriptionID}`,
+    url: `https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${subscriptionID}`,
     method: "get",
     headers: {
       Accept: "application/json",
@@ -44,7 +47,7 @@ export async function retriveuserinformation(subscriptionID) {
 export async function suspendusersubscription(subscriptionID) {
   // 1. Call PayPal to get a token
   const auth = await axios({
-    url: "https://api-m.paypal.com/v1/oauth2/token",
+    url: "https://api-m.sandbox.paypal.com/v1/oauth2/token",
     method: "post",
     headers: {
       Accept: "application/json",
@@ -61,7 +64,7 @@ export async function suspendusersubscription(subscriptionID) {
   });
   // 2. Call PayPal to get the subscription details
   const user_subscription_details = await axios({
-    url: `https://api-m.paypal.com/v1/billing/subscriptions/${subscriptionID}/suspend`,
+    url: `https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${subscriptionID}/suspend`,
     method: "post",
     headers: {
       Accept: "application/json",
@@ -79,7 +82,7 @@ export async function suspendusersubscription(subscriptionID) {
 export async function cancelusersubscription(subscriptionID) {
   // 1. Call PayPal to get a token
   const auth = await axios({
-    url: "https://api-m.paypal.com/v1/oauth2/token",
+    url: "https://api-m.sandbox.paypal.com/v1/oauth2/token",
     method: "post",
     headers: {
       Accept: "application/json",
@@ -96,7 +99,7 @@ export async function cancelusersubscription(subscriptionID) {
   });
   // 2. Call PayPal to get the subscription details
   const user_subscription_details = await axios({
-    url: `https://api-m.paypal.com/v1/billing/subscriptions/${subscriptionID}/cancel`,
+    url: `https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${subscriptionID}/cancel`,
     method: "post",
     headers: {
       Accept: "application/json",
@@ -114,7 +117,7 @@ export async function cancelusersubscription(subscriptionID) {
 export async function activateusersubscription(subscriptionID) {
   // 1. Call PayPal to get a token
   const auth = await axios({
-    url: "https://api-m.paypal.com/v1/oauth2/token",
+    url: "https://api-m.sandbox.paypal.com/v1/oauth2/token",
     method: "post",
     headers: {
       Accept: "application/json",
@@ -131,7 +134,7 @@ export async function activateusersubscription(subscriptionID) {
   });
   // 2. Call PayPal to get the subscription details
   const user_subscription_details = await axios({
-    url: `https://api-m.paypal.com/v1/billing/subscriptions/${subscriptionID}/activate`,
+    url: `https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${subscriptionID}/activate`,
     method: "post",
     headers: {
       Accept: "application/json",

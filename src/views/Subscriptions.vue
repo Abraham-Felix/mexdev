@@ -1,7 +1,7 @@
 <template>
   <div class="Subscriptions">
 
-      <h1> Planes de subscripción </h1>
+      <h1> Planes de subscripción | esta pagina esta en desarrollo no estamos aceptando pagos!</h1>
       <hr>
     <v-container>
         <!--Snackbar-->
@@ -54,7 +54,10 @@ export default {
           amount: "7.50",
           text:
             "-Incluye lo Pro <br> -Videos Premium <br> -Proyectos <br> -Soporte",
-          plan_id: "P-3YL457250M0907618MF2XKVI" // plan id
+          //test
+          plan_id: "P-6X196677491903040MGAN7EY"
+          //real
+          // plan_id: "P-3YL457250M0907618MF2XKVI" // plan id
         }
       ]
     };

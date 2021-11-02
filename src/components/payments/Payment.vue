@@ -7,6 +7,7 @@
           <div style="display: flex; justify-content: center">
             <div class="sheet-container">
               <v-card-text>
+                <h1>Pagina esta en desarrollo no estamos aceptando pagos!</h1>
                 <div class="paypal-title">{{ packageselect.title }}</div>
                 <div class="paypal-text">
                   <span>Total Amount (USD) </span>
@@ -26,10 +27,9 @@
 <script>
 import firebase from '@/plugins/firebase'
 import Swal from "sweetalert2";
-
 let db = firebase.database();
 
-let messagesRef = db.ref('subscriptions');
+let messagesRef = db.ref('users');
 
 export default {
   name: "Payment",
@@ -41,8 +41,8 @@ export default {
       item: {},
       packageselect: "",
       newSub: {
-        subscrptionId: "",
-        packageselect: {},
+        subscriptionId: "",
+        packageselect: "",
         name: "",
         email: ""
       }
@@ -72,6 +72,7 @@ export default {
       this.newSub.packageselect = package_results;
       await this.mountpaypalbutton();
     }
+
     // end
   },
   // methods
@@ -102,6 +103,7 @@ export default {
           },
           // eslint-disable-next-line no-unused-vars
           onApprove: async function(data, actions) {
+
             /**
              * NOTE
              * - Save the subscription id in your Database
@@ -110,34 +112,34 @@ export default {
              * - to make payment
              */
 
-             //Firebase config
-            messagesRef.child(this.userID).push(this.newSub);
-            this.newSub.packageselect = '';
-            this.newSub.name = '';
-            this.newSub.email = '';
-            let subscrption_id = data.subscriptionID;
-            this.newSub.subscrptionId = subscrption_id;
-            console.log(subscrption_id)
+
+             console.log(data)
+
 
             // 4. Remove the selected package from the local storage
 
-            localStorage.removeItem("@selectedpackage");
-
             // 5. Lets use swal to give us an alert once transcation is completed
-            Swal.fire({
-              icon: "success",
-              title: "Congratulations",
-              text: "Your payment has successfully been proccessed!",
-              confirmButtonText: "Complete",
-              showLoaderOnConfirm: true,
-              preConfirm: () => {
-                // redirect user to dashboard or login
-                location.assign("http://localhost:8080/profile");
-              },
-              allowOutsideClick: false
-            });
-          }
-        })
+              Swal.fire({
+                icon: "success",
+                title: "Congratulations",
+                text: "Your payment has successfully been proccessed!" + " " + "Subscription ID:" + " " + data.subscriptionID,
+                confirmButtonText: "Complete",
+                showLoaderOnConfirm: true,
+                preConfirm: () => {
+                  // redirect user to dashboard or login
+                  location.assign("http://localhost:1111/profile");
+                },
+                allowOutsideClick: false
+              });
+
+              //Firebase config this code dosnt run here but it runs on created or mounted just fine... 
+                 messagesRef.child(this.userID).update(this.newSub);
+                  this.newSub.packageselect = '' ;
+                  this.newSub.subscrptionId = '';
+
+            }
+
+          })
         .render("#paypal-button-container");
     }
   }

@@ -231,7 +231,8 @@ computed: {
   // map `this.user` to `this.$store.getters.user`
   ...mapGetters({
     user: "user",
-    admin: "admin"
+    admin: "admin",
+    subscriber: "subscriber"
   })
 },
 methods: {

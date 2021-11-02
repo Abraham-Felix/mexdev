@@ -330,8 +330,8 @@ form.mt-10.center {
                                     <Suspend class="mb-2" />
                                     <Activate class="mb-2" />
                                     <h3>Proximamente</h3>
-                                    <v-btn color="green" dark block tile @click="/*upgradesubscription*/" class="center">
-                                        <span style="text-transform: capitalize">Ya falta poco!</span>
+                                    <v-btn color="green" dark block tile @click="upgradesubscription" class="center">
+                                        <span style="text-transform: capitalize">Upgrade</span>
                                     </v-btn>
                                     <p>Servicio de subscripciones esta en proceso de desarrollo, sabemos que estas interesado :), Saludos!</p>
                                 </v-card-text>
@@ -353,10 +353,10 @@ import firebase from '../plugins/firebase'
 import toastr from 'toastr';
 import vue from 'vue';
 
-//import Header from "@/components/payments/Header";
-//import Cancel from "@/components/payments/Cancel";
-//import Suspend from "@/components/payments/Suspend";
-//import Activate from "@/components/payments/Activate";
+import Cancel from "@/components/payments/Cancel";
+import Suspend from "@/components/payments/Suspend";
+import Activate from "@/components/payments/Activate";
+
 
 let db = firebase.database();
 let messagesRef = db.ref('tutorials');
@@ -364,10 +364,9 @@ let usersRef = db.ref('users');
 export default {
     name: 'profile',
     components: {
-        //Header,
-        //Suspend,
-        //Cancel,
-        //Activate
+        Suspend,
+        Cancel,
+        Activate
     },
     firebase: {
         tutorials: messagesRef

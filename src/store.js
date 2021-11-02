@@ -7,11 +7,19 @@ export default new Vuex.Store({
     user: {
       loggedIn: false,
       data: null
+    },
+    subscriber: {
+      basic: false,
+      pro: false,
+      premium: false,
     }
   },
   getters: {
     user(state){
       return state.user
+    },
+    subscriber(state){
+      return state.subscriber
     }
   },
   mutations: {
