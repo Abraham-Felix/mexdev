@@ -22,14 +22,14 @@
     <br>
   </div>
     <div>
-        <form id="form" class="form-inline" v-on:submit.prevent="addMessage">
+        <form ref="form" id="form" class="form-inline" v-on:submit.prevent="addMessage">
           <div class="d-flex justify-space-between">
             <div class="form-group">
                 <v-text-field
                 :rules="nameRules"
                 required label="Nombre"
                 type="text"
-                name="name"
+                name="from_name"
                 id="messageFirst"
                 class="form-control"
                 v-model="newMessage.first">
@@ -39,6 +39,7 @@
                 <v-text-field
                 :rules="nameRules"
                 required label="Apellido"
+                name="from_last"
                 type="text" id="messageLast"
                 class="form-control"
                 v-model="newMessage.last">
@@ -162,32 +163,38 @@ export default {
         }
     },
     methods: {
-        addMessage: function(e) {
-            messagesRef.push(this.newMessage);
-            this.newMessage.first = '';
-            this.newMessage.last = '';
-            this.newMessage.email = '';
-            this.newMessage.phone = '';
-            this.newMessage.product = '';
-            this.newMessage.content = '';
-            toastr.success('Horray! message sent successfully');
-            this.displayText = 'Nice job!';
-            this.nameRules = true;
-            this.emailRules = true;
-            this.namePhone = true;
-            this.productRules = true;
-            this.contentRules = true;
-            // Swap this credentials to your service credential from emailjs.com this is Important! so you get email to your business email account
-            emailjs.sendForm('service_qe62coj','template_bin13y4', e.target,'user_1hqcYgrszmW6XZSBq6v5n', {
+        addMessage() {
+          // Swap this credentials to your service credential from emailjs.com this is Important! so you get email to your business email account
+          emailjs.sendForm('service_qe62coj','template_cuh12ka', this.$refs.form,'user_njL9HtVxRG3Lr78oXNGLS', {
             name: this.newMessage.first,
             email: this.newMessage.email,
             phone: this.newMessage.phone,
             product: this.newMessage.products,
             message: this.newMessage.content,
-          })
+        })
+        .then((result) => {
+          messagesRef.push(this.newMessage);
+          this.newMessage.first = '';
+          this.newMessage.last = '';
+          this.newMessage.email = '';
+          this.newMessage.phone = '';
+          this.newMessage.product = '';
+          this.newMessage.content = '';
+          toastr.success('Tu mensaje fue enviado correctamente');
+          this.displayText = 'Nice job!';
+          this.nameRules = true;
+          this.emailRules = true;
+          this.namePhone = true;
+          this.productRules = true;
+          this.contentRules = true;
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+
         },
         markcompleted: function() {
-            this.displayText = 'hum.. somthing still missing';
+            this.displayText = 'hum.. creo que algo hace falta';
         }
     },
 
