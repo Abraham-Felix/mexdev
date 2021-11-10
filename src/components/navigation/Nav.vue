@@ -244,7 +244,7 @@ logout: function() {
   .catch (err =>
     toastr.error('Yikes! '+ err.message))
   .catch (
-    toastr.success('Officially logged outty! Have a good day! :O '))
+    toastr.success('Oficialmente cerraste sesion! Que pases un agradable dia! :D'))
 },
 
 },

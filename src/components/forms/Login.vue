@@ -68,7 +68,7 @@ export default {
             .then(
                 (user) => {
                     this.$router.go('/profile' + user.message + this.created || true)
-                    toastr.success('Welcome visitor! nice having you around!')
+                    toastr.success('Bienvenido! es agradable tenerte cerca!')
                 }
             )
             .catch (err =>
@@ -80,7 +80,7 @@ export default {
           .then(
               (user) => {
                   this.$router.go('/profile' + user.message + this.created || true)
-                  toastr.success('Welcome visitor! nice having you around!')
+                  toastr.success('Bienvenido! es agradable tenerte cerca!')
                 }
           )
           .catch (err =>

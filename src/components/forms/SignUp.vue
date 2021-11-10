@@ -72,7 +72,7 @@ import toastr from 'toastr';
         .then(
       (user) => {
           this.$router.go('home' + user.message + this.authUser || true )
-          toastr.success('Welcome visitor! nice having you around!')
+          toastr.success('Bienvenido! es agradable tenerte cerca!')
         }
       )
       .catch (err =>
@@ -83,7 +83,7 @@ import toastr from 'toastr';
       firebase.auth().signInWithPopup(provider)
       .then(
         data => console.log(data.user, data.credential.accessToken),
-        toastr.success('Welcome visitor! nice having you around!')
+        toastr.success('Bienvenido! es agradable tenerte cerca!')
       ).catch(err =>
         toastr.error('Yikes '+ err.message))
     },

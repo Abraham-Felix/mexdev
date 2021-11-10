@@ -142,23 +142,23 @@ export default {
                 content: ''
             },
             nameRules: [
-                v => !!v || 'you must type something',
-                v => v.length <= 15 || 'hum.. this monk smelling somthing strange... must be less than 15 characters',
+                v => !!v || 'Este campo es obligatorio!',
+                v => v.length >= 3 || 'hum.. algo huele raro... este campo debe contener almenos 3 caracteres',
             ],
             emailRules: [
-                v => !!v || 'E-mail is required',
-                v => /.+@.+/.test(v) || 'Please enter a valid email containing @ ',
+                v => !!v || 'Este campo es obligatorio!',
+                v => /.+@.+/.test(v) || 'hum.. algo huele raro... porfavor escribe tu email en un formato legible con @ ',
             ],
             phoneRules: [
-                v => !!v || 'type your phone number',
-                v => v.length <= 13 || 'hum.. this monk smelling somthing strange... must be less than 12 numbers',
+                v => !!v || 'Este campo es obligatorio!',
+                v => v.length <= 13 || 'hum.. algo huele raro... tienes que escribir menos de 12 digitos',
             ],
             productRules: [
-                v => !!v || 'Content is required amigo!',
+                v => !!v || 'Este campo es obligatorio!',
             ],
             contentRules: [
-                v => !!v || 'Content is required amigo!',
-                v => v.length >= 20 || 'hum.. this monk smelling somthing strange... must be at least more than 30 characters',
+                v => !!v || 'Este campo es obligatorio!',
+                v => v.length >= 20 || 'hum.. algo huele raro... tienes que escribir almenos 30 caracteres!',
             ],
         }
     },
