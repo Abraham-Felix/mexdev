@@ -225,6 +225,11 @@ data: () => ({
           //active:null,
         },
 
+        {
+          title: "Fintech Social",
+          to: "/fintechsocial",
+          //active:null,
+        },
       ]
 }),
 computed: {
