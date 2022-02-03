@@ -1,32 +1,62 @@
-<style>
+<style scoped>
   .s-div {
-    box-shadow: 0px 0px 5px -3px gray;
+    box-shadow: 0px 0px 4px -1px gray;
+    padding:7px !important;
   }
-  .v-application--wrap {
-    min-height: 0;
+  form.v-form.mb-10.px-10 {
+  padding: 0 !important;
   }
 </style>
+<!-- full scoped style to be revised -->
+<style>
+.v-application--wrap {
+  min-height: 0;
+}
+</style>
 <template>
-<div>
+<div class="ml-12" >
 
   <!-- Fintech Social container layout -->
 
-    <v-container fluid>
-    <div>
-      <v-card class="d-flex align-self-start flex-column"  cols="auto">
+    <v-container  fluid>
+    <div >
+    <v-form
+    class="mb-10 px-10"
+    v-model="valid"
+    v-on:submit.prevent="addPost"
+    >
+      <v-card class=" d-flex align-self-start flex-column"  cols="auto">
         <v-row no-gutters>
-          <v-col  class="s-div" tile outline cols="2">
-          avatar image of user
+          <v-col  class="s-div "  cols="2">
+            <v-img
+            class="self-center"
+            :src="authUser.photoURL">
+            </v-img>
           </v-col>
-          <v-col class="s-div" cols="8">
-          this would be the post area
-          </v-col>
-          <v-col class="s-div" cols="2">
-          post button to send
+          <v-col  class="s-div d-flex" cols="10">
+          <v-textarea
+          v-model="newPost.postText"
+          :rules="postRules"
+          :counter="155"
+          rows="2"
+          class="pt-5"
+          label="Share your thoughts! 😎"
+          required>
+        </v-textarea>
+        <v-btn
+        class="ml-3 m-tb-20 align-self-end"
+        @click="markcompleted();"
+        type="submit"
+        small color="primary"
+        dark
+        >
+          {{ displayText }}
+        </v-btn>
           </v-col>
         </v-row>
       </v-card>
-      
+      </v-form>
+
 <!-- feed wall -->
       <v-card class="d-flex mt-5" height="fill">
           <v-col>
@@ -92,6 +122,11 @@
 </template>
 
 <script>
+// import firebase from '@/plugins/firebase'
+import toastr from 'toastr';
+let db = firebase.database();
+let messagesRef = db.ref('posts');
+
 import firebase from '../plugins/firebase'
 import FintechSocialProfile from '@/components/fintechsocial/FintechSocialProfile.vue'
 export default {
@@ -100,6 +135,7 @@ export default {
       FintechSocialProfile
     },
     data: () => ({
+        displayText: 'send',
         menu: false,
         drawer: true,
         mini: true,
@@ -108,7 +144,25 @@ export default {
         tutorialdialog: false,
         authUser: '',
         displayName: '',
+        newPost: {
+            postText: '',
+        },
+        postRules: [
+            v => !!v || 'Content is required amigo!'
+        ],
       }),
+      methods: {
+          addPost: function() {
+              messagesRef.child(this.authUser.uid).push(this.newPost);
+              this.newPost.postText = '';
+              toastr.success('Horray! message sent successfully');
+              this.displayText = 'Nice job!'
+              this.postRules = true;
+          },
+          markcompleted: function() {
+              this.displayText = 'something is strange';
+          }
+      },
       created: function() {
           // functions
           var user = firebase.auth().currentUser;
