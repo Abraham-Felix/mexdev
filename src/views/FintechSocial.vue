@@ -6,6 +6,12 @@
   form.v-form.mb-10.px-10 {
   padding: 0 !important;
   }
+  .main-content {
+  margin:auto;
+  }
+  .post-image {
+  max-width:100px;
+  }
 </style>
 <!-- full scoped style to be revised -->
 <style>
@@ -19,7 +25,7 @@
   <!-- Fintech Social container layout -->
 
     <v-container  fluid>
-    <div >
+    <div class="main-content">
     <v-form
     class="mb-10 px-10"
     v-model="valid"
@@ -27,13 +33,13 @@
     >
       <v-card class=" d-flex align-self-start flex-column"  cols="auto">
         <v-row no-gutters>
-          <v-col  class="s-div "  cols="2">
+          <v-col  class="s-div "  cols="1">
             <v-img
-            class="self-center"
+            class="align-center post-image"
             :src="authUser.photoURL">
             </v-img>
           </v-col>
-          <v-col  class="s-div d-flex" cols="10">
+          <v-col  class="s-div d-flex" cols="11">
           <v-textarea
           v-model="newPost.postText"
           :rules="postRules"
