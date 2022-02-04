@@ -1,5 +1,5 @@
 <style scoped>
-  .s-div {
+  .s-div{
     box-shadow: 0px 0px 4px -1px gray;
     padding:7px !important;
   }
@@ -12,6 +12,12 @@
   .post-image {
   max-width:100px;
   }
+
+  .feed-wall {
+  overflow-y: auto;
+  height:520px;
+  }
+
 </style>
 <!-- full scoped style to be revised -->
 <style>
@@ -64,11 +70,10 @@
       </v-form>
 
 <!-- feed wall -->
-      <v-card class="d-flex mt-5" height="fill">
-          <v-col>
-            <h1> Feed Walls </h1>
-          </v-col>
-      </v-card>
+<v-divider/>
+          <div class="feed-wall">
+            <FintechSocialFeed/>
+          </div>
     </div>
 
       <!-- View/edit profile -->
@@ -135,10 +140,13 @@ let messagesRef = db.ref('posts');
 
 import firebase from '../plugins/firebase'
 import FintechSocialProfile from '@/components/fintechsocial/FintechSocialProfile.vue'
+import FintechSocialFeed from '@/components/fintechsocial/FintechSocialFeed.vue'
+
 export default {
     name: 'FintechSocial',
     components: {
-      FintechSocialProfile
+      FintechSocialProfile,
+      FintechSocialFeed
     },
     data: () => ({
         displayText: 'send',
