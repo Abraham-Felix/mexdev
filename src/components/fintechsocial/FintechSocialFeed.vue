@@ -10,7 +10,7 @@ padding:7px !important;
 <template>
     <div>
            <div
-           v-for="post in allPosts"
+           v-for="post in allPosts.slice().reverse()"
            :key="post._key">
            <v-card class=" feed-card my-3">
              <p class="">{{post.postText}}</p>
@@ -37,7 +37,7 @@ export default {
     data => console.log(data.user, data.credential.accessToken)
     firebase.auth().onAuthStateChanged(user => {
         if (user) {
-          postRef.once('value', snapshot => {
+          postRef.on('value', snapshot => {
             const val = snapshot.val()
             if (val) {
               this.allPosts = Object.values(val).flatMap(posts =>

@@ -2,7 +2,7 @@
 
 .v-container {
 max-height: 620px;
-overflow:auto;
+overflow-y: auto;
 }
 
  #app {
@@ -107,9 +107,6 @@ button {
     box-shadow: 0px 0px 7px -6px #e6e8ec;
 }
 
-.p-pad {
-    padding: 15px;
-}
 
 .mdi-barcode {
     padding-left: -1;
@@ -138,7 +135,7 @@ form.mt-10.center {
 
 <div id="app">
     <v-container class="v-container">
-        <v-card v-if="authUser" class="center p-pad block">
+        <v-card v-if="authUser" class="center block">
             <h1> Profile </h1>
             <v-card>
                 <v-row>
