@@ -80,11 +80,11 @@
         <v-dialog
           class="mb-16"
           v-model="dialog"
-          max-width="650px"
+          max-width="1250px"
           >
         <div class=" top-r">
             <v-btn
-            class="form-close-btn"
+            class="form-close-btn mr-3 mt-3"
             width="10px"
             @click="dialog = false"
             >

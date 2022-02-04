@@ -1,5 +1,10 @@
 <style scoped>
 
+.v-container {
+max-height: 620px;
+overflow:auto;
+}
+
  #app {
    z-index:9999 !important;
    margin-bottom:20px;
@@ -40,8 +45,7 @@ button {
     margin-bottom: 1vw;
     height: auto;
     padding: 1vw;
-    max-width: 600px !important;
-    width: auto;
+    width: 100%;
     -webkit-box-pack: center;
 }
 
