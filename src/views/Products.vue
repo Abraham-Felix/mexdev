@@ -23,7 +23,7 @@
                         </v-container>
                         <div class="product-card-button">
                           <v-btn primary dark class="mt-5 center"
-                          href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L4GRV2X7J83DN"> $600mxn P/Hr </v-btn>
+                          to="contact"> Consult </v-btn>
                           <br>
                           <p class="center">"Deje el trabajo duro a nuestro equipo de soporte"</p>
                         <br>
@@ -54,7 +54,7 @@
                         </v-container>
                         <div class="product-card-button">
                         <v-btn primary dark class="mt-5 center"
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMENJA5EKK93S"> $20,000.00 mxn </v-btn>
+                        to="contact"> Consult </v-btn>
                         <br>
                         <p title="If you are form Mexico let us know!" class="center">"¡Empecemos a construir tu sueño!"</p>
                         <br>
