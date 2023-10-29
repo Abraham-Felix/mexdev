@@ -1,74 +1,50 @@
 <template>
   <v-container id="tutorials">
       <h1>Gigs Available!</h1>
-           <!-- loop over the tutorials -->
-           <div  class="Agrid d-grid">
-           <div
-           class="Amodule  back"
-           v-for="(gig, key) in authUser.allGigs"
-           :key="key">
-           <div class="fill-height">
-             <v-container >
-              <a @click.prevent="deleteGigs(gig)" class="card-link">
-                 <v-icon color=red>mdi-delete</v-icon>
-               </a>
-             <br>
-             <div class="d-flex align-start">
-               <h3 class="j-title center mb-00">{{ gig.gigtitle}}</h3>
-             </div>
-             <h6 class="">{{gig.companyname}}</h6>
-             <v-row class="d-flex ">
-               <p class="col-tres mdi mdi-clock text--secondary"> {{ gig.vacanttype }} </p>
-               <p class="col-tres mdi mdi-earth text--secondary"> {{ gig.giglocation }} </p>
-               <p class="col-tres mdi mdi-calendar text--secondary">{{gig.gigdate}} </p>
-             </v-row>
-             <v-divider class="mx-4"></v-divider>
-             <h5 class="left text-body-2">Company description</h5><br>
-             <p class="content"> {{ gig.companydescription}}</p><br>
-             <h5 class="left text-body-2">Gig description</h5><br>
-             <p class="content"> {{ gig.gigdescription}}</p><br>
-             <h5 class="left text-body-2">Gig benefits</h5><br>
-             <p class="content"> {{ gig.gigbenefits}}</p><br>
-             <h5 class="left text-body-2">Skills</h5><br>
-             <p class="content"> {{ gig.gigskills}}</p><br>
-           </v-container>
-         </div>
+      <!-- loop over the tutorials -->
+      <div
+        v-for="gig in allGigs"
+        :key="gig._key"
+      >
+        <a @click.prevent="deleteGigs(gig._key)">
+            <v-icon>mdi-delete</v-icon>
+        </a>
+        <h5>{{ gig.gigtitle}}</h5>
      </div>
-   </div>
-     <br>
-
   </v-container>
 </template>
 <script>
+
 import firebase from '@/plugins/firebase'
 let db = firebase.database();
 //let usersRef = db.ref('users');
 let gigRef = db.ref('gigs');
-import vue from 'vue'
+
 export default {
   name: 'EditGigs',
   data: () => ({
   authUser: {},
   allGigs: null, // initialise an array
 }),
-  methods: {
-       deleteGigs(key) {
-       gigRef.child(key+'value').remove()
-        console.log(key)
+   methods: {
+       async deleteGigs(gig) { 
+       await gigRef.child(gig).remove()
+         console.log(gig)
+       //I get the key on console when i click the button of the object I want to delete
     }
   },
   created: function() {
     //data => console.log(data.user, data.credential.accessToken)
     firebase.auth().onAuthStateChanged(user => {
         if (user) {
-          gigRef.child(user.uid).once('value', snapshot => {
-            if (snapshot.val()) {
-            this.allGigs = snapshot.val()
-            vue.set(this.authUser, 'allGigs' , this.allGigs , snapshot.key )
-             }
-             const key = snapshot.key
-             console.log(key)
-          })
+          gigRef.on('value', snapshot => {
+            const val = snapshot.val()
+            if (val) {
+              this.allGigs = Object.values(val).flatMap(gigs =>
+              Object.entries(gigs).map(([ _key, gig ]) => ({ _key, ...gig})))
+            }
+            //console.log(snapshot.val())
+          });
         }
      })
 }
